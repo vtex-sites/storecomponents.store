@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://biscoind.vtexcommercestable.com.br/$1" }
+  ]
+}
