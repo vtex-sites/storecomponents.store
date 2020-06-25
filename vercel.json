@@ -1,5 +1,16 @@
 {
   "rewrites": [
     { "source": "/api/(.*)", "destination": "https://biscoind.vtexcommercestable.com.br/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers" : [
+        {
+          "key" : "Host",
+          "value" : "biscoind.vtexcommercestable.com.br"
+        }
+      ]
+    }
   ]
 }
