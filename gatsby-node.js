@@ -7,15 +7,9 @@ const { join } = require('path')
 const { ensureDir, outputFile } = require('fs-extra')
 
 exports.createPages = async ({
-  actions: { createPage, createRedirect },
+  actions: { createPage },
   graphql,
 }) => {
-  createRedirect({
-    fromPath: '/api/*',
-    toPath: `https://${process.env.GATSBY_VTEX_TENANT}.${process.env.GATSBY_VTEX_ENVIRONMENT}.com.br/api/:splat`,
-    statusCode: 200,
-  })
-
   const { data, errors } = await graphql(`
     query {
       allProduct {
