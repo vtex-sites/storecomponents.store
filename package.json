@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^2.3.13",
     "prop-types": "^15.7.2",
     "react": "^0.0.0-experimental-7f28234f8",
-    "react-dom": "^0.0.0-experimental-7f28234f8",
+    "react-dom": "^0.14.1",
     "react-helmet": "^6.1.0",
     "swr": "^0.2.3",
     "theme-ui": "^0.3.1"
