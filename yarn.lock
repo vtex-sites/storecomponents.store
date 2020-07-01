@@ -1802,9 +1802,9 @@
     pretty-error "^2.1.1"
 
 "@vtex/gatsby-theme-vtex@^0.1.0-alpha.3":
-  version "0.1.0-alpha.11"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.1.0-alpha.11.tgz#6be7ee19e2d5c26043c98d99e638b4165d7e4184"
-  integrity sha512-nEjttnl8dW0mVzX7B3HAfIHyNKCovLvfvnrItMfBSIYMOYCHhJIhrX7K7wNz4r+S82H900VaLxafwKTjhmroVw==
+  version "0.1.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.1.0-alpha.12.tgz#1a5f2d7ab0ecc291076400db90c09d095efc84c8"
+  integrity sha512-fVfgHC5HK2PGc/TE4bI4AezVknKH2+19JUGf3X88lI55Ch/q3oSGgmsVkt0RiNP6VEcEY2KtJQMLvWWkOHupRg==
   dependencies:
     "@vtex/gatsby-source-vtex" "^0.1.0-alpha.10"
     "@vtex/gatsby-transformer-vtex-cms" "^0.1.0-alpha.10"
