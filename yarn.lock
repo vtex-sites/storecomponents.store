@@ -1802,9 +1802,9 @@
     pretty-error "^2.1.1"
 
 "@vtex/gatsby-theme-vtex@^0.1.0-alpha.3":
-  version "0.1.0-alpha.10"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.1.0-alpha.10.tgz#7e94c19648198596c2e6629c80bd31275da82525"
-  integrity sha512-+rWjdiWdMhPhEHegwMK3aIygdgEYXq405YKl3jpotKJUir3DlmJk8PChMJbn8yJR6gX6w90BB4DW8l65nussrA==
+  version "0.1.0-alpha.11"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.1.0-alpha.11.tgz#6be7ee19e2d5c26043c98d99e638b4165d7e4184"
+  integrity sha512-nEjttnl8dW0mVzX7B3HAfIHyNKCovLvfvnrItMfBSIYMOYCHhJIhrX7K7wNz4r+S82H900VaLxafwKTjhmroVw==
   dependencies:
     "@vtex/gatsby-source-vtex" "^0.1.0-alpha.10"
     "@vtex/gatsby-transformer-vtex-cms" "^0.1.0-alpha.10"
@@ -5607,9 +5607,9 @@ gatsby-plugin-page-creator@^2.3.12:
     micromatch "^3.1.10"
 
 gatsby-plugin-react-helmet@^3.3.6:
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.3.6.tgz#824202bdb2e83f90956e4ca1c076fd4dbbf97e61"
-  integrity sha512-KEmgL5TxdMsMNm6p5jgz422p8qwogriDlm0WPgObFshR3fkAFtbqEX6FlZW0Vv8itt6tP3YbKHN4exxIA2Hc8g==
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.3.8.tgz#e8efbc1d9ea98d6702d01effc6d381134f37aa7d"
+  integrity sha512-K9X/LPUOw1f36jjMdNeIPPXTCTZGvF8Qfq9FIe0PuzHFfnESjxkchw6Rd9gB0/wQxSlvunIuEz0z13Vki2aRKw==
   dependencies:
     "@babel/runtime" "^7.10.3"
 
