@@ -1793,10 +1793,10 @@
     axios "^0.19.2"
     pretty-error "^2.1.1"
 
-"@vtex/gatsby-theme-vtex@^0.1.0-alpha.13":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.1.0.tgz#2d9f041eff52cf13bc96ad1cd3edcbef6d4bfcc5"
-  integrity sha512-kVXijvviGbhXMbaghMe3nI176zjun4AGSlxHLbU86xtwyNk6AqbkjICqC8N1NsbNlE7aDWPYIq2NqKG3nMUW6g==
+"@vtex/gatsby-theme-vtex@0.1.1-alpha.0":
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.1.1-alpha.0.tgz#8608e4a8a1936cf32017c926f778d682153a7e92"
+  integrity sha512-5KAuVXL2l34NoUEN+660LDSTbe4rgpFeuJk7c7tKiGpvYRJBohY1qgDe8Nsb3GwQi/k8UWVr34ScDU9PNEa5ow==
   dependencies:
     "@vtex/gatsby-source-vtex" "^0.1.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.1.0"
