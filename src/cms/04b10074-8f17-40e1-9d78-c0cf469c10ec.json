@@ -6,9 +6,17 @@
   },
   "blocks": [
     {
+      "id": "1593176600903",
       "name": "img",
       "props": {
         "src": "https://content.vtexassets.com/assets/vtex.file-manager-graphql/images/chile-bike-2318___52930c4e532472f5263a0fbfdb067a1e.jpg"
+      }
+    },
+    {
+      "id": "1593176600904",
+      "name": "@bit/vtex.poc.rich-text/RichText",
+      "props": {
+        "text": "Juares"
       }
     }
   ]
