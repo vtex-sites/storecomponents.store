@@ -4,12 +4,27 @@
       "id": "1594065993932",
       "name": "vtex.rich-text@0.x/rich-text",
       "props": {
-        "text": "Test"
+        "text": "First"
+      }
+    },
+    {
+      "id": "1594066212277",
+      "name": "vtex.rich-text@0.x/rich-text",
+      "props": {
+        "text": "Second "
+      }
+    },
+    {
+      "id": "1594066557284",
+      "name": "vtex.rich-text@0.x/rich-text",
+      "props": {
+        "text": "Final"
       }
     }
   ],
   "meta": {
     "title": "Black Friday",
-    "description": "Black Friday"
+    "description": "Black Friday",
+    "slug": "/black"
   }
 }
