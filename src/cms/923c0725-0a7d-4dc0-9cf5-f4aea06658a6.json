@@ -1,0 +1,15 @@
+{
+  "blocks": [
+    {
+      "id": "1594065993932",
+      "name": "vtex.rich-text@0.x/rich-text",
+      "props": {
+        "text": "Test"
+      }
+    }
+  ],
+  "meta": {
+    "title": "Black Friday",
+    "description": "Black Friday"
+  }
+}
