@@ -16,7 +16,7 @@ module.exports = {
         name: 'Store Theme - VTEX Base Store',
         short_name: 'Store Theme',
         start_url: '/',
-        icon: `src/images/icon.png`,
+        icon: 'src/images/icon.png',
         background_color: '#0a034e',
         theme_color: '#0a034e',
         display: 'minimal-ui',
