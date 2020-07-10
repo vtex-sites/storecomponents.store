@@ -1748,24 +1748,25 @@
   dependencies:
     wonka "^4.0.14"
 
-"@vtex/gatsby-source-vtex@^0.2.1-alpha.0":
-  version "0.2.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.2.1-alpha.0.tgz#909c71e0ddf79d343a2b831552baa3f6e5d1c10a"
-  integrity sha512-XrLwawnroVSSj6bOLBOd/ORHTptr6GdIUh8SCnZa6kfNIwiHjlaAHslS6jS3cWIIMSxYfsplGTrXozRajjx/Vg==
+"@vtex/gatsby-source-vtex@^0.2.1-alpha.8":
+  version "0.2.1-alpha.8"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.2.1-alpha.8.tgz#aeea1e06d66ea4d2936aa45e03b0bfd83af1f12a"
+  integrity sha512-pJ3ocHApmAqxl1CnkLI7np4GWazWLCoVXwF9pYKsTjZNbQk1LR9x6JJ7aCtU8VdMi88Sm4NeWKs/IXNdaQoj4A==
   dependencies:
     isomorphic-unfetch "^3.0.0"
     pretty-error "^2.1.1"
 
-"@vtex/gatsby-theme-vtex@^0.2.1-alpha.0":
-  version "0.2.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.2.1-alpha.0.tgz#50d9d678625d2fc19bfd68ce9e499802c213ddf9"
-  integrity sha512-o85rLFV2s5UF8QmdYrTQlJbeZRxLBHHGrL2BzL8Gtpy4mRITUSU691lxNz+9q3uLfrRkGfRhK11CAZz4F0tauA==
+"@vtex/gatsby-theme-vtex@^0.2.1-alpha.8":
+  version "0.2.1-alpha.8"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.2.1-alpha.8.tgz#40f60868c66f4dd13b42848f0ed01451499d60fb"
+  integrity sha512-tSZxBZYZr5TKKNLRbWzZwsJM4BLk/91x29r08meYCdrnvpsqXxKgyW8KIlo5BGZLCmgyZnewq3B8tGBsIikHgA==
   dependencies:
-    "@vtex/gatsby-source-vtex" "^0.2.1-alpha.0"
-    "@vtex/gatsby-transformer-vtex-cms" "^0.2.1-alpha.0"
+    "@vtex/gatsby-source-vtex" "^0.2.1-alpha.8"
+    "@vtex/gatsby-transformer-vtex-cms" "^0.2.1-alpha.7"
     dotenv "^8.2.0"
     gatsby-plugin-react-helmet "^3.3.6"
     gatsby-plugin-theme-ui "^0.3.0"
+    p-queue "^6.5.0"
     react-helmet "^6.1.0"
     react-intersection-observer "^8.26.2"
     schema-dts "^0.6.0"
@@ -1773,10 +1774,10 @@
     theme-ui "^0.3.1"
     use-async-resource "^2.1.0"
 
-"@vtex/gatsby-transformer-vtex-cms@^0.2.1-alpha.0":
-  version "0.2.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.2.1-alpha.0.tgz#31aeb20cc4eba9fb1c4f075208fa49260591d6e0"
-  integrity sha512-VSQtvKArZjxmzKs2jHwxXTkpX6U4qgYpt33qNr6sMIJfIs8Fe/NsYfJTyHNJsbZfkJKmI/o6OlYCZRJFCf4VFg==
+"@vtex/gatsby-transformer-vtex-cms@^0.2.1-alpha.7":
+  version "0.2.1-alpha.7"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.2.1-alpha.7.tgz#a09f8d56264544341c293a36267f861e2a4af8a1"
+  integrity sha512-LglT5qc2g2UcfLvJbeDhKZxYA7H+dO7GDjbA1fakzkJtiTDTueMyEV+4C6ZiI24UwwJly2JXF3gwEp/bA2DYew==
   dependencies:
     pretty-error "^2.1.1"
 
@@ -4877,7 +4878,7 @@ eventemitter3@^3.1.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
-eventemitter3@^4.0.0:
+eventemitter3@^4.0.0, eventemitter3@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.4.tgz#b5463ace635a083d018bdc7c917b4c5f10a85384"
   integrity sha512-rlaVLnVxtxvoyLsQQFBx53YmXHDxRIzzTLbdfxqi4yocpSjAxXwkU0cScM5JgSKMqEhrZpnvQ2D9gjylR0AimQ==
@@ -8893,6 +8894,14 @@ p-map@^4.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
+p-queue@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.5.0.tgz#40d6bafdd3bb0c8eaa03e0649ba6fa3ce7249947"
+  integrity sha512-FLaTTD9Am6TeDfNuN0d+INeyVJoICoBS+OVP5K1S84v4w51LN3nRkCT+WC7xLBepV2s+N4LibM7Ys7xcSc0+1A==
+  dependencies:
+    eventemitter3 "^4.0.4"
+    p-timeout "^3.1.0"
+
 p-retry@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-3.0.1.tgz#316b4c8893e2c8dc1cfa891f406c4b422bebf328"
@@ -8904,6 +8913,13 @@ p-timeout@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-2.0.1.tgz#d8dd1979595d2dc0139e1fe46b8b646cb3cdf038"
   integrity sha512-88em58dDVB/KzPEx1X0N3LwFfYZPyDc4B6eF38M1rk9VTZMbxXXgjugz8mmwpS9Ox4BDZ+t6t3QP5+/gazweIA==
+  dependencies:
+    p-finally "^1.0.0"
+
+p-timeout@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-3.2.0.tgz#c7e17abc971d2a7962ef83626b35d635acf23dfe"
+  integrity sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==
   dependencies:
     p-finally "^1.0.0"
 
