@@ -1599,10 +1599,10 @@
   dependencies:
     csstype "^2.6.6"
 
-"@types/theme-ui@*", "@types/theme-ui@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@types/theme-ui/-/theme-ui-0.3.4.tgz#e2b313017243db7432f2ad2265b5b4214aa78645"
-  integrity sha512-68V4OR5fcS/IvAYJFilMa1g2SXC8/2D7+0jKp46PJO9OUz5PO/+l0zYAFVRh4IrVWfzXpEzjRp5H2Z8QPGVxOg==
+"@types/theme-ui@*", "@types/theme-ui@^0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@types/theme-ui/-/theme-ui-0.3.5.tgz#5cacd59e6480ab3cc4ac5fe07bc29d6c65b27eb8"
+  integrity sha512-BdsT396+tkn13HFfDQqzjFOh25tfbLXF/F1c9JlrV9lnqV0V7IhFSVODbtmGA27CkBBF/u/DcB3S8Yjt3ZnSXg==
   dependencies:
     "@emotion/serialize" "^0.11.15"
     "@types/react" "*"
