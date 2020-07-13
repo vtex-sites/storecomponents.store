@@ -7,14 +7,18 @@ export default {
     alignItems: 'center',
     flexWrap: 'wrap'
   },
+  'header-left': {
+    alignItems: 'center'
+  },
+  'header-right': {
+    alignItems: 'center'
+  },
   'header-menu': {
+    marginLeft: 4,
     a: {
       textDecoration: 'none',
-      m: 2,
-      p: 2,
-      mx: [1, 1, 2],
-      px: [3, 1, 2],
       color: 'inherit',
+      mx: [1, 2, 3],
       '&.active': {
         color: 'primary',
       },
@@ -34,6 +38,7 @@ export default {
   minicart: {
     background: '#f0f0f0',
     position: 'relative',
+    marginLeft: 2
   },
   'minicart-badge': {
     background: '#f71963',
