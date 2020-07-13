@@ -1,31 +1,43 @@
 export default {
-  'header': {
+  header: {
     bg: 'muted',
     px: [0, 2, 4],
     py: 3,
     justifyContent: ['center', 'space-between', 'space-between'],
     alignItems: 'center',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
   },
   'header-left': {
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
   },
   'header-right': {
-    alignItems: 'center'
+    alignItems: 'center',
   },
   'header-menu': {
-    marginLeft: 4,
+    marginLeft: [0, 0, 4],
+    my: [3, 0, 0],
     a: {
       textDecoration: 'none',
       color: 'inherit',
-      mx: [1, 2, 3],
+      mx: [2, 3, 3],
       '&.active': {
         color: 'primary',
       },
       '&:hover': {
-        color: 'primary'
-      } 
-    }
+        color: 'primary',
+      },
+    },
+  },
+  'header-search': {
+    maxWidth: 250,
+    background: '#fff',
+    border: '2px solid #e3e4e6',
+    px: 3,
+    '&:hover': {
+      borderColor: '#cacbcc',
+    },
   },
   loadMore: {
     cursor: 'pointer',
@@ -38,7 +50,7 @@ export default {
   minicart: {
     background: '#f0f0f0',
     position: 'relative',
-    marginLeft: 2
+    marginLeft: 2,
   },
   'minicart-badge': {
     background: '#f71963',
@@ -52,16 +64,6 @@ export default {
   },
   productTitle: {
     mb: 4,
-  },
-  forms: {
-    input: {
-      background: '#fff',
-      border: '2px solid #e3e4e6',
-      px: 3,
-      '&:hover': {
-        borderColor: '#cacbcc',
-      },
-    },
   },
   breakpoints: ['40em', '56em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
