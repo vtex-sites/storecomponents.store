@@ -47,12 +47,12 @@ export default {
       color: 'text',
     },
   },
-  minicart: {
+  'header-minicart': {
     background: '#f0f0f0',
     position: 'relative',
     marginLeft: 2,
   },
-  'minicart-badge': {
+  'header-minicart-badge': {
     background: '#f71963',
     borderRadius: '100%',
     height: 16,
