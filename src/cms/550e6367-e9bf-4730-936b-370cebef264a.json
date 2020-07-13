@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "CMS Test",
+    "slug": "/cms-test"
+  },
+  "blocks": [
+    {
+      "id": "1594675249800",
+      "name": "Header",
+      "props": {}
+    }
+  ]
+}
