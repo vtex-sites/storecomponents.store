@@ -1,4 +1,12 @@
 export default {
+  'header': {
+    bg: 'muted',
+    px: [0, 2, 4],
+    py: 3,
+    justifyContent: ['center', 'space-between', 'space-between'],
+    alignItems: 'center',
+    flexWrap: 'wrap'
+  },
   'header-menu': {
     a: {
       textDecoration: 'none',
