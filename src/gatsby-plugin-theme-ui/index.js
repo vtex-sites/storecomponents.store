@@ -51,6 +51,7 @@ export default {
     background: '#f0f0f0',
     position: 'relative',
     marginLeft: 2,
+    cursor: 'pointer',
   },
   'header-minicart-badge': {
     background: '#f71963',
