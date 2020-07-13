@@ -1,4 +1,20 @@
 export default {
+  'header-menu': {
+    a: {
+      textDecoration: 'none',
+      m: 2,
+      p: 2,
+      mx: [1, 1, 2],
+      px: [3, 1, 2],
+      color: 'inherit',
+      '&.active': {
+        color: 'primary',
+      },
+      '&:hover': {
+        color: 'primary'
+      } 
+    }
+  },
   loadMore: {
     cursor: 'pointer',
     '&:disabled': {
