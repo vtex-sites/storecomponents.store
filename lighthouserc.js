@@ -19,12 +19,7 @@ module.exports = {
       assertions: {
         'uses-long-cache-ttl': 'off',
         'is-crawlable': 'off', // preview pages are not crawlable
-        'uses-rel-preconnect': [
-          'warn',
-          {
-            maxNumericValue: 2 // somehow lighthouse ci can't find the dns-prefetch tags we are adding
-          }
-        ],
+        'uses-rel-preconnect': 'warn', // somehow lighthouse ci can't find the dns-prefetch tags we are adding
         'categories:pwa': 'off',
         'categories:seo': [
           'error',
