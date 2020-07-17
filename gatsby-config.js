@@ -37,12 +37,12 @@ module.exports = {
       resolve: require.resolve('gatsby-plugin-google-analytics'),
       options: {
         trackingId: "UA-43760863-27",
-        head: false,
+        head: true,
         anonymize: true,
         respectDNT: true,
         exclude: ["/preview/**"],
         pageTransitionDelay: 0,
-        defer: true,
+        defer: false,
       },
     },
     {
