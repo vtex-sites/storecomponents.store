@@ -1748,25 +1748,25 @@
   dependencies:
     wonka "^4.0.14"
 
-"@vtex/gatsby-source-vtex@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.2.1.tgz#cf55fbd5614b6acdb12ea2a4f552138fe4cecf2a"
-  integrity sha512-LO9WUivf0h7tz+XkhfZ5RUDpzbNrJye4ZMhykNzl5nMR+ffavOYyGagtQNx0aS7YwCb+dLpwhnEa2HvBLAJeqw==
+"@vtex/gatsby-source-vtex@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.4.0.tgz#4ac4842b5b6b0d8943773735d9303e256c4a8d80"
+  integrity sha512-ZV+PyTISFKxvpZ603f3MWQj5oBXMSlcngeDw0duO2QtynRFUJBX/ewwShVGk1redz0aI2k5PW0KIgvzzi4nr4A==
   dependencies:
     isomorphic-unfetch "^3.0.0"
     pretty-error "^2.1.1"
 
-"@vtex/gatsby-theme-vtex@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.2.1.tgz#bbe9007e12fa83b8449b7e4541e7ee40f0a58560"
-  integrity sha512-1H778+BxAMv6LwiiMVkX6zGHvMh3gy4k+8Cb0p/OAaH0aGhQfpa2JxKPDKV0mOMhEEnWi0C3+q+mc937zcF2uQ==
+"@vtex/gatsby-theme-vtex@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.4.0.tgz#df7a2adc6ed18bdff7534291c74fbe9713d7fddf"
+  integrity sha512-sF559d9NyO96zcpT/K+LlrP78iSGBImxIN3WmYEsuedmIkKk1FVg2/EOvEensKvp+78E2nwh/HQNQxLT6R1JEQ==
   dependencies:
-    "@vtex/gatsby-source-vtex" "^0.2.1"
-    "@vtex/gatsby-transformer-vtex-cms" "^0.2.1"
+    "@vtex/gatsby-source-vtex" "^0.4.0"
+    "@vtex/gatsby-transformer-vtex-cms" "^0.4.0"
+    common-tags "^1.8.0"
     dotenv "^8.2.0"
     gatsby-plugin-react-helmet "^3.3.6"
     gatsby-plugin-theme-ui "^0.3.0"
-    nuka-carousel "^4.7.0"
     p-queue "^6.5.0"
     react-helmet "^6.1.0"
     react-intersection-observer "^8.26.2"
@@ -1775,10 +1775,10 @@
     theme-ui "^0.3.1"
     use-async-resource "^2.1.0"
 
-"@vtex/gatsby-transformer-vtex-cms@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.2.1.tgz#26e8d6c525dfdad5331c820635db62f825f2f479"
-  integrity sha512-5aa21WatM5xYcybLDiizipa9n+k3eYv0xzXIUBuxCAAFfiJxP5Un4GY55mMyes5KZoXban4hp1/rZwmmA8xvag==
+"@vtex/gatsby-transformer-vtex-cms@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.4.0.tgz#005910f85570e16109e41308f226cb9df8feb655"
+  integrity sha512-BAsSE0jIj0d6m4qGRn5wICInj4pVmUBKuZJVvIJ8TgICgui1Lb0SgGHZv7RMpcW1mFIygxbM/5VzB3yKrzf0ag==
   dependencies:
     pretty-error "^2.1.1"
 
@@ -3901,16 +3901,6 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-d3-ease@^1.0.3:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/d3-ease/-/d3-ease-1.0.6.tgz#ebdb6da22dfac0a22222f2d4da06f66c416a0ec0"
-  integrity sha512-SZ/lVU7LRXafqp7XtIcBdxnWl8yyLpgOmzAk0mWBI9gXNzLDx5ybZgnRbH9dN/yY5tzVBqCQ9avltSnqVwessQ==
-
-d3-timer@^1.0.9:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/d3-timer/-/d3-timer-1.0.10.tgz#dfe76b8a91748831b13b6d9c793ffbd508dd9de5"
-  integrity sha512-B1JDm0XDaQC+uvo4DT79H0XmBskgS3l6Ve+1SBCfxgmtIb1AVrPIoqd+nPSv+loMX8szQ0sVUhGngL7D5QPiXw==
-
 damerau-levenshtein@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.6.tgz#143c1641cb3d85c60c32329e26899adea8701791"
@@ -4977,11 +4967,6 @@ execa@^4.0.1, execa@^4.0.2:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
-
-exenv@^1.2.0:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
-  integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
 
 expand-brackets@^2.1.4:
   version "2.1.4"
@@ -7513,13 +7498,6 @@ jsx-ast-utils@^2.4.1:
     array-includes "^3.1.1"
     object.assign "^4.1.0"
 
-kapellmeister@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/kapellmeister/-/kapellmeister-3.0.1.tgz#419b715cd221acda3db79892caedf63e1c9f7d25"
-  integrity sha512-S7+gYcziMREv8RxG46138mb1O4Xf9II/bCxEJPYkhlZ7PgGWTlicgsyNad/DGc5oEAlWGLXE5ExLbTDVvJmgDA==
-  dependencies:
-    d3-timer "^1.0.9"
-
 kebab-hash@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/kebab-hash/-/kebab-hash-0.1.2.tgz#dfb7949ba34d8e70114ea7d83e266e5e2a4abaac"
@@ -8578,18 +8556,6 @@ nth-check@^1.0.2, nth-check@~1.0.1:
   integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
   dependencies:
     boolbase "~1.0.0"
-
-nuka-carousel@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-4.7.0.tgz#30d56304fdf1de28ded2781be6cc280efc6bae0e"
-  integrity sha512-5ngBNwFnMqO9TXWsJdxQMUNbasbPFva5ukqB5GpJfdLGBVOP7q3dn7NLithqNVGcXvNgsp3UMXRwQZGZQrRlOw==
-  dependencies:
-    csstype "^2.6.6"
-    d3-ease "^1.0.3"
-    exenv "^1.2.0"
-    prop-types "^15.6.0"
-    react-move "^6.1.0"
-    wicg-inert "^3.0.3"
 
 null-loader@^3.0.0:
   version "3.0.0"
@@ -9754,7 +9720,7 @@ prompts@^2.3.2:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10044,15 +10010,6 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
-react-move@^6.1.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/react-move/-/react-move-6.4.0.tgz#9163a87c62fff94bf6e6980685c713739192650e"
-  integrity sha512-TNyDQESDZ0xsejnxFTQ9CKarJQN6NbgpImrvIEzOVe7+jt8y7uTjJwWxqFTfmvwskIs+RmUbCWdN7PAbGyhrdA==
-  dependencies:
-    "@babel/runtime" "^7.10.3"
-    kapellmeister "^3.0.1"
-    prop-types "^15.7.2"
 
 react-reconciler@^0.24.0:
   version "0.24.0"
@@ -12632,11 +12589,6 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
-
-wicg-inert@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/wicg-inert/-/wicg-inert-3.0.3.tgz#7d05eaed64176887ee4c66fc0c4d6fe4b38ccce5"
-  integrity sha512-XwXf8K0NN4cpagjBlZ2/j/5Sjf6dW3HNbfywEy1y6Z8PJKvSHVGiuc5Id/9RZ6EmGq+GQCGTo7B2SK0Misbr6g==
 
 wide-align@^1.1.0:
   version "1.1.3"
