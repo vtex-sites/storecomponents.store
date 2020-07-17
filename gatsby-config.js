@@ -42,7 +42,7 @@ module.exports = {
         respectDNT: true,
         exclude: ["/preview/**"],
         pageTransitionDelay: 0,
-        defer: false,
+        defer: true,
       },
     },
     {
