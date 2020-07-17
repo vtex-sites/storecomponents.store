@@ -34,14 +34,6 @@ module.exports = {
       },
     },
     {
-      resolve: require.resolve('gatsby-plugin-google-tagmanager'),
-      options: {
-        id: "GTM-TKDFD35",
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: "gatsby" },
-      },
-    },
-    {
       resolve: require.resolve('gatsby-plugin-google-analytics'),
       options: {
         trackingId: "UA-43760863-27",
