@@ -33,17 +33,17 @@ module.exports = {
         path: './src/cms/',
       },
     },
-    {
-      resolve: require.resolve('gatsby-plugin-google-marketing-platform'),
-      options: {
-        tagmanager: {
-          id: 'GTM-TKDFD35'
-        },
-        analytics: {
-          id: 'UA-43760863-27'
-        }
-      },
-    },
+    // {
+    //   resolve: require.resolve('gatsby-plugin-google-marketing-platform'),
+    //   options: {
+    //     tagmanager: {
+    //       id: 'GTM-TKDFD35'
+    //     },
+    //     analytics: {
+    //       id: 'UA-43760863-27'
+    //     }
+    //   },
+    // },
     {
       resolve: require.resolve('gatsby-plugin-netlify'),
       options: {
