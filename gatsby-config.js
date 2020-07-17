@@ -34,55 +34,22 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: require.resolve('gatsby-plugin-google-tagmanager'),
       options: {
         id: "GTM-TKDFD35",
-
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false,
-
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        //
-        // Defaults to null
         defaultDataLayer: { platform: "gatsby" },
-
-        // Specify optional GTM environment details.
-        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        // dataLayerName: "YOUR_DATA_LAYER_NAME",
-
-        // Name of the event that is triggered
-        // on every Gatsby route change.
-        //
-        // Defaults to gatsby-route-change
-        // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: require.resolve('gatsby-plugin-google-analytics'),
       options: {
-        // The property ID; the tracking code won't be generated without it
         trackingId: "UA-43760863-27",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
-        // Setting this parameter is optional
         anonymize: true,
-        // Setting this parameter is also optional
         respectDNT: true,
-        // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**"],
-        // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: undefined,
-        // Enables Google Optimize Experiment ID
-        experimentId: undefined,
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: undefined,
-        // Defers execution of google analytics script after page load
         defer: false,
       },
     },
