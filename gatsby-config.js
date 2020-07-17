@@ -33,15 +33,40 @@ module.exports = {
         path: './src/cms/',
       },
     },
+    // {
+    //   resolve: require.resolve('gatsby-plugin-google-marketing-platform'),
+    //   options: {
+    //     tagmanager: {
+    //       id: 'GTM-TKDFD35'
+    //     },
+    //     analytics: {
+    //       id: 'UA-43760863-27'
+    //     }
+    //   },
+    // },
     {
-      resolve: require.resolve('gatsby-plugin-google-marketing-platform'),
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        tagmanager: {
-          id: 'GTM-TKDFD35'
-        },
-        // analytics: {
-        //   id: 'UA-43760863-27'
-        // }
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-43760863-27",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        optimizeId: undefined,
+        // Enables Google Optimize Experiment ID
+        experimentId: undefined,
+        // Set Variation ID. 0 for original 1,2,3....
+        variationId: undefined,
+        // Defers execution of google analytics script after page load
+        defer: false,
       },
     },
     {
