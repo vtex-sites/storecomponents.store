@@ -1,6 +1,6 @@
 import React from 'react'
 
-exports.onRenderBody = ({
+export const onRenderBody = ({
   setHeadComponents,
 }) => {
   setHeadComponents([
