@@ -1756,10 +1756,10 @@
     isomorphic-unfetch "^3.0.0"
     pretty-error "^2.1.1"
 
-"@vtex/gatsby-theme-vtex@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.4.1.tgz#4d21a5d03709fdacc6fc3a8d95d868faff86c92c"
-  integrity sha512-DfMNtHpiObDVWq4ZhLZymXv0VzG/GEStiTpSY+Df9PYPEfPgBvMKvWL9vEpNbJ0AqRp8Cum2i2mPSaq0a8r3zg==
+"@vtex/gatsby-theme-vtex@^0.4.2-alpha.3":
+  version "0.4.2-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.4.2-alpha.3.tgz#c6e656ba703bcfae692f1cea129024e457aeb642"
+  integrity sha512-UfQiwi8KrIjfQMGza/T74GzfV9XLYrfHPq2xC85VZGrqqYVovxfGht3htFxSYT9rl2nqEnhb9ZjZPUjulSpOpQ==
   dependencies:
     "@vtex/gatsby-source-vtex" "^0.4.1"
     "@vtex/gatsby-transformer-vtex-cms" "^0.4.1"
@@ -1769,7 +1769,6 @@
     gatsby-plugin-theme-ui "^0.3.0"
     p-queue "^6.5.0"
     react-helmet "^6.1.0"
-    react-intersection-observer "^8.26.2"
     schema-dts "^0.6.0"
     swr "^0.3.0-beta.10"
     theme-ui "^0.3.1"
@@ -9994,13 +9993,6 @@ react-hot-loader@^4.12.21:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
-react-intersection-observer@^8.26.2:
-  version "8.26.2"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.26.2.tgz#0562ff0c06b2b10e809190c2fa9b6ded656e6e16"
-  integrity sha512-GmSjLNK+oV7kS+BHfrJSaA4wF61ELA33gizKHmN+tk59UT6/aW8kkqvlrFGPwxGoaIzLKS2evfG5fgkw5MIIsg==
-  dependencies:
-    tiny-invariant "^1.1.0"
-
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -11746,11 +11738,6 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
-
-tiny-invariant@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
-  integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
 
 tmp@^0.0.33:
   version "0.0.33"
