@@ -7,7 +7,7 @@
     "gatsby": "^2.24.9",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-netlify": "^2.3.5",
-    "gatsby-source-filesystem": "^2.3.13",
+    "gatsby-source-filesystem": "^2.3.22",
     "react": "^0.0.0-experimental-7f28234f8",
     "react-dom": "^0.0.0-experimental-7f28234f8",
     "theme-ui": "^0.3.1"
