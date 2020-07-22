@@ -1665,10 +1665,10 @@
     isomorphic-unfetch "^3.0.0"
     pretty-error "^2.1.1"
 
-"@vtex/gatsby-theme-vtex@^0.5.3-alpha.1":
-  version "0.5.3-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.5.3-alpha.1.tgz#0169799edc25589f9a020a806cacfb023da77685"
-  integrity sha512-xSCXsL6Me+QHThCYIQsAs6GJ+8dLXxccxanui/GLKxbjZyYPSSHjRJUN1pYLuh6IYXJBT1MABDdNOrDMabDt1w==
+"@vtex/gatsby-theme-vtex@^0.5.3-alpha.2":
+  version "0.5.3-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.5.3-alpha.2.tgz#cd26b6cd514fa9bddb495db27e56439fd53e36df"
+  integrity sha512-yBuLgcxE43ItBx9vI7yhwX1lbxuA/hVM7ijobW4zsY6tpW2b+Vn0lbEa9Y4bp/WjntKU3F+MaAEJ7M3jixJ6Ig==
   dependencies:
     "@vtex-components/drawer" "0.1.2"
     "@vtex/gatsby-source-vtex" "^0.5.3-alpha.0"

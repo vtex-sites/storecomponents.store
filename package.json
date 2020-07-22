@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
-    "@vtex/gatsby-theme-vtex": "^0.5.3-alpha.1",
+    "@vtex/gatsby-theme-vtex": "^0.5.3-alpha.2",
     "gatsby": "^2.23.12",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-netlify": "^2.3.5",
