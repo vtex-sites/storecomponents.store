@@ -1340,6 +1340,11 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/css/-/css-0.3.1.tgz#b85c7e8fae948dc0de65aa30b853368993e25cb3"
   integrity sha512-QB2/fZBpo4inaLHL3OrB8NOBgNfwnj8GtHzXWHb9iQSRjmtNX8zPXBe32jLT7qQP0+y8JxPT4YChZIkm5ZyIdg==
 
+"@theme-ui/match-media@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@theme-ui/match-media/-/match-media-0.3.1.tgz#05af6a71cf14368e1b3bd7180fc382c72d5ba53b"
+  integrity sha512-PHvSRB1vqUgDnPkGlXLa+qadmOMOy3LKSOzovwpTi+wzCUyyOGAsUY/fJQ7nufBrmU3vdYeUTrKplLn5VIEmlg==
+
 "@theme-ui/mdx@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@theme-ui/mdx/-/mdx-0.3.0.tgz#8bb1342204acfaa69914d6b6567c5c49d9a8c1e6"
@@ -1657,26 +1662,27 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.1.3.tgz#fbe460bc02169ec3f164646818ae959b4cecb275"
   integrity sha512-sxvJ7DbanPrlb64sziThUKz9OpEUMXR8yJUS6nSElXAR2KZPW+wYYSiyEFRHwzTmen3Bu717nI2LGDUSfFLp1w==
 
-"@vtex/gatsby-source-vtex@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.7.0.tgz#d40d004f8fa31bf8c5215c4ed10e4635d6ce587d"
-  integrity sha512-RKyNewa6KDQtWdHFJumV42popax70kCILiue6DT2Ei0NcPkxHfAqs55R0ks4dPsgAnKY7ktxm8hpoqtzG0U+SQ==
+"@vtex/gatsby-source-vtex@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.7.3.tgz#8d37d40ecece198019ea69e51e5d0ff6e43e25e7"
+  integrity sha512-p8o2CcF3PuGlnBRAuPIRgiF0pcoCecvHn6unr1pLG0bgBiCNZgA8HpsbwWt905subnN6QBdqf3OLejlAERgNMw==
   dependencies:
     isomorphic-unfetch "^3.0.0"
-    pretty-error "^2.1.1"
 
-"@vtex/gatsby-theme-vtex@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.7.2.tgz#da7ff8e5c00ff9216fbda3a5386a60b93779b039"
-  integrity sha512-/Ic+cdLjgbi4pdyqa3/EhZQ98oDCBhGBrPid076sDY6jDnSmCf9pSXTyC0/jOHiJy8IxVk4OJhyTxfd4Xd8+CA==
+"@vtex/gatsby-theme-vtex@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.8.0.tgz#01431f84341fccc9791721a5e04af8d46f5b7f52"
+  integrity sha512-wMAXzjECrxKKh6DgYYQnS4sCNFCUoeBhVnjGyeC4US9j8Yx6CT5Qdtaw7jq6pNog/7Vt8h1usZOfK0W8aUcZkg==
   dependencies:
+    "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
-    "@vtex/gatsby-source-vtex" "^0.7.0"
-    "@vtex/gatsby-transformer-vtex-cms" "^0.7.0"
+    "@vtex/gatsby-source-vtex" "^0.7.3"
+    "@vtex/gatsby-transformer-vtex-cms" "^0.8.0"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
     gatsby-plugin-react-helmet "^3.3.6"
     gatsby-plugin-theme-ui "^0.3.0"
+    intl-format-cache "^4.3.0"
     p-queue "^6.5.0"
     react-helmet "^6.1.0"
     schema-dts "^0.6.0"
@@ -1684,12 +1690,10 @@
     theme-ui "^0.3.1"
     use-async-resource "^2.1.0"
 
-"@vtex/gatsby-transformer-vtex-cms@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.7.0.tgz#7229d6e6e97dda4bec22b8b3e2a4ef62da33a6a8"
-  integrity sha512-0RbYviXT2xYepkxzHNXgjv/SEGEcyi9K7hZDpXi9VYM7eyHK0vEUPXQlUsjOWqRiwlQXA39tYnyzVs1K5aUpjA==
-  dependencies:
-    pretty-error "^2.1.1"
+"@vtex/gatsby-transformer-vtex-cms@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.8.0.tgz#82a7390a3b189345c76fbe9a9d7b26c0f1e09046"
+  integrity sha512-YFlaoSG2pftnPOki/c2Y35hs754WLgOKyYRfwlk7uUGqf9UWbtm8a5nI4TK4n3YMtdxL6+q9/dQvoPbSDKghVA==
 
 "@vtex/prettier-config@^0.3.1":
   version "0.3.1"
@@ -6628,6 +6632,11 @@ internal-slot@^1.0.2:
     es-abstract "^1.17.0-next.1"
     has "^1.0.3"
     side-channel "^1.0.2"
+
+intl-format-cache@^4.3.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-4.3.1.tgz#484d31a9872161e6c02139349b259a6229ade377"
+  integrity sha512-OEUYNA7D06agqPOYhbTkl0T8HA3QKSuwWh1HiClEnpd9vw7N+3XsQt5iZ0GUEchp5CW1fQk/tary+NsbF3yQ1Q==
 
 into-stream@^3.1.0:
   version "3.1.0"
