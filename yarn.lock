@@ -1178,6 +1178,11 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
+"@popperjs/core@^2.4.4":
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
+  integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
+
 "@reach/router@^1.3.4":
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
@@ -1353,6 +1358,11 @@
     "@emotion/core" "^10.0.0"
     "@emotion/styled" "^10.0.0"
     "@mdx-js/react" "^1.0.0"
+
+"@theme-ui/preset-base@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@theme-ui/preset-base/-/preset-base-0.3.0.tgz#853a78195beead04ece4391c5672d690899bec47"
+  integrity sha512-bFCYoxfe/Ugr5k5BEy3Gv5jg8+idZHWDt/NM95jgla4qITlaOAMuEL6afoQ5HXbJjp5TnZFZ73qO6cKI8/BFfQ==
 
 "@theme-ui/theme-provider@^0.3.1":
   version "0.3.1"
@@ -1662,23 +1672,23 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.1.3.tgz#fbe460bc02169ec3f164646818ae959b4cecb275"
   integrity sha512-sxvJ7DbanPrlb64sziThUKz9OpEUMXR8yJUS6nSElXAR2KZPW+wYYSiyEFRHwzTmen3Bu717nI2LGDUSfFLp1w==
 
-"@vtex/gatsby-source-vtex@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.8.1.tgz#6add4103d9e028103bab2ba7018240d1c5ed6dcc"
-  integrity sha512-5Sf9qBsgnxDDSJsSFiOoFQZ+2w3hUqtwEV2mTH8T4FYNJ8rnacbIk/ggpileK/kK3BRJN/KwnZiArA7NFBMQWw==
+"@vtex/gatsby-source-vtex@^0.8.2-alpha.3":
+  version "0.8.2-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.8.2-alpha.3.tgz#f67348fc1241187fcf6abfd4bf58719b2e74a42e"
+  integrity sha512-4BytVSLf64qCTgWg2iReY5SoOZeJVWf/xrBOTDkVW1fMT9zi7R+rilsmBRiQ+THcIivGJKD22t5BZI62LoxeSg==
   dependencies:
     isomorphic-unfetch "^3.0.0"
     p-map "^4.0.0"
 
-"@vtex/gatsby-theme-vtex@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.8.1.tgz#8bfab0cd6d60e680bca7bb3e568b0feb8302f327"
-  integrity sha512-gZreJqFvM5IWuwFKGYN49Lm9pjgeq7FXRIyFNODoxyvRVETGr2kMwB4WnKraeWCIKSEebjUmCfbJxkfAv1swug==
+"@vtex/gatsby-theme-vtex@0.8.2-alpha.3":
+  version "0.8.2-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.8.2-alpha.3.tgz#4e1514d8a36a3d3c495329d9b10702c63416ebac"
+  integrity sha512-ykb9lmGkOYitWXgLdwS0ChvAZ3ILddFMbKZOJlsJuJESYF9PvXWJarO6YG016MdqsBMc5NkrRiGWuKolp7oW/A==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
-    "@vtex/gatsby-source-vtex" "^0.8.1"
-    "@vtex/gatsby-transformer-vtex-cms" "^0.8.1"
+    "@vtex/gatsby-source-vtex" "^0.8.2-alpha.3"
+    "@vtex/gatsby-transformer-vtex-cms" "^0.8.2-alpha.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
     gatsby-plugin-react-helmet "^3.3.6"
@@ -1692,20 +1702,25 @@
     theme-ui "^0.3.1"
     use-async-resource "^2.1.0"
 
-"@vtex/gatsby-transformer-vtex-cms@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.8.1.tgz#30ef3496dc42812512bddde47df5ac5cdc7c2ff9"
-  integrity sha512-xHW3OJ5MIry4dFzmj/3WX2PenS7Xjc/ku4oqEYC+v1GQ4aQ9mbrUf20mIRMxduC0THNZG15r1KuiUk4PK8b1cA==
+"@vtex/gatsby-transformer-vtex-cms@^0.8.2-alpha.3":
+  version "0.8.2-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.8.2-alpha.3.tgz#5bc7f4bb090d775322c57fa589c5e822b55352a0"
+  integrity sha512-lptyKZD9nBdFHK5ODaqEivBs9nt/wSY02dk6wQ8IQ21Y7jZgOeNI2G1d+2neDz0XcrYOqAyvL8Fd6bY9H680gQ==
 
 "@vtex/prettier-config@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.1.1.tgz#a0e5e940446eb2e62f4a749876406d727eed156b"
-  integrity sha512-ImIl75qhcwNuUdPCJFwRi72zn94a44pSwi3lx2zwcUHTI15LFx4sXJSMCrfXLWP8Qw79rq/ojBaETuXzgO+6Uw==
+"@vtex/store-ui@0.8.2-alpha.3":
+  version "0.8.2-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.8.2-alpha.3.tgz#685f8578a926ceec20009a7133c15e6af47690ad"
+  integrity sha512-tAV72H6fYSCOUrROK7ffK47UrFAWoIYt4gp5GoDkiyzH9BpD8DiugksqBMta6jF7y81gQWNjp0XXOHjtrK/ffQ==
+  dependencies:
+    "@theme-ui/preset-base" "^0.3.0"
+    gatsby-link "^2.4.13"
+    reakit "^1.1.2"
+    theme-ui "^0.3.1"
 
 "@vtex/tsconfig@^0.5.0":
   version "0.5.0"
@@ -2556,6 +2571,11 @@ body-parser@1.19.0:
     qs "6.7.0"
     raw-body "2.4.0"
     type-is "~1.6.17"
+
+body-scroll-lock@^3.0.2:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/body-scroll-lock/-/body-scroll-lock-3.0.3.tgz#221d87435bcfb50e27ab5d4508735f622aed11a2"
+  integrity sha512-EUryImgD6Gv87HOjJB/yB2WIGECiZMhmcUK+DrqVRFDDa64xR+FsK0LgvLPnBxZDTxIl+W80/KJ8i6gp2IwOHQ==
 
 bonjour@^3.5.0:
   version "3.5.0"
@@ -9845,6 +9865,36 @@ readdirp@~3.4.0:
   integrity sha512-0xe001vZBnJEK+uKcj8qOhyAKPzIT+gStxWr3LCB0DwcXR5NZJ3IaC+yGnHCYzB/S7ov3m3EEbZI2zeNvX+hGQ==
   dependencies:
     picomatch "^2.2.1"
+
+reakit-system@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.13.1.tgz#e756b9a1b9d6cfe75f9a5e77531e5b0f9eb8227b"
+  integrity sha512-qglfQ53FsJh5+VSkjMtBg7eZiowj9zXOyfJJxfaXh/XYTVe/5ibzWg6rvGHyvSm6C3D7Q2sg/NPCLmCtYGGvQA==
+  dependencies:
+    reakit-utils "^0.13.1"
+
+reakit-utils@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.13.1.tgz#060b8b2a55eea1170c6d8ff37cd98c10c63ee55c"
+  integrity sha512-NBKgsot3tU91gZgK5MTInI/PR0T3kIsTmbU5MbGggSOcwU2dG/kbE8IrM2lC6ayCSL2W2QWkijT6kewdrIX7Gw==
+
+reakit-warning@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/reakit-warning/-/reakit-warning-0.4.1.tgz#a715302812c5fc7f89f35772d650423f09029b00"
+  integrity sha512-AgnRN6cf8DYBF/mK2JEMFVL67Sbon8fDbFy1kfm0EDibtGsMOQtsFYfozZL7TwmJ4yg68VMhg8tmPHchVQRrlg==
+  dependencies:
+    reakit-utils "^0.13.1"
+
+reakit@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.1.2.tgz#e644017de4f07b09433981cdad8bf66002dffe38"
+  integrity sha512-UJEeWJ+OwtBBY6gpOkbc2rflASID+t+B6GlqCmqwO4eD0YIGJwmF2O5U7HzV5igtyNBGPyKMhpodm2Yhx6UfHw==
+  dependencies:
+    "@popperjs/core" "^2.4.4"
+    body-scroll-lock "^3.0.2"
+    reakit-system "^0.13.1"
+    reakit-utils "^0.13.1"
+    reakit-warning "^0.4.1"
 
 recursive-readdir@2.2.1:
   version "2.2.1"

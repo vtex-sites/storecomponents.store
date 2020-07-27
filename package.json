@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
-    "@vtex/gatsby-theme-vtex": "^0.8.1",
-    "@vtex/store-ui": "^0.1.1",
+    "@vtex/gatsby-theme-vtex": "0.8.2-alpha.3",
+    "@vtex/store-ui": "0.8.2-alpha.3",
     "gatsby": "^2.24.9",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-netlify": "^2.3.5",
