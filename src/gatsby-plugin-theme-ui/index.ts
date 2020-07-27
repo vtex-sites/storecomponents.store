@@ -1,4 +1,8 @@
+import { baseTheme, cardTheme } from '@vtex/store-ui'
+
 export default {
+  ...baseTheme,
+  ...cardTheme,
   header: {
     bg: 'muted',
     px: [0, 2, 4],
@@ -63,15 +67,6 @@ export default {
         color: 'textMuted',
       },
     },
-  },
-  infocard: {
-    display: 'flex',
-    justifyContent: 'center',
-    px: '10px',
-    maxHeight: '540px',
-    background: '#e0efe0',
-    textAlign: 'center',
-    alignItems: 'center',
   },
   'header-left': {
     alignItems: 'center',
@@ -219,41 +214,5 @@ export default {
   },
   productTitle: {
     mb: 4,
-  },
-  breakpoints: ['40em', '56em', '64em'],
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  fonts: {
-    body:
-      'San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif',
-    heading: 'inherit',
-    monospace: 'Menlo, monospace',
-  },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700,
-  },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.125,
-  },
-  colors: {
-    text: '#3f3f40',
-    textMuted: '#979899',
-    textBold: '#03003d',
-    background: '#fff',
-    primary: '#0f3e99',
-    muted: '#f0f0f0',
-  },
-  styles: {
-    root: {
-      fontFamily: 'body',
-      lineHeight: 'body',
-      fontWeight: 'body',
-    },
-    img: {
-      maxWidth: '100%',
-    },
   },
 }

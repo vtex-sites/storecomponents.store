@@ -1702,6 +1702,11 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
+"@vtex/store-ui@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.1.1.tgz#a0e5e940446eb2e62f4a749876406d727eed156b"
+  integrity sha512-ImIl75qhcwNuUdPCJFwRi72zn94a44pSwi3lx2zwcUHTI15LFx4sXJSMCrfXLWP8Qw79rq/ojBaETuXzgO+6Uw==
+
 "@vtex/tsconfig@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@vtex/tsconfig/-/tsconfig-0.5.0.tgz#1314b4cb0c9503ebcae3afd1ec36106dc457cd5c"
