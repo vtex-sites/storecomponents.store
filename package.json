@@ -6,7 +6,7 @@
     "@vtex/gatsby-theme-vtex": "^0.9.0",
     "@vtex/store-ui": "^0.9.0",
     "gatsby": "^2.24.12",
-    "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-netlify": "^2.3.5",
     "gatsby-source-filesystem": "^2.3.22",
     "react": "^0.0.0-experimental-7f28234f8",
