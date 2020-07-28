@@ -1,6 +1,6 @@
 [
   "/",
-  "/apparel---accessories",
+
   "/gorgeous-watch/p",
   "/wood-clock/p",
   "/vintage-phone/p",
@@ -10,5 +10,26 @@
   "/classic-shoes/p",
   "/trendy-sweatshirt/p",
   "/fashion-eyeglasses/p",
-  "/ten-top-shirts/p"
+  "/ten-top-shirts/p",
+
+  "/electronics",
+  "/apparel---accessories",
+  "/apparel---accessories/hats",
+  "/apparel---accessories/shoes",
+  "/apparel---accessories/accessories",
+  "/apparel---accessories/watches",
+  "/apparel---accessories/eyeglasses",
+  "/apparel---accessories/clothing",
+  "/home---decor",
+  "/hobbies-e-artes",
+  "/racao-para-aves",
+  "/bells",
+  "/cadernos",
+  "/medicamentos",
+  "/saude-e-beleza-2",
+  "/grocery",
+  "/grocery/drinks",
+  "/storage",
+  "/storage/hard-drive"
+
 ]

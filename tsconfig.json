@@ -1,5 +1,5 @@
 {
   "extends": "@vtex/tsconfig",
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "public"]
+  "exclude": ["node_modules", "public", "__generated__"]
 }
