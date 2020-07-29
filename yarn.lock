@@ -1680,10 +1680,10 @@
     isomorphic-unfetch "^3.0.0"
     p-map "^4.0.0"
 
-"@vtex/gatsby-theme-vtex@0.9.1-alpha.11":
-  version "0.9.1-alpha.11"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.9.1-alpha.11.tgz#3d1d464043cf8c0ba486f7e202dd1b6642621b95"
-  integrity sha512-oENBVgo1f+sRc4UcWsIWj+ULzYYqGkgRR7yq9trl4mYH7CY2X6M4sYrl49KIQuNv94bBQ128kRjVgaF6dm/jlg==
+"@vtex/gatsby-theme-vtex@0.9.1-alpha.12":
+  version "0.9.1-alpha.12"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.9.1-alpha.12.tgz#64de02d08dfe7c9a9ef997934b1b309ee51fb9b6"
+  integrity sha512-cH6FH4On5lKeCYFKL+plfMXKN4hpgBPhOoiZysO77oDz3/adaptAIPwMmEjHOM0qyeBgZEOy7cqxRsXJsF182Q==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
@@ -1714,10 +1714,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@0.9.1-alpha.8":
-  version "0.9.1-alpha.8"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.9.1-alpha.8.tgz#7d36f9a8ecaca89a9d9e9fe8d61b7d6edfd72363"
-  integrity sha512-XbawNd6FV5AUOtByKV22csdi/tUhrkFiAprJHaOo0B2FSloN5IDM+ggd0z/hju9DCF49DmDYheNCre05UtdlQA==
+"@vtex/store-ui@0.9.1-alpha.12":
+  version "0.9.1-alpha.12"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.9.1-alpha.12.tgz#b9fda42cf1eea59f9784fd614183e7d8996ec97a"
+  integrity sha512-9MEDwgV+e3HZEw4hptHOKM33SfBMyuEiOeHM7CvGqDhtEL/NkMaCICAMomiKi1kgBh6QYxdq1pYSMgAvps3DNw==
   dependencies:
     "@theme-ui/preset-base" "^0.3.0"
     gatsby-link "^2.4.13"
