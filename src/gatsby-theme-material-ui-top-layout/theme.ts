@@ -1,6 +1,14 @@
 import { createMuiTheme } from '@material-ui/core'
 
 const theme = createMuiTheme({
+  // Define custom style for HighLights Component
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
+  HighlightsRoot: {
+    backgroundColor: '#a7afbd',
+    paddingBottom: 14,
+    paddingTop: 14,
+  },
   overrides: {
     MuiButton: {
       root: {
