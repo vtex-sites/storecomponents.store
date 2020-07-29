@@ -1680,10 +1680,10 @@
     isomorphic-unfetch "^3.0.0"
     p-map "^4.0.0"
 
-"@vtex/gatsby-theme-vtex@0.9.1-alpha.12":
-  version "0.9.1-alpha.12"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.9.1-alpha.12.tgz#64de02d08dfe7c9a9ef997934b1b309ee51fb9b6"
-  integrity sha512-cH6FH4On5lKeCYFKL+plfMXKN4hpgBPhOoiZysO77oDz3/adaptAIPwMmEjHOM0qyeBgZEOy7cqxRsXJsF182Q==
+"@vtex/gatsby-theme-vtex@0.9.1-alpha.13":
+  version "0.9.1-alpha.13"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.9.1-alpha.13.tgz#56861199cc9d89de35d0635a806b9f25d98a1993"
+  integrity sha512-eHznkc/CLqsrbqkIacnMuqp8w8C+HpTL4wwqF42Sqp1j4LXmzG0HFcQoXurbnSZf7YzizShtmmi1uyC80er+sg==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
