@@ -5,9 +5,14 @@ const theme = createMuiTheme({
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
   HighlightsRoot: {
-    backgroundColor: '#a7afbd',
+    backgroundColor: '#0f3e99',
     paddingBottom: 14,
     paddingTop: 14,
+  },
+  palette: {
+    primary: {
+      main: '#0f3e99',
+    },
   },
   overrides: {
     MuiButton: {
