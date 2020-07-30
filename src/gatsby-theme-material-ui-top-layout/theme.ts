@@ -15,6 +15,11 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiCard: {
+      root: {
+        boxShadow: 'none',
+      },
+    },
     MuiButton: {
       root: {
         backgroundColor: '#0f3e99',
