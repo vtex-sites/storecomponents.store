@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@vtex/gatsby-theme-vtex": "^0.9.1-alpha.22",
+    "@vtex/gatsby-theme-vtex": "^0.9.1-alpha.23",
     "gatsby": "^2.24.12",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-netlify": "^2.3.5",
