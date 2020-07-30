@@ -1577,10 +1577,10 @@
     isomorphic-unfetch "^3.0.0"
     p-map "^4.0.0"
 
-"@vtex/gatsby-theme-vtex@^0.9.1-alpha.21":
-  version "0.9.1-alpha.21"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.9.1-alpha.21.tgz#0fc54aff949dab6b8ce158fc6a7a6fe107a795d7"
-  integrity sha512-HCvb3gtc14GSszgmvN5x2lr32I2VaUoYIzk6da0mZ+Wkp3JQ008xThFEpukp5VUc88b4bjP4OBbqhmo7wSM0ew==
+"@vtex/gatsby-theme-vtex@^0.9.1-alpha.22":
+  version "0.9.1-alpha.22"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.9.1-alpha.22.tgz#b2ce0418a6edc80af2df1dfd23b12d9080c0072d"
+  integrity sha512-reFWZYm+Jj8bEHmj9Z2K7m3HRZsPFjshqRhJYv7fGD1e7CTF101VOTw8V+n1pjPnAn3LH2oeXiVOLvhb16CATg==
   dependencies:
     "@material-ui/core" "^4.11.0"
     "@vtex/gatsby-source-vtex" "^0.8.1"
