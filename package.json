@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@vtex/gatsby-theme-vtex": "^0.9.0",
-    "@vtex/store-ui": "^0.9.0",
+    "@vtex/store-ui": "^0.10.1",
     "gatsby": "^2.24.12",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-netlify": "^2.3.5",

@@ -1712,10 +1712,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.9.0.tgz#c93717da4cf822e3f14c62676571ba8009e66679"
-  integrity sha512-K/rry+MGxkQulnZILz4DjyeMgwePpCqWsikSiCet/xgG22X+yXyCorfWNp6pPJ8RA1XERY/u349erBreo+ZFCg==
+"@vtex/store-ui@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.10.1.tgz#a602ea7075ea0156839f81a5ef35a5e096ba4ae3"
+  integrity sha512-PbOQH8u149Ko0bjRPVu+QyQeXwZ4B/0JsC8AntXJ2q0eOrQpdGL9g1lXHyiO11We0Wou6DspX64sJOXko8bcAA==
   dependencies:
     "@theme-ui/preset-base" "^0.3.0"
     gatsby-link "^2.4.13"
