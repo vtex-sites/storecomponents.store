@@ -118,14 +118,14 @@ export default {
   },
   summary: {
     offer: {
-      mb: '32px'
+      mb: '32px',
     },
     name: {
       fontWeight: 600,
       fontSize: '18px',
       color: '#2e2e2e',
       marginTop: '1rem',
-      marginBottom: '3rem'
+      marginBottom: '3rem',
     },
     listPrice: {
       textDecoration: 'line-through',
@@ -148,24 +148,24 @@ export default {
       paddingLeft: '0.5rem',
       paddingRight: '0.5rem',
       marginLeft: '0.5rem',
-      minWidth: '51px'
+      minWidth: '51px',
     },
     availability: {
       fontSize: '0.875',
       marginBottom: '0.5rem',
-      color: '#727273'
-    }
+      color: '#727273',
+    },
   },
   detail: {
     offer: {
-      mb: '32px'
+      mb: '32px',
     },
     name: {
       fontWeight: 600,
       fontSize: '18px',
       color: '#2e2e2e',
       marginTop: '1rem',
-      marginBottom: '3rem'
+      marginBottom: '3rem',
     },
     listPrice: {
       textDecoration: 'line-through',
@@ -188,13 +188,13 @@ export default {
       paddingLeft: '0.5rem',
       paddingRight: '0.5rem',
       marginLeft: '0.5rem',
-      minWidth: '51px'
+      minWidth: '51px',
     },
     availability: {
       fontSize: '0.875',
       marginBottom: '0.5rem',
-      color: '#727273'
-    }
+      color: '#727273',
+    },
   },
   'header-minicart': {
     background: '#f0f0f0',
