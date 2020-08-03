@@ -14,7 +14,7 @@
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
-    "@types/theme-ui": "^0.3.4",
+    "@types/theme-ui": "^0.3.6",
     "@vtex/prettier-config": "^0.3.1",
     "@vtex/tsconfig": "^0.5.0",
     "eslint-config-vtex-react": "^6.7.1",
