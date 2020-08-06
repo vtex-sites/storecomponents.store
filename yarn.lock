@@ -2172,10 +2172,10 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.1.3.tgz#fbe460bc02169ec3f164646818ae959b4cecb275"
   integrity sha512-sxvJ7DbanPrlb64sziThUKz9OpEUMXR8yJUS6nSElXAR2KZPW+wYYSiyEFRHwzTmen3Bu717nI2LGDUSfFLp1w==
 
-"@vtex/gatsby-plugin-graphql@^0.13.1-alpha.4":
-  version "0.13.1-alpha.4"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.13.1-alpha.4.tgz#f27a11f19e0ad86b8a71f08fbf24fe5eb126d08e"
-  integrity sha512-3GK8jaQZYHPMRa5B3qYbcvfRUGtDat088oNnddCoV0ULLBeZmZQhDgIq7ueGPU1kH1hl0ygJiMo7jRB9p13dVQ==
+"@vtex/gatsby-plugin-graphql@^0.13.1-alpha.6":
+  version "0.13.1-alpha.6"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.13.1-alpha.6.tgz#045bca0e507056811af1d8479124e9d6e92276f4"
+  integrity sha512-eSCOocph70I4B80tivVjVPqU5F3CMPNT4BmjXQFDPVaLwz4YQ1+4XTorhIDxUwcyCJ4iYhf0Q3iUKFWGGCFH4w==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2195,14 +2195,14 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.13.1-alpha.4":
-  version "0.13.1-alpha.4"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.13.1-alpha.4.tgz#9a4207000de800fc8c4cee208ca05ba3df432d42"
-  integrity sha512-KjZ+wdcIKJigNYOU39nWfcXHR1T8SItuJZPKhWc1+QzVyJtd7td67MyAOJueBZFN6+9YKKMX+svp587Twj1GHA==
+"@vtex/gatsby-theme-vtex@^0.13.1-alpha.7":
+  version "0.13.1-alpha.7"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.13.1-alpha.7.tgz#8431759d1b4678b29116ffcd35066956cb4166aa"
+  integrity sha512-7FUnpZYnHfrZCfi+DrrAqvmUeb4PnxQ9Yih+rTHh57OVUhp2tszQDXaH491ADoXmiO0zu36LtXQN8yBgnpvH3w==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
-    "@vtex/gatsby-plugin-graphql" "^0.13.1-alpha.4"
+    "@vtex/gatsby-plugin-graphql" "^0.13.1-alpha.6"
     "@vtex/gatsby-source-vtex" "^0.11.2-alpha.1"
     "@vtex/gatsby-transformer-vtex-cms" "^0.11.1-alpha.0"
     babel-gql "^0.1.3"
