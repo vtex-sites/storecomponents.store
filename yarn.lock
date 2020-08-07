@@ -1672,22 +1672,22 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.1.3.tgz#fbe460bc02169ec3f164646818ae959b4cecb275"
   integrity sha512-sxvJ7DbanPrlb64sziThUKz9OpEUMXR8yJUS6nSElXAR2KZPW+wYYSiyEFRHwzTmen3Bu717nI2LGDUSfFLp1w==
 
-"@vtex/gatsby-source-vtex@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.13.0.tgz#27f091b8733bea3fa53e73f35a87ee1749192655"
-  integrity sha512-EqPnGss7idTVJPT0HkWALm6yKWodOJsSfmZUeD40Tx09ZQX0M+rtWGNOfPf8uLm88MG6GId+ncZ7wwTC6CXcDw==
+"@vtex/gatsby-source-vtex@^0.13.2-alpha.0":
+  version "0.13.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.13.2-alpha.0.tgz#665fef44b602bc34c900d044750983bdec0aa4ad"
+  integrity sha512-auaDwGMKzs2Gn4ZvZW3Q/dYTq2ask6+lplmvaPX7Gc/qrgB+ZJ8cDf0MHeQH2vEipfTX745DB7jDWzg9V2kJzA==
   dependencies:
     isomorphic-unfetch "^3.0.0"
     p-map "^4.0.0"
 
-"@vtex/gatsby-theme-vtex@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.13.0.tgz#df65164c74a1cc1ccc3bf6022bde5c6d1d4c5d0d"
-  integrity sha512-M9hwTGWrWrUC2BBKzUGcjxkZsCK+cPgmb8R4J7zVaP+lHCqDH1Gr78sPi45P+78Euv5DZW9hJCCVOKEfTajyKg==
+"@vtex/gatsby-theme-vtex@0.13.2-alpha.1":
+  version "0.13.2-alpha.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.13.2-alpha.1.tgz#db7efb44b5d51badc3c4bf5c462c51ec5be97b57"
+  integrity sha512-bPhIzgnXprAtevGSBYw+jSFXfHik/qHJKdenPSdVq939KK/nQeExhwOOHaB4ZWquZSTxlwuSh/qA+F9pnoHWKw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
-    "@vtex/gatsby-source-vtex" "^0.13.0"
+    "@vtex/gatsby-source-vtex" "^0.13.2-alpha.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.9.0"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -11413,9 +11413,9 @@ svgo@^1.0.0:
     util.promisify "~1.0.0"
 
 swr@^0.3.0-beta.10:
-  version "0.3.0-beta.10"
-  resolved "https://registry.yarnpkg.com/swr/-/swr-0.3.0-beta.10.tgz#c2d2810ea89f862fef328790949dd5e3ef55517b"
-  integrity sha512-SIWKDwu02zSQrxijB2jbu6aKkefOmxLinJ85AUlcdrMT366vQLRNZBDqH37jy8555Gt/b7t9Q8Q3XuPureb8Ig==
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-0.3.0.tgz#69602953dd50ab07fe60c920fd63199256645675"
+  integrity sha512-3p0p5TWH0qiaKAph5wBkMwqe2WjNseITfjmdVoNzjqRZGn/gnpRi6whMDjhMVb/vp/yyDtKWPlyjid8QZH+UhA==
   dependencies:
     fast-deep-equal "2.0.1"
 
@@ -12060,9 +12060,9 @@ urql@^1.9.8:
     wonka "^4.0.14"
 
 use-async-resource@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/use-async-resource/-/use-async-resource-2.1.0.tgz#270563e6860ec3fdd331f74538cdb922f633676d"
-  integrity sha512-qiJ6QMtraR6kuiKXQ5oclVBW3azSWzYE15rQTeUbJATL0iCBHH8sXCpL+qUFPE1P1rMro00DYgKZvUTe8Bbufg==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/use-async-resource/-/use-async-resource-2.2.0.tgz#c083a77d9ed8d1795a66eb42308753716dc9f6c5"
+  integrity sha512-v61Aj5xmdMlbKw/Q99U42Y6m7/l/At0glNMwaKs60v5TEXe9oCRh6ep9byfcZCvKdjcymSy954FxhEj9kZJW+A==
   dependencies:
     object-hash "^2.0.3"
 
