@@ -1,16 +1,11 @@
-import { baseTheme, infoCardTheme } from '@vtex/store-ui'
+import {
+  baseTheme,
+  infoCardTheme,
+  headerTheme,
+  createTheme,
+} from '@vtex/store-ui'
 
-export default {
-  ...baseTheme,
-  ...infoCardTheme,
-  header: {
-    bg: 'muted',
-    px: [0, 2, 4],
-    py: 3,
-    justifyContent: ['center', 'space-between', 'space-between'],
-    alignItems: 'center',
-    flexWrap: 'wrap',
-  },
+export default createTheme(baseTheme, infoCardTheme, headerTheme, {
   'rich-text': {
     default: {
       color: 'textBold',
@@ -31,73 +26,6 @@ export default {
       textAlign: 'center',
       textTransform: 'uppercase',
       textDecoration: 'none',
-    },
-  },
-  'notification-bar': {
-    display: ['none', 'none', 'none', 'flex'],
-    alignItems: 'center',
-    textDecoration: 'underline',
-    justifyContent: 'center',
-    background: '#e0efe0',
-    color: 'textBold',
-    minHeight: '48px',
-    fontWeight: 'bold',
-    fontSize: 0,
-  },
-  overmenu: {
-    display: ['none', 'none', 'none', 'flex'],
-    alignItems: 'center',
-    justifyContent: 'center',
-    textDecoration: 'none',
-    background: '#02003d',
-    minHeight: '48px',
-    color: 'muted',
-    fontSize: 1,
-    px: '16px',
-    a: {
-      mx: '24px',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textDecoration: 'none',
-      color: 'inherit',
-      '&.active': {
-        color: 'textMuted',
-      },
-      '&:hover': {
-        color: 'textMuted',
-      },
-    },
-  },
-  'header-left': {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-  },
-  'header-right': {
-    alignItems: 'center',
-  },
-  'header-menu': {
-    marginLeft: [0, 0, 4],
-    my: [3, 0, 0],
-    a: {
-      textDecoration: 'none',
-      color: 'inherit',
-      mx: [2, 3, 3],
-      '&.active': {
-        color: 'primary',
-      },
-      '&:hover': {
-        color: 'primary',
-      },
-    },
-  },
-  'header-search': {
-    maxWidth: 250,
-    background: '#fff',
-    border: '2px solid #e3e4e6',
-    px: 3,
-    '&:hover': {
-      borderColor: '#cacbcc',
     },
   },
   buttons: {
@@ -196,23 +124,7 @@ export default {
       color: '#727273',
     },
   },
-  'header-minicart': {
-    background: '#f0f0f0',
-    position: 'relative',
-    marginLeft: 2,
-    cursor: 'pointer',
-  },
-  'header-minicart-badge': {
-    background: '#f71963',
-    borderRadius: '100%',
-    height: 16,
-    position: 'absolute',
-    width: 16,
-    top: 0,
-    right: 0,
-    fontSize: 10,
-  },
   productTitle: {
     mb: 4,
   },
-}
+})
