@@ -18,7 +18,7 @@ Kick off your project with this default boilerplate. This starter ships with the
 
     ```shell
     # Clone this repo into your machine
-    git clone my-awesome-store https://github.com/vtex-sites/storecomponents.store.git
+    git clone https://github.com/vtex-sites/storecomponents.store.git my-awesome-store
     ```
 
 1.  **Install dependencies**
@@ -106,6 +106,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## ⚡ Performance
-This project uses Google's Lighthouse CI for analysing the store's performance and setting performance budgets. The urls tested can be found and changed in the `ci.collect.url` property. Feel free to change this at your will 
+This project uses Google's Lighthouse CI for analyzing the store's performance and setting performance budgets. The urls tested can be found and changed in the `ci.collect.url` property. Feel free to change this at your will 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
