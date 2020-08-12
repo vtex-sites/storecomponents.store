@@ -2089,18 +2089,6 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.1.3.tgz#fbe460bc02169ec3f164646818ae959b4cecb275"
   integrity sha512-sxvJ7DbanPrlb64sziThUKz9OpEUMXR8yJUS6nSElXAR2KZPW+wYYSiyEFRHwzTmen3Bu717nI2LGDUSfFLp1w==
 
-"@vtex/gatsby-plugin-graphql@^0.14.1":
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.14.1.tgz#755ddad15b1a167c927c0c22857a37ca02470abd"
-  integrity sha512-Lab4IFV8N4GErfcHDW4bXOfpa6Bcrd2YNRuSAcXju+oVPdyAsqm0CDXPVwUR4L8nCTyp6CgZrCX9T3YHGojC2w==
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
 "@vtex/gatsby-plugin-graphql@^0.14.3":
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.14.3.tgz#aa4e3cc562c0b6286c93e1676f6e92998ff07719"
