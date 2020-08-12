@@ -32,7 +32,7 @@ Kick off your project with this default boilerplate. This starter ships with the
 
 2.  **Setup env vars.**
 
-    Chose a store by changing the `vtex.env` file and adding your own custom account name.
+    Choose a store by changing the `vtex.env` file and adding your own custom account name.
 
 3.  **Start developing.**
 
