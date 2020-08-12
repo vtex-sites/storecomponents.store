@@ -1,17 +1,21 @@
 import {
-  baseTheme,
   createTheme,
   headerTheme,
   infoCardTheme,
   minicartTheme,
+  searchControlsTheme
 } from '@vtex/store-ui'
 
+import { base } from './base'
 import { custom } from './custom'
+import { searchTheme } from './searchFilter'
 
 export default createTheme(
-  baseTheme,
+  base,
   infoCardTheme,
   headerTheme,
   minicartTheme,
-  custom
+  searchControlsTheme,
+  searchTheme,
+  custom,
 )

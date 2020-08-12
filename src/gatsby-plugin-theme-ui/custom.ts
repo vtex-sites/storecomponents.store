@@ -1,4 +1,6 @@
-export const custom = {
+import { SxStyleProp } from "@vtex/store-ui";
+
+export const custom: SxStyleProp = {
   'rich-text': {
     default: {
       color: 'textBold',

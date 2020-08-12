@@ -1,8 +1,18 @@
 const getStaticPaths = () => require('./staticPaths.json')
 
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://faststore.netlify.app/',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV
+} = process.env;
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
 module.exports = {
   siteMetadata: {
     author: 'Emerson Laurentino',
+    siteUrl,
   },
   plugins: [
     {
@@ -31,6 +41,27 @@ module.exports = {
       resolve: require.resolve('gatsby-source-filesystem'),
       options: {
         path: './src/cms/',
+      },
+    },
+    {
+      resolve: require.resolve('gatsby-plugin-robots-txt'),
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: '*' }]
+          },
+          'branch-deploy': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null
+          },
+          'deploy-preview': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null
+          },
+        },
       },
     },
     {
