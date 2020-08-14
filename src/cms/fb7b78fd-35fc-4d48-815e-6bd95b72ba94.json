@@ -1,0 +1,18 @@
+{
+  "afterBlocks": [
+    {
+      "name": "footer",
+      "props": {
+        "title": "asfasdfad"
+      }
+    }
+  ],
+  "beforeBlocks": null,
+  "blocks": [
+    {
+      "id": "1597427483427",
+      "name": "Header",
+      "props": {}
+    }
+  ]
+}
