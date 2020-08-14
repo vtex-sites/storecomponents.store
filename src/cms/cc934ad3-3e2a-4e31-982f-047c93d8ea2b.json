@@ -1,0 +1,12 @@
+{
+  "afterBlocks": [
+    {
+      "name": "footer",
+      "props": {
+        "title": "adasdf"
+      }
+    }
+  ],
+  "beforeBlocks": null,
+  "blocks": []
+}
