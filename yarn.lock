@@ -2094,10 +2094,10 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.1.tgz#90ad5ca2327434c0855cebb76ccd4991a3b877a1"
   integrity sha512-q6CpbzuPKg8fJN6BmrmSlBiR/W0M9+7lj416+lQDZVsIgBuveAn6gBvIRbyOrdD/bnDg1h4ErHQGUmHCb1inUg==
 
-"@vtex/gatsby-plugin-graphql@^0.20.1":
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.20.1.tgz#528b6c59937ffb42ec56b3c76a41c7b5d328ed0d"
-  integrity sha512-vlfManbOORDvFJN+ZZLeboMAcCZ8aQTzYkRihqmyZ1Ffxn6WAdNXIsphjL+RuBsys8tmDAZ7nM0COJBdSFFQAg==
+"@vtex/gatsby-plugin-graphql@^0.20.1", "@vtex/gatsby-plugin-graphql@^0.20.4":
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.20.4.tgz#3300b2e547acdbc0637c0930474e48801fdbcc3f"
+  integrity sha512-ROIQ/Drk0MmL1RyHsSIXxatcejUUD/6ryIALMzWRPUTR3RBMp3MeBOi9BDvHluV4oP68T8fk8tQQlNlo3cVHsA==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2106,10 +2106,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-source-vtex@^0.20.1":
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.20.1.tgz#8bcd2ee6f7f7133ea03d800069a052b787735ae1"
-  integrity sha512-6f2VXMy6FtdhRxut6Gyoid5ao27KlISO6eIYurjHSBGay38atod05Q9noRdc6tdlXtiwtU2ClmK+PqoEraq/Ag==
+"@vtex/gatsby-source-vtex@^0.20.4":
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.20.4.tgz#4dc80775c2ace075cc547e1894ac8957406a574d"
+  integrity sha512-wQjMi4RZxf1XrUs/zWDeJLj3vJPinF5KFqVRJE90thumibwHHcwBF1tdLOezVRbzc00U7P3MIaVINU7QgNHg9Q==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
@@ -2117,16 +2117,16 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.20.1":
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.20.1.tgz#552ac6c2dcdf76cf2fd3a537be4bbb82b6f0f9a0"
-  integrity sha512-FEzrNLIMbduUeG9PFDF0A2Uv9rH2ywTkAZTzjddb5cNGQ9NXg8hcNGRFyVESY0R2hcbdxlsJl5kC0Ws9R5EPhw==
+"@vtex/gatsby-theme-vtex@^0.20.4":
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.20.4.tgz#239bb3f70d8665982772433ce4bb676eb30dbe7e"
+  integrity sha512-PAZj861r/oxYhXNColMNb7BqAdCYS+gXXXPNoRTjRtxPlczKh/KPi1zuh7ib6nLSNa/hXwMPYSW0zXlvEsUtEw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex-components/drawer" "^0.1.3"
-    "@vtex/gatsby-plugin-graphql" "^0.20.1"
-    "@vtex/gatsby-source-vtex" "^0.20.1"
-    "@vtex/gatsby-transformer-vtex-cms" "^0.20.1"
+    "@vtex/gatsby-plugin-graphql" "^0.20.4"
+    "@vtex/gatsby-source-vtex" "^0.20.4"
+    "@vtex/gatsby-transformer-vtex-cms" "^0.20.4"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2138,13 +2138,14 @@
     p-queue "^6.5.0"
     react-helmet "^6.1.0"
     react-loading-skeleton "^2.1.1"
+    requestidlecallback-polyfill "^1.0.2"
     schema-dts "^0.6.0"
     swr "^0.3.0"
 
-"@vtex/gatsby-transformer-vtex-cms@^0.20.1":
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.20.1.tgz#fee71a2536e10c525a72088257546af77bcd2da0"
-  integrity sha512-Zv/md+hW+3NRB3UzyrpQ+smOLwc3d3XagDqKfbGJzM1b6TqW0Vyr2BkhrGkCssn5DB3+6LqMKC+22SzBic9tNQ==
+"@vtex/gatsby-transformer-vtex-cms@^0.20.4":
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.20.4.tgz#bb9dcc88f9d282b59914a3259d928cf6ea6f38e4"
+  integrity sha512-p4+lfwVXB7OYb+mKa63bVaUAd/kb/Rys6875Gji8rqFIbiFhZiYTHkDJK5cyvWhQlrIpXqyPXi0sWgLS3nJh6w==
 
 "@vtex/prettier-config@^0.3.1":
   version "0.3.1"
@@ -11229,6 +11230,11 @@ replace-ext@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
   integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
+
+requestidlecallback-polyfill@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/requestidlecallback-polyfill/-/requestidlecallback-polyfill-1.0.2.tgz#02eefae286ff86ef04232087dba19f005308b18e"
+  integrity sha512-zzkRzvMe7UdV0M7AIU70vl2fh4rFnNYDL8U0ISwWiOX/5MowBV1ESYCWSQP/KsgJNUOC/AS6X3DApOmxoyE6MA==
 
 require-directory@^2.1.1:
   version "2.1.1"
