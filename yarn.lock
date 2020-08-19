@@ -2134,10 +2134,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.20.6":
-  version "0.20.6"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.20.6.tgz#696320deefd6effc96d61024539fa13ef809c0df"
-  integrity sha512-iXuOyGWdf4CZC4IZUvoAlk/nL4EjNxjEXypTetb+Suad3qU+f4ag6BQFxoiJ7UV7JuzTw+dHfHjEpdQg+S74ew==
+"@vtex/gatsby-theme-vtex@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.21.0.tgz#c7ce21962fe6b6e3b499eceadfa73ffaed1a21b2"
+  integrity sha512-W8IYKAfXgKHi8z5wqfQEsyGmfWiHxkcysKBCKYM6iYruA1XNRWuTn1bJJrO26MFO74SP7i/8UK6Z+et65N/0Ww==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.20.6"
@@ -2151,6 +2151,7 @@
     html-loader "^1.1.0"
     intl-format-cache "^4.3.0"
     markdown-loader "^5.1.0"
+    nprogress "^0.2.0"
     p-queue "^6.5.0"
     react-helmet "^6.1.0"
     react-loading-skeleton "^2.1.1"
@@ -2168,7 +2169,7 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.20.6":
+"@vtex/store-ui@0.20.6":
   version "0.20.6"
   resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.20.6.tgz#f4ca37e006222094ef24220f68615f3e18aa8ca0"
   integrity sha512-76C0p7pKxQs7RyYaiJkN4b2tAfP10UnLlhnEyvaCncWuGuIt+W1mzkNdrWQADv+r0kL4l3/v/oHT3D3jywyAWg==
@@ -9342,6 +9343,11 @@ npmlog@^4.0.1, npmlog@^4.1.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"
