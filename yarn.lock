@@ -2127,10 +2127,10 @@
   dependencies:
     wonka "^4.0.14"
 
-"@vtex-components/accordion@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@vtex-components/accordion/-/accordion-0.2.2.tgz#6233ed64542fa0331128eb2d7b8075eea14e537e"
-  integrity sha512-gSOSyJB5k6Veux9+kfHydIiwWc1IUEcTkbC4On9IdS5mIxV9INjcnFfKfFiy6zEGq4qc3UWdGituHtg3BWuCyg==
+"@vtex-components/accordion@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@vtex-components/accordion/-/accordion-0.2.3.tgz#d300548777b0c69941672def4b1f5f8ddef286d2"
+  integrity sha512-eBHg0p1iiOT1toSzrPxJz+9sSFlm/BY4VKOgopTFVI+CxW4fm4Wfk4nI0b+zq3w5nEPewu1RMgIBKsJtuTHrRw==
 
 "@vtex-components/drawer@^0.2.2":
   version "0.2.2"
@@ -2160,10 +2160,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.25.0":
-  version "0.25.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.25.0.tgz#d773862de24dd83afb19462763dfff9068e24aba"
-  integrity sha512-fls4QTm/4LyFf4ySJ20/8OnTyNf52zgSiLWFmbz8QHQoMommNZrPN+hzYpAVFCEvFEPry474XOAKllNElz6Tmw==
+"@vtex/gatsby-theme-vtex@^0.26.0-alpha.0":
+  version "0.26.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.26.0-alpha.0.tgz#9107b5914fcf6f277a356b84815e2b26c8c5bc98"
+  integrity sha512-wMbGIZI1iQAItVBqud56arF8eqeYdtAOOFJPYhsPLOAls+PnkWuTspRIZeVcpn8qTCrGAHqF43hGYHd6iPztdA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.20.6"
@@ -2196,13 +2196,13 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.24.0.tgz#fa6a1a5a011f36e64b274ce363b6292996855621"
-  integrity sha512-4q5WW0v3hK9S4MyZLDn5NsPbJ21gFJz7cibCEdzIei1EsQ0ja4bwwwy3BGiQH6BRr6ONtNvU9O1OltlCbDPkgg==
+"@vtex/store-ui@^0.26.0-alpha.0":
+  version "0.26.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.26.0-alpha.0.tgz#f9dcdebf48038d89dcaf3b9db0d92b8a5c524923"
+  integrity sha512-xMVEq8/Up1LDL983tpyAlNcSuBSrD6P09gFl/nNFErFlDwYWOp7xFnvPKvNduLpMM47UjSD/G7O/loy2qgfGSQ==
   dependencies:
     "@theme-ui/preset-base" "^0.3.0"
-    "@vtex-components/accordion" "^0.2.2"
+    "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.2"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
