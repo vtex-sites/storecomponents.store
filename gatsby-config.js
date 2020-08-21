@@ -48,7 +48,9 @@ module.exports = {
             'Referrer-Policy: same-origin',
           ]
 
-          return path.includes('/preview') || path.includes('/account')
+          return path.includes('/preview') ||
+            path.includes('/account') ||
+            path.includes('/my-account')
             ? [...DEFAULT_SECURITY_HEADERS, ...headers]
             : ['X-Frame-Options: DENY', ...DEFAULT_SECURITY_HEADERS, ...headers]
         },
