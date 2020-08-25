@@ -6,7 +6,7 @@
     "@vtex/gatsby-plugin-graphql": "^0.32.0",
     "@vtex/gatsby-theme-vtex": "^0.32.0",
     "@vtex/store-ui": "^0.32.0",
-    "babel-preset-gatsby": "^0.5.5",
+    "babel-preset-gatsby": "^0.5.6",
     "gatsby": "^2.24.39",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-netlify": "^2.3.5",
