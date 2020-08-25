@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@vtex/gatsby-plugin-graphql": "^0.32.0-alpha.0",
-    "@vtex/gatsby-theme-vtex": "^0.32.0-alpha.6",
+    "@vtex/gatsby-theme-vtex": "^0.32.0-alpha.7",
     "@vtex/store-ui": "^0.32.0-alpha.4",
     "babel-preset-gatsby": "^0.5.5",
     "gatsby": "^2.24.39",
