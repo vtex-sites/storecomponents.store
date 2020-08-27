@@ -1,0 +1,20 @@
+{
+  "afterBlocks": [],
+  "beforeBlocks": [],
+  "blocks": [
+    {
+      "id": "1598558816493",
+      "name": "RichText",
+      "props": {
+        "text": "asdf"
+      }
+    },
+    {
+      "id": "1598558809904",
+      "name": "RichText",
+      "props": {
+        "text": "hello bruno"
+      }
+    }
+  ]
+}
