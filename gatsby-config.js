@@ -21,6 +21,11 @@ module.exports = {
         title: 'Store Theme - VTEX Base Store',
         description: 'A sample store using the best of Gatsby and VTEX',
         getStaticPaths,
+        localizationThemeOptions: {
+          messagesPath: './i18n/messages',
+          locales: ['en', 'pt'],
+          defaultLocale: 'en',
+        }
       },
     },
     {
