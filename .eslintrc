@@ -1,3 +1,4 @@
 {
-  "extends": ["vtex-react"]
+  "root": true,
+  "extends": "vtex-react"
 }
