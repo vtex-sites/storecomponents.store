@@ -2196,10 +2196,22 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-theme-ui@^0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.32.0.tgz#233642188c63ef470555f23e28492f18ca1be8a5"
-  integrity sha512-OGV0u35nVVYoMyS0OKsWhQPgcaD8WmupREsLKLpVpypNuUmnk0ldkLM3IFKDByNpNxztZNX0l8IhRWcPwYdRhg==
+"@vtex/gatsby-plugin-graphql@^0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.33.0.tgz#c7ebda6af030a178fc171c2fc5483749dc54eb75"
+  integrity sha512-DmoOkWIsBuoQJKmbwdmX6Zmcdu2JjXmYbsRyO4J76I98J8cyXeECAj1cV++wJbDb9CkQTm7BEL8gbNTTKldG7w==
+  dependencies:
+    "@graphql-codegen/core" "^1.17.7"
+    "@graphql-codegen/plugin-helpers" "^1.17.7"
+    "@graphql-codegen/typescript" "^1.17.7"
+    "@graphql-codegen/typescript-operations" "^1.17.7"
+    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
+    fs-extra "^9.0.1"
+
+"@vtex/gatsby-plugin-theme-ui@^0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.33.0.tgz#396330f30372088da8541f90f8d33b6382ff758a"
+  integrity sha512-7cNlrd+cibNW6idUO2Fw59wFO4sQd8iE4tIK/Q1aL6gfC5zbbWg3TrP4T3mYAXyhDL5MgsZzXThODtKLwGb7DQ==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -2220,14 +2232,14 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.32.0.tgz#d0048fdeab80559c0a1a9292849cb8e65ee94b95"
-  integrity sha512-/RyIArERotu/cxewZSOuCiz7Ixptb/idfGbbU4EyAJJhwBUTYEjBYwTLx3DKM0NEFYO93NiI9rtk0z3jKNYD6g==
+"@vtex/gatsby-theme-vtex@^0.33.1-alpha.0":
+  version "0.33.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.33.1-alpha.0.tgz#83cc33e17b1c96a1ccff5a5a4293d52b5ee72916"
+  integrity sha512-yo/O7qpStt5b6pde6SiS2DkHn7JLwEn66e0mtXOBUf1mea1NLZp20jSR7Zh648oDmO4jF3ihF8jEbcEVOLXwnQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "^0.32.0"
-    "@vtex/gatsby-plugin-theme-ui" "^0.32.0"
+    "@vtex/gatsby-plugin-graphql" "^0.33.0"
+    "@vtex/gatsby-plugin-theme-ui" "^0.33.0"
     "@vtex/gatsby-source-vtex" "^0.32.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.32.0"
     babel-gql "^0.1.3"
