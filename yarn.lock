@@ -2167,18 +2167,6 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.2.tgz#df18c2311e0b10b6841764fee0cf492b732731e0"
   integrity sha512-8wt/aVM9NsLb8NAT+6wVpAB23NfXHBmQynhSONkL3C33ruDFtQgkBy9wpw1unZfRTHjD/zYk8ffmJ+lw+OZGAw==
 
-"@vtex/gatsby-plugin-graphql@^0.44.0":
-  version "0.44.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.44.0.tgz#07112227ca641be2c9d745362dd176acf4008ab1"
-  integrity sha512-HILkqmyVMosT2aS4PaDvfVnkO9/VWiviWEG4azWE0zL4llsEJlA8RwucCgqYSr2anJcNkPSoxZsXmxWRFX6/vw==
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
 "@vtex/gatsby-plugin-graphql@^0.52.0":
   version "0.52.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.52.0.tgz#5de057477abb3072e55003724ff9dd79b895a5b3"
@@ -2190,14 +2178,6 @@
     "@graphql-codegen/typescript-operations" "^1.17.7"
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
-
-"@vtex/gatsby-plugin-i18n@^0.44.0":
-  version "0.44.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.44.0.tgz#c41461601e30b2919f730ce3c9e79c8f3c747b2e"
-  integrity sha512-WqFeymTQ3CDUrJxInuYEYBxvIGdksIxZGR22P4+jMQJDC1COiK064cgvjofM5mUj6lXB4nu88crFtgIEqx6hhw==
-  dependencies:
-    "@formatjs/cli" "^2.7.7"
-    react-intl "^5.7.1"
 
 "@vtex/gatsby-plugin-i18n@^0.52.0":
   version "0.52.0"
@@ -2269,16 +2249,16 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.51.0":
-  version "0.51.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.51.0.tgz#815302a59ce8c5c897bace592e1f338608c383a0"
-  integrity sha512-IIcP8chS94EHwwm4ZWJlTCAzhQpVcN0VPQB5/Gd6ONFz45sFy+XpcDom4xmjOxmR4aS5CRLShg2ESvp9MWmL8Q==
+"@vtex/store-ui@^0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.52.0.tgz#2480e17145647287d953fdf06b9af5c233784172"
+  integrity sha512-hD7cEbW3n78O6vh0GejrgEvDlbUg0KYKGME2UjhQGzTwiHkuwHN3zy1JUXR09WiRBPhSdrNPlVK8nOwBW0oTDg==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.2"
-    "@vtex/gatsby-plugin-i18n" "^0.44.0"
+    "@vtex/gatsby-plugin-i18n" "^0.52.0"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     reakit "^1.1.2"
