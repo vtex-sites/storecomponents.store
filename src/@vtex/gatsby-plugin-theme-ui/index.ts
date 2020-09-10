@@ -3,13 +3,14 @@ import {
   headerTheme,
   infoCardTheme,
   minicartTheme,
+  searchBarTheme,
   searchControlsTheme,
 } from '@vtex/store-ui'
 
 import { base } from './base'
 import { custom } from './custom'
-import { searchTheme } from './searchFilter'
 import { breadcrumb } from './breadcrumb'
+import { searchTheme } from './searchFilter'
 
 export default createTheme(
   base,
@@ -18,6 +19,7 @@ export default createTheme(
   headerTheme,
   minicartTheme,
   searchControlsTheme,
+  searchBarTheme,
   searchTheme,
   custom
 )
