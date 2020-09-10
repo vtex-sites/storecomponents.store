@@ -2211,7 +2211,7 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.51.0-alpha.4":
+"@vtex/gatsby-theme-vtex@0.51.0-alpha.4":
   version "0.51.0-alpha.4"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.51.0-alpha.4.tgz#98942bca850113408b36d757b0e92c27d4a2d49f"
   integrity sha512-/+1K+jN+fku3b4L0r34cvoR0zXACZxbsLvHU/qt/eQdJ+/tZUkXzXKwxX36y9jgH5ZUcctEbKxQvzVbW6MZVgw==
