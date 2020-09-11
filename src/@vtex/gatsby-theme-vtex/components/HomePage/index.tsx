@@ -1,11 +1,12 @@
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
-import React, { FC, Fragment, lazy, Suspense } from 'react'
+import React, { FC, Fragment, lazy } from 'react'
 
 import { HomePageQueryQuery } from '@vtex/gatsby-theme-vtex/src/__generated__/HomePageQuery.graphql'
 import Carousel from '@vtex/gatsby-theme-vtex/src/components/Carousel'
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import Shelf from '@vtex/gatsby-theme-vtex/src/components/Shelf'
 import CAROUSEL_ITEMS from '@vtex/gatsby-theme-vtex/src/components/HomePage/carousel.json'
+import SuspenseViewport from '@vtex/gatsby-theme-vtex/src/components/Suspense/Viewport'
 
 const loader = () =>
   import('@vtex/gatsby-theme-vtex/src/components/HomePage/Fold')
@@ -31,9 +32,9 @@ const HomeBlocks: FC<Props> = ({ data }) => {
           autoplay={false}
           pageSizes={[1, 3, 5]}
         />
-        <Suspense fallback={null}>
+        <SuspenseViewport preloader={loader} fallback={null}>
           <Fold />
-        </Suspense>
+        </SuspenseViewport>
       </Container>
     </Fragment>
   )
