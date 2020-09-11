@@ -12,6 +12,7 @@ import { custom } from './custom'
 import { breadcrumb } from './breadcrumb'
 import { searchTheme } from './searchFilter'
 
+// Testing sonarqube
 export default createTheme(
   base,
   breadcrumb,
