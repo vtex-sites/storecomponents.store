@@ -1,5 +1,13 @@
 /// <reference types="cypress" />
 
+function testFn(a) {
+  console.log(a)
+}
+
+function testFn2() {
+  testFn('hello', 'world')
+}
+
 context('Sample', () => {
   it('Adds a product to the cart', () => {
     cy.visit('/')

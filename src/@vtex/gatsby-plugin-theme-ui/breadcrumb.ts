@@ -38,3 +38,11 @@ const custom: SxStyleProp = {
 }
 
 export const breadcrumb = createTheme(breadcrumbTheme, custom)
+
+function privateFn(a: string) {
+    return 'private:' + a
+}
+
+export const testFn = () => {
+  console.log(privateFn(a, 'dois'))
+}
