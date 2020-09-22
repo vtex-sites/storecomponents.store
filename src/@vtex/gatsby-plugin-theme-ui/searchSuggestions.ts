@@ -3,7 +3,7 @@ import searchSuggestionsTheme from '@vtex/gatsby-theme-vtex/components/SearchSug
 
 const theme: SxStyleProp = createTheme(searchSuggestionsTheme, {
   suggestions: {
-    minWidth: ['17rem', '40rem'],
+    minWidth: ['19rem', '40rem'],
 
     position: 'absolute',
     right: [undefined, 0],
