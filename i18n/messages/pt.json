@@ -18,5 +18,12 @@
   "error-generic": "Erro",
   "preview.not-found": "Nenhuma prévia encontrada. Esperando conteúdo",
   "notification-bar.sale": "ITEM SELECIONADOS EM PROMOÇÃO! DÊ UMA OLHADA!",
-  "signin": "Entrar"
+  "signin": "Entrar",
+  "suggestions.autocomplete.title": "Sugestoes",
+  "suggestions.autocomplete.notFound": "Sem sugestoes",
+  "suggestions.products.title": "Produtos para: {term}",
+  "suggestions.products.total": "Ver todos os {count} items",
+  "suggestions.products.notFound": "Nenhum produto encontrado",
+  "suggestions.history.title": "Historico",
+  "suggestions.topSearches.title": "Termos mais buscados"
 }
