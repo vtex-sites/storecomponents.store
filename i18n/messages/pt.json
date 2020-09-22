@@ -25,5 +25,6 @@
   "suggestions.products.total": "Ver todos os {count} items",
   "suggestions.products.notFound": "Nenhum produto encontrado",
   "suggestions.history.title": "Historico",
+  "suggestions.history.empty": "Nenhuma pesquisa encontrada",
   "suggestions.topSearches.title": "Termos mais buscados"
 }
