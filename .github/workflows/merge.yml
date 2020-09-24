@@ -18,7 +18,7 @@ jobs:
       - name: 'Wait for netlify deploy'
         run: |
           echo "Waiting for 120s so Netlify deploy is ready"
-          sleep 120
+          sleep 180
 
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v3

@@ -61,6 +61,9 @@ export const custom: SxStyleProp = {
       textTransform: 'uppercase',
       textDecoration: 'none',
     },
+    dealsRow: {
+      color: 'white',
+    },
   },
   buttons: {
     loadMore: {
@@ -193,5 +196,10 @@ export const custom: SxStyleProp = {
         margin: '24px 12px 12px 12px',
       },
     },
+  },
+
+  asyncShelfPlaceholder: {
+    width: '100%',
+    height: '585px',
   },
 }
