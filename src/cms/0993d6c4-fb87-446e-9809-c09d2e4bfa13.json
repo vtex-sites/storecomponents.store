@@ -1,0 +1,35 @@
+{
+  "afterBlocks": [],
+  "beforeBlocks": [],
+  "extraBlocks": [
+    {
+      "name": "admin/visibilityTitle",
+      "blocks": [
+        {
+          "name": "informations",
+          "props": {
+            "title": "Test",
+            "slug": "/test",
+            "description": "SEO description"
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "1600982983742",
+      "name": "RichText",
+      "props": {
+        "text": "Hello"
+      }
+    },
+    {
+      "id": "1600982987318",
+      "name": "RichText",
+      "props": {
+        "text": "World"
+      }
+    }
+  ]
+}
