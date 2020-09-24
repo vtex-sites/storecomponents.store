@@ -1,0 +1,24 @@
+{
+  "afterBlocks": [],
+  "beforeBlocks": [],
+  "extraBlocks": [],
+  "blocks": [
+    {
+      "id": "1600964646192",
+      "name": "Carousel",
+      "props": {
+        "items": [
+          "https://storecomponents.vtexassets.com/assets/vtex.file-manager-graphql/images/cf81acbf-338d-4888-995b-faaa1ab84631___18e102e0e73536e1462c460e03bf98bc.jpg",
+          null
+        ]
+      }
+    },
+    {
+      "id": "1600964639155",
+      "name": "RichText",
+      "props": {
+        "text": "asdf"
+      }
+    }
+  ]
+}
