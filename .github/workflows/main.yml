@@ -24,6 +24,9 @@ jobs:
           site_name: "faststore"
           max_timeout: 60
 
+      - name: Install VTEX Lighthouse Config
+        run: npm install @vtex/lighthouse-config
+
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v3
         env:
