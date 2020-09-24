@@ -50,7 +50,7 @@ Kick-off your project with this default boilerplate. This starter ships with the
 
     Open the `my-awesome-store` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real-time!
 
-## 🧐 What's inside?
+## 🧐 What's inside? aa
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
