@@ -3,7 +3,6 @@ import BuyButton from '@vtex/gatsby-theme-vtex/src/components/BuyButton'
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import OfferPreview from '@vtex/gatsby-theme-vtex/src/components/Offer/Preview'
 import ProductDetailsImage from '@vtex/gatsby-theme-vtex/src/components/ProductDetailsImage'
-import SEO from '@vtex/gatsby-theme-vtex/src/components/SEO/ProductDetails'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
 import { Props } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import { Breadcrumb, Card, Flex, Grid, Heading } from '@vtex/store-ui'
@@ -29,7 +28,6 @@ const AboveTheFold: FC<Props> = ({
   return (
     <Flex variant="productPage.container">
       <Container>
-        <SEO title={productName} slug={slug!} />
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
         <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
           <ProductDetailsImage

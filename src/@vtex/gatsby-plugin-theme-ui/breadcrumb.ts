@@ -6,6 +6,8 @@ const custom: SxStyleProp = {
       alignItems: 'center',
       paddingTop: '0.5rem',
       paddingBottom: '0.5rem',
+      marginTop: '1rem',
+      marginBottom: '0.5rem',
     },
     pair: {
       alignItems: 'center',
