@@ -2416,6 +2416,14 @@
     "@babel/types" "^7.11.0"
     theme-ui "^0.3.1"
 
+"@vtex/gatsby-plugin-vtex-nginx@^0.68.0":
+  version "0.68.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-vtex-nginx/-/gatsby-plugin-vtex-nginx-0.68.0.tgz#893daa9c1f360b5c1997e68a9eea55bec93a330f"
+  integrity sha512-JF62W3B3FD3bU+Ll05tqWk4oYuMqBVlcQSPfPzqybudEVHsGmcgzw/9HKTSKmVqwkrpgjyfB91cNXT1rhBIkKQ==
+  dependencies:
+    kebab-hash "^0.1.2"
+    webpack-assets-manifest "^3.1.1"
+
 "@vtex/gatsby-source-vtex@^0.68.0":
   version "0.68.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.68.0.tgz#67cee5eb06f5ec2e1bc9ffab35040a8297340862"
