@@ -13,6 +13,7 @@ import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import searchBarTheme from './searchBar'
 
+// Testing lhci
 export default createTheme(
   base,
   breadcrumb,
