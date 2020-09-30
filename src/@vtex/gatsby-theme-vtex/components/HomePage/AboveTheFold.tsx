@@ -11,7 +11,7 @@ const Fold: FC<Props> = () => {
   if (true) {
     return (
       <>
-        <Carousel allItems={CAROUSEL_ITEMS} autoplayTimeout={5e3} autoplay />
+        <Carousel allItems={CAROUSEL_ITEMS as any} autoplayTimeout={5e3} autoplay />
         <RichTextRow />
       </>
     )
