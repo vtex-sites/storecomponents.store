@@ -25,6 +25,7 @@ const AboveTheFold: FC<Props> = ({
 
   const [{ images }] = items
   const [{ imageUrl, imageText }] = images
+  testing('hey')
 
   return (
     <Flex variant="productPage.container">
@@ -50,6 +51,10 @@ const AboveTheFold: FC<Props> = ({
       </Container>
     </Flex>
   )
+}
+
+function testing() {
+  console.log('testing')
 }
 
 export default AboveTheFold
