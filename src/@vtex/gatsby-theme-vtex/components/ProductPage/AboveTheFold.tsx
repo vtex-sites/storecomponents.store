@@ -25,7 +25,6 @@ const AboveTheFold: FC<Props> = ({
 
   const [{ images }] = items
   const [{ imageUrl, imageText }] = images
-  testing('hey')
 
   return (
     <Flex variant="productPage.container">
@@ -43,9 +42,9 @@ const AboveTheFold: FC<Props> = ({
               {productName}
             </Heading>
             <SuspenseSSR fallback={<OfferPreview variant="detail" />}>
-              <AsyncOffer slug={slug!} variant="detail" />
+              <AsyncOffer slug={slug! as any} variant="detail" />
             </SuspenseSSR>
-            <BuyButton sku={items[0]} />
+            <BuyButton sku={items[0] as any} />
           </Card>
         </Grid>
       </Container>
@@ -53,8 +52,5 @@ const AboveTheFold: FC<Props> = ({
   )
 }
 
-function testing() {
-  console.log('testing')
-}
 
 export default AboveTheFold
