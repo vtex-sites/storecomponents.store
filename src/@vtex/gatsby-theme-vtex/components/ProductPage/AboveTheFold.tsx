@@ -26,12 +26,13 @@ const AboveTheFold: FC<Props> = ({
   const [{ images }] = items
   const [{ imageUrl, imageText }] = images
 
+  conafdak
   return (
     <Flex variant="productPage.container">
       <Container>
         <SEO title={productName} slug={slug!} />
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
+        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}
           <ProductDetailsImage
             src={imageUrl}
             alt={imageText}
