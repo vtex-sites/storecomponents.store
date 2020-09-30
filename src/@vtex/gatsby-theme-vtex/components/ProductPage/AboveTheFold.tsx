@@ -44,7 +44,7 @@ const AboveTheFold: FC<Props> = ({
             <SuspenseSSR fallback={<OfferPreview variant="detail" />}>
               <AsyncOffer slug={slug!} variant="detail" />
             </SuspenseSSR>
-            <BuyButton sku={items[0] as any} />
+            <BuyButton sku={items[0]} />
           </Card>
         </Grid>
       </Container>
