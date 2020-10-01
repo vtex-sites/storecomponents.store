@@ -35,7 +35,7 @@ const AboveTheFold: FC<Props> = ({
           <ProductDetailsImage
             src={imageUrl}
             alt={imageText}
-            loading="eager" // Never lazy load image in product details
+            loading="eager" // Never lazy load image in product details -
           />
           <Card>
             <Heading variant="productTitle" as="h1">
