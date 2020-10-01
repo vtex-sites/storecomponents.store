@@ -15,10 +15,6 @@ const AsyncOffer = lazy(() =>
   import('@vtex/gatsby-theme-vtex/src/components/Offer/Async')
 )
 
-const hello = () => {
-  console.log('hello')
-}
-
 const AboveTheFold: FC<Props> = ({
   data: {
     vtex: { product },
@@ -30,7 +26,12 @@ const AboveTheFold: FC<Props> = ({
   const [{ images }] = items
   const [{ imageUrl, imageText }] = images
 
-  await hello()
+  const a = 1
+
+  if (a === NaN) {
+    return (<>Not</>)
+  }
+
   return (
     <Flex variant="productPage.container">
       <Container>
