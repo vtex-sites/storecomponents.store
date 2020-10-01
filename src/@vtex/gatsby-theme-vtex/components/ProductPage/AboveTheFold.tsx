@@ -26,13 +26,12 @@ const AboveTheFold: FC<Props> = ({
   const [{ images }] = items
   const [{ imageUrl, imageText }] = images
 
-  conafdak
   return (
     <Flex variant="productPage.container">
       <Container>
         <SEO title={productName} slug={slug!} />
-        <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}
+        <Breadcrumb breadcrumb={breadcrumb as any} type={'PRODUCT' as string} />
+        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
           <ProductDetailsImage
             src={imageUrl}
             alt={imageText}
@@ -43,7 +42,7 @@ const AboveTheFold: FC<Props> = ({
               {productName}
             </Heading>
             <SuspenseSSR fallback={<OfferPreview variant="detail" />}>
-              <AsyncOffer slug={slug! as any} variant="detail" />
+              <AsyncOffer slug={slug!} variant="detail" />
             </SuspenseSSR>
             <BuyButton sku={items[0] as any} />
           </Card>
@@ -52,6 +51,5 @@ const AboveTheFold: FC<Props> = ({
     </Flex>
   )
 }
-
 
 export default AboveTheFold
