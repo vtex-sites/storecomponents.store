@@ -30,7 +30,7 @@ const AboveTheFold: FC<Props> = ({
     <Flex variant="productPage.container">
       <Container>
         <SEO title={productName} slug={slug!} />
-        <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
+        <Breadcrumb breadcrumb={breadcrumb as any} type={'PRODUCT' as string} />
         <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
           <ProductDetailsImage
             src={imageUrl}
