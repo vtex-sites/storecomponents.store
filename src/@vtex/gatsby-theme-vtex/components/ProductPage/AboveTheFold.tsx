@@ -1,17 +1,25 @@
-/* eslint-disable react/jsx-pascal-case */
-import React, { FC, lazy } from 'react'
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
-import ProductDetailsImage from '@vtex/gatsby-theme-vtex/src/components/ProductDetailsImage'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
-import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
-import { Breadcrumb, Card, Flex, Grid, Heading } from '@vtex/store-ui'
+import { useDetailsImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImage'
+import { Props } from '@vtex/gatsby-theme-vtex/src/templates/product'
+import {
+  Card,
+  Flex,
+  Grid,
+  Breadcrumb,
+  ProductDetailsImage,
+  ProductDetailsTitle,
+} from '@vtex/store-ui'
+import React, { FC, lazy } from 'react'
 
-import AsyncInfoPreview from './Above/Async/Preview'
 import AsyncInfoContainer from './Above/Async/Container'
-
-export { fragment } from '@vtex/gatsby-theme-vtex/src/components/ProductPage/AboveTheFold'
+import AsyncInfoPreview from './Above/Async/Preview'
+import Social from './Above/Social'
 
 const AsyncInfo = lazy(() => import('./Above/Async/index'))
+
+const variant = 'default'
 
 const AboveTheFold: FC<ProductPageProps> = ({
   data: {
@@ -19,36 +27,44 @@ const AboveTheFold: FC<ProductPageProps> = ({
   },
   slug,
 }) => {
-  const { categoryTree: breadcrumb = [], productName, items } = product as any
+  const {
+    productName,
+    categoryTree: breadcrumb = [],
+    items: [
+      {
+        images: [{ imageUrl, imageText }],
+      },
+    ],
+  } = product as any
 
-  const [{ images }] = items
-  const [{ imageUrl, imageText }] = images
+  const imgProps = useDetailsImage(imageUrl)
 
   return (
     <Flex variant="productPage.container">
       <Container>
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
         <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
-          <ProductDetailsImage
-            src={imageUrl}
-            alt={imageText}
-            loading="eager" // Never lazy load image in product details
-          />
+          <ProductDetailsImage {...imgProps} alt={imageText} />
+
           <Card>
-            <Heading variant="productTitle" as="h1">
+            <ProductDetailsTitle variant={variant}>
               {productName}
-            </Heading>
+            </ProductDetailsTitle>
 
             <AsyncInfoContainer>
               <SuspenseSSR fallback={<AsyncInfoPreview />}>
                 <AsyncInfo slug={slug!} />
               </SuspenseSSR>
             </AsyncInfoContainer>
+
+            <Social />
           </Card>
         </Grid>
       </Container>
     </Flex>
   )
 }
+
+export { fragment } from '@vtex/gatsby-theme-vtex/src/components/ProductPage/AboveTheFold'
 
 export default AboveTheFold

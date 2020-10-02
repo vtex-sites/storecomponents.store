@@ -2,7 +2,8 @@ import React, { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-vtex/src/components/ProductPage/useAsyncProduct'
 import { useBestSeller } from '@vtex/gatsby-theme-vtex/src/sdk/product/useBestSeller'
 import { useSku } from '@vtex/gatsby-theme-vtex/src/sdk/product/useSku'
-import { Divider } from '@vtex/store-ui'
+import { Divider, ProductDetailsReference } from '@vtex/store-ui'
+import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
 import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
@@ -11,10 +12,14 @@ interface Props {
   slug: string
 }
 
+const variant = 'default'
+
 const Async: FC<Props> = ({ slug }) => {
   const { product }: any = useAsyncProduct({ slug })
   const sku: any = useSku(product)
   const { commercialOffer } = useBestSeller(sku)
+  const { formatMessage } = useIntl()
+  const { productReference } = product
 
   if (product === null || sku === null) {
     return null
@@ -26,6 +31,9 @@ const Async: FC<Props> = ({ slug }) => {
 
       <Divider />
 
+      <ProductDetailsReference variant={variant}>
+        {formatMessage({ id: 'productDetails.reference' })}: {productReference}
+      </ProductDetailsReference>
       <BuyButton sku={sku} />
     </>
   )

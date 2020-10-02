@@ -10,10 +10,11 @@ import { base } from './base'
 import { custom } from './custom'
 import { breadcrumb } from './breadcrumb'
 import { searchTheme } from './searchFilter'
-import searchSuggestionsTheme from './searchSuggestions'
-import searchBarTheme from './searchBar'
-import productSummaryTheme from './productSummary'
 import offerTheme from './offer'
+import searchBarTheme from './searchBar'
+import productDetailsTheme from './productDetails'
+import productSummaryTheme from './productSummary'
+import searchSuggestionsTheme from './searchSuggestions'
 
 export default createTheme(
   base,
@@ -27,5 +28,6 @@ export default createTheme(
   searchTheme,
   custom,
   offerTheme,
-  productSummaryTheme
+  productSummaryTheme,
+  productDetailsTheme
 )
