@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-pascal-case */
+import React, { FC, lazy } from 'react'
 import BuyButton from '@vtex/gatsby-theme-vtex/src/components/BuyButton'
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import OfferPreview from '@vtex/gatsby-theme-vtex/src/components/Offer/Preview'
 import ProductDetailsImage from '@vtex/gatsby-theme-vtex/src/components/ProductDetailsImage'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
-import { Props } from '@vtex/gatsby-theme-vtex/src/templates/product'
+import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import { Breadcrumb, Card, Flex, Grid, Heading } from '@vtex/store-ui'
-import React, { FC, lazy } from 'react'
 
 export { fragment } from '@vtex/gatsby-theme-vtex/src/components/ProductPage/AboveTheFold'
 
@@ -14,7 +14,7 @@ const AsyncOffer = lazy(() =>
   import('@vtex/gatsby-theme-vtex/src/components/Offer/Async')
 )
 
-const AboveTheFold: FC<Props> = ({
+const AboveTheFold: FC<ProductPageProps> = ({
   data: {
     vtex: { product },
   },
