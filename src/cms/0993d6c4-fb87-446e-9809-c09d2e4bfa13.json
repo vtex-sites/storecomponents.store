@@ -1,6 +1,18 @@
 {
-  "afterBlocks": [],
-  "beforeBlocks": [],
+  "afterBlocks": [
+    {
+      "id": "1601396507229",
+      "name": "@vtex/gatsby-theme-vtex/src/components/Footer",
+      "props": {}
+    }
+  ],
+  "beforeBlocks": [
+    {
+      "id": "1601396507229",
+      "name": "@vtex/gatsby-theme-vtex/src/components/Header",
+      "props": {}
+    }
+  ],
   "extraBlocks": [
     {
       "name": "admin/visibilityTitle",
@@ -19,14 +31,14 @@
   "blocks": [
     {
       "id": "1600982983742",
-      "name": "RichText",
+      "name": "@vtex/gatsby-theme-vtex/src/components/RichText",
       "props": {
         "text": "Hello"
       }
     },
     {
       "id": "1600982987318",
-      "name": "RichText",
+      "name": "@vtex/gatsby-theme-vtex/src/components/RichText",
       "props": {
         "text": "World"
       }
