@@ -9,6 +9,8 @@
   "minicart.drawer.go-checkout": "GO TO CHECKOUT",
   "offer.product-unavailable": "Product Unavailable",
   "offer.units-left": "{quantity} units left!",
+  "offer.installments": "Up to {numberOfInstallments}x {value} interest-free",
+  "offer.discount": " Save {price}",
   "facets.brand-selector.title": "Brands",
   "facets.tree-selector.title": "Departments",
   "facets.filters": "Filters",
@@ -26,5 +28,7 @@
   "suggestions.products.notFound": "No product found",
   "suggestions.history.title": "History",
   "suggestions.history.empty": "No history yet",
-  "suggestions.topSearches.title": "Top searches"
+  "suggestions.topSearches.title": "Top searches",
+  "productDetails.reference": "Reference",
+  "social.share": "Share"
 }

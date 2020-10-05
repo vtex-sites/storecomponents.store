@@ -1,18 +1,17 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { FC, lazy } from 'react'
-import BuyButton from '@vtex/gatsby-theme-vtex/src/components/BuyButton'
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
-import OfferPreview from '@vtex/gatsby-theme-vtex/src/components/Offer/Preview'
 import ProductDetailsImage from '@vtex/gatsby-theme-vtex/src/components/ProductDetailsImage'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
 import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import { Breadcrumb, Card, Flex, Grid, Heading } from '@vtex/store-ui'
 
+import AsyncInfoPreview from './Above/Async/Preview'
+import AsyncInfoContainer from './Above/Async/Container'
+
 export { fragment } from '@vtex/gatsby-theme-vtex/src/components/ProductPage/AboveTheFold'
 
-const AsyncOffer = lazy(() =>
-  import('@vtex/gatsby-theme-vtex/src/components/Offer/Async')
-)
+const AsyncInfo = lazy(() => import('./Above/Async/index'))
 
 const AboveTheFold: FC<ProductPageProps> = ({
   data: {
@@ -39,10 +38,12 @@ const AboveTheFold: FC<ProductPageProps> = ({
             <Heading variant="productTitle" as="h1">
               {productName}
             </Heading>
-            <SuspenseSSR fallback={<OfferPreview variant="detail" />}>
-              <AsyncOffer slug={slug!} variant="detail" />
-            </SuspenseSSR>
-            <BuyButton sku={items[0] as any} />
+
+            <AsyncInfoContainer>
+              <SuspenseSSR fallback={<AsyncInfoPreview />}>
+                <AsyncInfo slug={slug!} />
+              </SuspenseSSR>
+            </AsyncInfoContainer>
           </Card>
         </Grid>
       </Container>

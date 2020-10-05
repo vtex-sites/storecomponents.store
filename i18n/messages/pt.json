@@ -9,6 +9,8 @@
   "minicart.drawer.go-checkout": "IR AO CHECKOUT",
   "offer.product-unavailable": "Produto Indisponível",
   "offer.units-left": "{quantity} items sobrando!",
+  "offer.installments": "Ate {numberOfInstallments}x {value} sem-juros",
+  "offer.discount": " Economize {price}",
   "facets.brand-selector.title": "Marcas",
   "facets.tree-selector.title": "Departamentos",
   "facets.filters": "Filtros",
@@ -26,5 +28,7 @@
   "suggestions.products.notFound": "Nenhum produto encontrado",
   "suggestions.history.title": "Historico",
   "suggestions.history.empty": "Nenhuma pesquisa encontrada",
-  "suggestions.topSearches.title": "Termos mais buscados"
+  "suggestions.topSearches.title": "Termos mais buscados",
+  "productDetails.reference": "Codigo",
+  "social.share": "Compartilhe"
 }

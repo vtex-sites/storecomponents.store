@@ -12,6 +12,7 @@ import { breadcrumb } from './breadcrumb'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import searchBarTheme from './searchBar'
+import offer from './offer'
 
 export default createTheme(
   base,
@@ -23,5 +24,6 @@ export default createTheme(
   searchSuggestionsTheme,
   searchBarTheme,
   searchTheme,
-  custom
+  custom,
+  offer
 )
