@@ -2,7 +2,7 @@
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
 import { useDetailsImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImage'
-import { Props } from '@vtex/gatsby-theme-vtex/src/templates/product'
+import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import {
   Card,
   Flex,
@@ -15,7 +15,6 @@ import React, { FC, lazy } from 'react'
 
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
-import Social from './Above/Social'
 
 const AsyncInfo = lazy(() => import('./Above/Async/index'))
 
@@ -57,7 +56,6 @@ const AboveTheFold: FC<ProductPageProps> = ({
               </SuspenseSSR>
             </AsyncInfoContainer>
 
-            <Social />
           </Card>
         </Grid>
       </Container>

@@ -7,6 +7,7 @@ import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
 import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
+import Social from './Social'
 
 interface Props {
   slug: string
@@ -35,6 +36,7 @@ const Async: FC<Props> = ({ slug }) => {
         {formatMessage({ id: 'productDetails.reference' })}: {productReference}
       </ProductDetailsReference>
       <BuyButton sku={sku} />
+      <Social />
     </>
   )
 }
