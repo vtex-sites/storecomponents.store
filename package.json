@@ -12,7 +12,7 @@
     "babel-preset-gatsby": "^0.5.5",
     "gatsby": "^2.24.64",
     "gatsby-plugin-manifest": "^2.4.21",
-    "gatsby-plugin-netlify": "^2.3.14",
+    "gatsby-plugin-netlify": "^2.3.17",
     "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-source-filesystem": "^2.3.23",
     "react": "^0.0.0-experimental-7f28234f8",
