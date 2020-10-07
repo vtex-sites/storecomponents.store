@@ -19,7 +19,7 @@ import AsyncInfoPreview from './Above/Async/Preview'
 const AsyncInfo = lazy(() => import('./Above/Async/index'))
 
 const variant = 'default'
-
+// Testint ci
 const AboveTheFold: FC<ProductPageProps> = ({
   data: {
     vtex: { product },
