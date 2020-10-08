@@ -32,7 +32,7 @@
   "productDetails.reference": "Reference",
   "social.share": "Share",
   "searchControls.totalCount": "{count,plural,=0{ PRODUCTS}one{ PRODUCT}other{ PRODUCTS}}",
-  "searchControls.filters": "Filters",
+  "searchControls.filters": "FILTERS ",
   "searchControls.select.scoreDesc": "Relevance",
   "searchControls.select.priceDesc": "Price: High to Low",
   "searchControls.select.priceAsc": "Price: Low to High",
