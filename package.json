@@ -7,7 +7,7 @@
     "@vtex/gatsby-plugin-i18n": "^0.81.0",
     "@vtex/gatsby-plugin-vtex-nginx": "^0.81.0",
     "@vtex/gatsby-source-vtex": "^0.82.0",
-    "@vtex/gatsby-theme-vtex": "^0.89.0",
+    "@vtex/gatsby-theme-vtex": "^0.89.1",
     "@vtex/store-ui": "^0.87.0",
     "babel-preset-gatsby": "^0.5.5",
     "gatsby": "^2.24.64",
