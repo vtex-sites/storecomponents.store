@@ -9,7 +9,7 @@
     "@vtex/gatsby-source-vtex": "^0.82.0",
     "@vtex/gatsby-theme-vtex": "^0.92.0",
     "@vtex/store-ui": "^0.87.0",
-    "babel-preset-gatsby": "^0.5.5",
+    "babel-preset-gatsby": "^0.5.13",
     "gatsby": "^2.24.64",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-netlify": "^2.3.14",
