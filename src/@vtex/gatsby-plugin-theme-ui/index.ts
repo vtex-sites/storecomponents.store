@@ -16,6 +16,8 @@ import productDetailsTheme from './productDetails'
 import productSummaryTheme from './productSummary'
 import searchSuggestionsTheme from './searchSuggestions'
 import sliderTheme from './slider'
+import loginTheme from './login'
+import authTheme from './auth'
 
 export default createTheme(
   base,
@@ -31,5 +33,7 @@ export default createTheme(
   sliderTheme,
   offerTheme,
   productSummaryTheme,
-  productDetailsTheme
+  productDetailsTheme,
+  loginTheme,
+  authTheme
 )

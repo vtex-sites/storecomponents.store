@@ -48,6 +48,7 @@ export const custom: SxStyleProp = {
     fontWeight: 200,
     color: '#727273',
   },
+
   productTitle: {
     mb: 4,
   },
@@ -56,6 +57,15 @@ export const custom: SxStyleProp = {
       my: 4,
       mx: 0,
       flexDirection: 'column',
+    },
+  },
+
+  alerts: {
+    signInDanger: {
+      color: 'text',
+      bg: '#ffe6e6',
+      fontSize: '14px',
+      fontWeight: 300,
     },
   },
 }

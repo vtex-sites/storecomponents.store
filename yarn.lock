@@ -2490,10 +2490,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.100.0":
-  version "0.100.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.100.0.tgz#4f07c08bf53baa4a0515cb5d93b0270232a4d484"
-  integrity sha512-Xkr0371BQlnGsY81Oahwinjc/r9dxMBO3OWuxeN/pv+3U6o7bojZeeZRFwPv12Bwdh+tKJtDRZ3MwefVypw94A==
+"@vtex/store-ui@^0.102.1-alpha.0":
+  version "0.102.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.102.1-alpha.0.tgz#6e3aec719945e64449791b929f1255d282cfa6a0"
+  integrity sha512-B/RnnAoN3R0czGRlp0CjFq2FdMmaorn9cUbY2upgU09bJGywwBspwuPxnNP20YW3Tz0UfwXPtDu6j7NJNDvejQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
