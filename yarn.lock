@@ -2455,10 +2455,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.94.0-alpha.2":
-  version "0.94.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.94.0-alpha.2.tgz#9f11d87b9a3b179be078b7ff82f4dc982be39420"
-  integrity sha512-Fic44UsvX+Bjowo1V4dEu51Tc/lw+2IRnMi2PnBPZW1lSvS3b6FdGjVAEYDDfnTjY2m6aQN/R4i0gs0sIcRPhQ==
+"@vtex/gatsby-theme-vtex@^0.95.0-alpha.0":
+  version "0.95.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.95.0-alpha.0.tgz#bf0fff3448d97e09c36b5e3087d30913b5630ff4"
+  integrity sha512-MeEZTctiaSOK2MUR7q9R4q7XqTVMpFie+zf6jpl9lJQMdYlw56BlYZ7dUkhPhPsPYsW1oFds0Hxz74HYLTVhew==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.82.0"
