@@ -11,6 +11,28 @@ const {
 const isNetlifyProduction = NETLIFY_ENV === 'production'
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
+const transformHeaders = (headers, path) => {
+  const DEFAULT_SECURITY_HEADERS = [
+    'X-XSS-Protection: 1; mode=block',
+    'X-Content-Type-Options: nosniff',
+    'Referrer-Policy: same-origin',
+  ]
+
+  if (path.includes('/preview')) {
+    return [
+      ...DEFAULT_SECURITY_HEADERS,
+      'Content-Security-Policy: frame-src https://*.myvtex.com/',
+      ...headers,
+    ]
+  }
+
+  if (path.includes('/account')) {
+    return [...DEFAULT_SECURITY_HEADERS, ...headers]
+  }
+
+  return ['X-Frame-Options: DENY', ...DEFAULT_SECURITY_HEADERS, ...headers]
+}
+
 module.exports = {
   siteMetadata: {
     author: 'Emerson Laurentino',
@@ -79,17 +101,7 @@ module.exports = {
             'Content-Security-Policy: frame-src https://*.myvtex.com/',
           ],
         },
-        transformHeaders: (headers, path) => {
-          const DEFAULT_SECURITY_HEADERS = [
-            'X-XSS-Protection: 1; mode=block',
-            'X-Content-Type-Options: nosniff',
-            'Referrer-Policy: same-origin',
-          ]
-
-          return path.includes('/preview')
-            ? [...DEFAULT_SECURITY_HEADERS, ...headers]
-            : ['X-Frame-Options: DENY', ...DEFAULT_SECURITY_HEADERS, ...headers]
-        },
+        transformHeaders,
         mergeSecurityHeaders: false,
         generateMatchPathRewrites: true,
       },
@@ -97,21 +109,7 @@ module.exports = {
     {
       resolve: require.resolve('@vtex/gatsby-plugin-vtex-nginx'),
       options: {
-        transformHeaders: (headers, path) => {
-          const DEFAULT_SECURITY_HEADERS = [
-            'X-XSS-Protection: 1; mode=block',
-            'X-Content-Type-Options: nosniff',
-            'Referrer-Policy: same-origin',
-          ]
-
-          return path.includes('/preview')
-            ? [
-                ...DEFAULT_SECURITY_HEADERS,
-                'Content-Security-Policy: frame-src https://*.myvtex.com/',
-                ...headers,
-              ]
-            : ['X-Frame-Options: DENY', ...DEFAULT_SECURITY_HEADERS, ...headers]
-        },
+        transformHeaders,
       },
     },
   ],
