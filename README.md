@@ -1,4 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) --> 
 <p align="center">
   <a href="https://storetheme.vtex.com/">
     <img alt="Gatsby" src="https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png" width="250" />
