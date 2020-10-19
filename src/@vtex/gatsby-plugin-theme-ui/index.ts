@@ -6,18 +6,18 @@ import {
   searchControlsTheme,
 } from '@vtex/store-ui'
 
+import authTheme from './auth'
 import { base } from './base'
-import { custom } from './custom'
 import { breadcrumb } from './breadcrumb'
-import { searchTheme } from './searchFilter'
+import { custom } from './custom'
+import loginTheme from './login'
 import offerTheme from './offer'
-import searchBarTheme from './searchBar'
 import productDetailsTheme from './productDetails'
 import productSummaryTheme from './productSummary'
+import searchBarTheme from './searchBar'
+import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import sliderTheme from './slider'
-import loginTheme from './login'
-import authTheme from './auth'
 
 export default createTheme(
   base,

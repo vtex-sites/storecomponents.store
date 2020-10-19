@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
+import ProductImageGallery from '@vtex/gatsby-theme-vtex/src/components/ProductImageGallery'
 import { useDetailsImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImage'
 import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import {
@@ -8,7 +9,6 @@ import {
   Flex,
   Grid,
   Breadcrumb,
-  ProductDetailsImage,
   ProductDetailsTitle,
 } from '@vtex/store-ui'
 import React, { FC, lazy } from 'react'
@@ -29,21 +29,17 @@ const AboveTheFold: FC<ProductPageProps> = ({
   const {
     productName,
     categoryTree: breadcrumb = [],
-    items: [
-      {
-        images: [{ imageUrl, imageText }],
-      },
-    ],
+    items: [{ images }],
   } = product as any
 
-  const imgProps = useDetailsImage(imageUrl)
+  const imageItems = useDetailsImage(images)
 
   return (
     <Flex variant="productPage.container">
       <Container>
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
         <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
-          <ProductDetailsImage {...imgProps} alt={imageText} />
+          <ProductImageGallery allItems={imageItems} />
 
           <Card>
             <ProductDetailsTitle variant={variant}>
@@ -55,7 +51,6 @@ const AboveTheFold: FC<ProductPageProps> = ({
                 <AsyncInfo slug={slug!} />
               </SuspenseSSR>
             </AsyncInfoContainer>
-
           </Card>
         </Grid>
       </Container>

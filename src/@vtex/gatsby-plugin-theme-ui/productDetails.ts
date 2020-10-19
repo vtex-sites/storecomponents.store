@@ -18,4 +18,6 @@ const productDetails: SxStyleProp = {
   },
 }
 
-export default { productDetails: { default: productDetails } }
+export default {
+  productDetails: { default: productDetails },
+}
