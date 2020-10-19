@@ -53,6 +53,6 @@
   "searchControls.select.releaseDateDesc": "Release date",
   "searchControls.select.bestDiscountDesc": "Discount",
 
-  "login.button.greeting": "Hello {name}",
+  "login.button.greeting": "Hello, {name}",
   "login.button.action": "Sign In"
 }

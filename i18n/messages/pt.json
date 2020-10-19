@@ -107,6 +107,6 @@
   "login.page.googleOAuth.error": "Entrar com Google falhou. Clique no botao abaixo para tentar novamente",
   "login.page.googleOAuth.tryAgain": "Tentar novamente",
 
-  "login.button.greeting": "Ola {name}",
+  "login.button.greeting": "Olá, {name}",
   "login.button.action": "Entrar"
 }
