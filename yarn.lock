@@ -1206,7 +1206,7 @@
     "@emotion/utils" "0.11.3"
     "@emotion/weak-memoize" "0.2.5"
 
-"@emotion/core@^10.0.0", "@emotion/core@^10.0.14", "@emotion/core@^10.0.22":
+"@emotion/core@^10.0.0", "@emotion/core@^10.0.14":
   version "10.0.28"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.28.tgz#bb65af7262a234593a9e952c041d0f1c9b9bef3d"
   integrity sha512-pH8UueKYO5jgg0Iq+AmCLxBsvuGtvlmiDCOuv8fGNYn3cowFpLN98L8zO56U0H1PjDIyAlXymgL3Wu7u7v6hbA==
@@ -2383,6 +2383,18 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
+"@vtex/gatsby-plugin-graphql@^0.100.0":
+  version "0.100.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.100.0.tgz#5a9b9c7e06d1a360cdc6fef2037896d28a57a862"
+  integrity sha512-iIRo8PGO1t8DQPDUI42O0TsuBP8I6rqaIzxzg6CpO007AsS9ZeoM5Wxud8/E6/x8HF+C1v5B+SLx6NQW6ByEVg==
+  dependencies:
+    "@graphql-codegen/core" "^1.17.7"
+    "@graphql-codegen/plugin-helpers" "^1.17.7"
+    "@graphql-codegen/typescript" "^1.17.7"
+    "@graphql-codegen/typescript-operations" "^1.17.7"
+    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
+    fs-extra "^9.0.1"
+
 "@vtex/gatsby-plugin-graphql@^0.82.0":
   version "0.82.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.82.0.tgz#eaf48246f1682f238c431be726b689bbd33d72b8"
@@ -2395,10 +2407,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-i18n@^0.81.0":
-  version "0.81.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.81.0.tgz#35b0528f24566b8b5f331510213ad4991d68daf6"
-  integrity sha512-Wyrffz2BONrwj8eeQ8O5VZpNMZX8mwmAcOpU7l22X8OOoNzs8dTRIdcrUpDNnUpkX333klcIAwspQJvStl8lCg==
+"@vtex/gatsby-plugin-i18n@^0.100.0":
+  version "0.100.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.100.0.tgz#8a9f6c0c8f4f1bc04f9b18d072bb135d0c1dfa6e"
+  integrity sha512-3BXo2c8Rndr3qcBhYPu5aXgLkq2DxVr7DtgwPiwIvY9YUlU/9ltE+OISP52TMw68tJy1+owmdy4d+Nc8+crfqA==
   dependencies:
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
@@ -2416,10 +2428,10 @@
     "@babel/types" "^7.11.0"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-vtex-nginx@^0.81.0":
-  version "0.81.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-vtex-nginx/-/gatsby-plugin-vtex-nginx-0.81.0.tgz#cbadef88066af668663345e8755fa9d4df6905e6"
-  integrity sha512-nGO01p1dFgFd5ycLr9dzQFc7YxsZeFnUgWBUg3uOCDHeGWdtIYog/HHzTQr9BDcTONYIMe19dXZYt0RNhjdZiA==
+"@vtex/gatsby-plugin-vtex-nginx@^0.100.0":
+  version "0.100.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-vtex-nginx/-/gatsby-plugin-vtex-nginx-0.100.0.tgz#a4ec7a3173cd068f7f633ee26a4bb826bf1982ba"
+  integrity sha512-jJlDExrRrR+K5rNdtu0b1KzBKytVzcKBGEFMoNFpSvNtF3de1Dv/xOCiwrP512wEtEnVoTNwC+ERMLANSsbzTA==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^3.1.1"
@@ -2435,14 +2447,14 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.92.0":
-  version "0.92.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.92.0.tgz#90e3e49de598a0d30a91c52adb8af2dc8a4653c8"
-  integrity sha512-j5W+3tIn0q+KX3jEifGupA4xEjt+g+U9hSB1yDs23J3bfhzdFUkdetSs04OOvN5rGvBk+syEclzI9PiRlRFefQ==
+"@vtex/gatsby-theme-vtex@^0.101.0":
+  version "0.101.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.101.0.tgz#84fa38f5a9bd780c3b0a7256d465a3abe8985e9d"
+  integrity sha512-Uvkao7Lnv9zKufkfmpT3i5OGhe5LdOeVzCEoAUuMi2XLYNg4f9VI7CSAtSgFf0d4PuqjYnsvqg4C7XFeiG4asg==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.82.0"
-    "@vtex/gatsby-plugin-i18n" "^0.81.0"
+    "@vtex/gatsby-plugin-i18n" "^0.100.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.81.0"
     "@vtex/gatsby-source-vtex" "^0.82.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.81.0"
@@ -2458,10 +2470,10 @@
     p-queue "^6.5.0"
     react-helmet "^6.1.0"
     react-hook-inview "^4.3.0"
-    react-loading-skeleton "^2.1.1"
     requestidlecallback-polyfill "^1.0.2"
     schema-dts "^0.6.0"
     swr "^0.3.0"
+    text-mask-core "^5.1.0"
 
 "@vtex/gatsby-transformer-vtex-cms@^0.81.0":
   version "0.81.0"
@@ -2478,16 +2490,16 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.87.0":
-  version "0.87.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.87.0.tgz#38b6c314679ffccd0c7572f3c7e8b4a7eff0248d"
-  integrity sha512-najEpYlaqKJEQyvyaLKBNQAOibsJza6ci56nlky2Uod9xDMBbKZjVnfOvh2TeCjH5d9DdmiNud/KGLmK4UiQJA==
+"@vtex/store-ui@^0.100.0":
+  version "0.100.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.100.0.tgz#4f07c08bf53baa4a0515cb5d93b0270232a4d484"
+  integrity sha512-Xkr0371BQlnGsY81Oahwinjc/r9dxMBO3OWuxeN/pv+3U6o7bojZeeZRFwPv12Bwdh+tKJtDRZ3MwefVypw94A==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.81.0"
+    "@vtex/gatsby-plugin-i18n" "^0.100.0"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     reakit "^1.1.2"
@@ -11605,13 +11617,6 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-loading-skeleton@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-loading-skeleton/-/react-loading-skeleton-2.1.1.tgz#2c075ea9683587c163408c8eec0703047c4203b1"
-  integrity sha512-+fGvgG9ieUw4D5QVgpqJkJ75jhzUdz96GRsA0HjTlR0Mpj9DJUEFc0AKELs7ZkqWVH8/DiroaaufSrOPld1kGA==
-  dependencies:
-    "@emotion/core" "^10.0.22"
-
 react-reconciler@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.24.0.tgz#5a396b2c2f5efe8554134a5935f49f546723f2dd"
@@ -13472,6 +13477,11 @@ terser@^4.1.2, terser@^4.6.12, terser@^4.6.3:
     commander "^2.20.0"
     source-map "~0.6.1"
     source-map-support "~0.5.12"
+
+text-mask-core@^5.1.0:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/text-mask-core/-/text-mask-core-5.1.2.tgz#80dd5ebe04825757e46619e691407a9f8b3c1b6f"
+  integrity sha1-gN1evgSCV1fkZhnmkUB6n4s8G28=
 
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"

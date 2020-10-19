@@ -1,6 +1,5 @@
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
-import Shelf from '@vtex/gatsby-theme-vtex/src/components/Shelf/AsyncShelf'
 import {
   Box,
   Flex,
@@ -12,6 +11,7 @@ import {
 } from '@vtex/store-ui'
 import React, { FC } from 'react'
 
+import Shelf from '../Shelf/ShelfProducts'
 import exampleStoreMd from './example-store.md'
 import reachUsMd from './reach-us.md'
 
@@ -33,10 +33,6 @@ const BelowTheFold: FC = () => {
             from: 0,
             to: 9,
           }}
-          showArrows
-          showDots
-          autoplay={false}
-          pageSizes={[1, 3, 5]}
         />
       </Container>
 

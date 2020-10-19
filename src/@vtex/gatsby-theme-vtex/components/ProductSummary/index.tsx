@@ -1,23 +1,23 @@
-import React, { FC } from 'react'
-import Skeleton from 'react-loading-skeleton'
 import { Props } from '@vtex/gatsby-theme-vtex/src/components/ProductSummary'
 import { useLink } from '@vtex/gatsby-theme-vtex/src/sdk/product/useLink'
 import { useSummaryImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useSummaryImage'
 import {
   OfferContainer,
+  ProductSummaryContainer,
   ProductSummaryImage,
   ProductSummaryTitle,
-  ProductSummaryContainer,
+  Skeleton,
 } from '@vtex/store-ui'
+import React, { FC } from 'react'
 
 import BuyButton from '../BuyButton'
 import Offer from './Offer'
 
 const OfferPreview: FC = () => (
   <OfferContainer variant="productSummary">
-    <Skeleton height={25} />
-    <Skeleton height={40} />
-    <Skeleton height={45} />
+    <Skeleton height="25px" />
+    <Skeleton height="40px" />
+    <Skeleton height="45px" />
   </OfferContainer>
 )
 

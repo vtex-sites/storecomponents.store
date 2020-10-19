@@ -15,6 +15,7 @@ import searchBarTheme from './searchBar'
 import productDetailsTheme from './productDetails'
 import productSummaryTheme from './productSummary'
 import searchSuggestionsTheme from './searchSuggestions'
+import sliderTheme from './slider'
 
 export default createTheme(
   base,
@@ -27,6 +28,7 @@ export default createTheme(
   searchBarTheme,
   searchTheme,
   custom,
+  sliderTheme,
   offerTheme,
   productSummaryTheme,
   productDetailsTheme
