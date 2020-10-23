@@ -9,7 +9,7 @@
 </h1>
 
 Kick off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing fast store for React.
-
+asdf
 asdfasdf
 sdfasdfadsf
 asdf
