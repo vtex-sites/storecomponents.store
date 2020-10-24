@@ -2455,14 +2455,14 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.108.0-alpha.0":
-  version "0.108.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.108.0-alpha.0.tgz#6211867721e53f689947de61758ea5165c47d7cf"
-  integrity sha512-UhqpKMf51DTn8fnKX1/4mcygRuyEsN64k4CC5U/DWxFlq2XN1cmDzC6amrKu1DVkamo29R/wmWbxzk7xbFM/Ow==
+"@vtex/gatsby-theme-vtex@^0.109.0-alpha.0":
+  version "0.109.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.109.0-alpha.0.tgz#33c3d0c3c02027a44835e02c49a1c547f588efe1"
+  integrity sha512-QPmaAtBtW5wKhkyLnJwRwVvMeIEHXxkcaoOD1x3c2Bykjch9CQSgIenCDiiVBb8lz30UhBZhf5iirqX1oSPcAA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.82.0"
-    "@vtex/gatsby-plugin-i18n" "^0.106.0"
+    "@vtex/gatsby-plugin-i18n" "^0.107.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.81.0"
     "@vtex/gatsby-source-vtex" "^0.82.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.81.0"
