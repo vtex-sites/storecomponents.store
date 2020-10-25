@@ -2423,19 +2423,6 @@
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-theme-ui@^0.106.0":
-  version "0.106.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.106.0.tgz#062f19eb7877c32f8a779a01df17287704afe52f"
-  integrity sha512-h3zgHSUHeWIpE2FxhHCCnMnbXSz6tSDLi4kHNuVlGQMJuDaNzMFcDmpQ82TYKUzuvkqLCztDG3LUkPvJxFp5Kg==
-  dependencies:
-    "@babel/core" "^7.11.4"
-    "@babel/parser" "^7.11.4"
-    "@babel/preset-typescript" "^7.10.4"
-    "@babel/register" "^7.11.5"
-    "@babel/traverse" "^7.11.0"
-    "@babel/types" "^7.11.0"
-    theme-ui "^0.3.1"
-
 "@vtex/gatsby-plugin-theme-ui@^0.81.0":
   version "0.81.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.81.0.tgz#71389617564e25ca7223a6c3424a1aca026f2ca2"
