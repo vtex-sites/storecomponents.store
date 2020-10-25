@@ -4,7 +4,7 @@ import {
   useBuyButton,
   SKU,
 } from '@vtex/gatsby-theme-vtex/src/sdk/buyButton/useBuyButton'
-import { Button, jsx, SxStyleProp } from '@vtex/store-ui'
+import { Button, jsx, Spinner, SxStyleProp } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
 interface Props {
@@ -15,22 +15,34 @@ const styles: SxStyleProp = {
   px: '24px',
   width: '100%',
   fontWeight: 500,
-  minHeight: '32px',
+  minHeight: '40px',
   textTransform: 'uppercase',
   backgroundColor: 'primary',
 
   '&:hover': {
     opacity: '0.95',
   },
+
+  '&:disabled': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#eeeeee',
+    color: 'text',
+  },
 }
 
 const BuyButton: FC<Props> = ({ sku }) => {
   const { formatMessage } = useIntl()
-  const props = useBuyButton(sku)
+  const { loading, ...props } = useBuyButton(sku)
 
   return (
     <Button sx={styles} {...props}>
-      {formatMessage({ id: 'buy-button.add-to-cart' })}
+      {loading ? (
+        <Spinner size="20px" />
+      ) : (
+        formatMessage({ id: 'buy-button.add-to-cart' })
+      )}
     </Button>
   )
 }
