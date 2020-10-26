@@ -54,6 +54,11 @@ const shelfArrows: SxStyleProp = {
     button: {
       bg: 'transparent',
       borderColor: 'transparent',
+      cursor: 'pointer',
+
+      '&:hover': {
+        opacity: '0.5',
+      },
     },
 
     svg: {
@@ -65,6 +70,11 @@ const shelfArrows: SxStyleProp = {
     button: {
       bg: 'transparent',
       borderColor: 'transparent',
+      cursor: 'pointer',
+
+      '&:hover': {
+        opacity: '0.5',
+      },
     },
 
     svg: {
@@ -82,6 +92,11 @@ const carouselArrows: SxStyleProp = {
       zIndex: 1,
       bg: 'transparent',
       borderColor: 'transparent',
+      cursor: 'pointer',
+
+      '&:hover': {
+        opacity: '0.5',
+      },
     },
 
     svg: {
@@ -97,6 +112,11 @@ const carouselArrows: SxStyleProp = {
       zIndex: 1,
       bg: 'transparent',
       borderColor: 'transparent',
+      cursor: 'pointer',
+
+      '&:hover': {
+        opacity: '0.5',
+      },
     },
 
     svg: {
