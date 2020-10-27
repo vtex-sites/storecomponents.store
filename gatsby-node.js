@@ -1,4 +1,4 @@
-// opa2345
+// opa23456
 exports.onCreateWebpackConfig = ({ actions: { setWebpackConfig } }) => {
   setWebpackConfig({
     resolve: {
