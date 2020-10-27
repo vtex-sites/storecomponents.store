@@ -1,3 +1,4 @@
+throw new Error('xd')
 exports.onCreateWebpackConfig = ({ actions: { setWebpackConfig } }) => {
   setWebpackConfig({
     resolve: {
