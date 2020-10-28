@@ -16,7 +16,7 @@ import React, { FC, lazy } from 'react'
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
 
-// Testing
+// Testing 2
 const AsyncInfo = lazy(() => import('./Above/Async/index'))
 
 const variant = 'default'
