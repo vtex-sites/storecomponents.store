@@ -18,7 +18,7 @@ Kick off your project with this default boilerplate. This starter ships with the
 
     ```shell
     # Clone this repo into your machine
-    git clone my-awesome-store https://github.com/vtex-sites/storecomponents.store.git
+    npx degit vtex-sites/storecomponents.store my-awesome-store
     ```
 
 1.  **Install dependencies**
