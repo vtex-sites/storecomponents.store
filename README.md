@@ -8,7 +8,7 @@
   A store theme powered by VTEX and Gatsby
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing fast store for React.
+Kick-off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing-fast store for React.
 
 ## 🚀 Quick start
 
@@ -48,7 +48,7 @@ Kick off your project with this default boilerplate. This starter ships with the
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-awesome-store` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `my-awesome-store` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real-time!
 
 ## 🧐 What's inside?
 
@@ -91,7 +91,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 10. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-11. **`tsconfig.json`**: The configuration file for the typescript compiler. This will statically analyse your code for errors and bugs before releasing them into production
+11. **`tsconfig.json`**: The configuration file for the typescript compiler. This will statically analyze your code for errors and bugs before releasing them into production
 
 12. **`vtex.env`**: Environment variables needed for accessing your account in VTEX
 
@@ -99,13 +99,13 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 🎓 Learning Gatsby
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Looking for more guidance? Full documentation for Gatsby lives [on their website](https://www.gatsbyjs.org/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+- **For most developers, we recommend starting with Gatsby's [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## ⚡ Performance
-This project uses Google's Lighthouse CI for analysing the store's performance and setting performance budgets. The urls tested can be found and changed in the `ci.collect.url` property. Feel free to change this at your will 
+This project uses Google's Lighthouse CI for analyzing the store's performance and setting performance budgets. The URLs tested can be found and changed in the `ci.collect.url` property. Feel free to change this at your will 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
