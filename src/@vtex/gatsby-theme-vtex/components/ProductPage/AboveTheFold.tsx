@@ -3,6 +3,7 @@ import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
 import ProductImageGallery from '@vtex/gatsby-theme-vtex/src/components/ProductImageGallery'
 import { useDetailsImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImage'
+import { useGalleryItems } from '@vtex/gatsby-theme-vtex/src/sdk/product/useGalleryItems'
 import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import {
   Card,
@@ -29,17 +30,19 @@ const AboveTheFold: FC<ProductPageProps> = ({
   const {
     productName,
     categoryTree: breadcrumb = [],
-    items: [{ images }],
+    items: [{ images, videos }],
   } = product as any
 
   const imageItems = useDetailsImage(images)
+
+  const galleryItems = useGalleryItems(imageItems, videos, productName)
 
   return (
     <Flex variant="productPage.container">
       <Container>
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
         <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
-          <ProductImageGallery allItems={imageItems} />
+          <ProductImageGallery allItems={galleryItems} />
 
           <Card>
             <ProductDetailsTitle variant={variant}>
