@@ -27,7 +27,6 @@ const ProductSummary: FC<Props> = ({
   variant = 'default',
 }) => {
   const {
-    linkText,
     items: [sku],
     productName,
   } = product as any
@@ -37,11 +36,11 @@ const ProductSummary: FC<Props> = ({
     sellers,
   } = sku
 
-  const to = useLink(linkText)
+  const linkProps = useLink(product)
   const imgProps = useSummaryImage(imageUrl)
 
   return (
-    <ProductSummaryContainer to={to} variant={variant}>
+    <ProductSummaryContainer {...linkProps} variant={variant}>
       <ProductSummaryImage
         alt={imageText ?? 'Product Image'}
         loading={loading}

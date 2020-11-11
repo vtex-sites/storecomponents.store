@@ -2403,10 +2403,10 @@
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-theme-ui@^0.120.0":
-  version "0.120.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.120.0.tgz#8a9f9ee20ccae60506c1c54ea0693f7f93f9927f"
-  integrity sha512-46WOJCAMG8Wp8Gls/9LUgQD1dhdDXVvGZsHznfxJh7JZBjHSspKTVfr9WJ4TxMVhiaPxn4sGelLzBd6Q7zjkWQ==
+"@vtex/gatsby-plugin-theme-ui@^0.120.1":
+  version "0.120.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.120.1.tgz#e4259d551d1b033f050bdf3dea5fe754eaf1c6bd"
+  integrity sha512-udvU9kCrGo5h7+Q7RtcNb2C28X96fA0XIWaeEp4Zr20Hgagjc2Rc3U0GZldCoCrEYhaBCePTJegclXsssnbIkQ==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -2436,18 +2436,18 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.120.0":
-  version "0.120.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.120.0.tgz#16063c8e8050e72c316b3153115458387736df5c"
-  integrity sha512-Diy9aB03mnKElFYvMzln6nlzlyuWwwH+w1kxBYaKDfll6cXi6RX13+Xy+m2EiTJjHFJAb1qewH9vIne43FivPA==
+"@vtex/gatsby-theme-vtex@^0.121.1-alpha.1":
+  version "0.121.1-alpha.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.121.1-alpha.1.tgz#59d192207977f7b6ddfae50ef24b8626df96807f"
+  integrity sha512-BJvDhVgIvBeiA6lOGNu5CSpuuP98wXWqr8cVeaGU5nmIQNcd1rTCu/mQxmbj3HnnnteCSxdB8tE4VZ1/ZbQBUQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
     "@vtex/gatsby-plugin-i18n" "^0.120.0"
-    "@vtex/gatsby-plugin-theme-ui" "^0.120.0"
+    "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
     "@vtex/gatsby-source-vtex" "^0.120.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.120.0"
-    "@vtex/store-ui" "^0.120.0"
+    "@vtex/store-ui" "^0.121.1-alpha.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2480,10 +2480,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.120.0":
-  version "0.120.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.120.0.tgz#573d46bf94986262b9dc6129bac7dd1bf69fd128"
-  integrity sha512-ZquwESTmYaCpBOIC0W3pxz/FPAi7L46zMzVYNgAKw4Bb6BPwRpbm0Xgr+fWUIXcR/37QHsUlf3KGHnqtjV5Fmg==
+"@vtex/store-ui@^0.121.1-alpha.0":
+  version "0.121.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.121.1-alpha.0.tgz#7563dff577d6eb2d5d7950556f433bff108b6e5a"
+  integrity sha512-JCLyvmFoBilX4eTYPjBztvF05wTCK+FxXmCCQwEy+WGCidaBgvEHawcjgPc6IxK/1n6MGg7UDquei1iN0viTng==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
