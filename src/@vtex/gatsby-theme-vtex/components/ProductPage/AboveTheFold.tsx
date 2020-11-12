@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import ProductImageGallery from '@vtex/gatsby-theme-vtex/src/components/ProductImageGallery'
-import { useDetailsImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImage'
-import { useGalleryItems } from '@vtex/gatsby-theme-vtex/src/sdk/product/useGalleryItems'
+import { useDetailsImages } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImages'
+import { useDetailsVideos } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsVideos'
 import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
 import {
   Card,
@@ -32,15 +32,15 @@ const AboveTheFold: FC<ProductPageProps> = ({
     items: [{ images, videos }],
   } = product as any
 
-  const imageItems = useDetailsImage(images)
-
-  const galleryItems = useGalleryItems(imageItems, videos, productName)
+  const imageItems = useDetailsImages(images)
+  const videoItems = useDetailsVideos(videos, productName)
+  const galleryItems = [...imageItems, ...videoItems]
 
   return (
     <Flex variant="productPage.container">
       <Container>
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
-        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
+        <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
           <ProductImageGallery allItems={galleryItems} />
 
           <Card>

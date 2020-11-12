@@ -30,7 +30,7 @@ const paginationDots: SxStyleProp = {
     width: `0.625rem`,
   },
   activeDot: {
-    bg: '#f71963',
+    bg: 'secondary',
     cursor: 'pointer',
     display: 'inline-block',
     borderRadius: '100%',
@@ -139,6 +139,30 @@ const theme: SxStyleProp = {
     arrow: carouselArrows,
     paginationDots: shelfPaginationDots,
     img: { width: '100%' },
+
+    paginationMiniatures: {
+      container: {
+        mx: '5px',
+        width: '80px',
+        display: ['none', 'block'],
+      },
+
+      active: {
+        width: '80px',
+        my: '5px',
+        borderStyle: 'solid',
+        borderColor: 'secondary',
+        borderWidth: '1px',
+      },
+
+      inactive: {
+        width: '80px',
+        my: '5px',
+        borderStyle: 'solid',
+        borderColor: 'gray',
+        borderWidth: '1px',
+      },
+    },
   },
 
   carousel: {
