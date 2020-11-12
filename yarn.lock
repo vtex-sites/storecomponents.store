@@ -2436,10 +2436,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.122.0-alpha.0":
-  version "0.122.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.122.0-alpha.0.tgz#32375597d5c232f4a0e8e24a4ca60f92ebc8a172"
-  integrity sha512-RBXym48ktUYwIYhHjYCxKZ+tVrxmMXxjPRq/KDImC2o/AamnHD8ve6vF1drkWSTbaBfcfUhjvYyfHg1/K9GCHw==
+"@vtex/gatsby-theme-vtex@^0.122.0":
+  version "0.122.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.122.0.tgz#2d27df5a8b693c38b71d21743800af0bb4d81d79"
+  integrity sha512-GIFS8RU4LU9AwUPXNnX/1Tp5DK2T0rF+u0SpujTFaCGMIXuZv23LNklDNLovhmbFTPioR4yI4pdgaH115R0UVQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
@@ -2447,7 +2447,7 @@
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
     "@vtex/gatsby-source-vtex" "^0.120.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.120.0"
-    "@vtex/store-ui" "^0.122.0-alpha.0"
+    "@vtex/store-ui" "^0.122.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2480,10 +2480,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.1.tgz#c376999e826827aa11f4b0e08af9cf59ae9ee476"
   integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
 
-"@vtex/store-ui@^0.122.0-alpha.0":
-  version "0.122.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.122.0-alpha.0.tgz#36a75b4ba8983d8e570e036374cd93627ca24288"
-  integrity sha512-ZMO7GvyK2jVHSarb4zCkUvkCI8TMHssn5/WY4cbUenrlndO1JENb6tDwx4sz730U+syuqMZx4xWTj3JkTmUzcA==
+"@vtex/store-ui@^0.122.0":
+  version "0.122.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.122.0.tgz#59fe8bc7eb91bb9df1f7d34f1df80d91a2fb8dd0"
+  integrity sha512-/y2nQ0jdNTgaP8KY0dd0blpi6Y4SpTxwKTxIaM9a28WeUGONFIwuyIJhSe0QzzS+EDqVs2SnnZD6+OI9Xdkrzg==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
