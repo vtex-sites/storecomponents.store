@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
-import SuspenseSSR from '@vtex/gatsby-theme-vtex/src/components/Suspense/SSR'
 import ProductImageGallery from '@vtex/gatsby-theme-vtex/src/components/ProductImageGallery'
 import { useDetailsImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImage'
 import { useGalleryItems } from '@vtex/gatsby-theme-vtex/src/sdk/product/useGalleryItems'
@@ -12,12 +11,12 @@ import {
   Breadcrumb,
   ProductDetailsTitle,
 } from '@vtex/store-ui'
-import React, { FC, lazy } from 'react'
+import React, { FC, Suspense } from 'react'
+import { isServer } from '@vtex/gatsby-theme-vtex/src/utils/env'
 
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
-
-const AsyncInfo = lazy(() => import('./Above/Async/index'))
+import AsyncInfo from './Above/Async'
 
 const variant = 'default'
 
@@ -50,9 +49,11 @@ const AboveTheFold: FC<ProductPageProps> = ({
             </ProductDetailsTitle>
 
             <AsyncInfoContainer>
-              <SuspenseSSR fallback={<AsyncInfoPreview />}>
-                <AsyncInfo slug={slug!} />
-              </SuspenseSSR>
+              {isServer ? null : (
+                <Suspense fallback={<AsyncInfoPreview />}>
+                  <AsyncInfo slug={slug!} />
+                </Suspense>
+              )}
             </AsyncInfoContainer>
           </Card>
         </Grid>
