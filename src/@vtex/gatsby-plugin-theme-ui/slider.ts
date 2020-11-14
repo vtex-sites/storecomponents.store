@@ -134,16 +134,15 @@ const carouselResponsivePicture = createTheme(responsivePictureTheme, {
 
 const theme: SxStyleProp = {
   productImageGallery: {
-    position: 'relative',
     mx: 2,
-    arrow: carouselArrows,
-    paginationDots: shelfPaginationDots,
-    img: { width: '100%' },
+    display: 'flex',
+    flexWrap: 'nowrap',
+    flexDirection: 'row',
 
-    paginationMiniatures: {
+    miniatures: {
       container: {
         mx: '5px',
-        width: '80px',
+        width: '78px',
         display: ['none', 'block'],
       },
 
@@ -162,6 +161,17 @@ const theme: SxStyleProp = {
         borderColor: 'gray',
         borderWidth: '1px',
       },
+    },
+
+    featured: {
+      flexGrow: 1,
+      position: 'relative',
+
+      media: { width: '100%' },
+
+      arrow: carouselArrows,
+
+      paginationDots: shelfPaginationDots,
     },
   },
 
