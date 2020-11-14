@@ -141,14 +141,14 @@ const theme: SxStyleProp = {
 
     miniatures: {
       container: {
-        mx: '5px',
+        mx: '15px',
         width: '78px',
         display: ['none', 'block'],
       },
 
       active: {
         width: '80px',
-        my: '5px',
+        marginBottom: '5px',
         borderStyle: 'solid',
         borderColor: 'secondary',
         borderWidth: '1px',
@@ -156,7 +156,7 @@ const theme: SxStyleProp = {
 
       inactive: {
         width: '80px',
-        my: '5px',
+        marginBottom: '5px',
         borderStyle: 'solid',
         borderColor: 'gray',
         borderWidth: '1px',

@@ -26,10 +26,10 @@ const BelowTheFold: FC = () => {
         <Shelf
           title={formatMessage({ id: 'shelf.title.0' })}
           searchParams={{
-            query: 'apparel---accessories',
-            orderBy: 'OrderByScoreDESC',
-            hideUnavailableItems: true,
-            map: 'c',
+            orderBy: 'OrderByTopSaleDESC',
+            hideUnavailableItems: false,
+            collection: '1182',
+            category: '',
             from: 0,
             to: 9,
           }}

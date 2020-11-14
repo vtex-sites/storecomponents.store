@@ -12,7 +12,7 @@ export interface Props {
   searchParams: ProductsShelfOptions
 }
 
-const pageSizes = [1, 3, 5]
+const pageSizes = [1, 3, 4]
 
 const ShelfProductsAsync: FC<Props> = ({ title, searchParams }) => {
   const { products } = useProductsShelf(searchParams)
@@ -21,16 +21,7 @@ const ShelfProductsAsync: FC<Props> = ({ title, searchParams }) => {
     return null
   }
 
-  return (
-    <Shelf
-      pageSizes={pageSizes}
-      products={products}
-      title={title}
-      showArrows
-      showDots
-      autoplay={false}
-    />
-  )
+  return <Shelf pageSizes={pageSizes} products={products} title={title} />
 }
 
 const ShelfProducts: FC<Props> = (props) => (

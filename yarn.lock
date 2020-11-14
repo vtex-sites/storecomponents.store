@@ -2338,7 +2338,7 @@
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
     "@vtex/gatsby-source-vtex" "^0.120.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.120.0"
-    "@vtex/store-ui" "^0.122.0"
+    "@vtex/store-ui" "^0.125.0-alpha.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2351,13 +2351,30 @@
     p-queue "^6.5.0"
     react-helmet-async "^1.0.7"
     react-hook-inview "^4.3.0"
-  version "0.119.2"
-  integrity sha512-B2tvaxrWXAzF2iSaRpQaw88kxq1lGC7/DSOBuGOn9225wNrF5g6D6NNky4/TZomv0NJTgO8tIT59ftbTHgMxXg==
+    requestidlecallback-polyfill "^1.0.2"
+    schema-dts "^0.6.0"
+    swr "^0.3.0"
+    text-mask-core "^5.1.0"
 
-"@vtex/store-ui@^0.122.0":
-  version "0.122.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.122.0.tgz#59fe8bc7eb91bb9df1f7d34f1df80d91a2fb8dd0"
-  integrity sha512-/y2nQ0jdNTgaP8KY0dd0blpi6Y4SpTxwKTxIaM9a28WeUGONFIwuyIJhSe0QzzS+EDqVs2SnnZD6+OI9Xdkrzg==
+"@vtex/gatsby-transformer-vtex-cms@^0.120.0":
+  version "0.120.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.120.0.tgz#ed6804e09b462c33a2ecfc206db5d2788f1212dc"
+  integrity sha512-7K0PwoQllVHuAveTmny7GHJCKg47S8arQhV6mq2vdx/lU7APTBdrE28ia8t/eseciyLe7w1zDXbUwquX7rss8g==
+
+"@vtex/lighthouse-config@^0.67.0":
+  version "0.67.0"
+  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.67.0.tgz#b47cb402b08b4e054fa4c57663d517daf0ac01ed"
+  integrity sha512-GRol4lOEOofUFeAAmK6i3drgrklmbop2CazGHnNCOI+EsMLrY7Fzd08LNh9ZyWGGVJaQr6oxiB0V8YDmSFI/hw==
+
+"@vtex/prettier-config@^0.3.1":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.3.tgz#08e76abb4d76ec65b435040f56af18d20ab94ae9"
+  integrity sha512-09BHR5ZUn2ySS9tWtaiwb8KJcXvBmjfMZnkW0HP+Pde4u0ZQ+bd2PWIo+BTmWxPdqLZbP2Y/OfXYcwLHwjR44w==
+
+"@vtex/store-ui@^0.125.0-alpha.0":
+  version "0.125.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.125.0-alpha.0.tgz#b1acfbc7ff767e65037d0abbdbabf664cb52572b"
+  integrity sha512-qcKS5sRU6bspxX7cg/wY3pBy+rdy+lt0MoheWstftjPgKLN6fyrsEWWOQSjOET5i2CWj8aVyyfKs2n4PVtSDYw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"

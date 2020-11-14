@@ -7,6 +7,9 @@ const productSummary: SxStyleProp = {
     textDecoration: 'none',
     color: 'text',
     flexGrow: 1,
+
+    justifySelf: 'center',
+    width: '100%',
   },
 
   title: {
