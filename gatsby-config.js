@@ -12,25 +12,29 @@ const isNetlifyProduction = NETLIFY_ENV === 'production'
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 const transformHeaders = (headers, path) => {
-  const DEFAULT_SECURITY_HEADERS = [
+  const outputHeaders = [
+    // Security
     'X-XSS-Protection: 1; mode=block',
     'X-Content-Type-Options: nosniff',
     'Referrer-Policy: same-origin',
   ]
 
+  // Checks for paths without extension (root pages)
+  if (path.match(/^(.*)\/([^.]*)$/) || !path) {
+    outputHeaders.push('Set-Cookie: VtexStoreVersion=v2; Max-Age=86400')
+  }
+
   if (path.includes('/preview')) {
-    return [
-      ...DEFAULT_SECURITY_HEADERS,
-      'Content-Security-Policy: frame-src https://*.myvtex.com/',
-      ...headers,
-    ]
+    outputHeaders.push(
+      'Content-Security-Policy: frame-src https://*.myvtex.com/'
+    )
   }
 
-  if (path.includes('account')) {
-    return [...DEFAULT_SECURITY_HEADERS, ...headers]
+  if (!path.includes('/account')) {
+    outputHeaders.push('X-Frame-Options: DENY')
   }
 
-  return ['X-Frame-Options: DENY', ...DEFAULT_SECURITY_HEADERS, ...headers]
+  return outputHeaders.concat(headers)
 }
 
 module.exports = {
