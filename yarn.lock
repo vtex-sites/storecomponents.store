@@ -2327,10 +2327,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@0.125.0":
-  version "0.125.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.125.0.tgz#ed566342bbdf4888060167d6da8b1a4cddee1803"
-  integrity sha512-f4a46H2zhHLfiy9ZtTjLaq61yfKOuTGe20oNO1alkt+UskrwMORMB1uJ1LspewWDS6ZHbQhvFBTnTDUHp9dy4Q==
+"@vtex/gatsby-theme-vtex@^0.126.0-alpha.0":
+  version "0.126.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.126.0-alpha.0.tgz#848068df1de4f260654319a0d4526b703e1a4358"
+  integrity sha512-FdrnzXEdNzaQ6zdVqBopukQodfRX3lCsAmv9d9wp3AG7PJF3qcKaQ0deYoSFbY+kbsVTYT3tIufZv4+CCqxU0w==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
@@ -2338,7 +2338,7 @@
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
     "@vtex/gatsby-source-vtex" "^0.120.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.120.0"
-    "@vtex/store-ui" "^0.125.0-alpha.0"
+    "@vtex/store-ui" "^0.126.0-alpha.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2371,10 +2371,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.3.tgz#08e76abb4d76ec65b435040f56af18d20ab94ae9"
   integrity sha512-09BHR5ZUn2ySS9tWtaiwb8KJcXvBmjfMZnkW0HP+Pde4u0ZQ+bd2PWIo+BTmWxPdqLZbP2Y/OfXYcwLHwjR44w==
 
-"@vtex/store-ui@^0.125.0-alpha.0":
-  version "0.125.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.125.0-alpha.0.tgz#b1acfbc7ff767e65037d0abbdbabf664cb52572b"
-  integrity sha512-qcKS5sRU6bspxX7cg/wY3pBy+rdy+lt0MoheWstftjPgKLN6fyrsEWWOQSjOET5i2CWj8aVyyfKs2n4PVtSDYw==
+"@vtex/store-ui@^0.126.0-alpha.0":
+  version "0.126.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.126.0-alpha.0.tgz#611eb19e72b2f30215c0e0d9cf5af869cbb0beb1"
+  integrity sha512-FMo/7irJO014/jHdsvWFPffrK8W+1USyEV5dR8To3YYbPyR7T+JPRtJZ3iugXr9jxFlvI+8V+UH77MDlCsmAEQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
