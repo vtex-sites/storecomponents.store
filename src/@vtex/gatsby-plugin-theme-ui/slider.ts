@@ -139,7 +139,7 @@ const theme: SxStyleProp = {
     flexWrap: 'nowrap',
     flexDirection: 'row',
 
-    miniatures: {
+    miniature: {
       container: {
         mx: '15px',
         width: '78px',
@@ -147,7 +147,6 @@ const theme: SxStyleProp = {
       },
 
       active: {
-        width: '80px',
         marginBottom: '5px',
         borderStyle: 'solid',
         borderColor: 'secondary',
@@ -155,7 +154,6 @@ const theme: SxStyleProp = {
       },
 
       inactive: {
-        width: '80px',
         marginBottom: '5px',
         borderStyle: 'solid',
         borderColor: 'gray',
