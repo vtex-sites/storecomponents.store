@@ -34,7 +34,7 @@ const styles: SxStyleProp = {
 
 const BuyButton: FC<Props> = ({ sku }) => {
   const { formatMessage } = useIntl()
-  const { loading, ...props } = useBuyButton({ sku })
+  const { loading, ...props } = useBuyButton({ sku, quantity: 1 })
 
   return (
     <Button sx={styles} {...props}>
