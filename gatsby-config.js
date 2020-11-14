@@ -106,11 +106,5 @@ module.exports = {
         generateMatchPathRewrites: true,
       },
     },
-    {
-      resolve: require.resolve('@vtex/gatsby-plugin-vtex-nginx'),
-      options: {
-        transformHeaders,
-      },
-    },
   ],
 }

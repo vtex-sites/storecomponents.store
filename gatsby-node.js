@@ -8,3 +8,13 @@ exports.onCreateWebpackConfig = ({ actions: { setWebpackConfig } }) => {
     },
   })
 }
+
+if (process.env.NETLIFY) {
+  exports.createPages = async ({ actions: { createRedirect } }) => {
+    createRedirect({
+      fromPath: '/api/*',
+      toPath: `/.netlify/functions/api/:splat`,
+      statusCode: 200,
+    })
+  }
+}
