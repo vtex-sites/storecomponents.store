@@ -17,7 +17,7 @@ const variant = 'default'
 
 const Async: FC<Props> = ({ slug }) => {
   const { product }: any = useAsyncProduct({ slug })
-  const sku: any = useSku(product)
+  const [sku]: any = useSku(product)
   const { commercialOffer } = useBestSeller(sku)
   const { formatMessage } = useIntl()
   const { productReference } = product
