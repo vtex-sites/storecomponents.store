@@ -5,5 +5,5 @@
   from = "/*"
   to = "https://storetheme.vtex.com/:splat"
   status = 200
-  force = true
+  force = false
   headers = {X-Forwarded-Host="storecomponents.myvtexprod.com", cache-control="no-cache", pragma="no-cache", x-from="Netlify"}
