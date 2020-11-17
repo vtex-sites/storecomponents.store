@@ -97,19 +97,19 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: require.resolve('gatsby-plugin-netlify'),
-      options: {
-        headers: {
-          '/preview': [
-            'Content-Security-Policy: frame-src https://*.myvtex.com/',
-          ],
-        },
-        transformHeaders,
-        mergeSecurityHeaders: false,
-        generateMatchPathRewrites: true,
-      },
-    },
+    // {
+    //   resolve: require.resolve('gatsby-plugin-netlify'),
+    //   options: {
+    //     headers: {
+    //       '/preview': [
+    //         'Content-Security-Policy: frame-src https://*.myvtex.com/',
+    //       ],
+    //     },
+    //     transformHeaders,
+    //     mergeSecurityHeaders: false,
+    //     generateMatchPathRewrites: true,
+    //   },
+    // },
     {
       resolve: require.resolve('@vtex/gatsby-plugin-vtex-nginx'),
       options: {

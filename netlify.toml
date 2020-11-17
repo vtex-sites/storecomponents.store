@@ -1,2 +1,8 @@
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+
+[[redirects]]
+  from = "/*"
+  to = "https://storecomponents.myvtexprod.com/:splat"
+  status = 200
+  force = true
