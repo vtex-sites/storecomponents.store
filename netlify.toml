@@ -6,3 +6,4 @@
   to = "https://storecomponents.myvtexprod.com/:splat"
   status = 200
   force = true
+  headers = {X-Forwarded-Host = "storetheme.vtex.com"}
