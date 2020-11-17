@@ -6,4 +6,4 @@
   to = "https://storetheme.vtex.com/:splat"
   status = 200
   force = true
-  headers = {X-Forwarded-Host=storecomponents.myvtexprod.com, cache-control=no-cache, pragma=no-cache}
+  headers = {X-Forwarded-Host="storecomponents.myvtexprod.com", cache-control="no-cache", pragma="no-cache"}
