@@ -3,7 +3,8 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://storetheme.vtex.com?workspace=nocache/:splat"
+  to = "https://storetheme.vtex.com/:splat"
+  query = { workspace="nocache" }
   status = 200
   force = true
   headers = {X-Forwarded-Host="storecomponents.myvtexprod.com", cache-control="no-cache", pragma="no-cache"}
