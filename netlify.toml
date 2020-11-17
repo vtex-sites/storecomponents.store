@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://storecomponents.myvtexprod.com/:splat"
+  to = "https://storetheme.vtex.com/:splat"
   status = 200
   force = true
-  headers = {X-Forwarded-Host = "storetheme.vtex.com"}
+  headers = {X-Forwarded-Host = "storecomponents.myvtexprod.com"}
