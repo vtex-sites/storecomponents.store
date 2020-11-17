@@ -1,9 +1,6 @@
-[[plugins]]
-  package = "netlify-plugin-gatsby-cache"
-
 [[redirects]]
   from = "/*"
   to = "https://storetheme.vtex.com/:splat"
   status = 200
-  force = false
+  force = true
   headers = {X-Forwarded-Host="storecomponents.myvtexprod.com", cache-control="no-cache", pragma="no-cache", x-from="Netlify"}
