@@ -20,6 +20,8 @@ import AsyncInfo from './Above/Async'
 
 const variant = 'default'
 
+// Testing
+
 const AboveTheFold: FC<ProductPageProps> = ({
   data: {
     vtex: { product },
