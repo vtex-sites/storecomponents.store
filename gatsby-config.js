@@ -1,4 +1,3 @@
-// eslint-disable-next-line global-require
 const getStaticPaths = () => require('./staticPaths.json')
 
 const {

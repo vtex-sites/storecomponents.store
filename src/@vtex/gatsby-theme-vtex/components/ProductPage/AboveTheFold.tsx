@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
 import ProductImageGallery from '@vtex/gatsby-theme-vtex/src/components/ProductImageGallery'
 import { useDetailsImages } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImages'

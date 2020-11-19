@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
 import React, { FC, lazy } from 'react'
 import { Breadcrumb, BreadcrumbItem } from '@vtex/store-ui'
 import PageList from '@vtex/gatsby-theme-vtex/src/components/Search/List'
@@ -12,8 +11,8 @@ import {
 } from '@vtex/gatsby-theme-vtex/src/components/Search/SearchTemplate'
 import { Props } from '@vtex/gatsby-theme-vtex/src/templates/search'
 
-const DesktopSearchFilters = lazy(() =>
-  import('@vtex/gatsby-theme-vtex/src/components/Search/Filters/Desktop')
+const DesktopSearchFilters = lazy(
+  () => import('@vtex/gatsby-theme-vtex/src/components/Search/Filters/Desktop')
 )
 
 const COLUMNS = [2, 3, 5]

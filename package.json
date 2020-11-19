@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
-    "@vtex/gatsby-plugin-graphql": "^0.196.0",
-    "@vtex/gatsby-plugin-i18n": "^0.196.0",
-    "@vtex/gatsby-plugin-vtex-nginx": "^0.196.0",
-    "@vtex/gatsby-theme-vtex": "^0.197.0",
-    "@vtex/store-ui": "^0.197.0",
+    "@vtex/gatsby-plugin-graphql": "^0.197.1",
+    "@vtex/gatsby-plugin-i18n": "^0.197.1",
+    "@vtex/gatsby-plugin-vtex-nginx": "^0.197.1",
+    "@vtex/gatsby-theme-vtex": "^0.197.1",
+    "@vtex/store-ui": "^0.197.1",
     "babel-preset-gatsby": "^0.5.5",
     "gatsby": "^2.24.64",
     "gatsby-plugin-manifest": "^2.4.21",
@@ -18,17 +18,17 @@
     "react-dom": "^0.0.0-experimental-7f28234f8"
   },
   "devDependencies": {
-    "@vtex/lighthouse-config": "^0.67.0",
-    "@vtex/prettier-config": "^0.3.1",
-    "@vtex/tsconfig": "^0.5.0",
+    "@vtex/lighthouse-config": "^0.197.1",
+    "@vtex/prettier-config": "^0.3.5",
+    "@vtex/tsconfig": "^0.5.5",
     "eslint": "^7.7.0",
-    "eslint-config-vtex-react": "^6.7.1",
+    "eslint-config-vtex-react": "^6.8.1",
     "prettier": "^2.0.5",
     "typescript": "^3.9.5"
   },
   "resolutions": {
-    "@typescript-eslint/parser": "^3.8.0",
-    "@typescript-eslint/eslint-plugin": "^3.8.0"
+    "@typescript-eslint/parser": "^4",
+    "@typescript-eslint/eslint-plugin": "^4"
   },
   "license": "MIT",
   "scripts": {
@@ -38,7 +38,7 @@
     "serve": "gatsby serve",
     "docker:serve": "sed -i -e 's/\\$PORT/80/' public/nginx.conf && docker run --rm --name local_nginx -v \"$PWD/public/nginx.conf:/etc/nginx/nginx.conf\" -v \"$PWD/public:/etc/nginx/html\" -p 80:80 -it nginx:latest",
     "clean": "gatsby clean",
-    "format": "prettier --write \"src/*.{ts,js,tsx,jsx,json}\"",
+    "format": "prettier --write \"**/*.{ts,js,tsx,jsx,json}\"",
     "lint": "eslint --ext js,ts,jsx,tsx .",
     "test:lhci": "lhci autorun"
   }
