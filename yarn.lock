@@ -2305,10 +2305,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@^0.197.1":
-  version "0.197.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.197.1.tgz#f08c46231111113c0944ab4d6612bb27f7a43986"
-  integrity sha512-Gl39H69r/GTBHgVgEBfNRIslEW2+KR15z+C2b2OwU57UavZOgTAf9oU1DXwwQMU/gSTbIu/tfXYdNzNjxbujmQ==
+"@vtex/gatsby-plugin-graphql@^0.199.0":
+  version "0.199.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.199.0.tgz#c48e5bbc7b17765131c9f9bbc0779fa53622ccf7"
+  integrity sha512-stnLI8GdHP8Bur9BvdR6dpg/9GThGl8EsrlcCH8eA27IXwf1lRSrHqzLfBmP9PcbhOOfBNMkOjtJqrTl/k2/yQ==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2325,10 +2325,10 @@
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-i18n@^0.197.1":
-  version "0.197.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.197.1.tgz#f4608214d9b0082e8e0bd0479739cfdac1821a14"
-  integrity sha512-rSRk/43qvLjHeF8P92Akc9L8cUMzXXj1p9HHbLDi3ewLdb3XNIFYL0tmDnCtcal0WInRWlfOErH6gCTJqMAOhg==
+"@vtex/gatsby-plugin-i18n@^0.199.0":
+  version "0.199.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.199.0.tgz#3e71746065bd832ab8236cb263ec04fb90bba597"
+  integrity sha512-qAkxVDQzoOudwnd2/hvdNxm1Giiry6K7hvc4Y/BkfLMVB7pXQvFh8MdDkBPGK4CSaFzztbSLeuV/ga9OE6nAvA==
   dependencies:
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
@@ -2347,10 +2347,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-vtex-nginx@^0.197.1":
-  version "0.197.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-vtex-nginx/-/gatsby-plugin-vtex-nginx-0.197.1.tgz#e56d0b22b5c62d39c8e2690de97960d434c3d650"
-  integrity sha512-DyCU3oLsQxM/GUiovH0F28c9PN4psPAq7jq9uouGPxhMYjjiVWwZo/BP8KeAL4y4LWQUZiGgpC663X67jJOTPQ==
+"@vtex/gatsby-plugin-vtex-nginx@^0.199.0":
+  version "0.199.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-vtex-nginx/-/gatsby-plugin-vtex-nginx-0.199.0.tgz#bf10d0336a0fc4a1e415d168a0616261fab42e4d"
+  integrity sha512-geiSa/sVHmS3v7TjLYApXC9KpaxgQ75oJ/MKa8kowOEJa4l2615CEXYIA2TpSzgUFVnIWlwcZs450tTt+yf2AQ==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^3.1.1"
@@ -2366,10 +2366,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.197.1":
-  version "0.197.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.197.1.tgz#2d6ecfcae3efa64e4df20cea8667fe038b8a6882"
-  integrity sha512-+m/CMtjgR0n73UCc71C2uXwbzZJk1HT1CDa6EtRQTkFCXJHTf4G7EQcsir+a+aZYKudS2zIeTHp/4Tl2aqnAZg==
+"@vtex/gatsby-theme-vtex@^0.199.0":
+  version "0.199.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.199.0.tgz#8cbe28e91b5f769d7c05d2797881df972bbb17ef"
+  integrity sha512-bmRuNtRb7c0PLRDITsL9eAx5+6Q3T+ucqFoGYB22h1QUDf8a1/Zg/MQxKKe2mbFEGFMRWfLVR+f0a27AYz/T1w==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
@@ -2377,7 +2377,7 @@
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
     "@vtex/gatsby-source-vtex" "^0.120.0"
     "@vtex/gatsby-transformer-vtex-cms" "^0.120.0"
-    "@vtex/store-ui" "^0.197.1"
+    "@vtex/store-ui" "^0.199.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2410,21 +2410,21 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.5.tgz#99e44c6235c541a8d2b7cd50fc9662c7bc17309a"
   integrity sha512-/mIPrS2Qz9vG//aRxk/hi3Np/NWfTbbJakVuy+ouY5Gh6tfYfC83neAm4KSJsNVVcIcPP1Shc4/Y9zVmgmNCRA==
 
-"@vtex/store-ui@^0.197.1":
-  version "0.197.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.197.1.tgz#ee641de4803efb7b069ce54d2a8fa7673851c6e8"
-  integrity sha512-tLBaZaCJDWJZx/B2yTxATQSsccJQ4v5oXE9w1xddpu5X6q7OD7HbyqIL2U+EywLrOv1ynM6gg6VbpDRJGo0zqQ==
+"@vtex/store-ui@^0.199.0":
+  version "0.199.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.199.0.tgz#313f43605445065d251fb11ae5183682bfbf9c7f"
+  integrity sha512-3LuhARW0V0Ri8K10tExP0i6TWrg/eykMywDgTMfQrW9/1Ka2AefX6wRL31dalqc+J+A5lPvsGrkYCA+yd7yPWA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@types/theme-ui__components" "^0.2.6"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.197.1"
+    "@vtex/gatsby-plugin-i18n" "^0.199.0"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     react-swipeable "^6.0.0"
-    reakit "^1.1.2"
+    reakit "^1.3.0"
     theme-ui "^0.3.1"
 
 "@vtex/tsconfig@^0.5.5":
@@ -11342,35 +11342,35 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-reakit-system@^0.14.5:
-  version "0.14.5"
-  resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.14.5.tgz#1fd0bf79d50fbf6dc8a2801fd68540ecdb67cdbe"
-  integrity sha512-zoUjfbNlYpb9GxlVwTiBJco0M7J4zKoJ+anhTUiAfo5OKabnuGUcI8fJ4OTiWgzH7XSdjDSubb2xCfGnwLR8BA==
+reakit-system@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/reakit-system/-/reakit-system-0.15.0.tgz#888c42a7e3dfae97913f920a23faaddb6a93ee1a"
+  integrity sha512-C7b9Jz9sU4qGpSQS5e1aGKJHoajbT3PBk3qDb5hOoc8BEpHEqkceaCH7THtVZze0I7tQUnOM9XL4DL1tO5xCxg==
   dependencies:
-    reakit-utils "^0.14.4"
+    reakit-utils "^0.15.0"
 
-reakit-utils@^0.14.4:
-  version "0.14.4"
-  resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.14.4.tgz#1ecf035faf58960ba48eac2963f70269596effcf"
-  integrity sha512-jDEf/NmZVJ6fs10G16ifD+RFhQikSLN7VfjRHu0CPoUj4g6lFXd5PPcRXCY81qiqc9FVHjr2d2fmsw1hs6xUxA==
+reakit-utils@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/reakit-utils/-/reakit-utils-0.15.0.tgz#41a53e4b768002d282aee76994737f2532be5afc"
+  integrity sha512-c9HWaT9XU8KQWj+dhUG01WD+D4EK5bQHq+wVwRUuTXau0e49i4udNxo/t/4M3lXeOS+WfgJ8aC00/0imgzPLTw==
 
-reakit-warning@^0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/reakit-warning/-/reakit-warning-0.5.5.tgz#551afcfd9b0c3dc92eab21fcca001fc2ebbc8465"
-  integrity sha512-OuP1r7rlSSJZsoLuc0CPA2ACPKnWO8HDbFktiiidbT67UjuX6udYV1AUsIgMJ8ado9K5gZGjPj7IB/GDYo9Yjg==
+reakit-warning@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/reakit-warning/-/reakit-warning-0.6.0.tgz#16c5b4f3ce603d28f6c624803f113d5d95816168"
+  integrity sha512-D3vMUQ8fFktZ+drs4PuUlwjLanYsc6bRoYQOma2iGTfQtqwQkhFeNMDKxlBQ79GfdQtZF/ECiCaLLjDUsIseWA==
   dependencies:
-    reakit-utils "^0.14.4"
+    reakit-utils "^0.15.0"
 
-reakit@^1.1.2:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.2.5.tgz#700cfe25543a2cce6d4c843d7b3d82ff9be3554a"
-  integrity sha512-i5i11ygjsf2H6p3P6+QSZo08PZe/HdH/3YoXtaozL95tC/47r9J2GPaVF0XZR1dcC7zWXVoiZdnFEowRIVx+Rw==
+reakit@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/reakit/-/reakit-1.3.0.tgz#52ea989111504ae89584b7482b8a98c82c73523b"
+  integrity sha512-2hTq1VQ8F5hUksyNFgCWhLuBipMlpjOIFfqwbossWgNj36pQQMsvB0kb/+vcvQ0YgS6iXCLFq9lI2O5G4wAkgw==
   dependencies:
     "@popperjs/core" "^2.4.4"
     body-scroll-lock "^3.1.5"
-    reakit-system "^0.14.5"
-    reakit-utils "^0.14.4"
-    reakit-warning "^0.5.5"
+    reakit-system "^0.15.0"
+    reakit-utils "^0.15.0"
+    reakit-warning "^0.6.0"
 
 recursive-readdir@2.2.1:
   version "2.2.1"
