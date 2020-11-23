@@ -106,7 +106,7 @@ module.exports = {
       },
     },
     {
-      resolve: require.resolve('@vtex/gatsby-plugin-vtex-nginx'),
+      resolve: require.resolve('@vtex/gatsby-plugin-nginx'),
       options: {
         transformHeaders,
       },

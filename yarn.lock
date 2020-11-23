@@ -2355,14 +2355,6 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-vtex-nginx@^0.199.0":
-  version "0.199.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-vtex-nginx/-/gatsby-plugin-vtex-nginx-0.199.0.tgz#bf10d0336a0fc4a1e415d168a0616261fab42e4d"
-  integrity sha512-geiSa/sVHmS3v7TjLYApXC9KpaxgQ75oJ/MKa8kowOEJa4l2615CEXYIA2TpSzgUFVnIWlwcZs450tTt+yf2AQ==
-  dependencies:
-    kebab-hash "^0.1.2"
-    webpack-assets-manifest "^3.1.1"
-
 "@vtex/gatsby-source-vtex@^0.120.0":
   version "0.120.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.120.0.tgz#a8f62620c2b3b4309cab90435e88859ce08883a7"
