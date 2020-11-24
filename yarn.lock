@@ -2428,10 +2428,12 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@^0.203.0":
-  version "0.203.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.203.0.tgz#3210fa7dd6a4d0d894caf6fd1a01b45ced4ee5b4"
-  integrity sha512-ToF3pyNQhSXbdofrsHyfEqNNv/eDsZr4d1FlH8N0YIBKmXvpTyiv5gU4A/KrP2xQFW6hDU1TK+dj3dAZMoJ0Rw==
+"@vtex/gatsby-plugin-cms@^0.204.0-alpha.0":
+  version "0.204.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.204.0-alpha.0.tgz#29fce0758660b1da8c157b3e8fe47a59de8db7bc"
+  integrity sha512-7s03t922R2KRG2CA26FgCqVpFw94+i+fnBbzyDqp29fCVqPZK5zOlIWBVQvz/ifRjrRZxgTT0hEp8Z2hkRlpUQ==
+  dependencies:
+    fs-extra "^9.0.1"
 
 "@vtex/gatsby-plugin-graphql@^0.120.0":
   version "0.120.0"
@@ -2512,7 +2514,6 @@
   integrity sha512-2GmFuLa6Nb/4m6lxgIuLy3BBT0U4eW2OiRsUap16Ke90ovNIX6XBCEn9YrFCnU22t8+Zbpu6ZYgclerivkwEdQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-cms" "^0.203.0"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
     "@vtex/gatsby-plugin-i18n" "^0.120.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
