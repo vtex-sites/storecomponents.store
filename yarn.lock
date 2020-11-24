@@ -2293,6 +2293,11 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
+"@vtex/gatsby-plugin-cms@^0.202.0":
+  version "0.202.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.202.0.tgz#66470ae49e6673603903c6b2c5fc96ce59ab25b6"
+  integrity sha512-e8dFMwF+MkiFVRcY55F/nCofxvsjvscH+X92aFq7QKjxotwNm1yPB3pWQIJT5CDRatzliszgaTKjLXXfhj3p5w==
+
 "@vtex/gatsby-plugin-graphql@^0.120.0":
   version "0.120.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.120.0.tgz#5f165d25c05e0f687d754d54bed1230abc953ba7"
@@ -2366,18 +2371,18 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-vtex@^0.200.0-alpha.3":
-  version "0.200.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.200.0-alpha.3.tgz#07fb60d2105699cf094d08be096048393b903a24"
-  integrity sha512-iZmykKj/ckYHedO7+WraXsCmjqWh3X7p5pd4hVl1evwlnLhUWRseGaU48f2FPH7Ys/r1GuO9Ze5DbYLvlullmQ==
+"@vtex/gatsby-theme-vtex@^0.202.0":
+  version "0.202.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-vtex/-/gatsby-theme-vtex-0.202.0.tgz#2e74fde361e3f880dcfe6e25b7de468c9ee8aeaa"
+  integrity sha512-unSYHsoyUj/7xW2nClYmWERJUJTeaa3WRPyhBITMBheQl4EoihB0ULRmEBJ/MEVodnfBBIWZIBEXpW/NfZE+iw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
+    "@vtex/gatsby-plugin-cms" "^0.202.0"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
     "@vtex/gatsby-plugin-i18n" "^0.120.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
     "@vtex/gatsby-source-vtex" "^0.120.0"
-    "@vtex/gatsby-transformer-vtex-cms" "^0.120.0"
-    "@vtex/store-ui" "^0.199.0"
+    "@vtex/store-ui" "^0.202.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     dotenv "^8.2.0"
@@ -2395,11 +2400,6 @@
     swr "^0.3.0"
     text-mask-core "^5.1.0"
 
-"@vtex/gatsby-transformer-vtex-cms@^0.120.0":
-  version "0.120.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-transformer-vtex-cms/-/gatsby-transformer-vtex-cms-0.120.0.tgz#ed6804e09b462c33a2ecfc206db5d2788f1212dc"
-  integrity sha512-7K0PwoQllVHuAveTmny7GHJCKg47S8arQhV6mq2vdx/lU7APTBdrE28ia8t/eseciyLe7w1zDXbUwquX7rss8g==
-
 "@vtex/lighthouse-config@^0.197.1":
   version "0.197.1"
   resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.197.1.tgz#821e64127d73143d17bdb3e17e1843ca30d50f77"
@@ -2410,27 +2410,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.5.tgz#99e44c6235c541a8d2b7cd50fc9662c7bc17309a"
   integrity sha512-/mIPrS2Qz9vG//aRxk/hi3Np/NWfTbbJakVuy+ouY5Gh6tfYfC83neAm4KSJsNVVcIcPP1Shc4/Y9zVmgmNCRA==
 
-"@vtex/store-ui@^0.199.0":
-  version "0.199.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.199.0.tgz#313f43605445065d251fb11ae5183682bfbf9c7f"
-  integrity sha512-3LuhARW0V0Ri8K10tExP0i6TWrg/eykMywDgTMfQrW9/1Ka2AefX6wRL31dalqc+J+A5lPvsGrkYCA+yd7yPWA==
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.199.0"
-    deepmerge "^4.2.2"
-    gatsby-link "^2.4.13"
-    react-swipeable "^6.0.0"
-    reakit "^1.3.0"
-    theme-ui "^0.3.1"
-
-"@vtex/store-ui@^0.202.0-alpha.1":
-  version "0.202.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.202.0-alpha.1.tgz#0656caa6ea7171d74c0e2d504b8a48ff7072070e"
-  integrity sha512-p26yO/aRpMAehVrnAFmAJuCXPB32VmLmrHwbaqdlaIKpMoeoOfe4YoLQeIpJqyrEsMtbS14Hgv112IY6hMnT4Q==
+"@vtex/store-ui@^0.202.0":
+  version "0.202.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.202.0.tgz#2e33f093a5b3bce6a52690a876ed617596d6c9d5"
+  integrity sha512-O8dK+dsKQywHMjJ/7P87AjAkBlNpuhU9npEHqEwvH9n0buBsdlGhLkUkwWXWhpQeX59iaFwOZ7f7aNHml1Kp8Q==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
