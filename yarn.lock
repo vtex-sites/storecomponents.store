@@ -2473,10 +2473,10 @@
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-nginx@^0.201.0":
-  version "0.201.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.201.0.tgz#6c6210983511531f4f65c6c139a31349e9d815e3"
-  integrity sha512-NiTjuorZhEhPRidSnxtOYAET0Q8myTPVwRS/VOwMy560TVhc6oqB1VDzOkvXahg4FB7aJG11AAk2aRzlxSe44Q==
+"@vtex/gatsby-plugin-nginx@^0.203.0-alpha.3":
+  version "0.203.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.203.0-alpha.3.tgz#de0d57fd485152d9f0ac4f2fd6d1a6cba6c0bb1c"
+  integrity sha512-QTJ6nx4daRrF1AWEdo9bzatKnWlhmlvp+lGpgt9DpynOyeV2WUL64f2oWRYtJP7abhnDurjegpVYh6OoAZkk1A==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^3.1.1"
@@ -2506,10 +2506,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.203.0-alpha.2":
-  version "0.203.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.203.0-alpha.2.tgz#34eab8e50ea31c0c987fb08cebf218be26596183"
-  integrity sha512-Su0nUY0NjJlkBTR/HbGomfSLgXXHYPxM2qRpPU2ikqotPvbT/L6wbW0pP3hAGMKKP8pBpXb7PLgVXLLNuTgeFA==
+"@vtex/gatsby-theme-store@^0.203.0-alpha.4":
+  version "0.203.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.203.0-alpha.4.tgz#d431eadec838a2326126a0aac1c0b10578e691f2"
+  integrity sha512-yTLlsp0abK1NkAWS2apjowbGWzbU8dN6RUFqFmpE9fVcF1HPSvgt30PiVlHNQuaReIxfl46oYLmX20HFhFd31g==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-cms" "^0.202.0"
