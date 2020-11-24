@@ -1,5 +1,5 @@
 import { createTheme, SxStyleProp } from '@vtex/store-ui'
-import searchSuggestionsTheme from '@vtex/gatsby-theme-vtex/components/SearchSuggestions/theme'
+import searchSuggestionsTheme from '@vtex/gatsby-theme-store/components/SearchSuggestions/theme'
 
 const theme: SxStyleProp = createTheme(searchSuggestionsTheme, {
   suggestions: {

@@ -1,18 +1,18 @@
 import React, { FC, lazy } from 'react'
 import { Breadcrumb, BreadcrumbItem } from '@vtex/store-ui'
-import PageList from '@vtex/gatsby-theme-vtex/src/components/Search/List'
-import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
-import SuspenseDevice from '@vtex/gatsby-theme-vtex/src/components/Suspense/Device'
-import Controls from '@vtex/gatsby-theme-vtex/src/components/Search/Controls'
+import PageList from '@vtex/gatsby-theme-store/src/components/Search/List'
+import Container from '@vtex/gatsby-theme-store/src/components/Container'
+import SuspenseDevice from '@vtex/gatsby-theme-store/src/components/Suspense/Device'
+import Controls from '@vtex/gatsby-theme-store/src/components/Search/Controls'
 import {
   SearchTemplateContainer,
   SearchTemplateAside,
   SearchTemplateMain,
-} from '@vtex/gatsby-theme-vtex/src/components/Search/SearchTemplate'
-import { Props } from '@vtex/gatsby-theme-vtex/src/templates/search'
+} from '@vtex/gatsby-theme-store/src/components/Search/SearchTemplate'
+import { Props } from '@vtex/gatsby-theme-store/src/templates/search'
 
 const DesktopSearchFilters = lazy(
-  () => import('@vtex/gatsby-theme-vtex/src/components/Search/Filters/Desktop')
+  () => import('@vtex/gatsby-theme-store/src/components/Search/Filters/Desktop')
 )
 
 const COLUMNS = [2, 3, 5]

@@ -39,7 +39,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: require.resolve('@vtex/gatsby-theme-vtex'),
+      resolve: require.resolve('@vtex/gatsby-theme-store'),
       options: {
         title: 'Store Theme - VTEX Base Store',
         description: 'A sample store using the best of Gatsby and VTEX',
@@ -65,7 +65,7 @@ module.exports = {
     },
     {
       // This plugin works in conjunction with the
-      // '@vtex/gatsby-theme-vtex' and sources the cms's json files
+      // '@vtex/gatsby-theme-store' and sources the cms's json files
       resolve: require.resolve('gatsby-source-filesystem'),
       options: {
         path: './src/cms/',

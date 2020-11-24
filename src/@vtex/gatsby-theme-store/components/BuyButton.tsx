@@ -3,7 +3,7 @@ import { FC } from 'react'
 import {
   useBuyButton,
   SKU,
-} from '@vtex/gatsby-theme-vtex/src/sdk/buyButton/useBuyButton'
+} from '@vtex/gatsby-theme-store/src/sdk/buyButton/useBuyButton'
 import { Button, jsx, Spinner, SxStyleProp } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 

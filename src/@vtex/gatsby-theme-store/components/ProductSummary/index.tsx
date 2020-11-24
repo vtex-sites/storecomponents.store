@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
-import { Props } from '@vtex/gatsby-theme-vtex/src/components/ProductSummary'
-import { useLink } from '@vtex/gatsby-theme-vtex/src/sdk/product/useLink'
-import { useSummaryImage } from '@vtex/gatsby-theme-vtex/src/sdk/product/useSummaryImage'
+import { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
+import { useLink } from '@vtex/gatsby-theme-store/src/sdk/product/useLink'
+import { useSummaryImage } from '@vtex/gatsby-theme-store/src/sdk/product/useSummaryImage'
 import {
   Skeleton,
   OfferContainer,
@@ -63,6 +63,6 @@ const ProductSummary: FC<Props> = ({
   )
 }
 
-export { fragment } from '@vtex/gatsby-theme-vtex/src/components/ProductSummary/index'
+export { fragment } from '@vtex/gatsby-theme-store/src/components/ProductSummary/index'
 
 export default ProductSummary

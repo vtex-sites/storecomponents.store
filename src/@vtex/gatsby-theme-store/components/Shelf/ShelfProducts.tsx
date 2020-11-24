@@ -1,10 +1,10 @@
 import React, { FC, Suspense } from 'react'
-import Shelf from '@vtex/gatsby-theme-vtex/src/components/Shelf/index'
-import ShelfContainer from '@vtex/gatsby-theme-vtex/src/components/Shelf/Container'
+import Shelf from '@vtex/gatsby-theme-store/src/components/Shelf/index'
+import ShelfContainer from '@vtex/gatsby-theme-store/src/components/Shelf/Container'
 import {
   useProductsShelf,
   ProductsShelfOptions,
-} from '@vtex/gatsby-theme-vtex/src/sdk/shelf/useProductsShelf'
+} from '@vtex/gatsby-theme-store/src/sdk/shelf/useProductsShelf'
 import { Center, Spinner } from '@vtex/store-ui'
 
 export interface Props {

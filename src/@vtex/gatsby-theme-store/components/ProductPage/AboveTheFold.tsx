@@ -1,8 +1,8 @@
-import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
-import ProductImageGallery from '@vtex/gatsby-theme-vtex/src/components/ProductImageGallery'
-import { useDetailsImages } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsImages'
-import { useDetailsVideos } from '@vtex/gatsby-theme-vtex/src/sdk/product/useDetailsVideos'
-import { ProductPageProps } from '@vtex/gatsby-theme-vtex/src/templates/product'
+import Container from '@vtex/gatsby-theme-store/src/components/Container'
+import ProductImageGallery from '@vtex/gatsby-theme-store/src/components/ProductImageGallery'
+import { useDetailsImages } from '@vtex/gatsby-theme-store/src/sdk/product/useDetailsImages'
+import { useDetailsVideos } from '@vtex/gatsby-theme-store/src/sdk/product/useDetailsVideos'
+import { ProductPageProps } from '@vtex/gatsby-theme-store/src/templates/product'
 import {
   Card,
   Flex,
@@ -11,7 +11,7 @@ import {
   ProductDetailsTitle,
 } from '@vtex/store-ui'
 import React, { FC, Suspense } from 'react'
-import { isServer } from '@vtex/gatsby-theme-vtex/src/utils/env'
+import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
 
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
@@ -61,6 +61,6 @@ const AboveTheFold: FC<ProductPageProps> = ({
   )
 }
 
-export { fragment } from '@vtex/gatsby-theme-vtex/src/components/ProductPage/AboveTheFold'
+export { fragment } from '@vtex/gatsby-theme-store/src/components/ProductPage/AboveTheFold'
 
 export default AboveTheFold

@@ -1,5 +1,5 @@
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
-import Container from '@vtex/gatsby-theme-vtex/src/components/Container'
+import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import {
   Box,
   Flex,

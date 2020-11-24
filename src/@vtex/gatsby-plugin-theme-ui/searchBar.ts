@@ -1,5 +1,5 @@
 import { createTheme, SxStyleProp } from '@vtex/store-ui'
-import searchBarTheme from '@vtex/gatsby-theme-vtex/components/SearchBar/theme'
+import searchBarTheme from '@vtex/gatsby-theme-store/components/SearchBar/theme'
 
 const theme: SxStyleProp = createTheme(searchBarTheme, {
   searchbar: {
