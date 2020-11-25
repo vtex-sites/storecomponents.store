@@ -2506,10 +2506,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.206.0-alpha.1":
-  version "0.206.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.206.0-alpha.1.tgz#e09fe904ebed473b6814144d1a72180b9249a18c"
-  integrity sha512-eEHPfM5xrGYRn4YRACDVja4+9mTn1lc4spnyGLP1/FpzN0CQGNmFbvY53G/mb5GmkorkYKKhk9cHxAVEbo92tA==
+"@vtex/gatsby-theme-store@^0.206.0":
+  version "0.206.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.206.0.tgz#e4f2aa7beaf2db34770a8634c35d740f3e9529ac"
+  integrity sha512-2GmFuLa6Nb/4m6lxgIuLy3BBT0U4eW2OiRsUap16Ke90ovNIX6XBCEn9YrFCnU22t8+Zbpu6ZYgclerivkwEdQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-cms" "^0.203.0"
