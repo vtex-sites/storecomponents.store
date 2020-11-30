@@ -19,7 +19,7 @@ const transformHeaders = (headers, path) => {
     'Set-Cookie: VtexStoreVersion=v2; Max-Age=86400',
   ]
 
-  if (path.includes('/preview')) {
+  if (path.includes('/cms/preview')) {
     outputHeaders.push(
       'Content-Security-Policy: frame-src https://*.myvtex.com/'
     )
