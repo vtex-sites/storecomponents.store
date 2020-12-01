@@ -1,6 +1,4 @@
-import { Components, Schemas, ContentTypes } from '@vtex/gatsby-plugin-cms'
-
-export const components: Components = {}
+import { Schemas, ContentTypes } from '@vtex/gatsby-plugin-cms'
 
 export const schemas: Schemas = {}
 

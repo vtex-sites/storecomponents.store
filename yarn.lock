@@ -2469,10 +2469,10 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@^0.208.0-alpha.2":
-  version "0.208.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.208.0-alpha.2.tgz#995f3ba6cde1428a65f7b2663179244dea291de2"
-  integrity sha512-eyhfmibSL4VCzfzWfiVa5XAV/zpD0bzwrBr8lyEw8xajreWvim9//8wiXPdcyz3RIt5teq9TGKvBR3Ci4ByaVQ==
+"@vtex/gatsby-plugin-cms@^0.208.0":
+  version "0.208.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.208.0.tgz#2e7f9511c463f6d2f7321f62da385928098d27bd"
+  integrity sha512-+EkUTWCrqkYQC2AWFB0RAEW5IvfwZEq1gfU83nBOUOyh0RdSHskC+UgCfHKAGIMvC7KQXAc6+Pa8r7Hml5Oxhw==
   dependencies:
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"
@@ -2560,10 +2560,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.208.0-alpha.1":
-  version "0.208.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.208.0-alpha.1.tgz#2437480ac9fee794c11953f83ccfaf32d666785a"
-  integrity sha512-itaGxtm/nDq9DhyMRYQ4Z+0NRr3k8zvO5LIlp/MdA9XCCmHHBE80MJqyRgqqMeGYnxIU/9brKlyjFPwpOAAWdg==
+"@vtex/gatsby-theme-store@^0.208.0":
+  version "0.208.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.208.0.tgz#53766a5a97056bdacbe64501a1abf14ecd64fd96"
+  integrity sha512-BRLf3MGmIddPJ0UNe8Mh8op+seCJ/BlRW1XtgGpBKSwg+9PuC0TNV0Uo9v7zoXWXQoyhm8cDcgsWx0slyoCkvw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
