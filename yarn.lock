@@ -2469,16 +2469,6 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@^0.208.0":
-  version "0.208.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.208.0.tgz#2e7f9511c463f6d2f7321f62da385928098d27bd"
-  integrity sha512-+EkUTWCrqkYQC2AWFB0RAEW5IvfwZEq1gfU83nBOUOyh0RdSHskC+UgCfHKAGIMvC7KQXAc6+Pa8r7Hml5Oxhw==
-  dependencies:
-    "@babel/preset-typescript" "^7.12.7"
-    "@babel/register" "^7.12.1"
-    fs-extra "^9.0.1"
-    globby "^11.0.1"
-
 "@vtex/gatsby-plugin-graphql@^0.120.0":
   version "0.120.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.120.0.tgz#5f165d25c05e0f687d754d54bed1230abc953ba7"
@@ -2560,10 +2550,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.208.0":
-  version "0.208.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.208.0.tgz#53766a5a97056bdacbe64501a1abf14ecd64fd96"
-  integrity sha512-BRLf3MGmIddPJ0UNe8Mh8op+seCJ/BlRW1XtgGpBKSwg+9PuC0TNV0Uo9v7zoXWXQoyhm8cDcgsWx0slyoCkvw==
+"@vtex/gatsby-theme-store@^0.209.0":
+  version "0.209.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.209.0.tgz#189c4c2c30cdb67fa2864f9addc9cd39d1938bfd"
+  integrity sha512-fN0HVFsz6JSty4qPjBGZNfmiID7qTMf+DLLgHA72xAqL1Om9T5ICkAKPjcjYpYE8CudUWRzqgCFFGZ5h7d6ApA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
