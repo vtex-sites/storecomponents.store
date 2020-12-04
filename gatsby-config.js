@@ -1,5 +1,14 @@
 const getStaticPaths = () => require('./staticPaths.json')
 
+require('dotenv').config({
+  path: `${__dirname}/vtex.env`,
+})
+
+const environment = process.env.GATSBY_VTEX_ENVIRONMENT
+const workspace = process.env.GATSBY_VTEX_IO_WORKSPACE
+
+const STORE_ID = 'storecomponents'
+
 const {
   NODE_ENV,
   URL: NETLIFY_SITE_URL = 'https://faststore.netlify.app/',
@@ -34,15 +43,24 @@ const transformHeaders = (headers, path) => {
 
 module.exports = {
   siteMetadata: {
+    title: 'Store Theme - VTEX Base Store',
+    description: 'A sample store using the best of Gatsby and VTEX',
     author: 'Emerson Laurentino',
     siteUrl,
   },
   plugins: [
     {
+      resolve: `@vtex/gatsby-source-vtex`,
+      options: {
+        tenant: STORE_ID,
+        environment,
+        workspace,
+      },
+    },
+    {
       resolve: '@vtex/gatsby-theme-store',
       options: {
-        title: 'Store Theme - VTEX Base Store',
-        description: 'A sample store using the best of Gatsby and VTEX',
+        storeId: STORE_ID,
         getStaticPaths,
         localizationThemeOptions: {
           messagesPath: './i18n/messages',
