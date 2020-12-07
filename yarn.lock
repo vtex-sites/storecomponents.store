@@ -2549,10 +2549,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@^0.210.0-alpha.5":
-  version "0.210.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.210.0-alpha.5.tgz#15d5f80ec257075be0269bf67c12af18dd409a35"
-  integrity sha512-utw1CX51n8ILmh1cNLqtqHfyeSOKO83372gTkncsGFx9FQZjKVK+BhYqJ83/Zk/a0agxvLxj5WMhScyZyowVDA==
+"@vtex/gatsby-source-vtex@^0.210.0":
+  version "0.210.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.210.0.tgz#2c9f711b823283e15e250f0a21e27a953688ac2c"
+  integrity sha512-kcd9zohQnBp9lKLSnDkFMZVGLLvRLSnHUoEneZ5A1rUhSAi8kmbtDZdAwsDFFMVe7o4L0VrvpLPvHVdShaCa2Q==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
@@ -2560,10 +2560,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.210.0-alpha.6":
-  version "0.210.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.210.0-alpha.6.tgz#33c6e860ecb712a644213f43cef617afab9d7214"
-  integrity sha512-F8cuk58UFYK8iJky/y/Nf2iJKTl8mP8QzmC+qJqgfTrea+r1mIIvUikF0vG7zIFrEULE+GxE1p695mWsvYyU2Q==
+"@vtex/gatsby-theme-store@^0.210.0":
+  version "0.210.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.210.0.tgz#ba62829ad9159231b14e5dfcd846f0ad9a1156d5"
+  integrity sha512-zv1OVgPS+nmW5T6okxhKQCtyvQnoiVm6CGW+K+Vo7WlYullJuzoe1ypEWb6JN1oGhidMkumLbpT8sUV5Ekj/sA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
@@ -9483,9 +9483,6 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
-  dependencies:
-    minipass "^3.0.0"
-    yallist "^4.0.0"
 
 mississippi@^3.0.0:
   version "3.0.0"
