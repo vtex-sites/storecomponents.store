@@ -2511,18 +2511,10 @@
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-i18n@^0.203.0":
-  version "0.203.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.203.0.tgz#d56b682924fb44193d947c5e31841b5caa098148"
-  integrity sha512-io8gOLa05GgcwvIxbkiNfaB8+FELYnME+hYHNzWjA31fVaAvSN19UXGLcuMraIR6Hasq06N09VSS9XA3vxYi+Q==
-  dependencies:
-    "@formatjs/cli" "^2.7.7"
-    react-intl "^5.7.1"
-
-"@vtex/gatsby-plugin-i18n@^0.207.0":
-  version "0.207.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.207.0.tgz#54315f16e1351ddc7ca936ad5d75522e2af32a01"
-  integrity sha512-7WiCuUvDKFgj96xguBMCuVfYuejdwazIyS2g9uu6xTAYHUBTyiRslywUYY4bqzLBc8tdVybOvSb7cDiyGA/74g==
+"@vtex/gatsby-plugin-i18n@^0.211.0-alpha.0":
+  version "0.211.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.211.0-alpha.0.tgz#2ae959ce49368ba04621e6b1afa2cc9b90db81ff"
+  integrity sha512-X6ZBfHfSp1ZQzrusMs/JrJI455Ex5qDpWIWIHLvCPGp36m7CGccABGKO3njsz/dkPevUGFv41XG3Gznjiz0dCA==
   dependencies:
     "@formatjs/cli" "^2.7.7"
     react-intl "^5.7.1"
@@ -2560,16 +2552,16 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.210.0":
-  version "0.210.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.210.0.tgz#ba62829ad9159231b14e5dfcd846f0ad9a1156d5"
-  integrity sha512-zv1OVgPS+nmW5T6okxhKQCtyvQnoiVm6CGW+K+Vo7WlYullJuzoe1ypEWb6JN1oGhidMkumLbpT8sUV5Ekj/sA==
+"@vtex/gatsby-theme-store@^0.211.0-alpha.0":
+  version "0.211.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.211.0-alpha.0.tgz#1e7e3dc98b6cf5f2804946cc06f09d437c2360f6"
+  integrity sha512-iSVXZXyhXYhagzpm9Oy7p3+Bd4Id9XDLA1QaOXJgSAS22GdpYo7iE8L26p1qge3rcYm2Dtoo44THGXPFUFnXnw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.120.0"
     "@vtex/gatsby-plugin-i18n" "^0.120.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.120.1"
-    "@vtex/store-ui" "^0.207.0"
+    "@vtex/store-ui" "^0.211.0-alpha.0"
     babel-gql "^0.1.3"
     common-tags "^1.8.0"
     gatsby-plugin-bundle-stats "^2.2.0"
@@ -2597,34 +2589,17 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.5.tgz#99e44c6235c541a8d2b7cd50fc9662c7bc17309a"
   integrity sha512-/mIPrS2Qz9vG//aRxk/hi3Np/NWfTbbJakVuy+ouY5Gh6tfYfC83neAm4KSJsNVVcIcPP1Shc4/Y9zVmgmNCRA==
 
-"@vtex/store-ui@^0.203.0":
-  version "0.203.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.203.0.tgz#536d0735470db77e738a6526ed750b19419dacb3"
-  integrity sha512-BTPU5UiTSFr82N+OPqFrmHe2YpO1q5RyvXJtVuAU6CqNeljN5YPqJMLLsDSjah/vmhEKqeOVOOGj+XV4I7CuAg==
+"@vtex/store-ui@^0.211.0-alpha.0":
+  version "0.211.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.211.0-alpha.0.tgz#82c8bad5110847a80327de1507bcb1abd79b572f"
+  integrity sha512-CBw00mVezkhlFwkS1mququRnYnMlPrfoH/IyBGlSNcGyFadhBkmNQ2jtD6ysHwZpcu2ZwdLHGbSdbBKlarnpnA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@types/theme-ui__components" "^0.2.6"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.203.0"
-    deepmerge "^4.2.2"
-    gatsby-link "^2.4.13"
-    react-swipeable "^6.0.0"
-    reakit "^1.3.0"
-    theme-ui "^0.3.1"
-
-"@vtex/store-ui@^0.207.0":
-  version "0.207.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.207.0.tgz#4a1fd0ebb3d9fc01d6c11da236acc2c130f2b225"
-  integrity sha512-tgMCFUPYUmPVZlFyPuP3U/GOjvygsqQTM9FnONxq/IS0A8rY7l+w0DzJs6PTkL3ywgniBZOmjQS2z/cXi2ksSA==
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.207.0"
+    "@vtex/gatsby-plugin-i18n" "^0.211.0-alpha.0"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     react-swipeable "^6.0.0"

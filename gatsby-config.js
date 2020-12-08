@@ -62,11 +62,8 @@ module.exports = {
       options: {
         storeId: STORE_ID,
         getStaticPaths,
-        localizationThemeOptions: {
-          messagesPath: './i18n/messages',
-          locales: ['en', 'pt'],
-          defaultLocale: 'en',
-        },
+        locales: ['en', 'pt'],
+        defaultLocale: 'en',
       },
     },
     {
