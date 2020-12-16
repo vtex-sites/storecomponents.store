@@ -12,8 +12,6 @@
         "media": "(min-width: 40em)"
       }
     ],
-    "height": "540px",
-    "width": "360px",
     "alt": "Slide 1",
     "href": "/apparel---accessories"
   },
@@ -28,8 +26,6 @@
         "media": "(min-width: 40em)"
       }
     ],
-    "height": "540px",
-    "width": "360px",
     "alt": "Slide 2",
     "href": "/"
   }

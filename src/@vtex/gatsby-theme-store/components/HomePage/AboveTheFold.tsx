@@ -9,7 +9,7 @@ type Props = PageProps<unknown>
 
 const Fold: FC<Props> = () => (
   <>
-    <Carousel allItems={CAROUSEL_ITEMS} />
+    <Carousel allItems={CAROUSEL_ITEMS} height="540px" width="360px" />
     <RichTextRow />
   </>
 )

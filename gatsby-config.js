@@ -28,12 +28,6 @@ const transformHeaders = (headers, path) => {
     'Set-Cookie: VtexStoreVersion=v2; Max-Age=86400',
   ]
 
-  if (path.includes('/cms/preview')) {
-    outputHeaders.push(
-      'Content-Security-Policy: frame-src https://*.myvtex.com/'
-    )
-  }
-
   if (!path.includes('/account')) {
     outputHeaders.push('X-Frame-Options: DENY')
   }
@@ -80,6 +74,11 @@ module.exports = {
     },
     {
       resolve: '@vtex/gatsby-plugin-cms',
+      options: {
+        tenant: STORE_ID,
+        appKey: process.env.VTEX_CMS_APP_KEY,
+        appToken: process.env.VTEX_CMS_APP_TOKEN,
+      },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
