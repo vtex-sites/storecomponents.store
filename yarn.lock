@@ -2441,10 +2441,10 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@^0.214.0":
-  version "0.214.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.214.0.tgz#3a7775f93bde73a7ddb6dda72d1facedadccf1ba"
-  integrity sha512-f6Yq52KQegnqEw076BpDaBOBNKSuKYhWCi8K63gFCFlpuzJ3vE4olHv3GrfI/CxEXU7Di+d+xi9xNfOVeyetIw==
+"@vtex/gatsby-plugin-cms@^0.215.0-alpha.0":
+  version "0.215.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.215.0-alpha.0.tgz#5fdf0f5809698883038b412c43d7637cffa8de1f"
+  integrity sha512-HeHKM8fclcfNDFYG3u4ki6CT/z90C88RmUgkKM9n44+ysMDonps7Va3qbUEoT6exj4BWkw8B1cmB2vcxs+e2vg==
   dependencies:
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"

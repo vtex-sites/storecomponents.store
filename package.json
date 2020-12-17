@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
-    "@vtex/gatsby-plugin-cms": "^0.214.0",
+    "@vtex/gatsby-plugin-cms": "^0.215.0-alpha.0",
     "@vtex/gatsby-plugin-graphql": "^0.213.0",
     "@vtex/gatsby-plugin-nginx": "^0.212.0",
     "@vtex/gatsby-plugin-theme-ui": "^0.207.0",
