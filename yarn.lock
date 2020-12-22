@@ -2562,10 +2562,10 @@
     swr "^0.3.0"
     text-mask-core "^5.1.0"
 
-"@vtex/lighthouse-config@^0.212.0":
-  version "0.212.0"
-  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.212.0.tgz#c2f4f94b9038ff37aad1bd5ea9032b5631c252e6"
-  integrity sha512-U9zEBzh97t/ULvFqfDMiBh3nJa6QB8QKqv5D3r/r4/Os8SGixGCGSWFp6PaMNrryELLb9JSb9QPvdkSivdbD6A==
+"@vtex/lighthouse-config@^0.217.1":
+  version "0.217.1"
+  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.217.1.tgz#6bc0761e5c22a121902dcfaa83cc98cf675bfd66"
+  integrity sha512-P2PhddR8yGHU63SDvWvd/DHpcjEd1Ed8vDi0qKCslaouVgDyULJ5mCM/oYXPhoo8V1rspIZVWnWk0c2cl0AgDQ==
 
 "@vtex/prettier-config@^0.3.5":
   version "0.3.5"
