@@ -2512,21 +2512,14 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@^0.217.1":
-  version "0.217.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.217.1.tgz#f8175f22c265a5f469e1ac9e7a45af31fee98cc7"
-  integrity sha512-h0qqzhaM5kFqhC2iPZAOaMZccQdZk5IYE1AeJGIPP8urj7rSyDcfPdb/GX0ih/DIo3EUUFFqcsgDbdRTetq8pA==
+"@vtex/gatsby-source-vtex@^0.219.0-alpha.20":
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.219.0-alpha.20.tgz#e8fe1f74653eac71fe881b210a582118f9cae8ce"
+  integrity sha512-z2u2CSxSjqcak0rh14hAMsFxxdZU6Q8+HzceSpkkzAdxvDfG/AP52ARXZSeIC6fGxGa8B4VUdlXZ3EZAPwwkRw==
   dependencies:
-    "@graphql-tools/delegate" "^6.0.15"
-    "@graphql-tools/wrap" "^6.0.15"
-    isomorphic-unfetch "^3.0.0"
-    p-map "^4.0.0"
-    uuid "^8.3.0"
-
-"@vtex/gatsby-theme-store@^0.220.0":
-  version "0.220.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.220.0.tgz#b84a247dc69a94ec44b7cd7ebb685e6925e672eb"
-  integrity sha512-GR1tO6Y49ny2E1kCptqYjvQo+//7iGLwRnPGA4U/EQJIw65aTZbeDHM5bkvX3I84CEY/Pi/smsvO03HdHJ5Idg==
+"@vtex/gatsby-theme-store@^0.219.0-alpha.20":
+  version "0.219.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.219.0-alpha.20.tgz#8caf033861973cf4613c34a9caa4dc92396dc3fe"
+  integrity sha512-TX7fooetF1pI7eW/6lmhcJK447J8aaWy4143ylwbwPxgj1k42BBgQwm06h0llabqcWAqjVH1dTiYhlTmH3OBaw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.214.0-alpha.6"
