@@ -9,15 +9,59 @@ import BuyButton from '../../../BuyButton'
 import Offer from './Offer'
 import Social from './Social'
 
+type Item = {
+  itemId: string
+  variations?: Array<{ name: string; values: string[] }>
+  images: Array<{ imageUrl: string; imageText: string }>
+  sellers: Array<{
+    sellerId: string
+    commercialOffer: {
+      spotPrice: number
+      availableQuantity: number
+      price: number
+      listPrice: number
+      maxInstallments: Array<{
+        value: number
+        numberOfInstallments: number
+      }>
+      installments: Array<{
+        value: number
+        numberOfInstallments: number
+        interestRate: number
+      }>
+      gifts: Array<{
+        skuName: string
+        images: Array<{ imageUrl: string }>
+      }>
+      teasers: Array<{ name: string }>
+    }
+  }>
+}
+
 interface Props {
-  slug: string
+  slug?: string
+}
+
+type Product = {
+  product: {
+    productId: string
+    productName: string
+    productReference: string
+    description: string
+    linkText: string
+    specificationGroups: Array<{
+      name: string
+      specifications: Array<{ name: string; values: string[] }>
+    }>
+    items: Item[]
+  }
 }
 
 const variant = 'default'
 
 const Async: FC<Props> = ({ slug }) => {
-  const { product }: any = useAsyncProduct({ slug })
-  const [sku]: any = useSku(product)
+  const { product } = (useAsyncProduct({ slug }) as unknown) as Product
+  const [sku] = useSku(product)
   const { commercialOffer } = useBestSeller(sku)
   const { formatMessage } = useIntl()
   const { productReference } = product
