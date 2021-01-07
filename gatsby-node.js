@@ -9,7 +9,7 @@ exports.onCreateWebpackConfig = ({ actions: { setWebpackConfig } }) => {
   })
 }
 
-let graphql = undefined
+let graphql
 
 // Use this API to capture the graphql executor function
 exports.createPages = (args) => {
@@ -25,7 +25,12 @@ exports.onCreatePage = async (args) => {
   } = args
 
   // Only add context to home page
-  if (page.path !== '/' && page.context?.originalPath !== '/') {
+  if (
+    page.path !== '/' &&
+    (page.context === undefined ||
+      typeof page.context.originalPath !== 'string' ||
+      page.context.originalPath !== '/')
+  ) {
     return
   }
 
@@ -47,14 +52,10 @@ exports.onCreatePage = async (args) => {
   }
 
   const {
-    vtexCmsPageContent: {
-      blocks,
-    },
+    vtexCmsPageContent: { blocks },
   } = data
 
-  const { searchParams } = blocks.find(
-    (x) => x.name === 'DynamicShelf'
-  ).props
+  const { searchParams } = blocks.find((x) => x.name === 'DynamicShelf').props
 
   // Add context to home page
   const pageWithNewContext = {
@@ -62,7 +63,7 @@ exports.onCreatePage = async (args) => {
     context: {
       ...page.context,
       ...searchParams,
-    }
+    },
   }
 
   deletePage(page)
