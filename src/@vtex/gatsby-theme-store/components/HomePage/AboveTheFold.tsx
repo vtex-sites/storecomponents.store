@@ -21,6 +21,8 @@ const Fold: FC<Props> = ({ data: { vtexCmsPageContent, vtex } }) => (
       <ShelfProducts
         {...vtexCmsPageContent?.blocks[1]?.props}
         products={vtex.products}
+        showArrows
+        showDots
       />
     </Container>
   </>
