@@ -76,8 +76,6 @@ module.exports = {
       resolve: '@vtex/gatsby-plugin-cms',
       options: {
         tenant: STORE_ID,
-        appKey: process.env.VTEX_CMS_APP_KEY,
-        appToken: process.env.VTEX_CMS_APP_TOKEN,
       },
     },
     {
