@@ -17,17 +17,23 @@ type Scalars = {
 }
 
 // Operation related types
-export type HomePageQueryQueryVariables = Exact<{ [key: string]: never; }>;
+export type HomePageQueryQueryVariables = Exact<{
+  from: Scalars['Int'];
+  to: Scalars['Int'];
+  collection: Scalars['String'];
+  orderBy: Scalars['String'];
+  hideUnavailableItems: Scalars['Boolean'];
+}>;
 
 
-export type HomePageQueryQuery = { vtexCmsPageContent: Maybe<{ blocks: Array<Maybe<{ name: string, props: Maybe<any> }>> }> };
+export type HomePageQueryQuery = { vtex: { products: Maybe<Array<Maybe<{ productId: Maybe<string>, productName: Maybe<string>, linkText: Maybe<string>, productClusters: Maybe<Array<Maybe<{ name: Maybe<string> }>>>, items: Maybe<Array<Maybe<{ itemId: Maybe<string>, images: Maybe<Array<Maybe<{ imageUrl: Maybe<string>, imageText: Maybe<string> }>>>, sellers: Maybe<Array<Maybe<{ sellerId: Maybe<string>, commercialOffer: Maybe<{ spotPrice: Maybe<number>, availableQuantity: Maybe<number>, price: Maybe<number>, listPrice: Maybe<number>, maxInstallments: Maybe<Array<Maybe<{ value: Maybe<number>, numberOfInstallments: Maybe<number> }>>>, installments: Maybe<Array<Maybe<{ value: Maybe<number>, numberOfInstallments: Maybe<number>, interestRate: Maybe<number> }>>>, teasers: Maybe<Array<{ name: Maybe<string> }>> }> }>>> }>>> }>>> }, vtexCmsPageContent: Maybe<{ blocks: Array<Maybe<{ name: string, props: Maybe<any> }>> }> };
 
 
 // Query Related Code
 
 export const HomePageQuery = {
-  query: "query HomePageQuery {\n  vtexCmsPageContent(type: {eq: \"home\"}) {\n    blocks {\n      name\n      props\n    }\n  }\n}\n",
-  sha256Hash: "13cefe685ba2df84786fcd758d2b72f16d474a7d3530f8bc437df342483f7965",
+  query: "query HomePageQuery($from: Int!, $to: Int!, $collection: String!, $orderBy: String!, $hideUnavailableItems: Boolean!) {\n  vtex {\n    products(from: $from, to: $to, collection: $collection, orderBy: $orderBy, hideUnavailableItems: $hideUnavailableItems) {\n      productId\n      productName\n      linkText\n      productClusters {\n        name\n      }\n      items {\n        itemId\n        images {\n          imageUrl\n          imageText\n        }\n        sellers {\n          sellerId\n          commercialOffer: commertialOffer {\n            maxInstallments: Installments(criteria: MAX_WITHOUT_INTEREST) {\n              value: Value\n              numberOfInstallments: NumberOfInstallments\n            }\n            installments: Installments(criteria: ALL) {\n              value: Value\n              numberOfInstallments: NumberOfInstallments\n              interestRate: InterestRate\n            }\n            availableQuantity: AvailableQuantity\n            price: Price\n            listPrice: ListPrice\n            spotPrice\n            teasers {\n              name\n            }\n          }\n        }\n      }\n    }\n  }\n  vtexCmsPageContent(type: {eq: \"home\"}) {\n    blocks {\n      name\n      props\n    }\n  }\n}\n",
+  sha256Hash: "72e13189b0c3f607c924a29c18c90b66fcf33b6b949313df9e28ffb70c776cc5",
   operationName: "HomePageQuery",
 }
 

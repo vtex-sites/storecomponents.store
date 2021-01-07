@@ -11,7 +11,7 @@
     "@vtex/store-ui": "^0.221.0",
     "babel-preset-gatsby": "^0.5.5",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.24.64",
+    "gatsby": "^2.30.1",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-netlify": "^2.3.17",
     "gatsby-plugin-robots-txt": "^1.5.1",
