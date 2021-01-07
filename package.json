@@ -1,7 +1,7 @@
 {
   "name": "storecomponents.store",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "dependencies": {
     "@vtex/gatsby-plugin-cms": "^0.223.1",
     "@vtex/gatsby-plugin-graphql": "^0.221.0",
