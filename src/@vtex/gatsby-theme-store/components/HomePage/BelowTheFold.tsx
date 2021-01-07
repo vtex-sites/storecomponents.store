@@ -1,4 +1,3 @@
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import {
   Box,
@@ -9,31 +8,28 @@ import {
   InfoCardInfoAction,
   RichMarkdown,
 } from '@vtex/store-ui'
-import React, { FC } from 'react'
+import { PageProps } from 'gatsby'
+import React, { FC, useMemo } from 'react'
 
+import { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import Shelf from '../Shelf/ShelfProducts'
 import exampleStoreMd from './example-store.md'
 import reachUsMd from './reach-us.md'
 
+type Props = PageProps<HomePageQueryQuery>
+
 const Block: FC = ({ children }) => <Box sx={{ my: 5 }}>{children}</Box>
 
-const BelowTheFold: FC = () => {
-  const { formatMessage } = useIntl()
+const BelowTheFold: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
+  const shelfBlock = useMemo(
+    () => vtexCmsPageContent!.blocks.find((x) => x?.name === 'DynamicShelf'),
+    [vtexCmsPageContent]
+  )
 
   return (
     <>
       <Container>
-        <Shelf
-          title={formatMessage({ id: 'shelf.title.0' })}
-          searchParams={{
-            orderBy: 'OrderByTopSaleDESC',
-            hideUnavailableItems: false,
-            collection: '1182',
-            category: '',
-            from: 0,
-            to: 9,
-          }}
-        />
+        <Shelf {...shelfBlock?.props} />
       </Container>
 
       <Block>
