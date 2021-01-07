@@ -2441,17 +2441,15 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@^0.222.0":
-  version "0.222.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.222.0.tgz#d2d377cdacebcf2a33c781d48ac4045926101ed5"
-  integrity sha512-59/ZbUmh/la2Hj5rSVnMXshMEd2BQxJXxZnZuBhjOGAcBCXVTG84W3/gVjywhIePVnXkVKXO2BOaBLL9YQL/AA==
+"@vtex/gatsby-plugin-cms@^0.223.1":
+  version "0.223.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.223.1.tgz#9131f342fc747b4669787c3bab23d77f1f6e0a4a"
+  integrity sha512-jpZfm2KlP/y/KuOzs0JQxpTWOIiEi9bsrdu/cbeeGOgcXC4MSp1pWBJCLqYwCxFePqDKuAvb4cjrmlCZoqPOUQ==
   dependencies:
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"
-    configstore "^5.0.1"
     fs-extra "^9.0.1"
     gatsby-graphql-source-toolkit "^0.6.3"
-    isomorphic-unfetch "^3.1.0"
     p-map "^4.0.0"
 
 "@vtex/gatsby-plugin-graphql@^0.214.0-alpha.6":
@@ -2513,10 +2511,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@^0.221.0":
-  version "0.221.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.221.0.tgz#ecfef53cf236233fee2db11ea9399d678091f6b9"
-  integrity sha512-LKMX3hifL6yOcEbMSj1/OEB5lTdo1J9oaBUf/rgi5NgFU0pT0OgO4pDHgJ1lnC/8b077TKBDiPQuB467UvccEA==
+"@vtex/gatsby-source-vtex@^0.223.1":
+  version "0.223.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.223.1.tgz#dca8bf1274886d3b2178c22f9f3342abce2de644"
+  integrity sha512-pnw+QYRhJj0OrmhDKKVmnG7rtjx9ui1otwAPUr1qRLNRNCGFhMXuzYGFLZYcYmdQ8lRbTJ51p0rAOUsMdShfjA==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
@@ -8420,7 +8418,7 @@ isomorphic-fetch@^2.1.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-isomorphic-unfetch@^3.0.0, isomorphic-unfetch@^3.1.0:
+isomorphic-unfetch@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/isomorphic-unfetch/-/isomorphic-unfetch-3.1.0.tgz#87341d5f4f7b63843d468438128cb087b7c3e98f"
   integrity sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==
