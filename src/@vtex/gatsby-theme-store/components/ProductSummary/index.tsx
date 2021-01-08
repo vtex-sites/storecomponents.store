@@ -78,10 +78,12 @@ const ProductSummary: FC<Props> = ({
         }
 
         if (sellers.length > 0) {
-          ;<Offer
-            variant="productSummary"
-            commercialOffer={sellers[0].commercialOffer}
-          />
+          return (
+            <Offer
+              variant="productSummary"
+              commercialOffer={sellers[0].commercialOffer}
+            />
+          )
         }
 
         return null
