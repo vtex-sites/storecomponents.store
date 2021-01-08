@@ -55,25 +55,20 @@ const Offer: FC<Props> = ({
           <Flex sx={{ alignItems: 'center', minHeight: '30px' }}>
             <OfferPrice variant={variant}>{price}</OfferPrice>
             <OfferDiscountBadge variant={variant}>
-              {() => {
-                if (discountPrice !== 0) {
-                  return <>-{discountPrice}%</>
-                }
-
-                return discountPrice
-              }}
+              {discountPrice !== 0 ? <>-{discountPrice}%</> : discountPrice}
             </OfferDiscountBadge>
           </Flex>
 
           <OfferInstallments variant={variant}>
-            {maxInstallments &&
-              formatMessage(
-                { id: 'offer.installments' },
-                {
-                  value: format(maxInstallments.value),
-                  numberOfInstallments: maxInstallments.numberOfInstallments,
-                }
-              )}
+            {maxInstallments
+              ? formatMessage(
+                  { id: 'offer.installments' },
+                  {
+                    value: format(maxInstallments.value),
+                    numberOfInstallments: maxInstallments.numberOfInstallments,
+                  }
+                )
+              : null}
           </OfferInstallments>
         </>
       )}

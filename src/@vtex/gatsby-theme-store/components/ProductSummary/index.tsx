@@ -72,22 +72,14 @@ const ProductSummary: FC<Props> = ({
       />
       <ProductSummaryTitle variant={variant}>{productName}</ProductSummaryTitle>
 
-      {() => {
-        if (sellers === undefined) {
-          return <OfferPreview />
-        }
-
-        if (sellers.length > 0) {
-          return (
-            <Offer
-              variant="productSummary"
-              commercialOffer={sellers[0].commercialOffer}
-            />
-          )
-        }
-
-        return null
-      }}
+      {sellers === undefined ? (
+        <OfferPreview />
+      ) : sellers.length > 0 ? (
+        <Offer
+          variant="productSummary"
+          commercialOffer={sellers[0].commercialOffer}
+        />
+      ) : null}
 
       <BuyButton sku={sku} />
     </ProductSummaryContainer>
