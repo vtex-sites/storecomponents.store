@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from '@vtex/gatsby-theme-store/src/components/SEO/Helmet'
 import { graphql, PageProps, useStaticQuery } from 'gatsby'
 import type { FC } from 'react'
+import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
 import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import { HomePageSeoQueryQuery } from './__generated__/HomePageSEOQuery.graphql'
@@ -9,6 +10,7 @@ import { HomePageSeoQueryQuery } from './__generated__/HomePageSEOQuery.graphql'
 type Props = PageProps<HomePageQueryQuery>
 
 const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
+  const { locale } = useIntl()
   const [
     { props: siteMetadata },
     { props: facebook },
@@ -29,6 +31,7 @@ const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
   return (
     <Helmet
       title={siteMetadata.title}
+      htmlAttributes={{ locale }}
       meta={[
         {
           name: 'description',
