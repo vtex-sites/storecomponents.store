@@ -7,7 +7,7 @@
     "@vtex/gatsby-plugin-graphql": "^0.221.0",
     "@vtex/gatsby-plugin-nginx": "^0.221.0",
     "@vtex/gatsby-source-vtex": "^0.223.1",
-    "@vtex/gatsby-theme-store": "^0.224.0-alpha.0",
+    "@vtex/gatsby-theme-store": "^0.224.0-alpha.1",
     "@vtex/store-ui": "^0.221.0",
     "babel-preset-gatsby": "^0.5.5",
     "dotenv": "^8.2.0",
