@@ -32,7 +32,7 @@ export type HomePageQueryQuery = { vtex: { products: Maybe<Array<Maybe<{ product
 // Query Related Code
 
 export const HomePageQuery = {
-  query: "query HomePageQuery($from: Int!, $to: Int!, $collection: String!, $orderBy: String!, $hideUnavailableItems: Boolean!) {\n  vtex {\n    products(from: $from, to: $to, collection: $collection, orderBy: $orderBy, hideUnavailableItems: $hideUnavailableItems) {\n      productId\n      productName\n      linkText\n      productClusters {\n        name\n      }\n      items {\n        itemId\n        images {\n          imageUrl\n          imageText\n        }\n        sellers {\n          sellerId\n          commercialOffer: commertialOffer {\n            maxInstallments: Installments(criteria: MAX_WITHOUT_INTEREST) {\n              value: Value\n              numberOfInstallments: NumberOfInstallments\n            }\n            installments: Installments(criteria: ALL) {\n              value: Value\n              numberOfInstallments: NumberOfInstallments\n              interestRate: InterestRate\n            }\n            availableQuantity: AvailableQuantity\n            price: Price\n            listPrice: ListPrice\n            spotPrice\n            teasers {\n              name\n            }\n          }\n        }\n      }\n    }\n  }\n  vtexCmsPageContent(type: {eq: \"home\"}) {\n    blocks {\n      name\n      props\n    }\n  }\n}\n",
+  query: undefined,
   sha256Hash: "72e13189b0c3f607c924a29c18c90b66fcf33b6b949313df9e28ffb70c776cc5",
   operationName: "HomePageQuery",
 }
