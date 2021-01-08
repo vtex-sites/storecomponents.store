@@ -233,7 +233,6 @@ export const contentTypes: ContentTypes = {
         'Appears when the page is shared on social media',
       'admin/headerTitle': 'Header',
       'admin/footerTitle': 'Footer',
-      'admin/visibilityTitle': 'SEO',
       'admin/siteMetadataTitle': 'Site Metadata',
       'admin/siteMetadataDescription': 'How search engines see your store',
       'admin/meta/siteMetadataTitleFieldTitle': 'Title',
