@@ -60,15 +60,14 @@ const Offer: FC<Props> = ({
           </Flex>
 
           <OfferInstallments variant={variant}>
-            {maxInstallments
-              ? formatMessage(
-                  { id: 'offer.installments' },
-                  {
-                    value: format(maxInstallments.value),
-                    numberOfInstallments: maxInstallments.numberOfInstallments,
-                  }
-                )
-              : null}
+            {maxInstallments &&
+              formatMessage(
+                { id: 'offer.installments' },
+                {
+                  value: format(maxInstallments.value),
+                  numberOfInstallments: maxInstallments.numberOfInstallments,
+                }
+              )}
           </OfferInstallments>
         </>
       )}

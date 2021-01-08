@@ -73,27 +73,30 @@ const Offer: FC<Props> = ({
           >
             <OfferListPrice variant={variant}>{listPrice}</OfferListPrice>
             <OfferDiscountBadge variant={variant}>
-              {discountPrice !== 0
-                ? formatMessage(
+              {() => {
+                if (discountPrice !== 0) {
+                  return formatMessage(
                     { id: 'offer.discount' },
                     { price: format(discountPrice) }
                   )
-                : discountPrice}
+                }
+
+                return discountPrice
+              }}
             </OfferDiscountBadge>
           </Box>
 
           <OfferPrice variant={variant}>{price}</OfferPrice>
 
           <OfferInstallments variant={variant}>
-            {maxInstallments
-              ? formatMessage(
-                  { id: 'offer.installments' },
-                  {
-                    value: format(maxInstallments.value),
-                    numberOfInstallments: maxInstallments.numberOfInstallments,
-                  }
-                )
-              : null}
+            {maxInstallments &&
+              formatMessage(
+                { id: 'offer.installments' },
+                {
+                  value: format(maxInstallments.value),
+                  numberOfInstallments: maxInstallments.numberOfInstallments,
+                }
+              )}
           </OfferInstallments>
         </>
       )}
