@@ -10,7 +10,9 @@ const paginationDots: SxStyleProp = {
     marginBottom: '0.5rem',
     position: 'absolute',
     justifyContent: 'center',
+    alignItems: 'center',
     display: 'flex',
+    minHeight: '42px',
     margin: 0,
     padding: 0,
     bottom: 0,
@@ -26,8 +28,8 @@ const paginationDots: SxStyleProp = {
     padding: '0.25rem',
     borderWidth: 0,
     outline: '0',
-    height: `0.625rem`,
-    width: `0.625rem`,
+    height: `0.825rem`,
+    width: `0.825rem`,
   },
   activeDot: {
     bg: 'secondary',
@@ -38,8 +40,8 @@ const paginationDots: SxStyleProp = {
     padding: '0.25rem',
     borderWidth: 0,
     outline: '0',
-    height: `0.625rem`,
-    width: `0.625rem`,
+    height: `0.825rem`,
+    width: `0.825rem`,
   },
 }
 
