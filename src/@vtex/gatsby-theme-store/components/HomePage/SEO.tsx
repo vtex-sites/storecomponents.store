@@ -31,7 +31,7 @@ const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
   return (
     <Helmet
       title={siteMetadata.title}
-      htmlAttributes={{ locale }}
+      htmlAttributes={{ locale, lang: locale }}
       meta={[
         {
           name: 'description',
