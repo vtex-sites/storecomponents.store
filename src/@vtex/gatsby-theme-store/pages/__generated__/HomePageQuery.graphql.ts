@@ -26,14 +26,14 @@ export type HomePageQueryQueryVariables = Exact<{
 }>;
 
 
-export type HomePageQueryQuery = { vtex: { products: Maybe<Array<Maybe<{ productId: Maybe<string>, productName: Maybe<string>, linkText: Maybe<string>, productClusters: Maybe<Array<Maybe<{ name: Maybe<string> }>>>, items: Maybe<Array<Maybe<{ itemId: Maybe<string>, images: Maybe<Array<Maybe<{ imageUrl: Maybe<string>, imageText: Maybe<string> }>>>, sellers: Maybe<Array<Maybe<{ sellerId: Maybe<string>, commercialOffer: Maybe<{ spotPrice: Maybe<number>, availableQuantity: Maybe<number>, price: Maybe<number>, listPrice: Maybe<number>, maxInstallments: Maybe<Array<Maybe<{ value: Maybe<number>, numberOfInstallments: Maybe<number> }>>>, installments: Maybe<Array<Maybe<{ value: Maybe<number>, numberOfInstallments: Maybe<number>, interestRate: Maybe<number> }>>>, teasers: Maybe<Array<{ name: Maybe<string> }>> }> }>>> }>>> }>>> }, vtexCmsPageContent: Maybe<{ blocks: Array<Maybe<{ name: string, props: Maybe<any> }>> }> };
+export type HomePageQueryQuery = { vtex: { products: Maybe<Array<Maybe<{ productId: Maybe<string>, productName: Maybe<string>, linkText: Maybe<string>, productClusters: Maybe<Array<Maybe<{ name: Maybe<string> }>>>, items: Maybe<Array<Maybe<{ itemId: Maybe<string>, images: Maybe<Array<Maybe<{ imageUrl: Maybe<string>, imageText: Maybe<string> }>>>, sellers: Maybe<Array<Maybe<{ sellerId: Maybe<string>, commercialOffer: Maybe<{ spotPrice: Maybe<number>, availableQuantity: Maybe<number>, price: Maybe<number>, listPrice: Maybe<number>, maxInstallments: Maybe<Array<Maybe<{ value: Maybe<number>, numberOfInstallments: Maybe<number> }>>>, installments: Maybe<Array<Maybe<{ value: Maybe<number>, numberOfInstallments: Maybe<number>, interestRate: Maybe<number> }>>>, teasers: Maybe<Array<{ name: Maybe<string> }>> }> }>>> }>>> }>>> }, vtexCmsPageContent: Maybe<{ extraBlocks: Array<Maybe<{ blocks: Array<{ name: string, props: Maybe<any> }> }>>, blocks: Array<Maybe<{ name: string, props: Maybe<any> }>> }> };
 
 
 // Query Related Code
 
 export const HomePageQuery = {
   query: undefined,
-  sha256Hash: "72e13189b0c3f607c924a29c18c90b66fcf33b6b949313df9e28ffb70c776cc5",
+  sha256Hash: "2e46311c7846d5de98e40929cf45443928d53728d205086596b2e550a48ece12",
   operationName: "HomePageQuery",
 }
 

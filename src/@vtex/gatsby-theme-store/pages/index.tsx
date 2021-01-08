@@ -27,6 +27,12 @@ export const query = graphql`
       }
     }
     vtexCmsPageContent(type: { eq: "home" }) {
+      extraBlocks {
+        blocks {
+          name
+          props
+        }
+      }
       blocks {
         name
         props

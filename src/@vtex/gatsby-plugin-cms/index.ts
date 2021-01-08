@@ -133,10 +133,10 @@ export const contentTypes: ContentTypes = {
       Fold: schemas.Fold,
     },
     extraBlocks: {
-      'admin/visibilityTitle': {
-        informations: {
-          title: 'admin/informationsTitle',
-          description: '',
+      SEO: {
+        siteMetadata: {
+          title: 'admin/siteMetadataTitle',
+          description: 'admin/siteMetadataDescription',
           type: 'object',
           required: ['slug'],
           widget: {
@@ -145,18 +145,44 @@ export const contentTypes: ContentTypes = {
           properties: {
             title: {
               type: 'string',
-              title: 'admin/meta/informationsTitleFieldTitle',
-              description: 'admin/meta/informationsTitleFieldDescription',
+              title: 'admin/meta/siteMetadataTitleFieldTitle',
+              description: 'admin/meta/siteMetadataTitleFieldDescription',
             },
             slug: {
               type: 'string',
-              title: 'admin/meta/informationsSlugFieldTitle',
-              description: 'admin/meta/informationsSlugFieldDescription',
+              title: 'admin/meta/siteMetadataSlugFieldTitle',
+              description: 'admin/meta/siteMetadataSlugFieldDescription',
             },
             description: {
               type: 'string',
-              title: 'admin/meta/informationsDescriptionFieldTitle',
-              description: 'admin/meta/informationsDescriptionFieldDescription',
+              title: 'admin/meta/siteMetadataDescriptionFieldTitle',
+              description: 'admin/meta/siteMetadataDescriptionFieldDescription',
+            },
+          },
+        } as any,
+        facebook: {
+          title: 'admin/facebookTitle',
+          description: 'admin/facebookDescription',
+          type: 'object',
+          required: ['thumbnail'],
+          widget: {
+            'ui:ObjectFieldTemplate': 'FacebookPreview',
+          },
+          properties: {
+            title: {
+              type: 'string',
+              title: 'admin/meta/facebookTitleFieldTitle',
+              description: 'admin/meta/facebookTitleFieldDescription',
+            },
+            thumbnail: {
+              type: 'string',
+              title: 'admin/meta/facebookThumbnailFieldTitle',
+              description: 'admin/meta/facebookThumbnailFieldDescription',
+            },
+            description: {
+              type: 'string',
+              title: 'admin/meta/facebookDescriptionFieldTitle',
+              description: 'admin/meta/facebookDescriptionFieldDescription',
             },
           },
         } as any,
@@ -208,15 +234,27 @@ export const contentTypes: ContentTypes = {
       'admin/headerTitle': 'Header',
       'admin/footerTitle': 'Footer',
       'admin/visibilityTitle': 'SEO',
-      'admin/informationsTitle': 'Page information',
-      'admin/meta/informationsTitleFieldTitle': 'Title',
-      'admin/meta/informationsTitleFieldDescription':
+      'admin/siteMetadataTitle': 'Site Metadata',
+      'admin/siteMetadataDescription': 'How search engines see your store',
+      'admin/meta/siteMetadataTitleFieldTitle': 'Title',
+      'admin/meta/siteMetadataTitleFieldDescription':
         'Appears on the browser tab and is suggested to search engines',
-      'admin/meta/informationsSlugFieldTitle': 'URL Slug',
-      'admin/meta/informationsSlugFieldDescription': 'No spaces allowed',
-      'admin/meta/informationsDescriptionFieldTitle': 'Meta description',
-      'admin/meta/informationsDescriptionFieldDescription':
+      'admin/meta/siteMetadataSlugFieldTitle': 'URL Slug',
+      'admin/meta/siteMetadataSlugFieldDescription': 'No spaces allowed',
+      'admin/meta/siteMetadataDescriptionFieldTitle': 'Meta description',
+      'admin/meta/siteMetadataDescriptionFieldDescription':
         'Suggested to search engines',
+      'admin/facebookTitle': 'Facebook',
+      'admin/facebookDescription': 'How facebook sees your store',
+      'admin/meta/facebookTitleFieldTitle': 'Title',
+      'admin/meta/facebookTitleFieldDescription':
+        'How the name of your site will appear in facebook',
+      'admin/meta/facebookThumbnailFieldTitle': 'Thumbnail path',
+      'admin/meta/facebookThumbnailFieldDescription':
+        'The path to an image of your site. This is how your site will appear on facebook',
+      'admin/meta/facebookDescriptionFieldTitle': 'Description',
+      'admin/meta/facebookDescriptionFieldDescription':
+        'How your site will be described in facebook',
     },
   },
 }
