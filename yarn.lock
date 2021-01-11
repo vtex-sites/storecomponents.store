@@ -3125,10 +3125,17 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
+<<<<<<< HEAD
 "@vtex/gatsby-theme-store@^0.224.1-antiq.0":
   version "0.224.1-antiq.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.224.1-antiq.0.tgz#2b5485d160d07821e8d29a989a4ab66b7f142c3d"
   integrity sha512-8cVO8GAQNfkEfy5JOQ8nx5Axp5cF2WNzsI5OoqUm+wuJyZFGKR6EhigTNg+sLEJPbuIVOCwuTZ0pX+6EjtcpUg==
+=======
+"@vtex/gatsby-theme-store@^0.224.0":
+  version "0.224.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.224.0.tgz#dd4a9e5a3e7197b344a39c0d8697e4980a096c00"
+  integrity sha512-LbV9j0kDZG2WaafIYZWcEF0iE+kPwlpvETJ1dQ4q46P2jM/OJvA13GZZfU+2cbWGuymWvZ9r8saOkb7QU9PLnw==
+>>>>>>> parent of 9636aec (updating packages | fix Sonarqube/Lint pipelines)
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.214.0-alpha.6"
@@ -3150,10 +3157,10 @@
     swr "^0.3.0"
     text-mask-core "^5.1.0"
 
-"@vtex/lighthouse-config@^0.222.1-alpha.1":
-  version "0.222.1-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.222.1-alpha.1.tgz#0d4815e906e34032ffefdeec1d8868fae4bbbba5"
-  integrity sha512-4V0OayqfQqVptDB3jadC6rkppGecqkUIdjMu7Q6aUDBLHrpqtfH+fwxTySHQ6WhYJeLz3b7e0DXGFkzevkSLIw==
+"@vtex/lighthouse-config@^0.221.0":
+  version "0.221.0"
+  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.221.0.tgz#6a7a4dc155cd8fae1e6a787316f9c5d0d248c275"
+  integrity sha512-wMeZF7epOv7zgSwYd5JcTZRbNjJR2xN7JxPAvPbGKM7gbvijDI6u/Xl3ETwCgsi48+8YJ1vZYODArnGn0OarCg==
 
 "@vtex/prettier-config@^0.3.5":
   version "0.3.5"
@@ -10114,9 +10121,6 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
-  dependencies:
-    minipass "^3.0.0"
-    yallist "^4.0.0"
 
 mississippi@^3.0.0:
   version "3.0.0"
