@@ -1,7 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { Schemas, ContentTypes } from '@vtex/gatsby-plugin-cms'
+import type {
+  Schemas,
+  ContentTypes,
+  BuilderConfig,
+} from '@vtex/gatsby-plugin-cms'
 
-const schemas: Schemas = {
+const blocks: Schemas = {
   Carousel: {
     title: 'Carousel',
     description: 'Um carousel de imagens',
@@ -127,11 +131,6 @@ const schemas: Schemas = {
 export const contentTypes: ContentTypes = {
   home: {
     name: 'Home Page',
-    blocks: {
-      Carousel: schemas.Carousel,
-      DynamicShelf: schemas.DynamicShelf,
-      Fold: schemas.Fold,
-    },
     extraBlocks: {
       SEO: {
         siteMetadata: {
@@ -220,40 +219,44 @@ export const contentTypes: ContentTypes = {
         },
       } as any,
     },
-    messages: {
-      'admin/socialmediaTitle': 'Social Media',
-      'admin/meta/socialmediaTitleFieldTitle': 'Title',
-      'admin/meta/socialmediaTitleFieldDescription':
-        'Appears when a link to this page is shared on social media',
-      'admin/meta/socialmediaDescriptionFieldTitle': 'Description',
-      'admin/meta/socialmediaDescriptionFieldDescription':
-        'Appears when a link to this page is shared on social media',
-      'admin/meta/socialmediaImageFieldTitle': 'Thumbnail',
-      'admin/meta/socialmediaImageFieldDescription':
-        'Appears when the page is shared on social media',
-      'admin/headerTitle': 'Header',
-      'admin/footerTitle': 'Footer',
-      'admin/siteMetadataTitle': 'Site Metadata',
-      'admin/siteMetadataDescription': 'How search engines see your store',
-      'admin/meta/siteMetadataTitleFieldTitle': 'Title',
-      'admin/meta/siteMetadataTitleFieldDescription':
-        'Appears on the browser tab and is suggested to search engines',
-      'admin/meta/siteMetadataSlugFieldTitle': 'URL Slug',
-      'admin/meta/siteMetadataSlugFieldDescription': 'No spaces allowed',
-      'admin/meta/siteMetadataDescriptionFieldTitle': 'Meta description',
-      'admin/meta/siteMetadataDescriptionFieldDescription':
-        'Suggested to search engines',
-      'admin/facebookTitle': 'Facebook',
-      'admin/facebookDescription': 'How facebook sees your store',
-      'admin/meta/facebookTitleFieldTitle': 'Title',
-      'admin/meta/facebookTitleFieldDescription':
-        'How the name of your site will appear in facebook',
-      'admin/meta/facebookThumbnailFieldTitle': 'Thumbnail path',
-      'admin/meta/facebookThumbnailFieldDescription':
-        'The path to an image of your site. This is how your site will appear on facebook',
-      'admin/meta/facebookDescriptionFieldTitle': 'Description',
-      'admin/meta/facebookDescriptionFieldDescription':
-        'How your site will be described in facebook',
-    },
+  },
+}
+
+export const builderConfig: BuilderConfig = {
+  blocks,
+  messages: {
+    'admin/socialmediaTitle': 'Social Media',
+    'admin/meta/socialmediaTitleFieldTitle': 'Title',
+    'admin/meta/socialmediaTitleFieldDescription':
+      'Appears when a link to this page is shared on social media',
+    'admin/meta/socialmediaDescriptionFieldTitle': 'Description',
+    'admin/meta/socialmediaDescriptionFieldDescription':
+      'Appears when a link to this page is shared on social media',
+    'admin/meta/socialmediaImageFieldTitle': 'Thumbnail',
+    'admin/meta/socialmediaImageFieldDescription':
+      'Appears when the page is shared on social media',
+    'admin/headerTitle': 'Header',
+    'admin/footerTitle': 'Footer',
+    'admin/siteMetadataTitle': 'Site Metadata',
+    'admin/siteMetadataDescription': 'How search engines see your store',
+    'admin/meta/siteMetadataTitleFieldTitle': 'Title',
+    'admin/meta/siteMetadataTitleFieldDescription':
+      'Appears on the browser tab and is suggested to search engines',
+    'admin/meta/siteMetadataSlugFieldTitle': 'URL Slug',
+    'admin/meta/siteMetadataSlugFieldDescription': 'No spaces allowed',
+    'admin/meta/siteMetadataDescriptionFieldTitle': 'Meta description',
+    'admin/meta/siteMetadataDescriptionFieldDescription':
+      'Suggested to search engines',
+    'admin/facebookTitle': 'Facebook',
+    'admin/facebookDescription': 'How facebook sees your store',
+    'admin/meta/facebookTitleFieldTitle': 'Title',
+    'admin/meta/facebookTitleFieldDescription':
+      'How the name of your site will appear in facebook',
+    'admin/meta/facebookThumbnailFieldTitle': 'Thumbnail path',
+    'admin/meta/facebookThumbnailFieldDescription':
+      'The path to an image of your site. This is how your site will appear on facebook',
+    'admin/meta/facebookDescriptionFieldTitle': 'Description',
+    'admin/meta/facebookDescriptionFieldDescription':
+      'How your site will be described in facebook',
   },
 }
