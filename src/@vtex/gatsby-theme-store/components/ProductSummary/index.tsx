@@ -21,29 +21,6 @@ const OfferPreview: FC = () => (
   </OfferContainer>
 )
 
-export type Item = {
-  itemId: string
-  sellers: Array<{
-    sellerId: string
-    commercialOffer: {
-      availableQuantity: number
-      price: number
-      listPrice: number
-      maxInstallments: Array<{
-        value: number
-        numberOfInstallments: number
-      }>
-      teasers: Array<{ name?: string }>
-    }
-  }>
-  images: Array<{ imageUrl: string; imageText: string }>
-}
-
-type Product = {
-  productName: string
-  items: Item[]
-}
-
 const ProductSummary: FC<Props> = ({
   product,
   loading = 'lazy',
@@ -52,7 +29,7 @@ const ProductSummary: FC<Props> = ({
   const {
     items: [sku],
     productName,
-  } = (product as unknown) as Product
+  } = product as any
 
   const {
     images: [{ imageUrl, imageText }],

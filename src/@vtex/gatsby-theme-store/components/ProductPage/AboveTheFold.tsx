@@ -2,6 +2,7 @@ import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import ProductImageGallery from '@vtex/gatsby-theme-store/src/components/ProductImageGallery'
 import { useDetailsImages } from '@vtex/gatsby-theme-store/src/sdk/product/useDetailsImages'
 import { useDetailsVideos } from '@vtex/gatsby-theme-store/src/sdk/product/useDetailsVideos'
+import { ProductPageProps } from '@vtex/gatsby-theme-store/src/templates/product'
 import {
   Card,
   Flex,
@@ -18,24 +19,7 @@ import AsyncInfo from './Above/Async'
 
 const variant = 'default'
 
-type Props = {
-  data: {
-    vtex: {
-      product: {
-        productName: string
-        categoryTree: Array<{ name: string; href: string }>
-        items: Array<{
-          images: Array<{ imageUrl: string; imageText: string }>
-
-          videos: Array<{ videoUrl: string }>
-        }>
-      }
-    }
-  }
-  slug: string
-}
-
-const AboveTheFold: FC<Props> = ({
+const AboveTheFold: FC<ProductPageProps> = ({
   data: {
     vtex: { product },
   },
@@ -45,7 +29,7 @@ const AboveTheFold: FC<Props> = ({
     productName,
     categoryTree: breadcrumb = [],
     items: [{ images, videos }],
-  } = product
+  } = product as any
 
   const imageItems = useDetailsImages(images)
   const videoItems = useDetailsVideos(videos, productName)
@@ -66,7 +50,7 @@ const AboveTheFold: FC<Props> = ({
             <AsyncInfoContainer>
               {isServer ? null : (
                 <Suspense fallback={<AsyncInfoPreview />}>
-                  <AsyncInfo slug={slug} />
+                  <AsyncInfo slug={slug!} />
                 </Suspense>
               )}
             </AsyncInfoContainer>

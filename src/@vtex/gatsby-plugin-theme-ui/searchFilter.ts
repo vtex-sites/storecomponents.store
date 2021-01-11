@@ -1,33 +1,34 @@
 import { createTheme, SxStyleProp, searchFilterTheme } from '@vtex/store-ui'
 
-const accordionDesktop: SxStyleProp = createTheme(searchFilterTheme, {})
+const accordionDesktop: SxStyleProp = createTheme(
+  (searchFilterTheme as any).accordion,
+  {}
+)
 
 const accordionMobile: SxStyleProp = createTheme(accordionDesktop, {
-  accordion: {
-    collapsible: {
-      paddingBottom: 0,
-      borderBottom: '1px solid #e2e2e2',
+  collapsible: {
+    paddingBottom: 0,
+    borderBottom: '1px solid #e2e2e2',
 
-      header: {
+    header: {
+      height: '60px',
+      backgroundColor: '#fff',
+      px: '10px',
+
+      icon: {
+        width: '60px',
         height: '60px',
-        backgroundColor: '#fff',
-        px: '10px',
-
-        icon: {
-          width: '60px',
-          height: '60px',
-        },
       },
+    },
 
-      ul: {
-        maxHeight: '',
-        overflowY: 'auto',
-      },
+    ul: {
+      maxHeight: '',
+      overflowY: 'auto',
+    },
 
-      li: {
-        minHeight: '50px',
-        px: '10px',
-      },
+    li: {
+      minHeight: '50px',
+      px: '10px',
     },
   },
 })
@@ -39,7 +40,7 @@ const filtersDesktop: SxStyleProp = {
     borderBottom: '1px solid #e3e4e6',
   },
 
-  ...accordionDesktop,
+  accordion: accordionDesktop,
 }
 
 const filtersMobile: SxStyleProp = createTheme(filtersDesktop, {
@@ -57,7 +58,7 @@ const filtersMobile: SxStyleProp = createTheme(filtersDesktop, {
     },
   },
 
-  ...accordionMobile,
+  accordion: accordionMobile,
 })
 
 export const searchTheme: SxStyleProp = {
