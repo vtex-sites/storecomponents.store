@@ -224,6 +224,7 @@ export const contentTypes: ContentTypes = {
 
 export const builderConfig: BuilderConfig = {
   blocks,
+  contentTypes,
   messages: {
     'admin/socialmediaTitle': 'Social Media',
     'admin/meta/socialmediaTitleFieldTitle': 'Title',
