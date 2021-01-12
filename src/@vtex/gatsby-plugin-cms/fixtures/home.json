@@ -1,0 +1,99 @@
+{
+  "name": "[SFJ] Home",
+  "type": "home",
+  "builderId": "faststore",
+  "author": {
+    "id": "0cc6d9e0-377d-4898-a907-350e4661c351",
+    "email": "tiago.gimenes@vtex.com.br"
+  },
+  "lastUpdatedAt": "2021-01-11T18:44:06.753Z",
+  "blocks": [
+    {
+      "name": "Carousel",
+      "props": {
+        "allItems": [
+          {
+            "sources": [
+              {
+                "srcSet": "https://storecomponents.vtexassets.com/assets/vtex.file-manager-graphql/images/f05e3621-d515-4dac-8c44-675f1ab36b66___3be6fb3cbcef0db2be3ad13631f2f356.jpg",
+                "media": "(max-width: 40em)"
+              },
+              {
+                "srcSet": "https://storecomponents.vtexassets.com/assets/vtex.file-manager-graphql/images/331632a0-fa52-4f08-8e45-df762d97a289___167e4c8385c3129b1a2ddab9156510ba.jpg",
+                "media": "(min-width: 40em)"
+              }
+            ],
+            "href": "/apparel---accessories",
+            "alt": "Apparel & Accessories"
+          },
+          {
+            "sources": [
+              {
+                "srcSet": "https://storecomponents.vtexassets.com/assets/vtex.file-manager-graphql/images/d8e7b221-7fe8-4360-a828-40b061105ded___3be6fb3cbcef0db2be3ad13631f2f356.jpg",
+                "media": "(max-width: 40em)"
+              },
+              {
+                "srcSet": "https://storecomponents.vtexassets.com/assets/vtex.file-manager-graphql/images/75d0c31e-cd9b-40e0-bfb6-7f7e0bcb5553___ccf112add6680da2b51c8e945426f70f.png",
+                "media": "(min-width: 40em)"
+              }
+            ],
+            "href": "/electronics",
+            "alt": "Electronics"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DynamicShelf",
+      "props": {
+        "searchParams": {
+          "hideUnavailableItems": true,
+          "from": 0,
+          "to": 11,
+          "orderBy": "OrderByScoreDESC",
+          "collection": "1182"
+        },
+        "title": "New Offers"
+      }
+    }
+  ],
+  "afterBlocks": [
+    {
+      "name": "Footer",
+      "props": {
+        "headerSelection": "MAIN_FOOTER"
+      }
+    }
+  ],
+  "beforeBlocks": [
+    {
+      "name": "Header",
+      "props": {
+        "headerSelection": "MAIN_HEADER"
+      }
+    }
+  ],
+  "extraBlocks": [
+    {
+      "name": "SEO",
+      "blocks": [
+        {
+          "name": "siteMetadata",
+          "props": {
+            "title": "Store Theme - VTEX Base Store",
+            "description": "A sample store using the best of Gatsby and Store Framework Jamstack",
+            "slug": "/"
+          }
+        },
+        {
+          "name": "facebook",
+          "props": {
+            "description": "A sample store using the best of Gatsby and Store Framework Jamstack",
+            "title": "Store Theme - VTEX Base Store",
+            "thumbnail": "https://vtex.io/_v/public/assets/v1/published/vtex.io-landing@1.2.1/public/react/7d5b9e9f1886c9ef557362564d67ae61.svg"
+          }
+        }
+      ]
+    }
+  ]
+}
