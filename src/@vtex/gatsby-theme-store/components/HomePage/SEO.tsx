@@ -14,7 +14,7 @@ const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
   const [
     { props: siteMetadata },
     { props: facebook },
-  ] = vtexCmsPageContent!.extraBlocks[0]!.blocks!
+  ] = vtexCmsPageContent!.extraBlocks[0]!.blocks
 
   const { site } = useStaticQuery<HomePageSeoQueryQuery>(
     graphql`
