@@ -1,4 +1,4 @@
-import Carousel from '@vtex/gatsby-theme-store/src/components/Carousel'
+import { Carousel } from '@vtex/store-ui'
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import { PageProps } from 'gatsby'
 import React, { FC } from 'react'
