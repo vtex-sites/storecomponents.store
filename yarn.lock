@@ -3139,7 +3139,6 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.5.tgz#99e44c6235c541a8d2b7cd50fc9662c7bc17309a"
   integrity sha512-/mIPrS2Qz9vG//aRxk/hi3Np/NWfTbbJakVuy+ouY5Gh6tfYfC83neAm4KSJsNVVcIcPP1Shc4/Y9zVmgmNCRA==
 
-"@vtex/store-ui@^0.239.0":
   version "0.239.0"
   resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.239.0.tgz#fda77ccefb6c83868cbb198e063946bfd8204695"
   integrity sha512-Ch5hA3++hy9yOr9F3M3RU7oXwimLripBm2tmM2PS5Aw0I9U1N6XbTWYZB8i2ck3nfoKDztvgpLl2xUoT3EWNXw==
@@ -3161,12 +3160,6 @@
   resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.231.5-alpha.1.tgz#11c0e30e6e3344084890206a5e5e3a6a9da624f4"
   integrity sha512-16+ZnIOuZ9hCw8VHdXKQYnv/g7zI3xvbl2BTUu4nEKWNJNSamR3k58aL2EonTMKjcMHmw/ONriQAX4QiKiLjGg==
   dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.230.0"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     react-swipeable "^6.0.0"
