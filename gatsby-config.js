@@ -1,5 +1,3 @@
-const getStaticPaths = () => require('./staticPaths.json')
-
 require('dotenv').config({
   path: `${__dirname}/vtex.env`,
 })
@@ -18,6 +16,27 @@ const {
 
 const isNetlifyProduction = NETLIFY_ENV === 'production'
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
+const getStaticPaths = async () => {
+  const options = {
+    tenant: STORE_ID,
+    workspace,
+    environment,
+  }
+
+  const {
+    default: getProductionStaticPaths,
+  } = require('@vtex/gatsby-source-vtex/staticPaths')
+
+  const staticPaths = require('./staticPaths.json')
+
+  const paths =
+    process.env.NODE_ENV === 'production'
+      ? [...(await getProductionStaticPaths(options)), ...staticPaths]
+      : staticPaths
+
+  return Array.from(new Set(paths))
+}
 
 const transformHeaders = (headers, path) => {
   const outputHeaders = [
