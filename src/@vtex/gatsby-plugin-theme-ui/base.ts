@@ -1,6 +1,6 @@
 import { baseTheme, createTheme } from '@vtex/store-ui'
 
-// Testing 2
+// Testing 3
 type Custom = {
   sizes: {
     container: string
