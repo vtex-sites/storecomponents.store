@@ -1,32 +1,28 @@
-import React from 'react'
-import Helmet from '@vtex/gatsby-theme-store/src/components/SEO/Helmet'
-import { graphql, PageProps, useStaticQuery } from 'gatsby'
-import type { FC } from 'react'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
+import Helmet from '@vtex/gatsby-theme-store/src/components/SEO/Helmet'
+import { PageProps } from 'gatsby'
+import React from 'react'
+import type { FC } from 'react'
 
-import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
-import { HomePageSeoQueryQuery } from './__generated__/HomePageSEOQuery.graphql'
+import type { HomePageQueryQuery } from '../../../pages/__generated__/HomePageQuery.graphql'
 
-type Props = PageProps<HomePageQueryQuery>
+interface Props extends PageProps<HomePageQueryQuery> {
+  siteMetadata: {
+    siteUrl: string
+    description: string
+    title: string
+  }
+}
 
-const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
+const SiteMetadata: FC<Props> = ({
+  data: { vtexCmsPageContent },
+  siteMetadata: { siteUrl },
+}) => {
   const { locale } = useIntl()
   const [
     { props: siteMetadata },
     { props: facebook },
   ] = vtexCmsPageContent!.extraBlocks[0]!.blocks
-
-  const { site } = useStaticQuery<HomePageSeoQueryQuery>(
-    graphql`
-      query StoreHomePageSEOQuery {
-        site {
-          siteMetadata {
-            siteUrl
-          }
-        }
-      }
-    `
-  )
 
   return (
     <Helmet
@@ -39,7 +35,7 @@ const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
         },
         {
           property: 'og:url',
-          content: site?.siteMetadata?.siteUrl,
+          content: siteUrl,
         },
         {
           property: 'og:type',
@@ -62,4 +58,4 @@ const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
   )
 }
 
-export default SEO
+export default SiteMetadata
