@@ -80,6 +80,12 @@ module.exports = {
       },
     },
     {
+      resolve: '@vtex/gatsby-plugin-google-tag-manager',
+      options: {
+        gtmId: 'GTM-TT2MDM3',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Store Theme - VTEX Base Store',
