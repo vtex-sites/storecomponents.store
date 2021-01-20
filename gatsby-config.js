@@ -61,6 +61,12 @@ module.exports = {
     author: 'Emerson Laurentino',
     siteUrl,
   },
+  flags: {
+    QUERY_ON_DEMAND: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    DEV_SSR: true,
+  },
   plugins: [
     {
       resolve: `@vtex/gatsby-source-vtex`,
