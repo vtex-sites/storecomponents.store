@@ -18,7 +18,7 @@ const SEO: FC<Props> = ({ data: { vtexCmsPageContent } }) => {
 
   const { site } = useStaticQuery<HomePageSeoQueryQuery>(
     graphql`
-      query HomePageSEOQuery {
+      query StoreHomePageSEOQuery {
         site {
           siteMetadata {
             siteUrl
