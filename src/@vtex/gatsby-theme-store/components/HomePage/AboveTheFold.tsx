@@ -1,4 +1,4 @@
-import Carousel from '@vtex/gatsby-theme-store/src/components/Carousel'
+import { Carousel, LocalizedLink } from '@vtex/store-ui'
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import { PageProps } from 'gatsby'
 import React, { FC } from 'react'
@@ -15,6 +15,7 @@ const Fold: FC<Props> = ({ data: { vtexCmsPageContent, vtex } }) => (
       {...vtexCmsPageContent?.blocks[0]?.props}
       height="540px"
       width="360px"
+      link={LocalizedLink}
     />
     <RichTextRow />
     <Container>
