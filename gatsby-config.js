@@ -101,6 +101,7 @@ module.exports = {
       resolve: '@vtex/gatsby-plugin-cms',
       options: {
         tenant: STORE_ID,
+        workspace,
       },
     },
     {
