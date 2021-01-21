@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.2.0",
   "dependencies": {
-    "@vtex/gatsby-plugin-google-tag-manager": "0.1.0-alpha.2",
+    "@vtex/gatsby-plugin-google-tag-manager": "0.239.4-alpha.0",
     "@vtex/gatsby-plugin-cms": "^0.236.0",
     "@vtex/gatsby-plugin-graphql": "^0.236.0",
     "@vtex/gatsby-plugin-nginx": "^0.236.0",

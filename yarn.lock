@@ -3034,10 +3034,10 @@
     gatsby-graphql-source-toolkit "^0.6.3"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-google-tag-manager@0.1.0-alpha.2":
-  version "0.1.0-alpha.2"
-  resolved "https://registry.npmjs.org/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.1.0-alpha.2.tgz#9b48522b8ce94fe0e5acbe268af0c7add3901b90"
-  integrity sha512-Ug7asU+czRuIANZt7p5t7djYilmKBqIDEhDfqKMTfbJvZjpsBmnaAGQXBTxH/ENFJeWTkh5nXzDpvi4FACjxrQ==
+"@vtex/gatsby-plugin-google-tag-manager@0.239.4-alpha.0":
+  version "0.239.4-alpha.0"
+  resolved "https://registry.npmjs.org/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.239.4-alpha.0.tgz#53c8faad729e88d47023a93a55751519178077cf"
+  integrity sha512-nToP5zlnXL5hPGudWb+uXKUl3MURS+NwyRLEgZ9fmM9u4fq3EfvJh8cJPXQ0rgyFy3rdjSXp75aDowtGbUkV2A==
 
 "@vtex/gatsby-plugin-graphql@^0.214.0-alpha.6":
   version "0.214.0-alpha.6"
@@ -10042,6 +10042,9 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
+  dependencies:
+    minipass "^3.0.0"
+    yallist "^4.0.0"
 
 mississippi@^3.0.0:
   version "3.0.0"
