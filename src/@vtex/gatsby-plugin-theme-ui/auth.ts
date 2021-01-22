@@ -1,3 +1,3 @@
-import { AuthProvidersTheme as theme } from '@vtex/store-ui'
+import { AuthProvidersTheme } from '@vtex/store-ui'
 
-export default theme
+export default AuthProvidersTheme
