@@ -1,3 +1,3 @@
-import theme from '@vtex/gatsby-theme-store/components/Auth/Providers/theme'
+import { AuthProvidersTheme as theme } from '@vtex/store-ui'
 
 export default theme
