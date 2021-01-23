@@ -1,8 +1,5 @@
 teste cluster test-3a
-sem pr agora
-second try
-third try
-sem pr dnv e vou 2
+abrindo pr instantaneo agr
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://storetheme.vtex.com/">
