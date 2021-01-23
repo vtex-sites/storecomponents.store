@@ -1,5 +1,6 @@
 teste cluster test-3a
 primeiro commit
+segundo commit
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://storetheme.vtex.com/">
