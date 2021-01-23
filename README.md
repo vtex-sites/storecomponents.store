@@ -1,4 +1,4 @@
-test234soquero1token
+teste cluster test-3a
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://storetheme.vtex.com/">
