@@ -92,6 +92,9 @@ module.exports = {
       },
     },
     {
+      resolve: '@vtex/gatsby-plugin-pixel-facebook',
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Store Theme - VTEX Base Store',
