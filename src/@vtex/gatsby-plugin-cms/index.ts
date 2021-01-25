@@ -382,6 +382,7 @@ export const contentTypes: ContentTypes = {
 
 export const builderConfig: BuilderConfig = {
   blocks: {
+    Carousel,
     SearchBanner,
     Fold,
     DynamicShelf,
