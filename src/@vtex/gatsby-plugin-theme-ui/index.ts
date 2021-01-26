@@ -4,13 +4,13 @@ import {
   infoCardTheme,
   minicartTheme,
   searchControlsTheme,
+  loginTheme,
 } from '@vtex/store-ui'
 
 import authTheme from './auth'
 import { base } from './base'
 import { breadcrumb } from './breadcrumb'
 import { custom } from './custom'
-import loginTheme from './login'
 import { minicart } from './minicart'
 import offerTheme from './offer'
 import productDetailsTheme from './productDetails'
