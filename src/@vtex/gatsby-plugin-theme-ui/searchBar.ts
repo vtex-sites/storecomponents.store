@@ -1,9 +1,9 @@
-import { createTheme, SxStyleProp } from '@vtex/store-ui'
-import searchBarTheme from '@vtex/gatsby-theme-store/components/SearchBar/theme'
+import { createTheme, searchBarTheme, SxStyleProp } from '@vtex/store-ui'
 
 const theme: SxStyleProp = createTheme(searchBarTheme, {
   searchbar: {
     textInput: {
+      backgroundColor: 'red',
       maxHeight: '40px',
     },
 
