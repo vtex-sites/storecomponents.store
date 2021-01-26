@@ -22,7 +22,8 @@ export const Banner: FC<Props> = ({ blocks }) => {
     }
 
     return {
-      text: block.props.text,
+      title: block.props.title,
+      description: block.props.description,
       alt: block.props.alt,
       sources: [
         {
@@ -53,9 +54,38 @@ export const Banner: FC<Props> = ({ blocks }) => {
         height="238px"
       />
       <div
-        sx={{ position: 'absolute', top: 0, left: 0 }}
-        dangerouslySetInnerHTML={{ __html: props.text }}
-      />
+        sx={{
+          top: '0px',
+          position: 'absolute',
+          color: 'black',
+          width: ['320px', '570px'],
+          marginX: '0px',
+          left: '50%',
+          transform: 'translate(-50%)',
+          textAlign: 'center',
+        }}
+      >
+        <h1
+          sx={{
+            fontSize: ['36px', '48px'],
+            minHeight: ['40px', '52px'],
+            fontWeight: 400,
+            marginTop: ['10px', '0px'],
+            lineHeight: '1.1',
+          }}
+        >
+          {props.title}
+        </h1>
+        <h2
+          sx={{
+            marginTop: '140px',
+            lineHeight: '24px',
+            fontWeight: 400,
+            fontSize: 'initial',
+          }}
+          dangerouslySetInnerHTML={{ __html: props.description }}
+        />
+      </div>
     </div>
   )
 }

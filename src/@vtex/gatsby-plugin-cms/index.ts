@@ -73,12 +73,16 @@ const SearchBanner: Schema = {
   type: 'object',
   required: ['desktop', 'mobile', 'alt'],
   properties: {
-    text: {
-      title: 'Image text',
+    title: {
+      title: 'Image Title',
+      type: 'string',
+    },
+    description: {
+      title: 'Image description',
       type: 'string',
     },
     alt: {
-      title: 'Texto alternativo da imagem',
+      title: 'Image alt',
       type: 'string',
     },
     desktop: {

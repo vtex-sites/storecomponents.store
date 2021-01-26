@@ -11,13 +11,14 @@
     {
       "name": "SearchBanner",
       "props": {
-        "text": "<p style=\"font-size: 2rem;margin-top: 10px;margin-left: 15px;margin-bottom: 155px;\">Accessoires</p> <p style=\"margin-left: 5px;\">All you need one click away</p>",
+        "title": "Apparel",
+        "description": "All you need one click away",
         "alt": "My awesome image description",
         "desktop": {
-          "srcSet": "https://storecomponents.vtexassets.com/assets/faststore/images/apparel-desktop___07ad2fd37189b675f282d74044120d6c.jpg"
+          "srcSet": "https://storecomponents.vtexassets.com/assets/faststore/images/apparel-desktop-resized___a0f94b37fc1374348a4bff0245b58b31.jpeg"
         },
         "mobile": {
-          "srcSet": "https://storecomponents.vtexassets.com/assets/faststore/images/apparel-mobile___741598629d2a0834fe61ff3223b1a550.jpg"
+          "srcSet": "https://storecomponents.vtexassets.com/assets/faststore/images/apparel-mobile-resized___e3ebb67c189a6fcf3ce89140474259d4.jpeg"
         }
       }
     }
