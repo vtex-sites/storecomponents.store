@@ -17,76 +17,35 @@ const throwOnErrors = (errors, reporter) => {
   }
 }
 
-let resolveCMSData = null
-const dataCMS = new Promise((resolve) => {
-  resolveCMSData = resolve
+let resolveGraphQL = null
+const graphqlPromise = new Promise((resolve) => {
+  resolveGraphQL = resolve
 })
 
-// Use this API to capture the graphql executor function
-exports.createPages = async ({ graphql, reporter }) => {
-  const [plps, home] = await Promise.all([
-    graphql(`
-      query CMSPageContent {
-        allVtexCmsPageContent(
-          filter: { extraBlocks: { elemMatch: { name: { eq: "Parameters" } } } }
-        ) {
-          nodes {
-            blocks {
-              name
-              props
-            }
-            extraBlocks {
-              name
-              blocks {
-                name
-                props
-              }
-            }
-          }
-        }
-      }
-    `),
-    graphql(`
-      query CMSContent {
-        vtexCmsPageContent(type: { eq: "home" }) {
-          blocks {
-            name
-            props
-          }
-        }
-      }
-    `),
-  ])
-
-  throwOnErrors(home.errors, reporter)
-  throwOnErrors(plps.errors, reporter)
-
-  const remoteIdsById = plps.data.allVtexCmsPageContent.nodes.reduce(
-    (acc, node) => {
-      const { props } = node.extraBlocks
-        .find((block) => block.name === 'Parameters')
-        .blocks.find((block) => block.name === 'SearchIdSelector')
-
-      acc[props.id] = node
-
-      return acc
-    },
-    {}
-  )
-
-  resolveCMSData({
-    home: home.data,
-    plps: remoteIdsById,
-  })
+exports.createPages = async ({ graphql }) => {
+  resolveGraphQL(graphql)
 }
+
+// Use this API to capture the graphql executor function
+const nodesByIds = (nodes) =>
+  nodes.reduce((acc, node) => {
+    const { props } = node.extraBlocks
+      .find((block) => block.name === 'Parameters')
+      .blocks.find((block) => block.name === 'SearchIdSelector')
+
+    acc[props.id] = node
+
+    return acc
+  }, {})
 
 exports.onCreatePage = async (args) => {
   const {
     page,
+    reporter,
     actions: { createPage, deletePage },
   } = args
 
-  const { home, plps } = await dataCMS
+  const graphql = await graphqlPromise
 
   /**
    * Adds context to home page
@@ -97,12 +56,27 @@ exports.onCreatePage = async (args) => {
       typeof page.context.originalPath === 'string' &&
       page.context.originalPath === '/')
   ) {
-    if (!home.vtexCmsPageContent) {
+    const home = await graphql(`
+      query CMSContent {
+        vtexCmsPageContent(type: { eq: "home" }) {
+          blocks {
+            name
+            props
+          }
+        }
+      }
+    `)
+
+    throwOnErrors(home.errors, reporter)
+
+    if (!home.data.vtexCmsPageContent) {
       return
     }
 
     const {
-      vtexCmsPageContent: { blocks },
+      data: {
+        vtexCmsPageContent: { blocks },
+      },
     } = home
 
     const {
@@ -128,6 +102,32 @@ exports.onCreatePage = async (args) => {
     return
   }
 
+  const plps = await graphql(`
+    query CMSPageContent {
+      allVtexCmsPageContent(
+        filter: { extraBlocks: { elemMatch: { name: { eq: "Parameters" } } } }
+      ) {
+        nodes {
+          blocks {
+            name
+            props
+          }
+          extraBlocks {
+            name
+            blocks {
+              name
+              props
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  throwOnErrors(plps.errors, reporter)
+
+  const nodeMap = nodesByIds(plps.data.allVtexCmsPageContent.nodes)
+
   const {
     context: { canonicalPath },
   } = page
@@ -137,7 +137,7 @@ exports.onCreatePage = async (args) => {
     ...page,
     context: {
       ...page.context,
-      vtexCmsPageContent: plps[canonicalPath] || null,
+      vtexCmsPageContent: nodeMap[canonicalPath] || null,
     },
   })
 }
