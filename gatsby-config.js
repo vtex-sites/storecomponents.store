@@ -116,7 +116,18 @@ module.exports = {
         resolveEnv: () => ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }],
+            policy: [
+              {
+                userAgent: '*',
+                allow: '/',
+                disallow: [
+                  '/page-data/*',
+                  '/graphql/*',
+                  '/api/*',
+                  '/checkout/*',
+                ],
+              },
+            ],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
