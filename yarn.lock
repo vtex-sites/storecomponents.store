@@ -3109,10 +3109,10 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.243.1":
-  version "0.243.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.243.1.tgz#04097dfd25ea191c52d428a807df7ada5f41fc87"
-  integrity sha512-PPZmIkCDCxqblPANut2mAvNGtBYsWsGYSHItb5pKEUr1fX2HBsXvmBleeJoHy9t48BuR9apM4x2oBvjBpvx+CA==
+"@vtex/gatsby-theme-store@0.245.0-alpha.0":
+  version "0.245.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.245.0-alpha.0.tgz#a925f649d8e375aa83850ba23144d5b613b0be14"
+  integrity sha512-T8Pc7qgsx4iV0oUcEkHu+xn37kilzRq+KYXcDi93t22bX8T+IVTTk8jH2uPLKQBZ14I7O3w1rY90A551rMKiJQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.214.0-alpha.6"
@@ -10042,9 +10042,6 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
-  dependencies:
-    minipass "^3.0.0"
-    yallist "^4.0.0"
 
 mississippi@^3.0.0:
   version "3.0.0"
