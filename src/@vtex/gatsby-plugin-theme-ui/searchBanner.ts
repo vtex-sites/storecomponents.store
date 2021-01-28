@@ -1,18 +1,18 @@
-import { responsivePictureTheme, createTheme } from '@vtex/store-ui'
+import type { SxStyleProp } from '@vtex/store-ui'
 
-export const searchBannerTheme = createTheme(
-  {
-    searchBanner: {
-      responsivePicture: responsivePictureTheme,
-    },
-  },
-  {
-    searchBanner: {
-      responsivePicture: {
-        img: {
-          height: '238px',
-        },
+export const searchBannerTheme: SxStyleProp = {
+  searchBanner: {
+    responsivePicture: {
+      picture: {
+        display: 'block',
+        overflow: 'hidden',
+        height: '238px',
+      },
+
+      img: {
+        width: '100%',
+        objectFit: 'cover',
       },
     },
-  }
-)
+  },
+}

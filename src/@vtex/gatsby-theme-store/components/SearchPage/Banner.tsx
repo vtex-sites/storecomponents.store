@@ -7,10 +7,10 @@ interface Props {
   blocks: any
 }
 
-const convert = (src: string) => (width: string, index: number) =>
-  `${src}?width=${width}&aspect=true&quality=${10 - index * 2} ${width}w`
+const convert = (src: string) => (width: string) =>
+  `${src}?width=${width}&aspect=true&quality=8 ${width}w`
 
-const mobileSizes = ['360', '720', '1080']
+const mobileSizes = ['360', '480']
 const desktopSizes = ['1080', '1920', '3840']
 
 export const Banner: FC<Props> = ({ blocks }) => {
