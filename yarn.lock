@@ -3109,16 +3109,16 @@
     p-map "^4.0.0"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.249.1":
-  version "0.249.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.249.1.tgz#5fed1bf89b2d0797eea745297bb22af452c5f1e8"
-  integrity sha512-Gb4vbQgnY3UvRLpQ9t3dWOTPwCpALNiYu06/RhQzSKSJqEpkqxJBCEna/WUkcD83icWtFRneGgU/9NKg3nGnwg==
+"@vtex/gatsby-theme-store@0.249.2-shippingsimulator.0":
+  version "0.249.2-shippingsimulator.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.249.2-shippingsimulator.0.tgz#b3e34dec614d34b629461043ff02e572822e8102"
+  integrity sha512-PYgFkellU8b7HMqoFODaIe3u2CJO/kjL4Hy3Ud8GwECBe+MQsTyZX74sIlXu+IZn4g0oWFNESUs7/9GnNmqHIQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.214.0-alpha.6"
     "@vtex/gatsby-plugin-i18n" "^0.248.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.248.0"
-    "@vtex/store-ui" "^0.249.1"
+    "@vtex/store-ui" "^0.249.2-shippingsimulator.0"
     gatsby-plugin-bundle-stats "^2.2.0"
     gatsby-plugin-react-helmet-async "^1.1.0"
     html-loader "^1.1.0"
@@ -3132,7 +3132,6 @@
     requestidlecallback-polyfill "^1.0.2"
     schema-dts "^0.6.0"
     swr "^0.3.0"
-    text-mask-core "^5.1.0"
 
 "@vtex/lighthouse-config@^0.237.0":
   version "0.237.0"
@@ -3144,10 +3143,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@^0.249.1":
-  version "0.249.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.249.1.tgz#86265d85160f8b3ce184e4ac9ce1c98a9416a468"
-  integrity sha512-COBacId2eMXSyws4y3caO3zP2uycL3+J+AFdtW36NOiwU5AhdljsM9xzB5BfukLImnoY5UNq4vcS+in0wqIs5Q==
+"@vtex/store-ui@0.249.2-shippingsimulator.0", "@vtex/store-ui@^0.249.2-shippingsimulator.0":
+  version "0.249.2-shippingsimulator.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.249.2-shippingsimulator.0.tgz#983b00fbc23c7c73bd7e12dac35ed19e6ff8a260"
+  integrity sha512-bdLK2QqKroukdRpbKXuiIoGpz0Suy0WYODwXy9KCxP2O9yZvPpXsiq7iXIox5eYqcOfkSP7YtSnhtJcmqa5zlA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
@@ -3159,6 +3158,7 @@
     gatsby-link "^2.4.13"
     react-swipeable "^6.0.0"
     reakit "^1.3.0"
+    text-mask-core "^5.1.2"
     theme-ui "^0.3.1"
 
 "@vtex/tsconfig@^0.5.5":
@@ -13626,7 +13626,7 @@ terser@^4.1.2, terser@^4.6.12, terser@^4.6.3:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
-text-mask-core@^5.1.0:
+text-mask-core@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/text-mask-core/-/text-mask-core-5.1.2.tgz#80dd5ebe04825757e46619e691407a9f8b3c1b6f"
   integrity sha1-gN1evgSCV1fkZhnmkUB6n4s8G28=
