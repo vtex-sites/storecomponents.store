@@ -17,27 +17,6 @@ const {
 const isProduction = ENV === 'production'
 const siteUrl = isProduction ? URL : DEPLOY_PRIME_URL
 
-const getStaticPaths = async () => {
-  const options = {
-    tenant: STORE_ID,
-    workspace,
-    environment,
-  }
-
-  const {
-    default: getProductionStaticPaths,
-  } = require('@vtex/gatsby-source-vtex/staticPaths')
-
-  const staticPaths = require('./staticPaths.json')
-
-  const paths =
-    process.env.NODE_ENV === 'production'
-      ? [...(await getProductionStaticPaths(options)), ...staticPaths]
-      : staticPaths
-
-  return Array.from(new Set(paths))
-}
-
 const transformHeaders = (headers, path) => {
   const outputHeaders = [
     // Security
@@ -79,7 +58,6 @@ module.exports = {
       resolve: '@vtex/gatsby-theme-store',
       options: {
         storeId: STORE_ID,
-        getStaticPaths,
         locales: ['en', 'pt'],
         defaultLocale: 'en',
       },
