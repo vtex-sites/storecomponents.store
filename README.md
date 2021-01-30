@@ -8,6 +8,8 @@
   A store theme powered by VTEX and Gatsby
 </h1>
 
+1
+
 Kick-off your project with this default boilerpaaaalate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing-fast store for React.
 
 ## 🚀 Quick start
