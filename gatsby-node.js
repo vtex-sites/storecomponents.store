@@ -26,7 +26,7 @@ exports.onCreateNode = async ({ node, reporter }) => {
 
   const sizes = {
     mobile: [360, 480],
-    desktop: [1280, 1440, 3840],
+    desktop: [1280, 1440, 1920],
   }
 
   reporter.info('[storecomponents.store]: Optimizing Images for', node.name)

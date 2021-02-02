@@ -126,7 +126,7 @@ const carouselArrows: SxStyleProp = {
 
 const carouselResponsivePicture = createTheme(responsivePictureTheme, {
   img: {
-    aspectRatio: ['360 / 540', '1680 / 806'],
+    aspectRatio: ['900 / 1348', '1680 / 806'],
     zIndex: -2,
   },
 })
