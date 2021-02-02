@@ -1,8 +1,5 @@
-import {
-  createTheme,
-  responsivePictureTheme,
-  SxStyleProp,
-} from '@vtex/store-ui'
+import type { SxStyleProp } from '@vtex/store-ui'
+import { createTheme, responsivePictureTheme } from '@vtex/store-ui'
 
 const paginationDots: SxStyleProp = {
   container: {
@@ -129,8 +126,8 @@ const carouselArrows: SxStyleProp = {
 
 const carouselResponsivePicture = createTheme(responsivePictureTheme, {
   img: {
-    height: ['540px', '806px'],
-    width: 'auto',
+    aspectRatio: ['360 / 540', '1680 / 806'],
+    zIndex: -2,
   },
 })
 

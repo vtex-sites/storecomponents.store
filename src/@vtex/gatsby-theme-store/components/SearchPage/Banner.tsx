@@ -7,38 +7,15 @@ interface Props {
   blocks: any
 }
 
-const convert = (src: string) => (width: string) =>
-  `${src}?width=${width}&aspect=true&quality=8 ${width}w`
-
-const mobileSizes = ['360', '480']
-const desktopSizes = ['1080', '1920', '3840']
-
-export const Banner: FC<Props> = ({ blocks }) => {
-  const props = useMemo(() => {
+const useBanner = (blocks: any) =>
+  useMemo(() => {
     const block = blocks.find((b: any) => b.name === 'SearchBanner')
 
-    if (block == null) {
-      return null
-    }
-
-    return {
-      title: block.props.title,
-      description: block.props.description,
-      alt: block.props.alt,
-      sources: [
-        {
-          media: '(min-width: 40em)',
-          srcSet: desktopSizes
-            .map(convert(block.props.desktop.srcSet))
-            .join(','),
-        },
-        {
-          media: '(max-width: 40em)',
-          srcSet: mobileSizes.map(convert(block.props.mobile.srcSet)).join(','),
-        },
-      ],
-    }
+    return block?.props
   }, [blocks])
+
+export const Banner: FC<Props> = ({ blocks }) => {
+  const props = useBanner(blocks)
 
   if (props === null) {
     return null
