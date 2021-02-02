@@ -2222,16 +2222,16 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@^0.253.0-alpha.0":
-  version "0.253.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.253.0-alpha.0.tgz#cbe6a1152f724ad37941028d7765e75b3a2571c9"
-  integrity sha512-GugqohpenXheZYHzzSnDe4LGjuwS7SwyS4Wvrj6ZuxeO4OoNXRE/2NQJWUu9l7yJJKEsc4PeoQ2v3Lnq35SQXQ==
+"@vtex/gatsby-theme-store@^0.253.0-alpha.1":
+  version "0.253.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.253.0-alpha.1.tgz#d628b1b6b46e5748b312b44a5b46910adff57583"
+  integrity sha512-wEoo4Lhe3Tba0z1SMxszfkrudXOlsMEMoJLp/WicyCgY8GWNO3RF0zYO05oQZ7HvBzeSsRwsElHzobNi92IdaQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.214.0-alpha.6"
     "@vtex/gatsby-plugin-i18n" "^0.248.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.248.0"
-    "@vtex/store-ui" "^0.253.0-alpha.0"
+    "@vtex/store-ui" "^0.253.0-alpha.1"
     gatsby-plugin-bundle-stats "^2.2.0"
     gatsby-plugin-react-helmet-async "^1.1.0"
     html-loader "^1.1.0"
@@ -2256,10 +2256,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@^0.253.0-alpha.0":
-  version "0.253.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.253.0-alpha.0.tgz#68e5bb16b65458691da142956c3cadd53ea97cd1"
-  integrity sha512-j2w4OFcKziUUDkeQrBuQvtpizdPSwF/XGkJ5+z39IT1Bw3G0P4xeLPEFSJDsOHf29bpaKbwg0/vMFB6zHVbT8Q==
+"@vtex/store-ui@^0.253.0-alpha.1":
+  version "0.253.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.253.0-alpha.1.tgz#3b0b276ff4925d4d693a01a775e733022225cd63"
+  integrity sha512-Qat2CniLfNAFVcwHd7IMYBC/+lTdhFwa2nu9viQFBVLP4CJtr8BEgp7SIpeQFi2yu9R+IZjpUsqCokMDCipw+g==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
