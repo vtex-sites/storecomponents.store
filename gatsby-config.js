@@ -23,7 +23,6 @@ const transformHeaders = (headers, path) => {
     'X-XSS-Protection: 1; mode=block',
     'X-Content-Type-Options: nosniff',
     'Referrer-Policy: same-origin',
-    'Set-Cookie: VtexStoreVersion=v2; Max-Age=86400',
   ]
 
   if (!path.includes('/account')) {
