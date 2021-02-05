@@ -34,8 +34,9 @@ const transformHeaders = (headers, path) => {
 
 module.exports = {
   siteMetadata: {
-    title: 'Store Theme - VTEX Base Store',
+    title: 'Store Theme | VTEX Base Store',
     description: 'A sample store using the best of Gatsby and VTEX',
+    titleTemplate: '%s | Store Theme',
     author: 'Emerson Laurentino',
     siteUrl,
   },
