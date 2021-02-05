@@ -96,12 +96,7 @@ module.exports = {
               {
                 userAgent: '*',
                 allow: '/',
-                disallow: [
-                  '/page-data/*',
-                  '/graphql/*',
-                  '/api/*',
-                  '/checkout/*',
-                ],
+                disallow: ['/checkout/*'],
               },
             ],
           },
