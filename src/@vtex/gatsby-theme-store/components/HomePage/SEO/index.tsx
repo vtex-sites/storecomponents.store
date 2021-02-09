@@ -16,6 +16,7 @@ const SEO: FC<Props> = (props) => {
     ...props,
     siteMetadata: {
       ...siteMetadata!.props,
+      titleTemplate: '%s',
       social: {
         facebook: facebook!.props,
       },
