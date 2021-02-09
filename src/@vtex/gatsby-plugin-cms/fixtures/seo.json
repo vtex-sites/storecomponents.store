@@ -1,0 +1,36 @@
+{
+  "name": "[SFJ] SEO",
+  "type": "seo",
+  "builderId": "faststore",
+  "author": {
+    "id": "0cc6d9e0-377d-4898-a907-350e4661c351",
+    "email": "tiago.gimenes@vtex.com.br"
+  },
+  "lastUpdatedAt": "2021-01-11T18:44:06.753Z",
+  "blocks": [],
+  "afterBlocks": [],
+  "beforeBlocks": [],
+  "extraBlocks": [
+    {
+      "name": "seo",
+      "blocks": [
+        {
+          "name": "siteMetadata",
+          "props": {
+            "title": "Store Theme | VTEX SFJ",
+            "description": "The base VTEX theme",
+            "titleTemplate": "%s | Store Theme"
+          }
+        },
+        {
+          "name": "facebook",
+          "props": {
+            "title": "Store Theme | VTEX SFJ",
+            "description": "The base VTEX theme",
+            "thumbnail": "https://vtex.io/_v/public/assets/v1/published/vtex.io-landing@1.2.1/public/react/7d5b9e9f1886c9ef557362564d67ae61.svg"
+          }
+        }
+      ]
+    }
+  ]
+}

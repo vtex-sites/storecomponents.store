@@ -15,6 +15,20 @@ export const query = graphql`
     $orderBy: String!
     $hideUnavailableItems: Boolean!
   ) {
+    seo: vtexCmsPageContent(type: { eq: "seo" }) {
+      extraBlocks {
+        blocks {
+          name
+          props
+        }
+      }
+    }
+    content: vtexCmsPageContent(type: { eq: "home" }) {
+      blocks {
+        name
+        props
+      }
+    }
     vtex {
       products(
         from: $from
@@ -24,18 +38,6 @@ export const query = graphql`
         hideUnavailableItems: $hideUnavailableItems
       ) {
         ...ProductSummary_product
-      }
-    }
-    vtexCmsPageContent(type: { eq: "home" }) {
-      extraBlocks {
-        blocks {
-          name
-          props
-        }
-      }
-      blocks {
-        name
-        props
       }
     }
   }

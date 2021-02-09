@@ -23,6 +23,60 @@ const widgets = {
   },
 }
 
+const siteMetadata: Schema = {
+  title: 'Site Metadata',
+  description: 'Configure global site metadata',
+  type: 'object',
+  ...widgets.googleSEOPreview,
+  properties: {
+    title: {
+      title: 'Default page title',
+      description: 'Display this title when no other tile is available',
+      type: 'string',
+      default: 'Store Theme | VTEX SFJ',
+    },
+    description: {
+      title: 'Meta tag description',
+      type: 'string',
+      default: 'A beautifuly designed site for general VTEX stores',
+    },
+    titleTemplate: {
+      title: 'Title template to be used in category/product pages',
+      type: 'string',
+      default: '%s | Store Theme',
+    },
+  },
+}
+
+const facebook: Schema = {
+  title: 'Facebook',
+  description: 'Como o Facebook compartilha a sua loja',
+  type: 'object',
+  required: ['thumbnail'],
+  ...widgets.facebookSEOPreview,
+  properties: {
+    title: {
+      type: 'string',
+      title: 'Title',
+      description: 'Store title in facebook',
+      default: 'Marin Brasil Tramontina',
+    },
+    thumbnail: {
+      type: 'string',
+      title: 'Thumbnail',
+      description:
+        'Thumbnail to show in facebook when someone is sharing you store. The image must be bigger than 200px/200px',
+      ...widgets.imageUploader,
+    },
+    description: {
+      type: 'string',
+      title: 'Description',
+      description: 'Site description when sharing on facebook',
+      default: 'A beautifuly designed site for general VTEX stores',
+    },
+  },
+}
+
 const SearchIdSelector: Schema = {
   title: 'Category ID Selector',
   description: 'In which categories this banner will be shown',
@@ -249,75 +303,6 @@ const DynamicShelf: Schema = {
   },
 }
 
-const siteMetadata: Schema = {
-  title: 'admin/siteMetadataTitle',
-  description: 'admin/siteMetadataDescription',
-  type: 'object',
-  required: ['slug'],
-  ...widgets.googleSEOPreview,
-  properties: {
-    title: {
-      type: 'string',
-      title: 'admin/meta/siteMetadataTitleFieldTitle',
-      description: 'admin/meta/siteMetadataTitleFieldDescription',
-    },
-    slug: {
-      type: 'string',
-      title: 'admin/meta/siteMetadataSlugFieldTitle',
-      description: 'admin/meta/siteMetadataSlugFieldDescription',
-    },
-    description: {
-      type: 'string',
-      title: 'admin/meta/siteMetadataDescriptionFieldTitle',
-      description: 'admin/meta/siteMetadataDescriptionFieldDescription',
-    },
-  },
-}
-
-const facebook: Schema = {
-  title: 'admin/facebookTitle',
-  description: 'admin/facebookDescription',
-  type: 'object',
-  required: ['thumbnail'],
-  ...widgets.facebookSEOPreview,
-  properties: {
-    title: {
-      type: 'string',
-      title: 'admin/meta/facebookTitleFieldTitle',
-      description: 'admin/meta/facebookTitleFieldDescription',
-    },
-    thumbnail: {
-      type: 'string',
-      title: 'admin/meta/facebookThumbnailFieldTitle',
-      description: 'admin/meta/facebookThumbnailFieldDescription',
-    },
-    description: {
-      type: 'string',
-      title: 'admin/meta/facebookDescriptionFieldTitle',
-      description: 'admin/meta/facebookDescriptionFieldDescription',
-    },
-  },
-}
-
-const plpSiteMetadata: Schema = {
-  title: 'admin/siteMetadataTitle',
-  description: 'admin/siteMetadataDescription',
-  type: 'object',
-  ...widgets.googleSEOPreview,
-  properties: {
-    title: {
-      type: 'string',
-      title: 'admin/meta/siteMetadataTitleFieldTitle',
-      description: 'admin/meta/siteMetadataTitleFieldDescription',
-    },
-    description: {
-      type: 'string',
-      title: 'admin/meta/siteMetadataDescriptionFieldTitle',
-      description: 'admin/meta/siteMetadataDescriptionFieldDescription',
-    },
-  },
-}
-
 const Header: Schema = {
   title: 'admin/headerTitle',
   description: '',
@@ -351,12 +336,7 @@ const Footer = {
 export const contentTypes: ContentTypes = {
   home: {
     name: 'Home Page',
-    extraBlocks: {
-      SEO: {
-        siteMetadata,
-        facebook,
-      },
-    },
+    extraBlocks: {},
     beforeBlocks: {
       Header,
     },
@@ -370,10 +350,6 @@ export const contentTypes: ContentTypes = {
       Parameters: {
         SearchIdSelector,
       },
-      SEO: {
-        siteMetadata: plpSiteMetadata,
-        facebook,
-      },
     },
     beforeBlocks: {
       Header,
@@ -381,6 +357,17 @@ export const contentTypes: ContentTypes = {
     afterBlocks: {
       Footer,
     },
+  },
+  seo: {
+    name: 'Global SEO Settings',
+    extraBlocks: {
+      SEO: {
+        siteMetadata,
+        facebook,
+      },
+    },
+    beforeBlocks: {},
+    afterBlocks: {},
   },
 }
 

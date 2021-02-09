@@ -73,27 +73,5 @@
       }
     }
   ],
-  "extraBlocks": [
-    {
-      "name": "SEO",
-      "blocks": [
-        {
-          "name": "siteMetadata",
-          "props": {
-            "title": "Store Theme - VTEX Base Store",
-            "description": "A sample store using the best of Gatsby and Store Framework Jamstack",
-            "slug": "/"
-          }
-        },
-        {
-          "name": "facebook",
-          "props": {
-            "description": "A sample store using the best of Gatsby and Store Framework Jamstack",
-            "title": "Store Theme - VTEX Base Store",
-            "thumbnail": "https://vtex.io/_v/public/assets/v1/published/vtex.io-landing@1.2.1/public/react/7d5b9e9f1886c9ef557362564d67ae61.svg"
-          }
-        }
-      ]
-    }
-  ]
+  "extraBlocks": []
 }

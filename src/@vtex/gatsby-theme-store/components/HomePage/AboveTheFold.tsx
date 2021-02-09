@@ -1,18 +1,19 @@
 import { Carousel, LocalizedLink } from '@vtex/store-ui'
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
-import { PageProps } from 'gatsby'
-import React, { FC } from 'react'
+import type { PageProps } from 'gatsby'
+import type { FC } from 'react'
+import React from 'react'
 
-import { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
+import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import ShelfProducts from '../Shelf/ShelfProducts'
 import RichTextRow from './RichTextRow'
 
 type Props = PageProps<HomePageQueryQuery>
 
-const Fold: FC<Props> = ({ data: { vtexCmsPageContent, vtex } }) => (
+const Fold: FC<Props> = ({ data: { content, vtex } }) => (
   <>
     <Carousel
-      {...vtexCmsPageContent?.blocks[0]?.props}
+      {...content?.blocks[0]?.props}
       height="540px"
       width="360px"
       link={LocalizedLink}
@@ -20,7 +21,7 @@ const Fold: FC<Props> = ({ data: { vtexCmsPageContent, vtex } }) => (
     <RichTextRow />
     <Container>
       <ShelfProducts
-        {...vtexCmsPageContent?.blocks[1]?.props}
+        {...content?.blocks[1]?.props}
         products={vtex.products}
         showArrows
         showDots
