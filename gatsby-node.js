@@ -1,4 +1,13 @@
-const { optimize } = require('@vtex/gatsby-theme-store/sdk/img/fileManager')
+const {
+  optimize: resize,
+} = require('@vtex/gatsby-theme-store/sdk/img/fileManager')
+
+const optimize = (src, options) => {
+  const resized = resize(src, options)
+  const url = new URL(resized)
+
+  return resized.replace(url.origin, '')
+}
 
 exports.onCreateWebpackConfig = ({ actions: { setWebpackConfig } }) => {
   setWebpackConfig({
