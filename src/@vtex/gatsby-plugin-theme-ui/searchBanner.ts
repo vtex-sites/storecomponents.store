@@ -12,6 +12,7 @@ export const searchBannerTheme: SxStyleProp = createTheme(
       responsivePicture: {
         img: {
           aspectRatio: ['480 / 317', '3840 / 714'],
+          height: '233px',
         },
       },
     },
