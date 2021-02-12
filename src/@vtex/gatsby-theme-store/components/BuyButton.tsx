@@ -1,10 +1,9 @@
 /** @jsx jsx */
-import { FC } from 'react'
-import {
-  useBuyButton,
-  SKU,
-} from '@vtex/gatsby-theme-store/src/sdk/buyButton/useBuyButton'
-import { Button, jsx, Spinner, SxStyleProp } from '@vtex/store-ui'
+import type { FC } from 'react'
+import type { SKU } from '@vtex/gatsby-theme-store/src/sdk/buyButton/useBuyButton'
+import { useBuyButton } from '@vtex/gatsby-theme-store/src/sdk/buyButton/useBuyButton'
+import type { SxStyleProp } from '@vtex/store-ui'
+import { Button, jsx, Spinner } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
 interface Props {

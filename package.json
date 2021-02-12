@@ -25,6 +25,8 @@
     "@vtex/tsconfig": "^0.5.5",
     "eslint": "^7.14.0",
     "eslint-config-vtex-react": "^6.8.3",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.0",
     "typescript": "^3.9.5"
   },
@@ -42,6 +44,16 @@
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{ts,js,tsx,jsx,json}\"",
     "lint": "eslint --ext js,ts,jsx,tsx .",
-    "test:lhci": "lhci autorun"
+    "test:lhci": "lhci autorun",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   }
 }
