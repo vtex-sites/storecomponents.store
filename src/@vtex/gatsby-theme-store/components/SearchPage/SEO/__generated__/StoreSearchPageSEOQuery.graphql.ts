@@ -26,7 +26,7 @@ export type StoreSearchPageSeoQueryQuery = { seo: Maybe<{ extraBlocks: Array<May
 // Query Related Code
 
 export const StoreSearchPageSEOQuery = {
-  query: "query StoreSearchPageSEOQuery {\n  seo: vtexCmsPageContent(type: {eq: \"seo\"}) {\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n}\n",
+  query: undefined,
   sha256Hash: "c2f9f2304e3c79ed99d177267785aef8cd1099e5540f4b42f55c1f9dd337728d",
   operationName: "StoreSearchPageSEOQuery",
 }

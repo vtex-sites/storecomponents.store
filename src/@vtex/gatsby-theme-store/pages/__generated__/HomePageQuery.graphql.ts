@@ -32,7 +32,7 @@ export type HomePageQueryQuery = { seo: Maybe<{ extraBlocks: Array<Maybe<{ block
 // Query Related Code
 
 export const HomePageQuery = {
-  query: "query HomePageQuery($from: Int!, $to: Int!, $collection: String!, $orderBy: String!, $hideUnavailableItems: Boolean!) {\n  seo: vtexCmsPageContent(type: {eq: \"seo\"}) {\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n  content: vtexCmsPageContent(type: {eq: \"home\"}) {\n    blocks {\n      name\n      props\n    }\n  }\n  vtex {\n    products(from: $from, to: $to, collection: $collection, orderBy: $orderBy, hideUnavailableItems: $hideUnavailableItems) {\n      productId\n      productName\n      linkText\n      productClusters {\n        name\n      }\n      items {\n        itemId\n        images {\n          imageUrl\n          imageText\n        }\n        sellers {\n          sellerId\n          commercialOffer: commertialOffer {\n            maxInstallments: Installments(criteria: MAX_WITHOUT_INTEREST) {\n              value: Value\n              numberOfInstallments: NumberOfInstallments\n            }\n            installments: Installments(criteria: ALL) {\n              value: Value\n              numberOfInstallments: NumberOfInstallments\n              interestRate: InterestRate\n            }\n            availableQuantity: AvailableQuantity\n            price: Price\n            listPrice: ListPrice\n            spotPrice\n            teasers {\n              name\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+  query: undefined,
   sha256Hash: "35c2c8c5d19533e4e3e21283c536db6496cdeec6e06f3a539b65bfd80738c8eb",
   operationName: "HomePageQuery",
 }

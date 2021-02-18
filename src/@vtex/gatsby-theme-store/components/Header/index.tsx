@@ -5,7 +5,7 @@ import { Flex, Header } from '@vtex/store-ui'
 import type { FC } from 'react'
 import React, { Fragment } from 'react'
 
-import Login from '../Login'
+import Login from '../../../../components/Login'
 import Logo from './Logo'
 import Menu from './Menu'
 import NotificationBar from './NotificationBar'
