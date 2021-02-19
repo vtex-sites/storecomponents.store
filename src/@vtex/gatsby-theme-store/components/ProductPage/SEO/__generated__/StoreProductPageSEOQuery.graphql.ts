@@ -26,7 +26,7 @@ export type StoreProductPageSeoQueryQuery = { seo: Maybe<{ extraBlocks: Array<Ma
 // Query Related Code
 
 export const StoreProductPageSEOQuery = {
-  query: undefined,
+  query: process.env.NODE_ENV === 'production' ? undefined : "query StoreProductPageSEOQuery {\n  seo: vtexCmsPageContent(type: {eq: \"seo\"}) {\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n}\n",
   sha256Hash: "97c4d3ad6a7663c3b0222a71873d74ff87edc013e66c3fa3f8405333f808489a",
   operationName: "StoreProductPageSEOQuery",
 }
