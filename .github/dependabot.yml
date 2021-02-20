@@ -1,8 +1,5 @@
 version: 2
 updates:
-  ignored_updates:
-      - match:
-          update_type: 'semver:major'
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
