@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+      time: '08:30'
+      timezone: 'America/Sao_Paulo'
+    allow:
+      - dependency-name: '@vtex/*'
+    open-pull-requests-limit: 5
+    reviewers:
+      - 'vtex/faststore'
+      - 'vtex/store-framework'
