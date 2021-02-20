@@ -11,9 +11,9 @@ updates:
     ignored_updates:
       - match:
           update_type: 'semver:major'
-    automerged_updates:
-      - match:
-          update_type: 'semver:patch'
+    # automerged_updates:
+    #   - match:
+    #       update_type: 'semver:patch'
     open-pull-requests-limit: 5
     reviewers:
       - 'vtex/faststore'
