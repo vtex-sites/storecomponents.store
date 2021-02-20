@@ -2164,31 +2164,6 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@^0.265.0":
-  version "0.265.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.265.0.tgz#d8ced1cc2d18d437b6ba98dd18364cdc9adea702"
-  integrity sha512-g2kRKnMGnAFRTLbgRfUlp88m8XOZSSMQOx5B5aZFudPr7G5+vEL5ilW2aUNmpr/Jq/qhEmRnrFJ+xtPBvX12qA==
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
-"@vtex/gatsby-plugin-i18n@^0.265.0":
-  version "0.265.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.265.0.tgz#3e8fe2149052773dd1b2c4e501e6fc29f6b8483c"
-  integrity sha512-KHf67Da1zUyDElZBx8gIGbfRDDIntCH+ycgSLnb0/QgTJ3pPsI3DFdTIrnuKdp7EvkvqSnNHYQc+nFX5Swz05w==
-  dependencies:
-    "@babel/parser" "^7.12.7"
-    "@babel/preset-typescript" "^7.12.7"
-    "@babel/register" "^7.12.1"
-    "@babel/traverse" "^7.12.9"
-    "@babel/types" "^7.12.7"
-    intl-messageformat-parser "^6.0.18"
-    react-intl "^5.7.1"
-
 "@vtex/gatsby-plugin-i18n@^0.265.0":
   version "0.265.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.265.0.tgz#3e8fe2149052773dd1b2c4e501e6fc29f6b8483c"
@@ -2269,24 +2244,6 @@
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
-
-"@vtex/store-ui@^0.265.0":
-  version "0.265.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.265.0.tgz#cc3f66baa60f5d9efd0333136396b0e04f37f471"
-  integrity sha512-el+pwpNRCrJDo33ONNh5YTUKfoHNijSnJElKQbtlPAMrzT/HDvlS0FrSSEnJ0K73isQxQeCJkCAPCdLYeTrb7A==
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.265.0"
-    deepmerge "^4.2.2"
-    gatsby-link "^2.4.13"
-    react-swipeable "^6.0.0"
-    reakit "^1.3.0"
-    text-mask-core "^5.1.2"
-    theme-ui "^0.3.1"
 
 "@vtex/store-ui@^0.265.0":
   version "0.265.0"
