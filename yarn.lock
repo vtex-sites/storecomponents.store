@@ -2166,7 +2166,7 @@
 
 "@vtex/gatsby-plugin-i18n@^0.265.0":
   version "0.265.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.265.0.tgz#3e8fe2149052773dd1b2c4e501e6fc29f6b8483c"
+  resolved "https://registry.npmjs.org/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.265.0.tgz#3e8fe2149052773dd1b2c4e501e6fc29f6b8483c"
   integrity sha512-KHf67Da1zUyDElZBx8gIGbfRDDIntCH+ycgSLnb0/QgTJ3pPsI3DFdTIrnuKdp7EvkvqSnNHYQc+nFX5Swz05w==
   dependencies:
     "@babel/parser" "^7.12.7"
