@@ -7,7 +7,7 @@
     "@vtex/gatsby-plugin-google-tag-manager": "^0.261.1",
     "@vtex/gatsby-plugin-graphql": "^0.266.3",
     "@vtex/gatsby-plugin-nginx": "^0.261.0",
-    "@vtex/gatsby-source-vtex": "^0.261.0",
+    "@vtex/gatsby-source-vtex": "^0.265.0",
     "@vtex/gatsby-theme-store": "^0.266.3",
     "@vtex/store-ui": "^0.265.0",
     "babel-preset-gatsby": "^0.5.5",
