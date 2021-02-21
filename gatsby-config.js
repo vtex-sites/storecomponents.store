@@ -14,6 +14,7 @@ const {
   CONTEXT: ENV = NODE_ENV,
 } = process.env
 
+const allowedHosts = ['storecomponents.vtex.app', 'storetheme.vtex.com']
 const isProduction = ENV === 'production'
 const siteUrl = isProduction ? URL : DEPLOY_PRIME_URL
 
@@ -66,6 +67,7 @@ module.exports = {
       resolve: '@vtex/gatsby-plugin-google-tag-manager',
       options: {
         gtmId: 'GTM-TT2MDM3',
+        allowedHosts,
       },
     },
     {
