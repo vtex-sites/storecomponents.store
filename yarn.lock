@@ -2211,10 +2211,10 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.267.0":
-  version "0.267.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.267.0.tgz#7a8e0c35a376a7f9634c57110f3be2951d87086f"
-  integrity sha512-QrJLqt6B4iNPGtPQywO0Hw/rYe27ce8S9BCCweL7UmC29cwvHso3548jLKJ7GPD6PuJ8SBfDjtGUDhJ70LCCBA==
+"@vtex/gatsby-theme-store@0.267.2":
+  version "0.267.2"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.267.2.tgz#5d6a0cc01590ba893092fd2d18ebadf03a12e416"
+  integrity sha512-ihICftbqYLqTHe43q1WM/nehb54qNmqyqNxP6L5/ryjHY/jDZ9CA85sv0aU7RvmpwirEoFwYSHkVCIGV5AbFcw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.266.3"
