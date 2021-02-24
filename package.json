@@ -21,7 +21,7 @@
     "react-dom": "^0.0.0-experimental-7f28234f8"
   },
   "devDependencies": {
-    "@vtex/lighthouse-config": "^0.265.0",
+    "@vtex/lighthouse-config": "^0.269.0",
     "@vtex/prettier-config": "^0.3.5",
     "@vtex/tsconfig": "^0.5.5",
     "eslint": "^7.14.0",
