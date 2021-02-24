@@ -2164,6 +2164,18 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
+"@vtex/gatsby-plugin-graphql@^0.269.0":
+  version "0.269.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.269.0.tgz#f90ccafd7dd43c8bf29a9d4821c97cd403c54df6"
+  integrity sha512-o7CDr2hMZU4JbI7KQqNki5P5+04V8CFz+jJTDz0Y9OJH3Tn/lQrkXG9AVabJ0UyIxyN+KhGz5zQ1t5CnH2O3hw==
+  dependencies:
+    "@graphql-codegen/core" "^1.17.7"
+    "@graphql-codegen/plugin-helpers" "^1.17.7"
+    "@graphql-codegen/typescript" "^1.17.7"
+    "@graphql-codegen/typescript-operations" "^1.17.7"
+    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
+    fs-extra "^9.0.1"
+
 "@vtex/gatsby-plugin-i18n@^0.265.0":
   version "0.265.0"
   resolved "https://registry.npmjs.org/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.265.0.tgz#3e8fe2149052773dd1b2c4e501e6fc29f6b8483c"
@@ -2235,10 +2247,10 @@
     schema-dts "^0.6.0"
     swr "^0.3.0"
 
-"@vtex/lighthouse-config@^0.265.0":
-  version "0.265.0"
-  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.265.0.tgz#cb5ef454f93c45d996a2f91d27c94803fe5454a5"
-  integrity sha512-MVOM+x19X1dJ3wSsoyiM5PN8zkVxw3DJnpH/XPx3Q5xMYgYSNV8ISxx8Ix/BkuDvYk3QwNY4NNWxF0Xyy9cVxw==
+"@vtex/lighthouse-config@^0.269.0":
+  version "0.269.0"
+  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.269.0.tgz#7415fe0d37c09de29d2f2308e59ef4b1ca901242"
+  integrity sha512-H8cS2cMgpTtpOvAwkw2cEsVIoAAir/OcgSMlsdGTtuRo1xCVBFMLsCJ4r87Wb5u13r+eVO82ottSAqPmOS4s+Q==
 
 "@vtex/prettier-config@^0.3.5":
   version "0.3.6"
