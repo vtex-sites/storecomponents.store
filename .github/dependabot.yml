@@ -12,3 +12,5 @@ updates:
     reviewers:
       - 'vtex/faststore'
       - 'vtex/store-framework'
+    labels:
+      - 'automerge'
