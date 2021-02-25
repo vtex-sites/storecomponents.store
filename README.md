@@ -3,7 +3,7 @@
   <a href="https://storetheme.vtex.com/">
     <img alt="Gatsby" src="https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png" width="250" />
   </a>
-</p>
+</p> 
 <h1 align="center">
   A store theme powered by VTEX and Gatsby
 </h1>
