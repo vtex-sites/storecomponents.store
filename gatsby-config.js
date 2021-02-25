@@ -30,6 +30,14 @@ const transformHeaders = (headers, path) => {
     outputHeaders.push('X-Frame-Options: DENY')
   }
 
+  if (path.startsWith('/graphql')) {
+    // 6 months stale
+    // TODO: public?
+    outputHeaders.push(
+      'Cache-Control: public, max-age=0, stale-while-revalidate=15552000'
+    )
+  }
+
   return outputHeaders.concat(headers)
 }
 
