@@ -2164,10 +2164,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-i18n@^0.270.0":
-  version "0.270.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.270.0.tgz#367ae5b4d7812be5b89833257830e68527292646"
-  integrity sha512-kfY1D7HERREUxRlmli7BPY+p5i4LS+Vs7m6S6U66xazX2oOEX5nTOeJxBa0Imu5htETxBgCHddpwuA9QcKtMpQ==
+"@vtex/gatsby-plugin-i18n@^0.270.0", "@vtex/gatsby-plugin-i18n@^0.270.1":
+  version "0.270.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.270.1.tgz#45f6357161104f0f390c1d8f798bb302d692fd18"
+  integrity sha512-Xzbdp5PP2XXwS6BXfmq20eNNIdYniQjsyGxhdPGMuZnW3Me8iaqc1P6vVHvKvHOmlmlWxobysQu6p71cQBFNNw==
   dependencies:
     "@babel/parser" "^7.12.7"
     "@babel/preset-typescript" "^7.12.7"
@@ -2245,17 +2245,17 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.270.0", "@vtex/store-ui@^0.270.0":
-  version "0.270.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.270.0.tgz#b6d70fe9a029b7eb43580b1f5db586121beccbf3"
-  integrity sha512-RQkaBisSPCjflEoo/3995OPZU+TVSRoQCn1M0cFPu4W1fQgogWbzXz4LRsZLJwXMjVM+w5Y+DftJ4K9mIPOI0g==
+"@vtex/store-ui@0.270.1", "@vtex/store-ui@^0.270.0":
+  version "0.270.1"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.270.1.tgz#371dfddadfc82dfa751b194965e1d2acfc52ba3f"
+  integrity sha512-RwBuTGn9+0vGqAracwtUo6x33TWQHTNX3+GmNcg1gmfQeLj1BeolDBSr0Vs+N1fQK4GRHyDTOIMC7xulZQtmjw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@types/theme-ui__components" "^0.2.6"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.270.0"
+    "@vtex/gatsby-plugin-i18n" "^0.270.1"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     react-swipeable "^6.0.0"
