@@ -2135,10 +2135,10 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@^0.270.1":
-  version "0.270.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.270.1.tgz#77fb50f4f456b10b6e1858d4779b46cc472bf1c2"
-  integrity sha512-43l2xM82cGVVuzlz+BbVtI4X0LI9n6ip+gTkkoIoWaUdt2bV0O9vTo+Los44wpjRSrfH0tBnb/hC0P+EATQyLA==
+"@vtex/gatsby-plugin-cms@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.273.0.tgz#38bafe94445b5d229fabb21ccc9717d1e1319c72"
+  integrity sha512-65HDfyexYg1u7VdrfF9Lo4QjwGBPB/to5AEzq3IYB8ex3VIePMZIrR1F2QfboekzfUvd+EolWonVZX4QaOQOBw==
   dependencies:
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"
@@ -2147,15 +2147,15 @@
     gatsby-graphql-source-toolkit "^0.6.3"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-google-tag-manager@0.272.0":
-  version "0.272.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.272.0.tgz#66ab3be68976a133c8274ba77095e28156cf2ee3"
-  integrity sha512-YIDLcqoAazRWt16y6f4KMBT9MWBsKDr/pOrwco6LfBH+/qnXvR2eDPJN2vkyfPzjX+fMM+OzTAqLnGwVLY4HiA==
+"@vtex/gatsby-plugin-google-tag-manager@0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.273.0.tgz#193dc915ae9c3e8e696724d3976f224c32b270a9"
+  integrity sha512-ckUYti+XUpaAnRt6svGsbCQfwAicIUWqIoOz7IxocLZOkDkb+S3uUb1RZALKY9Qm7v/j+yVs2bSOeNapvBE4cw==
 
-"@vtex/gatsby-plugin-graphql@^0.270.0":
-  version "0.270.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.270.0.tgz#2f21d9b96cf7c471f11063b5e914d257df26cddc"
-  integrity sha512-DJWkkyvRc4Ss7shAbq5D7V0paaAq/ziUETeU/XLGTpcnClFkd+Yiv+EnPLDTW6IK9BQ+ATLCXPSnOnk0gtduuQ==
+"@vtex/gatsby-plugin-graphql@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.273.0.tgz#152b601aeea8a6536a783c0cefb7e4caef5990e1"
+  integrity sha512-jWdcRwJyTwiAu6g4qf6pG40yUWIBJ0y79z6RRePWykfkrx9qt+ryldforCoetxcnESizzT7A8cKkDatDXPX3LQ==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2164,22 +2164,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@^0.270.1":
-  version "0.270.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.270.1.tgz#bda9765880ed9272e8a45317122b3bfcdffade83"
-  integrity sha512-6encz5eZtkzYhcfZkaeXhxQj0ZIDr1O91NxRtiWiEvI14zPc56+SeTbrZfvSMIUZIHgyXYuZ3Wtk2s5nBF8OAg==
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
-"@vtex/gatsby-plugin-i18n@^0.270.0":
-  version "0.270.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.270.0.tgz#367ae5b4d7812be5b89833257830e68527292646"
-  integrity sha512-kfY1D7HERREUxRlmli7BPY+p5i4LS+Vs7m6S6U66xazX2oOEX5nTOeJxBa0Imu5htETxBgCHddpwuA9QcKtMpQ==
+"@vtex/gatsby-plugin-i18n@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.273.0.tgz#4363beda77e4efcf5bcba748d7eea19c1c3ef247"
+  integrity sha512-NIombN5PxZkN5mUfxjMMFBUIaYxmnSR5uV0IuucCpq2M0ObgG30F6HK92M0I0h9sJdplSm8hxXHl2JVQVvf0Gg==
   dependencies:
     "@babel/parser" "^7.12.7"
     "@babel/preset-typescript" "^7.12.7"
@@ -2189,31 +2177,18 @@
     intl-messageformat-parser "^6.0.18"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-i18n@^0.270.1":
-  version "0.270.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.270.1.tgz#45f6357161104f0f390c1d8f798bb302d692fd18"
-  integrity sha512-Xzbdp5PP2XXwS6BXfmq20eNNIdYniQjsyGxhdPGMuZnW3Me8iaqc1P6vVHvKvHOmlmlWxobysQu6p71cQBFNNw==
-  dependencies:
-    "@babel/parser" "^7.12.7"
-    "@babel/preset-typescript" "^7.12.7"
-    "@babel/register" "^7.12.1"
-    "@babel/traverse" "^7.12.9"
-    "@babel/types" "^7.12.7"
-    intl-messageformat-parser "^6.0.18"
-    react-intl "^5.7.1"
-
-"@vtex/gatsby-plugin-nginx@0.272.0":
-  version "0.272.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.272.0.tgz#907d0d50499075bc51c294ceb1d5bdccb69c4e07"
-  integrity sha512-++Vd9wFnK1yusJaETxc+52nQO0eADg+pcHZxx5YCU2ciaYklQLXdPyHhCE8i5PLSb4QjroBInmddNbv68Fmr5A==
+"@vtex/gatsby-plugin-nginx@0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.273.0.tgz#8f8407c6e5376f6bb251c22f974d4b78ce98ebf3"
+  integrity sha512-CaHuUCQJsbphYuMRaVFClzKIzFzNcFIjovkRDUSGWI5Q9VHuLZQnWMiv9yeWQen4Cy1kqQcDE4i+q4p64qHNvw==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^3.1.1"
 
-"@vtex/gatsby-plugin-theme-ui@^0.270.0":
-  version "0.270.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.270.0.tgz#81d25528a9fe323fb03fb2a8837b9a8201867817"
-  integrity sha512-3W1MvOUdpcQ5sJ1Kdkv3plGSlSvx2zp8lNd3bHmE/tDb5CWZy9DFnnBGKrTtJvgAiarDknBPrfo8HOZm5naoew==
+"@vtex/gatsby-plugin-theme-ui@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.273.0.tgz#6364e0f463baa5c9e07d6ee2e820283a1c53270c"
+  integrity sha512-vGReAA1KqCzpPwD7AJdMLLrnKW+GnS3BoPMFDFRrErGULupDwMBepHbDGLigtgUHWw00Fe1OKjLfw5sVPnpQXw==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -2224,10 +2199,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@^0.270.1":
-  version "0.270.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.270.1.tgz#b658b198af9414455178baae5bc4a9bf90ab51c1"
-  integrity sha512-czZLj6ppcJ2hByh3zDJhRh6xhVGATDwrtN7qdReQNH5kybZ0C90QkLp3lIUH44piyRnaeBxS4/6hvGWiVg3+Hg==
+"@vtex/gatsby-source-vtex@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.273.0.tgz#ee2657d293b073781e793f57b48b5430da3d7c57"
+  integrity sha512-8CQkpc0ggX7E6pV+kpiGinoxyiMGYtjqpH/i6Kcc9rsRHeMOma8wlWk4M+Fq7sa27gY+dVi2uqmO3GJGMePh8g==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
@@ -2236,69 +2211,32 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.272.0":
-  version "0.272.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.272.0.tgz#d8531cdd22fc0582f68ddb83cf01c0b8d2063ba4"
-  integrity sha512-v/nkc12i2563lMrohN4dH8Pc/7I8I9A2T1pxUBSU2jOFTFVbAGc2YZ3DHkS17XBdpNZCt4f9i8vvEjwIHqO/GA==
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "^0.270.0"
-    "@vtex/gatsby-plugin-i18n" "^0.270.0"
-    "@vtex/gatsby-plugin-theme-ui" "^0.270.0"
-    "@vtex/store-ui" "^0.270.0"
-    gatsby-plugin-bundle-stats "^2.2.0"
-    gatsby-plugin-react-helmet-async "^1.1.0"
-    html-loader "^1.1.0"
-    intersection-observer "^0.11.0"
-    intl-format-cache "^4.3.0"
-    markdown-loader "^5.1.0"
-    nprogress "^0.2.0"
-    p-queue "^6.5.0"
-    react-helmet-async "^1.0.7"
-    react-hook-inview "^4.3.0"
-    requestidlecallback-polyfill "^1.0.2"
-    schema-dts "^0.6.0"
-    swr "^0.3.0"
+"@vtex/gatsby-theme-store@0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.273.0.tgz#d17ae9f1cf47ffc85586489cea96c1b3b5261654"
+  integrity sha512-nk7BoiA3cbpjlDmStZZD7guN+n913GC15JAeNW1zsqr2V2guMiRakgwEQNZiSGDeM9dRXmYi186DOqbOn4tg3Q==
 
-"@vtex/lighthouse-config@^0.270.1":
-  version "0.270.1"
-  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.270.1.tgz#56defebc6b796c959ca4f24f93f83b89639301b4"
-  integrity sha512-2PA8fsaLGGCFzsO5e9LTtEgHbLopeoyRR32XQnxo/MI0lfAr2xPS828vuDEagBwen19U7pGKHA/8jU0Hf3oYqg==
+"@vtex/lighthouse-config@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.273.0.tgz#e0f71679d15d41b2a645aa3aa9ffacf141a59913"
+  integrity sha512-1WAyq38gGq+EOyLfT1qBtjwic7K8+hUFs3K2M4bEpEN7ib0xjJr9vnWEY5sLzhJ2HG83auOozxSvOZCPcgnNqA==
 
 "@vtex/prettier-config@^0.3.5":
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.270.1":
-  version "0.270.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.270.1.tgz#371dfddadfc82dfa751b194965e1d2acfc52ba3f"
-  integrity sha512-RwBuTGn9+0vGqAracwtUo6x33TWQHTNX3+GmNcg1gmfQeLj1BeolDBSr0Vs+N1fQK4GRHyDTOIMC7xulZQtmjw==
+"@vtex/store-ui@0.273.0", "@vtex/store-ui@^0.273.0":
+  version "0.273.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.273.0.tgz#d75d99bfc7d5847ced0ef8f43b7c0c54d3df6bec"
+  integrity sha512-RtlB0vkfF6gNW9GhX5YewJEXX459Q6+BL9ikgIPSlLrTrXJTSyYxo9T6hHBoUrxdwDrOFQCsBEBr4wqwyNi4OA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@types/theme-ui__components" "^0.2.6"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.270.1"
-    deepmerge "^4.2.2"
-    gatsby-link "^2.4.13"
-    react-swipeable "^6.0.0"
-    reakit "^1.3.0"
-    text-mask-core "^5.1.2"
-    theme-ui "^0.3.1"
-
-"@vtex/store-ui@^0.270.0":
-  version "0.270.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.270.0.tgz#b6d70fe9a029b7eb43580b1f5db586121beccbf3"
-  integrity sha512-RQkaBisSPCjflEoo/3995OPZU+TVSRoQCn1M0cFPu4W1fQgogWbzXz4LRsZLJwXMjVM+w5Y+DftJ4K9mIPOI0g==
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.270.0"
+    "@vtex/gatsby-plugin-i18n" "^0.273.0"
     deepmerge "^4.2.2"
     gatsby-link "^2.4.13"
     react-swipeable "^6.0.0"
