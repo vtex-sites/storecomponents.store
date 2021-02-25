@@ -34,7 +34,7 @@ const transformHeaders = (headers, path) => {
     // 6 months stale
     // TODO: public?
     outputHeaders.push(
-      'Cache-Control: public, max-age=0, stale-while-revalidate=15552000'
+      'Cache-Control: public, max-age=120, stale-while-revalidate=604800'
     )
   }
 
