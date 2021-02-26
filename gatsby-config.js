@@ -63,6 +63,7 @@ module.exports = {
                 fromPath,
                 toPath,
                 isPermanent: type === 'PERMANENT',
+                statusCode: type === 'PERMANENT' ? 301 : 302,
               }))
             ),
       },
