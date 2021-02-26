@@ -2372,10 +2372,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@0.274.0-alpha.5":
-  version "0.274.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.274.0-alpha.5.tgz#697fd4709cf3699ae3680f5ebfe2020693ac5df8"
-  integrity sha512-vyKoCuOWSd2i1Ix9xRAkSzmRN4V0dlWaSyoStmDJ7k8fCI7d97D3LaJDMXHBYU0gnJxNZIvCDR3CTdrJEb7rnw==
+"@vtex/gatsby-source-vtex@0.274.0-alpha.6":
+  version "0.274.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.274.0-alpha.6.tgz#50644251ba6a8d11caefa16b3189da5348da5ed0"
+  integrity sha512-50fknhVi/TdnJBTfE+/9L5usdLGRCfcvUTVYBJBBle9O1onVWRZS+4DOnpHCoyn6wRfo2/d09WHrE+YOp6El2A==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
