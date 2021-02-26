@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `${__dirname}/vtex.env`,
 })
 
+const csv2json = require('csvtojson')
+
 const environment = process.env.GATSBY_VTEX_ENVIRONMENT
 const workspace = process.env.GATSBY_VTEX_IO_WORKSPACE
 
@@ -53,6 +55,16 @@ module.exports = {
         tenant: STORE_ID,
         environment,
         workspace,
+        getRedirects: () =>
+          csv2json({ delimiter: ';' })
+            .fromFile('./redirects.csv')
+            .then((redirects) =>
+              redirects.map(({ fromPath, toPath, type }) => ({
+                fromPath,
+                toPath,
+                isPermanent: type === 'PERMANENT',
+              }))
+            ),
       },
     },
     {
