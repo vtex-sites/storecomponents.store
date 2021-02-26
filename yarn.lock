@@ -2350,10 +2350,10 @@
     intl-messageformat-parser "^6.0.18"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-nginx@0.274.0-alpha.2":
-  version "0.274.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.274.0-alpha.2.tgz#50dd71e762dff0d432aaee3f0be530915250cbad"
-  integrity sha512-6NXzM91QSGgwOlX5mgnej9K/x7Oa6J8BOm4bUIeE1OjLVO7UD9HamueD1DEMoQgApV7d1eeRIi2IuAuYEbmvuA==
+"@vtex/gatsby-plugin-nginx@0.274.0-alpha.3":
+  version "0.274.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.274.0-alpha.3.tgz#c28098eb85930d78248fc98df1869a46e404bc06"
+  integrity sha512-JwpKviY6a/oOqjkgv1PyYg7cuALjZpMC6PLl1mdAge3CQ6QE/MM80Le2cjpT3ZZNLBH6jCdbLMxRP9r9QWnKFw==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^3.1.1"
@@ -2372,10 +2372,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@0.274.0-alpha.1":
-  version "0.274.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.274.0-alpha.1.tgz#592588e9f699055d06f75c907552cf515ea41cdf"
-  integrity sha512-1NJ73rUUGCfGa2jRlZYlVhZj6UVc0GcWix1yr6qlYmeRtizr3siYd1EVB4I2g0xtzFjQDeQZFFYksfCcJw2AUw==
+"@vtex/gatsby-source-vtex@0.274.0-alpha.3":
+  version "0.274.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.274.0-alpha.3.tgz#f07081236c7d71216cc02f5803e8052b5d3afca3"
+  integrity sha512-gblRzr1P+e2LJghTPTTb6g+OY1SxmQVFxhBS2IoV5PnU2lrzEFQSWnVQbrboY48dntD6r16PbnBtjroiJ+GLrg==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
