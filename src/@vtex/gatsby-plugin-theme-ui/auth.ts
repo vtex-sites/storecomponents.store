@@ -1,4 +1,4 @@
 import { authProvidersTheme } from '@vtex/store-ui'
 
-// Test
+// Test 2
 export default authProvidersTheme
