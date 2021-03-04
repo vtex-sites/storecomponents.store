@@ -2439,10 +2439,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/sfj-functions@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@vtex/sfj-functions/-/sfj-functions-1.0.1.tgz#84105693d848073a846803e332902919e3a84731"
-  integrity sha512-rcAW5nzWSgetZgpQ4HOIUjDMN0dCw1G7RQpNQMd14JCC6WfmUdUM4w0T5newbvu2wsJuxOx6heg3uomyIMbvzg==
+"@vtex/sfj-functions@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@vtex/sfj-functions/-/sfj-functions-1.0.2.tgz#bb9476b3c1f2f8fd6ba7cd5785c16f16e9ff9c63"
+  integrity sha512-+tr+msmUzPJCNkhxxuC9iyxArbYgk4qYzct+7UdePtcjVJ25bxepkAvNNrkBRbp3p2fvOeYnvC3URxSLlNUYIw==
   dependencies:
     aws-sdk "^2.853.0"
     glob "^7.1.6"
