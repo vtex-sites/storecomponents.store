@@ -1,17 +1,18 @@
-describe('File test 1', () => {
-    it('File:1 (1)', () => {
+describe('File test 0', () => {
+    it('File:0 (1)', () => {
         expect(true).to.equal(true)
     })
-    it('File:1 (2)', () => {
+    it('File:0 (2)', () => {
         expect(true).to.equal(true)
     })
-    it('File:1 (3)', () => {
+    it('File:0 (3)', () => {
         expect(true).to.equal(true)
     })
-    it('File:1 (4)', () => {
+    it('File:0 (4)', () => {
         expect(true).to.equal(true)
     })
-    it('File:1 (5)', () => {
+    it('File:0 (5)', () => {
+        import "faillib"
         expect(true).to.equal(true)
     })
 })

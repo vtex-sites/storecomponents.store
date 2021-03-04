@@ -8,8 +8,8 @@ describe('File test 2 - 1', () => {
     it('File: 2 (3)', () => {
         expect(true).to.equal(true)
     })
-    it('File: 2 (4)', () => {
-        import x from 'blabla'
+    it('File: 2 (4) Break', () => {
+        // import x from 'blabla'
         expect(true).to.equal(true)
     })
     it('File: 2 (5)', () => {
@@ -18,7 +18,6 @@ describe('File test 2 - 1', () => {
     it('File: 2 (6)', () => {
         expect(true).to.equal(true)
     })
-    
 
 })
 
