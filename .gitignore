@@ -70,3 +70,6 @@ yarn-error.log
 
 # lighthouse CI autogen files
 .lighthouseci
+
+# function build files
+dist/
