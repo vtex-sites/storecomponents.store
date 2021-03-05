@@ -9,7 +9,7 @@ describe('File test 2 - 1', () => {
         expect(true).to.equal(true)
     })
     it('File: 2 (4) Break', () => {
-        // import x from 'blabla'
+        import x from 'blabla'
         expect(true).to.equal(true)
     })
     it('File: 2 (5)', () => {
