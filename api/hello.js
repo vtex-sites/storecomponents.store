@@ -1,5 +1,12 @@
-exports.handler = (req, res) => {
-  const { name = 'World' } = req.query
+exports.handler = async (event) => {
+  let name = 'World'
 
-  res.status(200).send(`Hello ${name}!`)
+  if (event.queryStringParameters && event.queryStringParameters.name) {
+    name = event.queryStringParameters.name
+  }
+
+  return {
+    statusCode: 200,
+    body: `Hello ${name}`,
+  }
 }
