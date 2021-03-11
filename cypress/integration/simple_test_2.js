@@ -18,7 +18,6 @@ describe('File test 2 - 1', () => {
     it('File: 2 (6)', () => {
         expect(true).to.equal(true)
     })
-
 })
 
 describe('File test 2 - 2', () => {
