@@ -61,7 +61,7 @@
     {
       "name": "Footer",
       "props": {
-        "headerSelection": "MAIN_FOOTER"
+        "headerSelection": "MAIN_FOOTER" 
       }
     }
   ],
