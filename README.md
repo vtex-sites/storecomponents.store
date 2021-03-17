@@ -16,7 +16,7 @@ asdfasdf
 asdfasdf
     Get up and running by cloning this repo.
 asdfasdf
-    ```shell
+    ```shellasdfasdf
     # Clone this repo into your machineasdfasdfasdf
     npx degit vtex-sites/storecomponents.store my-awesome-store
     ```
