@@ -53,7 +53,7 @@
           "orderBy": "OrderByScoreDESC",
           "collection": "1182"
         },
-        "title": "Hello Tech Thursday!!!"
+        "title": "AAAAAAAAA"
       }
     }
   ],
@@ -61,7 +61,7 @@
     {
       "name": "Footer",
       "props": {
-        "headerSelection": "MAIN_FOOTER" 
+        "headerSelection": "MAIN_FOOTER"
       }
     }
   ],
