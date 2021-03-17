@@ -27,7 +27,7 @@ asdfasdf
 
     ```shell
     cd my-awesome-store/
-    yarn
+    yarnasdfasdf
     ```
 
 2.  **Setup env vars.**
