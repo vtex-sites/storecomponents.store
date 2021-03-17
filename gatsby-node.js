@@ -52,35 +52,37 @@ exports.onCreateNode = async ({ node, reporter }) => {
   if (node.type === 'plp' || node.type === 'productListLandingPage') {
     const banner = node.blocks.find((block) => block.name === 'SearchBanner')
 
-    banner.props.sources = [
-      {
-        media: '(min-width: 40em)',
-        srcSet: sizes.desktop
-          .map(
-            (width) =>
-              `${optimize(banner.props.desktop.srcSet, {
-                width,
-                aspect: true,
-              })} ${width}w`
-          )
-          .join(','),
-      },
-      {
-        media: '(max-width: 40em)',
-        srcSet: sizes.mobile
-          .map(
-            (width) =>
-              `${optimize(banner.props.mobile.srcSet, {
-                width,
-                aspect: true,
-              })} ${width}w`
-          )
-          .join(','),
-      },
-    ]
+    if (banner) {
+      banner.props.sources = [
+        {
+          media: '(min-width: 40em)',
+          srcSet: sizes.desktop
+            .map(
+              (width) =>
+                `${optimize(banner.props.desktop.srcSet, {
+                  width,
+                  aspect: true,
+                })} ${width}w`
+            )
+            .join(','),
+        },
+        {
+          media: '(max-width: 40em)',
+          srcSet: sizes.mobile
+            .map(
+              (width) =>
+                `${optimize(banner.props.mobile.srcSet, {
+                  width,
+                  aspect: true,
+                })} ${width}w`
+            )
+            .join(','),
+        },
+      ]
 
-    delete banner.props.desktop
-    delete banner.props.mobile
+      delete banner.props.desktop
+      delete banner.props.mobile
+    }
   }
 }
 
