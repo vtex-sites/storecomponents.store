@@ -23,7 +23,7 @@ asdfasdf
 
 1.  **Install dependencies**
 
-    Install dependencies with yarn
+    Install dependencies with yarnadsfasdf
 
     ```shell
     cd my-awesome-store/
