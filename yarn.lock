@@ -2350,10 +2350,10 @@
     intl-messageformat-parser "^6.0.18"
     react-intl "^5.7.1"
 
-"@vtex/gatsby-plugin-nginx@0.275.0":
-  version "0.275.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.275.0.tgz#faa66185b29f9981abf00c00adb5f1d6398dd91c"
-  integrity sha512-Hg/NvfUvxS8lnIL5Mi8uAvniUYTiWkS4DUnqpLaoMhSVOR19679VzHNaxTILXcW5RSI/YECKcUHNHhIzmwkc4A==
+"@vtex/gatsby-plugin-nginx@0.277.6":
+  version "0.277.6"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.277.6.tgz#9afc4d3ba2f6242ab0c5c352df98378490c382f5"
+  integrity sha512-o2E4PMQPghDghvfH9Is5bn58muWB7DFN256zY6hxjcNEQg8oSQ+4+2n0VpEAmshKAX8kxix9STcQTbFW86OWOQ==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^3.1.1"
