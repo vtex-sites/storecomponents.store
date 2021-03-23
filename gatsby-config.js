@@ -1,13 +1,14 @@
-require('dotenv').config({
-  path: `${__dirname}/vtex.env`,
-})
+const { resolve } = require('path')
 
 const csv2json = require('csvtojson')
 
-const environment = process.env.GATSBY_VTEX_ENVIRONMENT
-const workspace = process.env.GATSBY_VTEX_IO_WORKSPACE
+require('dotenv').config({
+  path: resolve('vtex.env'),
+})
 
 const STORE_ID = 'storecomponents'
+const environment = process.env.GATSBY_VTEX_ENVIRONMENT
+const workspace = process.env.GATSBY_VTEX_IO_WORKSPACE
 
 const {
   NODE_ENV,
@@ -19,21 +20,6 @@ const {
 const allowedHosts = ['storecomponents.vtex.app', 'storetheme.vtex.com']
 const isProduction = ENV === 'production'
 const siteUrl = isProduction ? URL : DEPLOY_PRIME_URL
-
-const transformHeaders = (headers, path) => {
-  const outputHeaders = [
-    // Security
-    'X-XSS-Protection: 1; mode=block',
-    'X-Content-Type-Options: nosniff',
-    'Referrer-Policy: same-origin',
-  ]
-
-  if (!path.includes('/account')) {
-    outputHeaders.push('X-Frame-Options: DENY')
-  }
-
-  return outputHeaders.concat(headers)
-}
 
 module.exports = {
   siteMetadata: {
@@ -130,23 +116,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        headers: {
-          '/preview': [
-            'Content-Security-Policy: frame-src https://*.myvtex.com/',
-          ],
-        },
-        transformHeaders,
-        mergeSecurityHeaders: false,
-        generateMatchPathRewrites: true,
-      },
-    },
-    {
       resolve: '@vtex/gatsby-plugin-nginx',
-      options: {
-        transformHeaders,
-      },
     },
   ],
 }

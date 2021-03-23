@@ -1,16 +1,5 @@
 const { optimize } = require('@vtex/gatsby-theme-store/sdk/img/fileManager')
 
-exports.onCreateWebpackConfig = ({ actions: { setWebpackConfig } }) => {
-  setWebpackConfig({
-    resolve: {
-      alias: {
-        react: require.resolve('react'),
-        'react-dom': require.resolve('react-dom'),
-      },
-    },
-  })
-}
-
 const throwOnErrors = (errors, reporter) => {
   if (Array.isArray(errors) && errors.length > 0) {
     reporter.panicOnBuild(errors.toString())
