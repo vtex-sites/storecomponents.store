@@ -2695,10 +2695,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.280.0", "@vtex/store-ui@^0.280.0":
-  version "0.280.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.280.0.tgz#3932d6c6327b59190480ddd3e920de1aaa323ca9"
-  integrity sha512-K15EbP0Z1Gso26n5B4uYO4nro6LguLjqbX63yVHdnnuKa+MSsvyfNpTBQ2nwiEBR7/UtSHTDVzoj57dhUDoPKQ==
+"@vtex/store-ui@0.280.1", "@vtex/store-ui@^0.280.0":
+  version "0.280.1"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.280.1.tgz#f61cf1823a114d34e225ded881e8886f327f9c3f"
+  integrity sha512-JcxQr6rYbnM+ZeYgFCah5D07rVuiJJ8thUHe1n0I7tRD/2xju2ib6Q5FmDm0hH4ZRGSDkXwhXRyx17ewXna3AQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
@@ -2706,7 +2706,6 @@
     "@types/theme-ui__components" "^0.2.6"
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
-    "@vtex/gatsby-plugin-i18n" "^0.280.0"
     deepmerge "^4.2.2"
     react-swipeable "^6.0.0"
     reakit "^1.3.0"
