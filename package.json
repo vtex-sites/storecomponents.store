@@ -40,7 +40,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p public/ && sfj-functions . storecomponents && gatsby build --log-pages",
+    "build": "gatsby build --log-pages",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
