@@ -1959,6 +1959,16 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
   integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
 
+"@reach/router@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
+  integrity sha512-+mtn9wjlB9NN2CNnnC/BRYtwdKBfSyyasPYraNAyvaV1occr/5NnB4CVzjEZipNHwYebQwcndGUmpFzxAUoqSA==
+  dependencies:
+    create-react-context "0.3.0"
+    invariant "^2.2.3"
+    prop-types "^15.6.1"
+    react-lifecycles-compat "^3.0.4"
+
 "@sideway/address@^4.1.0":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.1.tgz#9e321e74310963fdf8eebfbee09c7bd69972de4d"
@@ -2579,10 +2589,10 @@
     gatsby-graphql-source-toolkit "^0.6.3"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-google-tag-manager@0.282.0-alpha.1":
-  version "0.282.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.282.0-alpha.1.tgz#b7cc6acd8e893f3e2c57b98f77f94b7b79b5e42b"
-  integrity sha512-50IIbvA/rr6rqLjcxD+rF4oGIH8PCUr2CAMCcSaz9fP2EYDP5CfFfZL92hZart77xM2BuTEbZWuhnxqQ6J95Cw==
+"@vtex/gatsby-plugin-google-tag-manager@0.282.0-alpha.2":
+  version "0.282.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.282.0-alpha.2.tgz#af3ec50cfad1ddba05677e5a591f3dcebebbf90f"
+  integrity sha512-w8DIGy4GczlY8ixbfKBdygQmwZOGtlRBb58+Vi23YqKXMvQwqhzfxWsEDrFPjl2SjJtDgSjHYkjoShqB1cdFnw==
 
 "@vtex/gatsby-plugin-graphql@0.280.0":
   version "0.280.0"
@@ -2655,15 +2665,15 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.282.0-alpha.1":
-  version "0.282.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.282.0-alpha.1.tgz#8dc33971d15723d6c6610190de6eeacf730d8e96"
-  integrity sha512-lxgbh5Q3AQesL28jJx8yrJDcEFCJ01m0Z89tMQtrs5rdTlesM2oo5Uyhidzk5ij07lWy96Nv7qWyfsooS97sNw==
+"@vtex/gatsby-theme-store@0.282.0-alpha.2":
+  version "0.282.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.282.0-alpha.2.tgz#8b916d21dcf052d2f1e60d9c3267c002b0d7d861"
+  integrity sha512-8w/fm+hf3AivSJZR0D30elY/FS9RgCLeVvw9ihVyVgVpm5NBjssJnxR94enfmekjRObExeowZx15d7hEYYfqJQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.281.2-next.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.281.2-next.0"
-    "@vtex/store-ui" "^0.282.0-alpha.1"
+    "@vtex/store-ui" "^0.282.0-alpha.2"
     gatsby-plugin-bundle-stats "^2.7.2"
     gatsby-plugin-react-helmet-async "^1.2.0"
     html-loader "^2.1.2"
@@ -2688,11 +2698,12 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.282.0-alpha.1", "@vtex/store-ui@^0.282.0-alpha.1":
-  version "0.282.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.282.0-alpha.1.tgz#f5cf430d88ecdbdff9a03a20b7441777a28e9550"
-  integrity sha512-9BQ5tltX8qMmViBr3ZJiv4Uo5DVayTZyMWY3JdzurDEpWfJlVnw4wK2I6S+nxYu9/RKHgFrmhbZjYMiCFqXHzQ==
+"@vtex/store-ui@0.282.0-alpha.2", "@vtex/store-ui@^0.282.0-alpha.2":
+  version "0.282.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.282.0-alpha.2.tgz#a82c2a3696301f9c0b05ce3acaf05f6501e3d0e7"
+  integrity sha512-+xrmMb00wdmghkmWHKTpmm10DLq2DRZOIJRRF13qMYxpQwhJH1jRB4j/O61ikF/nHKcRCQmO00n++B/llmx4Fw==
   dependencies:
+    "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
     "@theme-ui/preset-base" "^0.3.0"
     "@types/react-modal" "^3.12.0"
@@ -4454,6 +4465,14 @@ create-gatsby@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-1.1.0.tgz#91a381886d5127d1f0c7ecf52eaf6fd2e1b9b169"
   integrity sha512-AM9JNlbIOkTinGNiG7J8AnCCykZxJfVENlv1vF7hS3RqGsKeZlv4PADTLCdkeIUhaLcjEiEVv7HbyfK8dA2eoA==
+
+create-react-context@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.3.0.tgz#546dede9dc422def0d3fc2fe03afe0bc0f4f7d8c"
+  integrity sha512-dNldIoSuNSvlTJ7slIKC/ZFGKexBMBrrcc+TTe1NdmROnaASuLPvqpwj9v4XS4uXZ8+YPu0sNmShX2rXI5LNsw==
+  dependencies:
+    gud "^1.0.0"
+    warning "^4.0.3"
 
 create-require@^1.1.0:
   version "1.1.1"
@@ -7050,6 +7069,11 @@ graphql@^15.4.0:
   version "15.5.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
   integrity sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
+
+gud@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
+  integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
 
 gzip-size@5.1.1:
   version "5.1.1"
@@ -13296,6 +13320,13 @@ vfile@^4.0.0:
     is-buffer "^2.0.0"
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
+
+warning@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack@^2.0.0:
   version "2.1.1"
