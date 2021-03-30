@@ -12,7 +12,7 @@ Kick-off your project with this default boilerplate. This starter ships with the
 asdfasdf
 asdfasdf
 asdfasdfasf
-## 🚀 Quick start
+## 🚀 Quick startasdf
 
 0. **Clone this repo**
 
