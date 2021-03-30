@@ -5,6 +5,7 @@ import {
   minicartTheme,
   searchControlsTheme,
   loginTheme,
+  toastTheme,
 } from '@vtex/store-ui'
 
 import authTheme from './auth'
@@ -41,5 +42,6 @@ export default createTheme(
   productSummaryTheme,
   productDetailsTheme,
   loginTheme,
-  authTheme
+  authTheme,
+  toastTheme
 )
