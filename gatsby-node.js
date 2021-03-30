@@ -1,6 +1,8 @@
 const { merge } = require('webpack-merge')
 const { optimize } = require('@vtex/gatsby-theme-store/sdk/img/fileManager')
 
+const { GATSBY_VTEX_ACCOUNT } = process.env
+
 exports.onCreateWebpackConfig = ({
   actions: { replaceWebpackConfig },
   stage,
@@ -49,7 +51,9 @@ exports.onCreateNode = async ({ node, reporter }) => {
     desktop: [1280, 1440, 1920],
   }
 
-  reporter.info(`[storecomponents.store]: Optimizing Images for: ${node.name}`)
+  reporter.info(
+    `[${GATSBY_VTEX_ACCOUNT}.store]: Optimizing Images for: ${node.name}`
+  )
 
   if (node.type === 'home') {
     const carousel = node.blocks.find((block) => block.name === 'Carousel')

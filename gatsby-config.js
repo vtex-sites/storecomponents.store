@@ -6,18 +6,20 @@ require('dotenv').config({
   path: resolve('vtex.env'),
 })
 
-const STORE_ID = 'storecomponents'
-const environment = process.env.GATSBY_VTEX_ENVIRONMENT
-const workspace = process.env.GATSBY_VTEX_IO_WORKSPACE
+const {
+  GATSBY_VTEX_ACCOUNT,
+  GATSBY_VTEX_ENVIRONMENT,
+  GATSBY_VTEX_IO_WORKSPACE,
+} = process.env
 
 const {
   NODE_ENV,
-  URL = `https://${STORE_ID}.vtex.app`,
+  URL = `https://${GATSBY_VTEX_ACCOUNT}.vtex.app`,
   DEPLOY_PRIME_URL = URL,
   CONTEXT: ENV = NODE_ENV,
 } = process.env
 
-const allowedHosts = ['storecomponents.vtex.app', 'storetheme.vtex.com']
+const allowedHosts = [`${GATSBY_VTEX_ACCOUNT}.vtex.app`, 'storetheme.vtex.com']
 const isProduction = ENV === 'production'
 const siteUrl = isProduction ? URL : DEPLOY_PRIME_URL
 
@@ -38,9 +40,9 @@ module.exports = {
     {
       resolve: `@vtex/gatsby-source-vtex`,
       options: {
-        tenant: STORE_ID,
-        environment,
-        workspace,
+        tenant: GATSBY_VTEX_ACCOUNT,
+        environment: GATSBY_VTEX_ENVIRONMENT,
+        workspace: GATSBY_VTEX_IO_WORKSPACE,
         getRedirects: () =>
           csv2json({ delimiter: ';' })
             .fromFile('./redirects.csv')
@@ -57,7 +59,7 @@ module.exports = {
     {
       resolve: '@vtex/gatsby-theme-store',
       options: {
-        storeId: STORE_ID,
+        storeId: GATSBY_VTEX_ACCOUNT,
         locales: ['en', 'pt'],
         defaultLocale: 'en',
       },
@@ -84,8 +86,8 @@ module.exports = {
     {
       resolve: '@vtex/gatsby-plugin-cms',
       options: {
-        tenant: STORE_ID,
-        workspace,
+        tenant: GATSBY_VTEX_ACCOUNT,
+        workspace: GATSBY_VTEX_IO_WORKSPACE,
       },
     },
     {
