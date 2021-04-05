@@ -1,4 +1,5 @@
-import React, { FC } from 'react'
+import React from 'react'
+import type { FC } from 'react'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import { useNumberFormat } from '@vtex/gatsby-theme-store/src/sdk/localization/useNumberFormat'
 import { useListPrice } from '@vtex/gatsby-theme-store/src/sdk/offer/useListPrice'
@@ -24,6 +25,7 @@ interface Props {
     listPrice: number
     teasers: Array<{ name?: string }>
     maxInstallments: Installment[]
+    availableQuantity: number
   }
   variant?: string
 }
@@ -55,9 +57,12 @@ const Offer: FC<Props> = ({
   const listPrice = useListPrice(commercialOffer)
   const discountPrice = useDiscount(commercialOffer)
 
+  const isAvailable =
+    commercialOffer.price > 0 && commercialOffer.availableQuantity > 0
+
   return (
     <OfferContainer variant={variant}>
-      {commercialOffer.price === 0 ? (
+      {!isAvailable ? (
         <OfferSoldOut variant={variant}>
           {formatMessage({ id: 'offer.soldout' })}
         </OfferSoldOut>

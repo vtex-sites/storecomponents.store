@@ -1,4 +1,5 @@
-import React, { FC } from 'react'
+import React from 'react'
+import type { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
 import { useBestSeller } from '@vtex/gatsby-theme-store/src/sdk/product/useBestSeller'
 import { useSku } from '@vtex/gatsby-theme-store/src/sdk/product/useSku'
@@ -40,6 +41,9 @@ const Async: FC<Props> = ({ slug }) => {
   const { formatMessage } = useIntl()
   const { productReference } = product
 
+  const isAvailable =
+    commercialOffer.price > 0 && commercialOffer.availableQuantity > 0
+
   if (product === null || sku === null) {
     return null
   }
@@ -53,7 +57,7 @@ const Async: FC<Props> = ({ slug }) => {
       <ProductDetailsReference variant={variant}>
         {formatMessage({ id: 'productDetails.reference' })}: {productReference}
       </ProductDetailsReference>
-      <BuyButton sku={sku} />
+      {isAvailable && <BuyButton sku={sku} />}
       <Social />
     </>
   )
