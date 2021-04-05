@@ -7,19 +7,20 @@ require('dotenv').config({
 })
 
 const {
-  GATSBY_VTEX_ACCOUNT,
+  GATSBY_VTEX_ACCOUNT: STORE_ID,
   GATSBY_VTEX_ENVIRONMENT,
   GATSBY_VTEX_IO_WORKSPACE,
+  GATSBY_STORE_PROFILING = false,
 } = process.env
 
 const {
   NODE_ENV,
-  URL = `https://${GATSBY_VTEX_ACCOUNT}.vtex.app`,
+  URL = `https://${STORE_ID}.vtex.app`,
   DEPLOY_PRIME_URL = URL,
   CONTEXT: ENV = NODE_ENV,
 } = process.env
 
-const allowedHosts = [`${GATSBY_VTEX_ACCOUNT}.vtex.app`, 'storetheme.vtex.com']
+const allowedHosts = [`${STORE_ID}.vtex.app`, 'storetheme.vtex.com']
 const isProduction = ENV === 'production'
 const siteUrl = isProduction ? URL : DEPLOY_PRIME_URL
 
@@ -40,7 +41,7 @@ module.exports = {
     {
       resolve: `@vtex/gatsby-source-vtex`,
       options: {
-        tenant: GATSBY_VTEX_ACCOUNT,
+        tenant: STORE_ID,
         environment: GATSBY_VTEX_ENVIRONMENT,
         workspace: GATSBY_VTEX_IO_WORKSPACE,
         getRedirects: () =>
@@ -59,9 +60,10 @@ module.exports = {
     {
       resolve: '@vtex/gatsby-theme-store',
       options: {
-        storeId: GATSBY_VTEX_ACCOUNT,
-        locales: ['en', 'pt'],
+        profiling: GATSBY_STORE_PROFILING,
+        storeId: STORE_ID,
         defaultLocale: 'en',
+        locales: ['en', 'pt'],
       },
     },
     {
@@ -86,7 +88,7 @@ module.exports = {
     {
       resolve: '@vtex/gatsby-plugin-cms',
       options: {
-        tenant: GATSBY_VTEX_ACCOUNT,
+        tenant: STORE_ID,
         workspace: GATSBY_VTEX_IO_WORKSPACE,
       },
     },
