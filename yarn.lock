@@ -2594,10 +2594,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.286.0.tgz#e2d835c0a91bc5240737258cef30795f0cea4910"
   integrity sha512-Gl2EYkPAKEVR+whXkkxkI9RZ5lP/JLNgVeOmdMHLVDzrO7pNBdyrBotIM6HpHX0UmTULA5pAEr0UbJYFKt1w8w==
 
-"@vtex/gatsby-plugin-graphql@0.286.0", "@vtex/gatsby-plugin-graphql@^0.286.0":
-  version "0.286.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.286.0.tgz#13383841c46be5cdcec36ca8c497e9585693954e"
-  integrity sha512-vWmzJKjiIwdF/KT/z4gDVL7BnO8R1RLzXgfkmHTtM57D5+N9snEDd41VNa3vpNeX8Yw3MPeH5DPWb5ro+doZKA==
+"@vtex/gatsby-plugin-graphql@0.286.1", "@vtex/gatsby-plugin-graphql@^0.286.0":
+  version "0.286.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.286.1.tgz#5bb9b307df5f3975e594e7b24a93d53e1c01af7c"
+  integrity sha512-nuWUCW9MIQlIioKmkF/LTIKRp+PwMqr0jRcLmOMioCJ+o2TXZdcG2Id5b4vJIbhRlPcLkOGDN3GY3KOE9Vm4Sw==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
