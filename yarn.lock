@@ -2653,10 +2653,10 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.288.0":
-  version "0.288.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.288.0.tgz#0687a36a51d327a887eaaf5357b5b759db1bd23f"
-  integrity sha512-yg3PtrZdpUeDN5iwzrLuNSicbOe/W/MZ3dF1PvN0XCPfWcj70I4tBR/HVsc+o/cs2GlmRTQMFQyR/7ju8L3g0Q==
+"@vtex/gatsby-theme-store@0.289.0-alpha.0":
+  version "0.289.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.289.0-alpha.0.tgz#20a432e7b4f87f5016378d4a3080f6b1174d73bf"
+  integrity sha512-LQHHlRtn35WtQ/B+NT0jiWRg0X6x+1vcUkLLaLNZiT5EhWYF1SI7cUTzoTBah1rLDJH9180fDWveA7zrEuQQ9A==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.288.0"
@@ -2687,24 +2687,6 @@
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
 "@vtex/store-ui@0.288.0", "@vtex/store-ui@^0.288.0":
-  version "0.288.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.288.0.tgz#80b37b5ed1dcee5f8a0b6ab560d3dcce81c8de13"
-  integrity sha512-lf8BrzzRFJwgn5NcxYMnzjol9luWC3GP8YJ7Pyx82zAhkzyNQE3DOs6ui6a6HWqo3deJN+UHGffhRiN832CJ5w==
-  dependencies:
-    "@reach/router" "^1.3.4"
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/react-modal" "^3.12.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    deepmerge "^4.2.2"
-    react-swipeable "^6.0.0"
-    reakit "^1.3.0"
-    text-mask-core "^5.1.2"
-    theme-ui "^0.3.1"
-
-"@vtex/store-ui@^0.288.0":
   version "0.288.0"
   resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.288.0.tgz#80b37b5ed1dcee5f8a0b6ab560d3dcce81c8de13"
   integrity sha512-lf8BrzzRFJwgn5NcxYMnzjol9luWC3GP8YJ7Pyx82zAhkzyNQE3DOs6ui6a6HWqo3deJN+UHGffhRiN832CJ5w==
