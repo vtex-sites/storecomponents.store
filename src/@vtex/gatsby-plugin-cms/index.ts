@@ -371,12 +371,28 @@ export const contentTypes: ContentTypes = {
   },
 }
 
+const RichText = {
+  title: 'Rich Text',
+  description: 'Rich text using draftjs',
+  type: 'object',
+  properties: {
+    content: {
+      type: 'string',
+      title: 'Rich text',
+      widget: {
+        'ui:widget': 'draftjs-rich-text',
+      },
+    },
+  },
+} as any
+
 export const builderConfig: BuilderConfig = {
   blocks: {
     Carousel,
     SearchBanner,
     Fold,
     DynamicShelf,
+    RichText,
   },
   contentTypes,
   messages: {
