@@ -16,9 +16,10 @@
     "dotenv": "^8.2.0",
     "gatsby": "^3.1.2",
     "gatsby-plugin-manifest": "^3.1.0",
+    "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-robots-txt": "^1.5.1",
-    "react": "^0.0.0-experimental-7f28234f8",
-    "react-dom": "^0.0.0-experimental-7f28234f8",
+    "react": "^0.0.0-experimental-a817840ea",
+    "react-dom": "^0.0.0-experimental-a817840ea",
     "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
