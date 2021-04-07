@@ -82,7 +82,15 @@ module.exports = {
         icon: 'src/images/icon.png',
         background_color: '#0a034e',
         theme_color: '#0a034e',
-        display: 'minimal-ui',
+        display: 'standalone',
+        cache_busting_mode: 'none',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        precachePages: [`/_v/offline`],
+        appendScript: 'src/custom-sw-code.js',
       },
     },
     {
