@@ -7,6 +7,7 @@ import React from 'react'
 import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import ShelfProducts from '../Shelf/ShelfProducts'
 import RichTextRow from './RichTextRow'
+import { RichTextExample } from './RichTextExample'
 
 type Props = PageProps<HomePageQueryQuery>
 
@@ -18,6 +19,7 @@ const Fold: FC<Props> = ({ data: { content, vtex } }) => (
       width="360px"
       link={LocalizedLink}
     />
+    {content && <RichTextExample {...content} />}
     <RichTextRow />
     <Container>
       <ShelfProducts
