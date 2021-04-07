@@ -9,7 +9,7 @@
     "@vtex/gatsby-plugin-i18n": "0.290.0",
     "@vtex/gatsby-plugin-nginx": "0.290.0",
     "@vtex/gatsby-source-vtex": "0.290.0",
-    "@vtex/gatsby-theme-store": "0.290.0",
+    "@vtex/gatsby-theme-store": "0.291.0-alpha.3",
     "@vtex/store-ui": "0.290.0",
     "babel-preset-gatsby": "^1.1.0",
     "csvtojson": "^2.0.10",
