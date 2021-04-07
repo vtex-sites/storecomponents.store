@@ -1,7 +1,6 @@
 import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import ProductImageGallery from '@vtex/gatsby-theme-store/src/components/ProductImageGallery'
-import { useDetailsImages } from '@vtex/gatsby-theme-store/src/sdk/product/useDetailsImages'
-import { useDetailsVideos } from '@vtex/gatsby-theme-store/src/sdk/product/useDetailsVideos'
+import { useDetailsImages, useDetailsVideos } from '@vtex/gatsby-theme-store'
 import {
   Card,
   Flex,
@@ -9,7 +8,8 @@ import {
   Breadcrumb,
   ProductDetailsTitle,
 } from '@vtex/store-ui'
-import React, { FC, Suspense } from 'react'
+import type { FC } from 'react'
+import React, { Suspense } from 'react'
 import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
 
 import AsyncInfoContainer from './Above/Async/Container'

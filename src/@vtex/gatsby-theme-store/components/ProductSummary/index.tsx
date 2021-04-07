@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
-import { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
-import { useLink } from '@vtex/gatsby-theme-store/src/sdk/product/useLink'
-import { useSummaryImage } from '@vtex/gatsby-theme-store/src/sdk/product/useSummaryImage'
+import type { FC } from 'react'
+import React from 'react'
+import type { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
+import { useLink, useSummaryImage } from '@vtex/gatsby-theme-store'
 import {
   Skeleton,
   OfferContainer,

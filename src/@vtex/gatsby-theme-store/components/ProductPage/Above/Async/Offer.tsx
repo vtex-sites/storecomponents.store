@@ -1,9 +1,11 @@
 import React from 'react'
 import type { FC } from 'react'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
-import { useNumberFormat } from '@vtex/gatsby-theme-store/src/sdk/localization/useNumberFormat'
-import { useListPrice } from '@vtex/gatsby-theme-store/src/sdk/offer/useListPrice'
-import { usePrice } from '@vtex/gatsby-theme-store/src/sdk/offer/usePrice'
+import {
+  useNumberFormat,
+  useListPrice,
+  usePrice,
+} from '@vtex/gatsby-theme-store'
 import {
   Box,
   OfferPrice,

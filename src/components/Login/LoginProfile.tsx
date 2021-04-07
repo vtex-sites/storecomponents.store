@@ -1,6 +1,6 @@
 import React from 'react'
 import type { FC } from 'react'
-import { useProfile } from '@vtex/gatsby-theme-store/src/sdk/session/useProfile'
+import { useProfile } from '@vtex/gatsby-theme-store'
 
 import Anonymous from './Anonymous'
 import Authenticated from './Authenticated'

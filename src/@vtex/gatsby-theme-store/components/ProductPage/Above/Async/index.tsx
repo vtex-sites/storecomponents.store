@@ -1,8 +1,7 @@
 import React from 'react'
 import type { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
-import { useBestSeller } from '@vtex/gatsby-theme-store/src/sdk/product/useBestSeller'
-import { useSku } from '@vtex/gatsby-theme-store/src/sdk/product/useSku'
+import { useBestSeller, useSku } from '@vtex/gatsby-theme-store'
 import { Divider, ProductDetailsReference } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
