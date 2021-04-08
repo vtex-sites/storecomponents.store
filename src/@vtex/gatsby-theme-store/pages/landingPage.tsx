@@ -26,18 +26,16 @@ const Page: FC<Props> = ({ data, pageContext }) => {
 // These variables are populated via CMS in gatsby-node's onCreatePage API
 export const query = graphql`
   query LandingPageQuery {
-    seo: vtexCmsPageContent(type: { eq: "seo" }) {
+    content: vtexCmsPageContent(type: { eq: "landingPage" }) {
+      blocks {
+        name
+        props
+      }
       extraBlocks {
         blocks {
           name
           props
         }
-      }
-    }
-    content: vtexCmsPageContent(type: { eq: "landingPage" }) {
-      blocks {
-        name
-        props
       }
     }
   }

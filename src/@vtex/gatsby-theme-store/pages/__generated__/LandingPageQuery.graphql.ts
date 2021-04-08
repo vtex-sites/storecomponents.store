@@ -20,14 +20,14 @@ type Scalars = {
 export type LandingPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type LandingPageQueryQuery = { seo: Maybe<{ extraBlocks: Array<Maybe<{ blocks: Array<{ name: string, props: Maybe<any> }> }>> }>, content: Maybe<{ blocks: Array<Maybe<{ name: string, props: Maybe<any> }>> }> };
+export type LandingPageQueryQuery = { content: Maybe<{ blocks: Array<Maybe<{ name: string, props: Maybe<any> }>>, extraBlocks: Array<Maybe<{ blocks: Array<{ name: string, props: Maybe<any> }> }>> }> };
 
 
 // Query Related Code
 
 export const LandingPageQuery = {
-  query: process.env.NODE_ENV === 'production' ? undefined : "query LandingPageQuery {\n  seo: vtexCmsPageContent(type: {eq: \"seo\"}) {\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n  content: vtexCmsPageContent(type: {eq: \"landingPage\"}) {\n    blocks {\n      name\n      props\n    }\n  }\n}\n",
-  sha256Hash: "0c2bd7e06284654f4c3431abf7acd86369074138dc2389c765f6a054cd85a173",
+  query: process.env.NODE_ENV === 'production' ? undefined : "query LandingPageQuery {\n  content: vtexCmsPageContent(type: {eq: \"landingPage\"}) {\n    blocks {\n      name\n      props\n    }\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n}\n",
+  sha256Hash: "e15318f8ecf1711c43c7dff2785388ffbd739c189c3be28c030bcb1df74d6ea8",
   operationName: "LandingPageQuery",
 }
 

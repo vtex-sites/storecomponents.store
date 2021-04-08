@@ -48,6 +48,28 @@ const siteMetadata: Schema = {
   },
 }
 
+const siteMetadataWithSlug: Schema = {
+  ...siteMetadata,
+  properties: {
+    title: {
+      title: 'Default page title',
+      description: 'Display this title when no other tile is available',
+      type: 'string',
+      default: 'Store Theme | VTEX SFJ',
+    },
+    description: {
+      title: 'Meta tag description',
+      type: 'string',
+      default: 'A beautifuly designed site for general VTEX stores',
+    },
+    slug: {
+      title: 'URL Slug to be used in website',
+      type: 'string',
+      default: '/landing-page-url',
+    },
+  },
+}
+
 const facebook: Schema = {
   title: 'Facebook',
   description: 'Como o Facebook compartilha a sua loja',
@@ -367,6 +389,18 @@ export const contentTypes: ContentTypes = {
       },
     },
     beforeBlocks: {},
+    afterBlocks: {},
+  },
+  landingPage: {
+    name: 'Landing Page',
+    extraBlocks: {
+      SEO: {
+        siteMetadataWithSlug,
+      },
+    },
+    beforeBlocks: {
+      Header,
+    },
     afterBlocks: {},
   },
 }
