@@ -1,0 +1,99 @@
+{
+  "name": "[SFJ] Landing Page",
+  "type": "landingPage",
+  "builderId": "faststore",
+  "author": {
+    "id": "0cc6d9e0-377d-4898-a907-350e4661c351",
+    "email": "tiago.gimenes@vtex.com.br"
+  },
+  "lastUpdatedAt": "2021-01-11T18:44:06.753Z",
+  "blocks": [
+    {
+      "name": "Header",
+      "props": {
+        "title": "My Landing Page SFJ"
+      }
+    },
+    {
+      "name": "RichText",
+      "props": {
+        "content": {
+          "blocks": [
+            {
+              "key": "3ed3h",
+              "text": "What is Lorem Ipsum?",
+              "type": "header-two",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            },
+            {
+              "key": "6sg1n",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "type": "unstyled",
+              "depth": 0,
+              "inlineStyleRanges": [
+                { "offset": 0, "length": 11, "style": "BOLD" }
+              ],
+              "entityRanges": [],
+              "data": {}
+            },
+            {
+              "key": "998s5",
+              "text": "Afonso",
+              "type": "ordered-list-item",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            },
+            {
+              "key": "lp32",
+              "text": "Breno",
+              "type": "ordered-list-item",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            },
+            {
+              "key": "d3dbj",
+              "text": "Emerson",
+              "type": "ordered-list-item",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            },
+            {
+              "key": "91rlg",
+              "text": "Nardi",
+              "type": "ordered-list-item",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            }
+          ],
+          "entityMap": {}
+        }
+      }
+    }
+  ],
+  "extraBlocks": [
+    {
+      "name": "SEO",
+      "blocks": [
+        {
+          "name": "siteMetadata",
+          "props": {
+            "title": "Landing Page - Store Theme - VTEX Base Store",
+            "description": "A sample store using the best of Gatsby and Store Framework Jamstack",
+            "slug": "/my-page"
+          }
+        }
+      ]
+    }
+  ]
+}
