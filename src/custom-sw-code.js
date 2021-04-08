@@ -20,7 +20,7 @@ self.addEventListener('install', (event) => {
 const catchHandler = async ({ event }) => {
   const dest = event.request.destination
 
-  if (dest === 'document') {
+  if (dest === 'document' || dest === '') {
     // Getting the offline page from cache.
     const cache = await caches.open(OFFLINE_PAGE_CACHE_NAME)
     const cachedResponse = await cache.match(OFFLINE_PAGE)
