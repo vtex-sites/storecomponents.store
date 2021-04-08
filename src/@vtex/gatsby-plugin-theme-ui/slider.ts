@@ -42,45 +42,11 @@ const paginationDots: SxStyleProp = {
   },
 }
 
-const shelfPaginationDots: SxStyleProp = createTheme(paginationDots, {
+const galleryDots: SxStyleProp = createTheme(paginationDots, {
   container: {
     position: 'relative',
   },
 })
-
-const shelfArrows: SxStyleProp = {
-  left: {
-    button: {
-      bg: 'transparent',
-      borderColor: 'transparent',
-      cursor: 'pointer',
-
-      '&:hover': {
-        opacity: '0.5',
-      },
-    },
-
-    svg: {
-      color: 'text',
-    },
-  },
-
-  right: {
-    button: {
-      bg: 'transparent',
-      borderColor: 'transparent',
-      cursor: 'pointer',
-
-      '&:hover': {
-        opacity: '0.5',
-      },
-    },
-
-    svg: {
-      color: 'text',
-    },
-  },
-}
 
 const carouselArrows: SxStyleProp = {
   left: {
@@ -172,7 +138,7 @@ const theme: SxStyleProp = {
 
       arrow: carouselArrows,
 
-      paginationDots: shelfPaginationDots,
+      paginationDots: galleryDots,
     },
   },
 
@@ -181,30 +147,6 @@ const theme: SxStyleProp = {
     arrow: carouselArrows,
     paginationDots,
     responsivePicture: carouselResponsivePicture,
-  },
-
-  shelf: {
-    default: {
-      arrow: shelfArrows,
-
-      container: {
-        width: '100%',
-        height: '585px',
-        marginTop: '20px',
-        marginBottom: '120px',
-      },
-
-      title: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: '32px',
-        fontWeight: 200,
-        my: '20px',
-      },
-
-      paginationDots: shelfPaginationDots,
-    },
   },
 }
 

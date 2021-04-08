@@ -7,10 +7,11 @@ import {
   InfoCardInfoAction,
   RichMarkdown,
 } from '@vtex/store-ui'
-import { PageProps } from 'gatsby'
-import React, { FC } from 'react'
+import type { PageProps } from 'gatsby'
+import type { FC } from 'react'
+import React from 'react'
 
-import { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
+import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 import exampleStoreMd from './example-store.md'
 import reachUsMd from './reach-us.md'
 

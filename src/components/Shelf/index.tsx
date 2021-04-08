@@ -1,6 +1,6 @@
-import Shelf from '@vtex/gatsby-theme-store/src/components/Shelf'
-import { ShelfContainer } from '@vtex/store-ui'
-import React, { ComponentPropsWithoutRef, FC } from 'react'
+import { ShelfContainer, Shelf } from '@vtex/store-ui'
+import React from 'react'
+import type { ComponentPropsWithoutRef, FC } from 'react'
 
 type Props = ComponentPropsWithoutRef<typeof Shelf>
 

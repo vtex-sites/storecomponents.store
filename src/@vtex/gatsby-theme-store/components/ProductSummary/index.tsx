@@ -1,6 +1,4 @@
-import type { FC } from 'react'
 import React from 'react'
-import type { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
 import { useLink, useSummaryImage } from '@vtex/gatsby-theme-store'
 import {
   Skeleton,
@@ -9,6 +7,8 @@ import {
   ProductSummaryImage,
   ProductSummaryTitle,
 } from '@vtex/store-ui'
+import type { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
+import type { FC } from 'react'
 
 import BuyButton from '../BuyButton'
 import Offer from './Offer'

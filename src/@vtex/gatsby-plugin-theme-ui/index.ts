@@ -22,6 +22,7 @@ import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import sliderTheme from './slider'
+import shelfTheme from './shelf'
 
 export default createTheme(
   searchBannerTheme,
@@ -43,5 +44,6 @@ export default createTheme(
   productDetailsTheme,
   loginTheme,
   authTheme,
-  toastTheme
+  toastTheme,
+  shelfTheme
 )
