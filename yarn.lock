@@ -2599,10 +2599,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.290.0.tgz#09f78d957adf3141b90ad388e8dbbe77e1014565"
   integrity sha512-iRK6OhEXyytFr5Z4qTSmSiYBLV8onVlFfTNkVxUNTYvhJZz73HSZRp+DaArUYF0tCKYvgDzdF4XpOVT5Gc8h2w==
 
-"@vtex/gatsby-plugin-graphql@0.290.0":
-  version "0.290.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.290.0.tgz#1e3ef642773ba681cb9dd3fda19fc6236d8a0453"
-  integrity sha512-8VI2iqsdCcKK1Tk22/pdgLhS95wcvTTQ2lCVJU+Z8eOAtViz1hdcalaU9zoIa6DlItxEaSaisPq1uBqCSVHw9Q==
+"@vtex/gatsby-plugin-graphql@0.291.0-alpha.4":
+  version "0.291.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.291.0-alpha.4.tgz#c7c44c42a4e218b335a4989fd81a80bd18dc5ffe"
+  integrity sha512-HodtBmFXFEbodMyosdJj1vI92Qj4DRcDELdCmL3PCADwBOebdC/dE74pPB3zu3cGix+MuisNMK0oeCNA0XIg5w==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2611,10 +2611,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@^0.291.0-alpha.3":
-  version "0.291.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.291.0-alpha.3.tgz#1aa96b1e73b7083bfe54b70bad47bb0c0b0fb9fc"
-  integrity sha512-sy6Qs3xjgB8ACHeIWg3WqaaxNQnzQr7tK4WsVt+X97cusQcg6XBu/VHtvVKdJtaTEYnRbMkyfCX71yAyFiBryQ==
+"@vtex/gatsby-plugin-graphql@^0.291.0-alpha.4":
+  version "0.291.0-next.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.291.0-next.1.tgz#0b4156f676c06959d8b955375d4eab3473e5b678"
+  integrity sha512-l9yMMiMc/GAUaffvrcCsxJpJHMt4yGYH7tl7y8rzD4JN5CCjHA3RSU7UDoMa7iz8fxt+8ezHc8AREO5bYRq4pw==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2670,13 +2670,13 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.291.0-alpha.3":
-  version "0.291.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.291.0-alpha.3.tgz#be037ae3f0eaa1c1195a7e8da93d6a4474ea9396"
-  integrity sha512-QZ1mida1HA54TV4oWFAC9Fq0JMLgJbHRNh1q0+3AABYNl79JGXyikfGDyya0PjgoS4wp6gKe8WVkDIprFFLwZA==
+"@vtex/gatsby-theme-store@0.291.0-alpha.4":
+  version "0.291.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.291.0-alpha.4.tgz#b274b4a6196331563615a267a9f950ceb7fe6513"
+  integrity sha512-37regedVJsB9ImgvOUueoiIk6vww1e8PPz3uHWYbiOimcxf49WU2VM651W5hyp1v18OzweuTZRPXFqDStprEeQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "^0.291.0-alpha.3"
+    "@vtex/gatsby-plugin-graphql" "^0.291.0-alpha.4"
     "@vtex/gatsby-plugin-theme-ui" "^0.291.0-alpha.3"
     "@vtex/order-items" "^0.4.0"
     "@vtex/order-manager" "^0.3.0"
