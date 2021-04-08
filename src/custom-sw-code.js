@@ -23,9 +23,8 @@ const catchHandler = async ({ event }) => {
   if (dest === 'document' || dest === '') {
     // Getting the offline page from cache.
     const cache = await caches.open(OFFLINE_PAGE_CACHE_NAME)
-    const cachedResponse = await cache.match(OFFLINE_PAGE)
 
-    return cachedResponse
+    return cache.match(OFFLINE_PAGE)
   }
 
   return Response.error()
