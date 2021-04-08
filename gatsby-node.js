@@ -119,14 +119,26 @@ exports.createPages = async ({ graphql }) => {
   resolveGraphQL(graphql)
 }
 
-// Use this API to capture the graphql executor function
-const nodesByIds = (nodes) =>
+// Map all PLP pages to IDs based on category
+const plpToIds = (nodes) =>
   nodes.reduce((acc, node) => {
     const { props } = node.extraBlocks
       .find((block) => block.name === 'Parameters')
       .blocks.find((block) => block.name === 'SearchIdSelector')
 
     acc[props.id] = node
+
+    return acc
+  }, {})
+
+// Map all landing Pages to IDs based on slug
+const langingPagesToIds = (nodes) =>
+  nodes.reduce((acc, node) => {
+    const { props } = node.extraBlocks
+      .find((block) => block.name === 'SEO')
+      .blocks.find((block) => block.name === 'siteMetadata')
+
+    acc[props.slug] = node
 
     return acc
   }, {})
@@ -197,9 +209,7 @@ exports.onCreatePage = async (args) => {
 
   const plps = await graphql(`
     query CMSPageContent {
-      allVtexCmsPageContent(
-        filter: { extraBlocks: { elemMatch: { name: { eq: "Parameters" } } } }
-      ) {
+      allVtexCmsPageContent(filter: { type: { eq: "plp" } }) {
         nodes {
           blocks {
             name
@@ -219,7 +229,7 @@ exports.onCreatePage = async (args) => {
 
   throwOnErrors(plps.errors, reporter)
 
-  const nodeMap = nodesByIds(plps.data.allVtexCmsPageContent.nodes)
+  const nodeMap = plpToIds(plps.data.allVtexCmsPageContent.nodes)
 
   const {
     context: { canonicalPath },
@@ -233,4 +243,41 @@ exports.onCreatePage = async (args) => {
       vtexCmsPageContent: nodeMap[canonicalPath] || null,
     },
   })
+
+  const landingPage = await graphql(`
+    query CMSPageContent {
+      allVtexCmsPageContent(filter: { type: { eq: "landingPage" } }) {
+        nodes {
+          name
+          blocks {
+            name
+            props
+          }
+          extraBlocks {
+            name
+            blocks {
+              name
+              props
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const landingMap = langingPagesToIds(
+    landingPage.data.allVtexCmsPageContent.nodes
+  )
+
+  for (const [slug, pageContext] of Object.entries(landingMap)) {
+    createPage({
+      path: slug,
+      component: require.resolve(
+        './src/@vtex/gatsby-theme-store/pages/landingPage.tsx'
+      ),
+      context: {
+        vtexCmsPageContent: pageContext || null,
+      },
+    })
+  }
 }
