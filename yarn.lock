@@ -2668,7 +2668,7 @@
     "@vtex/gatsby-plugin-theme-ui" "^0.294.0"
     "@vtex/order-items" "^0.4.0"
     "@vtex/order-manager" "^0.3.0"
-    "@vtex/store-ui" "^0.295.2-alpha.0"
+    "@vtex/store-ui" "^0.294.0"
     gatsby-plugin-bundle-stats "^2.7.2"
     gatsby-plugin-react-helmet-async "^1.2.0"
     html-loader "^2.1.2"
@@ -2709,10 +2709,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.295.2-alpha.0", "@vtex/store-ui@^0.295.2-alpha.0":
-  version "0.295.2-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.295.2-alpha.0.tgz#f63f5d82dff451a864094d4ebb4ad6c341bbde10"
-  integrity sha512-inEPz8XFElP1JBy/TDWbfLPZDeF1EUTkquQQos9yWGCrrXvHqskycaSca1UgPqc6feNJdGWdjTyjQqe13HDYow==
+"@vtex/store-ui@^0.294.0":
+  version "0.294.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.294.0.tgz#4e818beb61cb11bb114afdbd5088a804d4a275f4"
+  integrity sha512-9VbLhEh6kH4UuA5DnowHAI3alD16iryS2O2U6qeW3Jz/cJwhBWFRw5mFz+KFzdT/jqcyUM83HNcskLgcUidoqQ==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
