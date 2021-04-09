@@ -2594,10 +2594,10 @@
     gatsby-graphql-source-toolkit "^0.6.3"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-google-tag-manager@0.294.0":
-  version "0.294.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.294.0.tgz#5f1ec39a142704a600d7e4b8b6a0aceb287cb8eb"
-  integrity sha512-6HPcsks7KkKFoKzHQ0Z0dmGWfU8P1oELgvUjYbcoIvXbie34I3/9Ax8YOIIKUzQ98ZZbXlNdsNLlvqjd20u5+g==
+"@vtex/gatsby-plugin-google-tag-manager@0.295.1":
+  version "0.295.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.295.1.tgz#7af20d7f90cf09ff25a155566a607fc4cfc9b079"
+  integrity sha512-igt4RVLLlT9S7vn/AWZoQvvrJLS1gfIP9aTWjcQZfkHj/D8LyVlvlJQtXDFbjwkmXTwHgnOaax8jmsXqe8jmDA==
 
 "@vtex/gatsby-plugin-graphql@0.294.0", "@vtex/gatsby-plugin-graphql@^0.294.0":
   version "0.294.0"
@@ -2646,10 +2646,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-source-vtex@0.294.0":
-  version "0.294.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.294.0.tgz#9e17576b7ecb7440e26030b2cd9d6c9137885979"
-  integrity sha512-c6tB3O8xwIaEqiWjftgGtBGmhbLWJijWO9yFHia0ZZwQm57CzK9Jq4cBT4HHDo6ZSjt5tiNp9+zV8HjKVog1Tg==
+"@vtex/gatsby-source-vtex@0.294.1":
+  version "0.294.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.294.1.tgz#0c7bdffb01816404e4f39f6d5e27a7144aa82afd"
+  integrity sha512-0R8CULawvEXxlPtoVFsEm5I+kkrci0Wpw6iN8Qf9iC3q/4d3SAAeFU2U2Jc6XYA5QVh2Q9wo0DE/otWv1BfOFg==
   dependencies:
     "@graphql-tools/delegate" "^6.0.15"
     "@graphql-tools/wrap" "^6.0.15"
@@ -2658,10 +2658,10 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.295.1-alpha.0":
-  version "0.295.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.295.1-alpha.0.tgz#00b1fbb95908c5edcc3cad64fb2ae60c8d5ba336"
-  integrity sha512-3Q4dIp/+v4+5mzOX8MR/4U+0GSw4o6TY1llAZet9DRTwr2BDdVZMeIsehIpHVHsk1jjjRIHls+f3WysgfTxJ+w==
+"@vtex/gatsby-theme-store@0.295.1":
+  version "0.295.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.295.1.tgz#cab37d8871f60a37d4d6175dc4b71697807b9b96"
+  integrity sha512-KMYIfISwEfc2r4H5JIY9cLfI0Wh1sdNVnOwL6fTIGmD4BtoBQVvg/ZxWc1pmrUVbCzyDqt6bAKq7mZTqB01ZgQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.294.0"
