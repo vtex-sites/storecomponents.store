@@ -2624,10 +2624,10 @@
     intl-messageformat-parser "^6.4.3"
     react-intl "^5.13.5"
 
-"@vtex/gatsby-plugin-nginx@0.290.0-alpha.111":
-  version "0.290.0-alpha.111"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.290.0-alpha.111.tgz#041554e7f0f8cce29939725e96a8168e74830705"
-  integrity sha512-ZO/G14vB+AVcWW6uNSEIo7BeRmhpYdnxnMjZp+cdLdXYvn6qnRGTIlGRE7P8wEZ6N5qi7e05ucJdhZgIS89EVg==
+"@vtex/gatsby-plugin-nginx@0.290.0-alpha.113":
+  version "0.290.0-alpha.113"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.290.0-alpha.113.tgz#f881b2d4ca041b980dbfcf19b422de40613aaeea"
+  integrity sha512-V9xqoU6txmVOlVzTxrZecS79v4Bj3BsuizrkaerA0m5Y4u7LISaLQvPpgPvFf7kc4rwVfee0DQ0b3jbBzuW+fQ==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^5.0.1"
@@ -5907,6 +5907,11 @@ extract-files@9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-9.0.0.tgz#8a7744f2437f81f5ed3250ed9f1550de902fe54a"
   integrity sha512-CvdFfHkC95B4bBBk36hcEmvdR2awOdhhVUYH6S/zrVj3477zven/fJMYg7121h4T1xHZC+tetUpubpAhxwI7hQ==
+
+faker@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-5.5.3.tgz#c57974ee484431b25205c2c8dc09fda861e51e0e"
+  integrity sha512-wLTv2a28wjUyWkbnX7u/ABZBkUkIF2fCd73V6P2oFqEGEktDfzWx4UxrSqtPRw0xPRAcjeAOIiJWqZm3pP4u3g==
 
 fast-copy@^2.1.0:
   version "2.1.1"
