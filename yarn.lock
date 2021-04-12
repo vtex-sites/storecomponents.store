@@ -2658,17 +2658,17 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.297.0":
-  version "0.297.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.297.0.tgz#d383e71001ee495035ab9968d3c550aae955eea4"
-  integrity sha512-Dq6VBvTJa7BttsGvpgwQ4DnStmK283UcpiVRuKl86TsuYzPG9BMakH96sKTMeooA+D/h9MC7Kv2rth2MkB4sGA==
+"@vtex/gatsby-theme-store@0.298.1-alpha.0":
+  version "0.298.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.298.1-alpha.0.tgz#226a3e8badc87da1aec64dcfea0be20bf0cd345d"
+  integrity sha512-/g8z+UthJJFt6JPLt8slNTXQnNwCdzz4ar68gKEpB8XQzsTuwQD9nzt6u0sl1dS0bTb0jEFm99fcy3+No8rzqA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.297.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.297.0"
     "@vtex/order-items" "^0.4.0"
     "@vtex/order-manager" "^0.3.0"
-    "@vtex/store-ui" "^0.297.0"
+    "@vtex/store-ui" "^0.298.1-alpha.0"
     gatsby-plugin-bundle-stats "^2.7.2"
     gatsby-plugin-react-helmet-async "^1.2.0"
     html-loader "^2.1.2"
@@ -2709,10 +2709,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@^0.297.0":
-  version "0.297.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.297.0.tgz#ded52cd9ec97bffbc645543d29fb901f16cef457"
-  integrity sha512-yHpCMt2RSzJXuvvzI3espUDE/73XVBLKOnjSDhj2jKGPlf3vq/nFlieEjLxH0IAysEsDyTDIkCkOzDJwI5CuVQ==
+"@vtex/store-ui@0.298.1-alpha.0", "@vtex/store-ui@^0.298.1-alpha.0":
+  version "0.298.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.298.1-alpha.0.tgz#c99e5e964c747effffd1f515d4e32adf722cc434"
+  integrity sha512-4DJGisYdhfrbH4KCMkv5qtReuHowE6Os09GA6eB/MuYG+VjS+OItWl1fwQkgyNcOgMwDuZTwZcUhK66VO3E5sA==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
