@@ -58,16 +58,20 @@ exports.onCreateNode = async ({ node, reporter }) => {
   if (node.type === 'home') {
     const carousel = node.blocks.find((block) => block.name === 'Carousel')
 
-    for (const item of carousel.props.allItems) {
-      for (const source of item.sources) {
-        const widths =
-          source.media === '(max-width: 40em)' ? sizes.mobile : sizes.desktop
+    if (carousel) {
+      for (const item of carousel.props.allItems) {
+        for (const source of item.sources) {
+          const widths =
+            source.media === '(max-width: 40em)' ? sizes.mobile : sizes.desktop
 
-        const src = source.srcSet
+          const src = source.srcSet
 
-        source.srcSet = widths
-          .map((width) => `${optimize(src, { width, aspect: true })} ${width}w`)
-          .join(',')
+          source.srcSet = widths
+            .map(
+              (width) => `${optimize(src, { width, aspect: true })} ${width}w`
+            )
+            .join(',')
+        }
       }
     }
   }
