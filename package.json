@@ -1,7 +1,7 @@
 {
   "name": "storecomponents.store",
   "private": true,
-  "version": "0.56.0",
+  "version": "0.57.0",
   "dependencies": {
     "@vtex/gatsby-plugin-cms": "0.297.0",
     "@vtex/gatsby-plugin-google-tag-manager": "0.297.0",
