@@ -5,7 +5,7 @@ import SuspenseViewport from '@vtex/gatsby-theme-store/src/components/Suspense/V
 import Toast from '../../../components/Toast'
 import Header from './Header'
 
-const loader = () => import('@vtex/gatsby-theme-store/src/components/Footer')
+const loader = () => import('./Footer')
 
 const Footer = lazy(loader)
 
