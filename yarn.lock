@@ -2594,10 +2594,10 @@
     gatsby-graphql-source-toolkit "^0.6.3"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-google-tag-manager@0.301.0":
-  version "0.301.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.301.0.tgz#4ef1d93713f58f9d73c8889dd0068b7ca187d6b1"
-  integrity sha512-afmQm0HVZZrgR5j8j7qaOSYvJK2Rxref61P5LmgEcLbqnf/PsaaWAvjJOZWFdqkRtDj7T7JQUT1cJ8I2Vf+uVQ==
+"@vtex/gatsby-plugin-google-tag-manager@0.303.0":
+  version "0.303.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.303.0.tgz#176ec294d0f06b99543a96c160ed81b3f3aea501"
+  integrity sha512-1YnYzH3CF6IYpdDs/vrjFnvL8yHqZ4hcQfFRj66qRgnSRUNMbamruh0G/qdd+y7Zfg8E4byiJkXPvUbRyDGQIQ==
 
 "@vtex/gatsby-plugin-graphql@0.300.0", "@vtex/gatsby-plugin-graphql@^0.300.0":
   version "0.300.0"
@@ -2658,17 +2658,17 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.301.0":
-  version "0.301.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.301.0.tgz#42c90290d8aae4ef7b79b8989f015b8ecb11e240"
-  integrity sha512-UReL9GA2fuwC09PCuylyIw7Hhdz8fIzEgHCEj14+imtaKQ9+x9mg6u67uKDg+1kJGLUmmlN8IWoztzU+k/E2TQ==
+"@vtex/gatsby-theme-store@0.303.0":
+  version "0.303.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.303.0.tgz#229062d62bbdcc8971bf6836848bfb0788428228"
+  integrity sha512-WfezFZEzPnLNMB9OO+zvwG08Py68PhzrEdHmCW8CxNnqvBzOa0NrabPAMjctm/9s9W630GOFeVVa2TAds+yNGA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.300.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.300.0"
     "@vtex/order-items" "^0.4.0"
     "@vtex/order-manager" "^0.3.0"
-    "@vtex/store-ui" "^0.300.0"
+    "@vtex/store-ui" "^0.303.0"
     gatsby-plugin-bundle-stats "^2.7.2"
     gatsby-plugin-react-helmet-async "^1.2.0"
     html-loader "^2.1.2"
@@ -2709,10 +2709,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.300.0", "@vtex/store-ui@^0.300.0":
-  version "0.300.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.300.0.tgz#ec1fb603fc7b239baedc046476977896990339eb"
-  integrity sha512-gMncVBeCosdoladFbihM2o3aYNk6V9E2Qj9ez308pDqNQ8tLYIpmQXGBt6g29Cl6me0KmCT6QqQztDbaxbA8aA==
+"@vtex/store-ui@0.303.0", "@vtex/store-ui@^0.303.0":
+  version "0.303.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.303.0.tgz#5fbf6a3ae2f3d046e48cbdac47d8fae7333ce08e"
+  integrity sha512-GEoY+wGmkMO2rv/F+mhhrAl9cNOo1FoQZz47fEYhgBG6q4i/mxLQtrlo8AKAZlegSxLx9yJifWp/O7/lrXW72A==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
@@ -9239,6 +9239,9 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
+  dependencies:
+    minipass "^3.0.0"
+    yallist "^4.0.0"
 
 mitt@^1.2.0:
   version "1.2.0"
