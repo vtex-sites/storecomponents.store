@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 const OFFLINE_PAGE_CACHE_NAME = 'offline-page'
-const OFFLINE_PAGE = '/_v/offline'
+const OFFLINE_PAGE = '/offline'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -16,11 +16,11 @@ self.addEventListener('install', (event) => {
 })
 
 // This is gonna handle failed network requests.
-// We're simply returning a cached offline page here.
+// We're simply returning a cached offline page.
 const catchHandler = async ({ event }) => {
   const dest = event.request.destination
 
-  if (dest === 'document' || dest === '') {
+  if (dest === 'document') {
     // Getting the offline page from cache.
     const cache = await caches.open(OFFLINE_PAGE_CACHE_NAME)
 

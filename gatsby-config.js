@@ -89,7 +89,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-        precachePages: [`/_v/offline`],
+        precachePages: [`/offline`],
         appendScript: 'src/custom-sw-code.js',
       },
     },
