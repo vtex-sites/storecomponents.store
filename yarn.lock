@@ -2594,10 +2594,10 @@
     gatsby-graphql-source-toolkit "^0.6.3"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-google-tag-manager@0.300.0":
-  version "0.300.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.300.0.tgz#5cea66e384fcec2bdaed1ba578f1a376ece0c604"
-  integrity sha512-TwtwAnwJfD1kSxMNBjO7rBeimJIYmyCSbLF5AchUD/JmhpTml4Urjb204J+105krHYITUy3Bx1StbirMqXspCQ==
+"@vtex/gatsby-plugin-google-tag-manager@0.301.0":
+  version "0.301.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.301.0.tgz#4ef1d93713f58f9d73c8889dd0068b7ca187d6b1"
+  integrity sha512-afmQm0HVZZrgR5j8j7qaOSYvJK2Rxref61P5LmgEcLbqnf/PsaaWAvjJOZWFdqkRtDj7T7JQUT1cJ8I2Vf+uVQ==
 
 "@vtex/gatsby-plugin-graphql@0.300.0", "@vtex/gatsby-plugin-graphql@^0.300.0":
   version "0.300.0"
@@ -2658,10 +2658,10 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.301.0-alpha.0":
-  version "0.301.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.301.0-alpha.0.tgz#379cfde7468dec022672557460a8c0a6cc99e687"
-  integrity sha512-9oDmr5JGaG/RUe+z5g+iBtC6Xaj4Bh/WuGP4X+Gz9b/5SeUl6TqYgOxfloigFCaXZPkc7Ex7gRnfP21zy+OwVg==
+"@vtex/gatsby-theme-store@0.301.0":
+  version "0.301.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.301.0.tgz#42c90290d8aae4ef7b79b8989f015b8ecb11e240"
+  integrity sha512-UReL9GA2fuwC09PCuylyIw7Hhdz8fIzEgHCEj14+imtaKQ9+x9mg6u67uKDg+1kJGLUmmlN8IWoztzU+k/E2TQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.300.0"
