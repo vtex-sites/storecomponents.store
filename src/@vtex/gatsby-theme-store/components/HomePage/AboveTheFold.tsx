@@ -1,6 +1,5 @@
 import React from 'react'
-import { Carousel, LocalizedLink } from '@vtex/store-ui'
-import Container from '@vtex/gatsby-theme-store/src/components/Container'
+import { Carousel, LocalizedLink, Container } from '@vtex/store-ui'
 import type { PageProps } from 'gatsby'
 import type { FC } from 'react'
 

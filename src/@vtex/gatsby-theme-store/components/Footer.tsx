@@ -1,7 +1,14 @@
 /** @jsx jsx */
 import { graphql, useStaticQuery } from 'gatsby'
-import { Flex, Grid, Image, jsx, Link, LocalizedLink } from '@vtex/store-ui'
-import Container from '@vtex/gatsby-theme-store/src/components/Container'
+import {
+  Flex,
+  Grid,
+  Image,
+  jsx,
+  Link,
+  LocalizedLink,
+  Container,
+} from '@vtex/store-ui'
 import type { FC } from 'react'
 
 import type { FooterQueryQuery } from './__generated__/FooterQuery.graphql'

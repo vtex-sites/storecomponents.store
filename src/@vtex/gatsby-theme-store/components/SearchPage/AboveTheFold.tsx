@@ -1,7 +1,8 @@
-import React, { FC, lazy } from 'react'
-import { Breadcrumb, BreadcrumbItem } from '@vtex/store-ui'
+import type { FC } from 'react'
+import React, { lazy } from 'react'
+import type { BreadcrumbItem } from '@vtex/store-ui'
+import { Breadcrumb, Container } from '@vtex/store-ui'
 import PageList from '@vtex/gatsby-theme-store/src/components/Search/List'
-import Container from '@vtex/gatsby-theme-store/src/components/Container'
 import SuspenseDevice from '@vtex/gatsby-theme-store/src/components/Suspense/Device'
 import Controls from '@vtex/gatsby-theme-store/src/components/Search/Controls'
 import {
