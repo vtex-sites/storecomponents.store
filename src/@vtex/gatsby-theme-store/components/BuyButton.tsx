@@ -6,10 +6,6 @@ import type { SxStyleProp } from '@vtex/store-ui'
 import { Button, jsx, Spinner } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
-interface Props {
-  sku: SKU | undefined | null
-}
-
 const styles: SxStyleProp = {
   px: '24px',
   width: '100%',
@@ -31,9 +27,14 @@ const styles: SxStyleProp = {
   },
 }
 
-const BuyButton: FC<Props> = ({ sku }) => {
+interface Props {
+  sku: SKU | undefined | null
+  productName: string
+}
+
+const BuyButton: FC<Props> = ({ sku, productName }) => {
   const { formatMessage } = useIntl()
-  const { loading, ...props } = useBuyButton({ sku, quantity: 1 })
+  const { loading, ...props } = useBuyButton({ sku, quantity: 1, productName })
 
   return (
     <Button sx={styles} {...props}>

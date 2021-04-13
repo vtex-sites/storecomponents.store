@@ -28,6 +28,7 @@ type Product = {
   product: {
     productReference: string
     items: Item[]
+    productName: string
   }
 }
 
@@ -38,7 +39,7 @@ const Async: FC<Props> = ({ slug }) => {
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
   const { formatMessage } = useIntl()
-  const { productReference } = product
+  const { productReference, productName } = product
 
   const isAvailable =
     commercialOffer.price > 0 && commercialOffer.availableQuantity > 0
@@ -56,7 +57,7 @@ const Async: FC<Props> = ({ slug }) => {
       <ProductDetailsReference variant={variant}>
         {formatMessage({ id: 'productDetails.reference' })}: {productReference}
       </ProductDetailsReference>
-      {isAvailable && <BuyButton sku={sku} />}
+      {isAvailable && <BuyButton sku={sku} productName={productName} />}
       <Social />
     </>
   )
