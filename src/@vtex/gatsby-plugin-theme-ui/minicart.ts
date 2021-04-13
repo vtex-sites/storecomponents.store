@@ -48,6 +48,10 @@ const custom: SxStyleProp = {
           ...btn,
         },
       },
+      warning: {
+        px: ['6px', '16px'],
+        py: ['10px', '16px'],
+      },
     },
   },
 }
