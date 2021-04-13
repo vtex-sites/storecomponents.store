@@ -81,7 +81,7 @@ const ProductSummary: FC<Props> = ({
         />
       ) : null}
 
-      <BuyButton sku={sku} />
+      <BuyButton sku={sku} productName={productName} />
     </ProductSummaryContainer>
   )
 }

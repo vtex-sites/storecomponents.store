@@ -35,7 +35,11 @@ type Product = {
 const variant = 'default'
 
 const Async: FC<Props> = ({ slug }) => {
-  const { product } = (useAsyncProduct({ slug }) as unknown) as Product
+  const { product } = (useAsyncProduct({
+    slug,
+    regionId: null,
+  }) as unknown) as Product
+
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
   const { formatMessage } = useIntl()

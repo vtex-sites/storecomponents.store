@@ -1,4 +1,5 @@
-import { createTheme, minicartTheme, SxStyleProp } from '@vtex/store-ui'
+import type { SxStyleProp } from '@vtex/store-ui'
+import { createTheme, minicartTheme } from '@vtex/store-ui'
 
 const btn = {
   padding: 0,
@@ -24,6 +25,11 @@ const custom: SxStyleProp = {
         },
       },
       content: {
+        product: {
+          image: {
+            maxWidth: 150,
+          },
+        },
         quantity: {
           width: 100,
           border: '2px solid #e3e4e6',
