@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 const OFFLINE_PAGE_CACHE_NAME = 'offline-page'
-const OFFLINE_PAGE = '/offline'
+const OFFLINE_PAGE = '/offline/simple'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
