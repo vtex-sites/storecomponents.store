@@ -2658,17 +2658,17 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.303.0":
-  version "0.303.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.303.0.tgz#229062d62bbdcc8971bf6836848bfb0788428228"
-  integrity sha512-WfezFZEzPnLNMB9OO+zvwG08Py68PhzrEdHmCW8CxNnqvBzOa0NrabPAMjctm/9s9W630GOFeVVa2TAds+yNGA==
+"@vtex/gatsby-theme-store@0.303.0-alpha.1":
+  version "0.303.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.303.0-alpha.1.tgz#d91514f580fe297262ece436c5d0da3820b396ea"
+  integrity sha512-e66Iy/7vNlFZYPsnExpICz3B/nOnqa8jSI370zv0dqRhiz0Ag3+c+NKH5Xk7kD9KDr4LddkJKPA9qITHIv0ArQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.300.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.300.0"
     "@vtex/order-items" "^0.4.0"
     "@vtex/order-manager" "^0.3.0"
-    "@vtex/store-ui" "^0.303.0"
+    "@vtex/store-ui" "^0.300.0"
     gatsby-plugin-bundle-stats "^2.7.2"
     gatsby-plugin-react-helmet-async "^1.2.0"
     html-loader "^2.1.2"
@@ -2709,10 +2709,28 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.303.0", "@vtex/store-ui@^0.303.0":
+"@vtex/store-ui@0.303.0":
   version "0.303.0"
   resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.303.0.tgz#5fbf6a3ae2f3d046e48cbdac47d8fae7333ce08e"
   integrity sha512-GEoY+wGmkMO2rv/F+mhhrAl9cNOo1FoQZz47fEYhgBG6q4i/mxLQtrlo8AKAZlegSxLx9yJifWp/O7/lrXW72A==
+  dependencies:
+    "@reach/router" "^1.3.4"
+    "@theme-ui/match-media" "^0.3.1"
+    "@theme-ui/preset-base" "^0.3.0"
+    "@types/react-modal" "^3.12.0"
+    "@types/theme-ui__components" "^0.2.6"
+    "@vtex-components/accordion" "^0.2.3"
+    "@vtex-components/drawer" "^0.2.4"
+    deepmerge "^4.2.2"
+    react-swipeable "^6.0.0"
+    reakit "^1.3.0"
+    text-mask-core "^5.1.2"
+    theme-ui "^0.3.1"
+
+"@vtex/store-ui@^0.300.0":
+  version "0.300.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.300.0.tgz#ec1fb603fc7b239baedc046476977896990339eb"
+  integrity sha512-gMncVBeCosdoladFbihM2o3aYNk6V9E2Qj9ez308pDqNQ8tLYIpmQXGBt6g29Cl6me0KmCT6QqQztDbaxbA8aA==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
@@ -9239,9 +9257,6 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
-  dependencies:
-    minipass "^3.0.0"
-    yallist "^4.0.0"
 
 mitt@^1.2.0:
   version "1.2.0"
