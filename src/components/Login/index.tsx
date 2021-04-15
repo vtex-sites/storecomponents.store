@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import type { FC } from 'react'
-import SuspenseSSR from '@vtex/gatsby-theme-store/src/components/Suspense/SSR'
+import { SuspenseSSR } from '@vtex/store-ui'
 
 import Anonymous from './Anonymous'
 

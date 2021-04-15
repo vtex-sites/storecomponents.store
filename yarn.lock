@@ -2658,17 +2658,17 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.305.0":
-  version "0.305.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.305.0.tgz#b24bf2a3ba9fe50eedd2bbb232cc78473bc5fb79"
-  integrity sha512-eY0WD0kxeBXLHwo9xF5XjZbZnfy0XN0YVaQnJaNkkpG+y2WtGvGHR4axa4cCknDiiVdQTUY2FO6wh3iuwpjqIA==
+"@vtex/gatsby-theme-store@0.306.0-alpha.0":
+  version "0.306.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.306.0-alpha.0.tgz#b31ed54c32e9e2ee16d41d6fd74f6fec235963ed"
+  integrity sha512-MANSqI5BL/wKqNnbAdzxs7546sQ7L/9klo2/bnTe8jnrQ2noSXp0A5lnpxJh4n61XDRPBJMFAQmUOIfoETaeBA==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.305.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.305.0"
     "@vtex/order-items" "^0.4.0"
     "@vtex/order-manager" "^0.3.0"
-    "@vtex/store-ui" "^0.305.0"
+    "@vtex/store-ui" "^0.306.0-alpha.0"
     gatsby-plugin-bundle-stats "^2.7.2"
     gatsby-plugin-react-helmet-async "^1.2.0"
     html-loader "^2.1.2"
@@ -2677,7 +2677,6 @@
     markdown-loader "^6.0.0"
     nprogress "^0.2.0"
     react-helmet-async "^1.0.7"
-    react-hook-inview "^4.3.0"
     requestidlecallback-polyfill "^1.0.2"
     schema-dts "^0.6.0"
     swr "^0.3.0"
@@ -2709,10 +2708,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.305.0", "@vtex/store-ui@^0.305.0":
-  version "0.305.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.305.0.tgz#01d53aec47ff801cb7572240e2b82022618a5604"
-  integrity sha512-jagHgco24tBWgqJHsaZZoWeXGyEX0QfP6BAHIyiB8qF7tL7aMN4yTPL6WZL412BhSeNHg0OSk/maGkKnbUrbEA==
+"@vtex/store-ui@0.306.0-alpha.0", "@vtex/store-ui@^0.306.0-alpha.0":
+  version "0.306.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.306.0-alpha.0.tgz#eeb6cef3df40e5b32b6572a6ddd6c1269ff4e795"
+  integrity sha512-ej1vgU4K77rj+zZX5ZKxk3j2jXn2sSI+8mEo/WPMfXldMyvtzlq+PHvPNHLCGJTIlFbsXDNiL2XtvYG11yj3lg==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
@@ -2722,6 +2721,7 @@
     "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
     deepmerge "^4.2.2"
+    react-hook-inview "^4.3.9"
     react-swipeable "^6.0.0"
     reakit "^1.3.0"
     text-mask-core "^5.1.2"
@@ -10956,10 +10956,10 @@ react-helmet-async@^1.0.7:
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
 
-react-hook-inview@^4.3.0:
-  version "4.3.8"
-  resolved "https://registry.yarnpkg.com/react-hook-inview/-/react-hook-inview-4.3.8.tgz#423f5adba95a8de3e888540873c8025e2fb00075"
-  integrity sha512-4ocl6+lAwyV0I65zqHdGwRy1Piwbu/hy/rED83XvaPlUkF88s3JlrTbIBuLBmFBb3vzGduVHJmPr3jGLv0Tqng==
+react-hook-inview@^4.3.9:
+  version "4.3.9"
+  resolved "https://registry.yarnpkg.com/react-hook-inview/-/react-hook-inview-4.3.9.tgz#a4f7bfc5efaece2f2a07ede8e81674559ffdc845"
+  integrity sha512-ykLsEbul/F9l9B9FhB09IY47vJwFQgle4eALnH2Ul9+Wr9TBj6jE8qbCoJW+6ulEkirlfE6FGmC4N9aNRQYtPg==
 
 react-intl@^5.13.5:
   version "5.14.0"

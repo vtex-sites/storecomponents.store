@@ -1,6 +1,6 @@
 import React, { Fragment, lazy } from 'react'
 import type { FC } from 'react'
-import SuspenseViewport from '@vtex/gatsby-theme-store/src/components/Suspense/Viewport'
+import { SuspenseViewport } from '@vtex/store-ui'
 
 import Toast from '../../../components/Toast'
 import Header from './Header'
