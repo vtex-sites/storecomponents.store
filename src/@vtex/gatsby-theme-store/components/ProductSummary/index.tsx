@@ -62,6 +62,11 @@ const ProductSummary: FC<Props> = ({
   const linkProps = useLink(product)
   const imgProps = useSummaryImage(imageUrl)
 
+  const itemSku = {
+    ...sku,
+    images: [{ imageUrl: imgProps.src }],
+  }
+
   return (
     <ProductSummaryContainer {...linkProps} variant={variant}>
       <ProductSummaryImage
@@ -81,7 +86,7 @@ const ProductSummary: FC<Props> = ({
         />
       ) : null}
 
-      <BuyButton sku={sku} productName={productName} />
+      <BuyButton sku={itemSku} productName={productName} />
     </ProductSummaryContainer>
   )
 }
