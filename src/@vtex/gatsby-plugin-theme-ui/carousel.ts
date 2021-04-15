@@ -42,12 +42,6 @@ const paginationDots: SxStyleProp = {
   },
 }
 
-const galleryDots: SxStyleProp = createTheme(paginationDots, {
-  container: {
-    position: 'relative',
-  },
-})
-
 const carouselArrows: SxStyleProp = {
   left: {
     button: {
@@ -102,46 +96,6 @@ const carouselResponsivePicture = createTheme(responsivePictureTheme, {
 })
 
 const theme: SxStyleProp = {
-  productImageGallery: {
-    mx: 2,
-    display: 'flex',
-    flexWrap: 'nowrap',
-    flexDirection: 'row',
-
-    miniature: {
-      container: {
-        mx: '15px',
-        width: '78px',
-        display: ['none', 'block'],
-      },
-
-      active: {
-        marginBottom: '5px',
-        borderStyle: 'solid',
-        borderColor: 'secondary',
-        borderWidth: '1px',
-      },
-
-      inactive: {
-        marginBottom: '5px',
-        borderStyle: 'solid',
-        borderColor: 'gray',
-        borderWidth: '1px',
-      },
-    },
-
-    featured: {
-      flexGrow: 1,
-      position: 'relative',
-
-      media: { width: '100%' },
-
-      arrow: carouselArrows,
-
-      paginationDots: galleryDots,
-    },
-  },
-
   carousel: {
     position: 'relative',
     arrow: carouselArrows,

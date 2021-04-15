@@ -21,8 +21,9 @@ import { searchBannerTheme } from './searchBanner'
 import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
-import sliderTheme from './slider'
+import carouselTheme from './carousel'
 import shelfTheme from './shelf'
+import productImageGalleryTheme from './productImageGallery'
 
 export default createTheme(
   searchBannerTheme,
@@ -38,12 +39,13 @@ export default createTheme(
   searchBarTheme,
   searchTheme,
   custom,
-  sliderTheme,
+  carouselTheme,
   offerTheme,
   productSummaryTheme,
   productDetailsTheme,
   loginTheme,
   authTheme,
   toastTheme,
-  shelfTheme
+  shelfTheme,
+  productImageGalleryTheme
 )

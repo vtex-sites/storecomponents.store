@@ -1,4 +1,3 @@
-import ProductImageGallery from '@vtex/gatsby-theme-store/src/components/ProductImageGallery'
 import { useDetailsImages, useDetailsVideos } from '@vtex/gatsby-theme-store'
 import {
   Card,
@@ -7,6 +6,7 @@ import {
   Breadcrumb,
   ProductDetailsTitle,
   Container,
+  ProductImageGallery,
 } from '@vtex/store-ui'
 import type { FC } from 'react'
 import React, { Suspense } from 'react'
