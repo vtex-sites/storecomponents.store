@@ -5,7 +5,7 @@ import { useToast } from '@vtex/gatsby-theme-store'
 export const MinicartWarning = () => {
   return (
     <Box variant="minicart.drawer.warning">
-      <Toast {...useToast()} disablePortal type="error" />
+      <Toast {...useToast()} type="error" />
     </Box>
   )
 }
