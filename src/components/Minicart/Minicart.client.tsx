@@ -1,12 +1,13 @@
-import React, { lazy } from 'react'
-import { MinicartButton } from '@vtex/store-ui'
 import {
   useMinicart,
-  useOrderForm,
   useNumberFormat,
+  useOrderForm,
   useToast,
+  useOrderQueueStatus,
+  useOrderItems,
 } from '@vtex/gatsby-theme-store'
-import { useOrderItems } from '@vtex/gatsby-theme-store/src/sdk/orderForm/useOrderItems'
+import { MinicartButton } from '@vtex/store-ui'
+import React, { lazy } from 'react'
 import type { FC, MouseEventHandler } from 'react'
 
 const onCheckout: MouseEventHandler<HTMLButtonElement> = (e) => {
@@ -19,6 +20,7 @@ const MinicartDrawer = lazy(() => import('@vtex/store-ui/src/Minicart/Drawer'))
 const Minicart: FC = () => {
   const { removeItem, updateQuantity: updateItem } = useOrderItems()
   const { hideToast, message, type, isVisible } = useToast()
+  const queueStatus = useOrderQueueStatus()
   const { format: numberFormat } = useNumberFormat()
   const { isOpen, toggle } = useMinicart()
   const { orderForm } = useOrderForm()
@@ -36,6 +38,7 @@ const Minicart: FC = () => {
           removeItem={removeItem}
           updateItem={updateItem}
           onCheckout={onCheckout}
+          disableViewCart={queueStatus === 'Pending'}
           numberFormat={numberFormat}
           hideToast={hideToast}
           message={message}
