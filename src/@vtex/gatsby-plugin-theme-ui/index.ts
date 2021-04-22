@@ -2,7 +2,6 @@ import {
   createTheme,
   headerTheme,
   infoCardTheme,
-  minicartTheme,
   searchControlsTheme,
   loginTheme,
   toastTheme,
@@ -12,7 +11,6 @@ import authTheme from './auth'
 import { base } from './base'
 import { breadcrumb } from './breadcrumb'
 import { custom } from './custom'
-import { minicart } from './minicart'
 import offerTheme from './offer'
 import productDetailsTheme from './productDetails'
 import { productQuantityTheme } from './productQuantity'
@@ -23,17 +21,17 @@ import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import carouselTheme from './carousel'
 import shelfTheme from './shelf'
+import minicartTheme from './minicart'
 import productImageGalleryTheme from './productImageGallery'
 
 export default createTheme(
   searchBannerTheme,
   base,
   breadcrumb,
-  minicart,
+  minicartTheme,
   infoCardTheme,
   headerTheme,
   productQuantityTheme,
-  minicartTheme,
   searchControlsTheme,
   searchSuggestionsTheme,
   searchBarTheme,

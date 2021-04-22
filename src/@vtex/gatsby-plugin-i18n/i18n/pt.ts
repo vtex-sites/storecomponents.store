@@ -1,7 +1,10 @@
 import pt from '@vtex/gatsby-theme-store/i18n/pt.json'
+import { MinicartI18nPT } from '@vtex/store-ui'
 
 export default {
   ...pt,
+
+  ...MinicartI18nPT,
 
   'shelf.title.0': 'Ofertas',
 

@@ -10,7 +10,7 @@ import {
 import type { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
 import type { FC } from 'react'
 
-import BuyButton from '../BuyButton'
+import BuyButton from '../../../../components/BuyButton'
 import Offer from './Offer'
 
 const OfferPreview: FC = () => (

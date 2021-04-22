@@ -1,10 +1,10 @@
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
-import Minicart from '@vtex/gatsby-theme-store/src/components/Minicart'
 import { Flex, Header } from '@vtex/store-ui'
 import type { FC } from 'react'
 import React, { Fragment } from 'react'
 
 import Login from '../../../../components/Login'
+import Minicart from '../../../../components/Minicart'
 import SearchBar from '../../../../components/SearchBar'
 import Logo from './Logo'
 import Menu from './Menu'

@@ -13,47 +13,46 @@ const btn = {
   cursor: 'pointer',
 }
 
-const custom: SxStyleProp = {
+const drawer: SxStyleProp = {
+  footer: {
+    button: {
+      cursor: 'pointer',
+      '&:hover': {
+        backgroundColor: '#072c75',
+      },
+    },
+  },
+  content: {
+    product: {
+      image: {
+        maxWidth: 150,
+      },
+    },
+    quantity: {
+      marginTop: 3,
+      alignItems: 'center',
+
+      spinner: {
+        marginLeft: 2,
+      },
+    },
+    delete: {
+      marginLeft: 2,
+      ...btn,
+    },
+  },
+  warning: {
+    px: ['6px', '16px'],
+    py: ['10px', '16px'],
+  },
+}
+
+const theme: SxStyleProp = {
   minicart: {
-    drawer: {
-      footer: {
-        button: {
-          cursor: 'pointer',
-          '&:hover': {
-            backgroundColor: '#072c75',
-          },
-        },
-      },
-      content: {
-        product: {
-          image: {
-            maxWidth: 150,
-          },
-        },
-        quantity: {
-          width: 100,
-          border: '2px solid #e3e4e6',
-
-          wrapper: {
-            marginTop: 3,
-            alignItems: 'center',
-
-            spinner: {
-              marginLeft: 2,
-            },
-          },
-        },
-        delete: {
-          marginLeft: 2,
-          ...btn,
-        },
-      },
-      warning: {
-        px: ['6px', '16px'],
-        py: ['10px', '16px'],
-      },
+    default: {
+      drawer,
     },
   },
 }
 
-export const minicart = createTheme(minicartTheme, custom)
+export default createTheme(minicartTheme, theme)
