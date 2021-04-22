@@ -21,6 +21,17 @@ const drawer: SxStyleProp = {
         backgroundColor: '#072c75',
       },
     },
+
+    checkout: {
+      spinner: {
+        color: '#fff',
+      },
+    },
+  },
+  header: {
+    close: {
+      bg: '#fff',
+    },
   },
   content: {
     product: {
