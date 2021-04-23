@@ -1,10 +1,12 @@
 import en from '@vtex/gatsby-theme-store/i18n/en.json'
-import { MinicartI18nEN } from '@vtex/store-ui'
+import { searchSuggestionsI18nEN, minicartI18nEN } from '@vtex/store-ui'
 
 export default {
   ...en,
 
-  ...MinicartI18nEN,
+  ...minicartI18nEN,
+
+  ...searchSuggestionsI18nEN,
 
   'shelf.title.0': 'New Offers',
 

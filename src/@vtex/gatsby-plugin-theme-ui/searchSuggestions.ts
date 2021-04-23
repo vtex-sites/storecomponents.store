@@ -1,7 +1,6 @@
-import { createTheme, SxStyleProp } from '@vtex/store-ui'
-import searchSuggestionsTheme from '@vtex/gatsby-theme-store/components/SearchSuggestions/theme'
+import { createTheme, searchSuggestionsTheme } from '@vtex/store-ui'
 
-const theme: SxStyleProp = createTheme(searchSuggestionsTheme, {
+export default createTheme(searchSuggestionsTheme, {
   suggestions: {
     minWidth: ['19rem', '40rem'],
 
@@ -9,5 +8,3 @@ const theme: SxStyleProp = createTheme(searchSuggestionsTheme, {
     right: [undefined, 0],
   },
 })
-
-export default theme
