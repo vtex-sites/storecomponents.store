@@ -1,5 +1,11 @@
 import { useSearch } from '@vtex/gatsby-theme-store'
-import { SearchBar as StoreUISearchBar, SuspenseSSR } from '@vtex/store-ui'
+import {
+  Center,
+  SearchBar as StoreUISearchBar,
+  SearchSuggestionsContainer,
+  Spinner,
+  SuspenseSSR,
+} from '@vtex/store-ui'
 import React, { lazy } from 'react'
 import type { FC } from 'react'
 
@@ -14,7 +20,15 @@ const SearchBar: FC = () => {
       placeholder="Olá, o que você procura hoje?"
       aria-label="Olá, o que você procura hoje?"
     >
-      <SuspenseSSR fallback={null}>
+      <SuspenseSSR
+        fallback={
+          <SearchSuggestionsContainer>
+            <Center>
+              <Spinner />
+            </Center>
+          </SearchSuggestionsContainer>
+        }
+      >
         <SearchSuggestions />
       </SuspenseSSR>
     </StoreUISearchBar>
