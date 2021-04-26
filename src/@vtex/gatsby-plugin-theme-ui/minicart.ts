@@ -19,8 +19,17 @@ const custom: SxStyleProp = {
       footer: {
         button: {
           cursor: 'pointer',
-          '&:hover': {
+          '&:not(:disabled):hover': {
             backgroundColor: '#072c75',
+          },
+          '&:disabled': {
+            background: '#eeeeee',
+          },
+        },
+        checkout: {
+          spinner: {
+            display: 'flex',
+            alignItems: 'center',
           },
         },
       },
