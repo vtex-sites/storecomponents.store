@@ -91,6 +91,9 @@ module.exports = {
       options: {
         precachePages: [`/offline`],
         appendScript: 'src/custom-sw-code.js',
+        workboxConfig: {
+          globPatterns: ['**/offline/*'],
+        },
       },
     },
     {
