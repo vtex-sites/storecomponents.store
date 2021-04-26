@@ -9,7 +9,7 @@ import {
 import { Divider, ProductDetailsReference } from '@vtex/store-ui'
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
 
-import BuyButton from '../../../../../../components/BuyButton'
+import BuyButton from '../../../../../../components/BuyButton/BuyButton.client'
 import Offer from './Offer'
 import Social from './Social'
 

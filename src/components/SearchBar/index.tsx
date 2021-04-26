@@ -4,7 +4,7 @@ import {
   SearchBar as StoreUISearchBar,
   SearchSuggestionsContainer,
   Spinner,
-  SuspenseSSR,
+  Suspense,
 } from '@vtex/store-ui'
 import React, { lazy } from 'react'
 import type { FC } from 'react'
@@ -21,7 +21,7 @@ const SearchBar: FC = () => {
       aria-label="Olá, o que você procura hoje?"
     >
       <SearchSuggestionsContainer>
-        <SuspenseSSR
+        <Suspense
           fallback={
             <Center>
               <Spinner />
@@ -29,7 +29,7 @@ const SearchBar: FC = () => {
           }
         >
           <SearchSuggestions />
-        </SuspenseSSR>
+        </Suspense>
       </SearchSuggestionsContainer>
     </StoreUISearchBar>
   )
