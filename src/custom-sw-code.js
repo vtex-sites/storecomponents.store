@@ -1,35 +1,36 @@
 /* eslint-disable no-restricted-globals */
-const OFFLINE_PAGE_CACHE_NAME = 'offline-page'
-const OFFLINE_PAGE = '/offline/simple'
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    (async () => {
-      const cache = await caches.open(OFFLINE_PAGE_CACHE_NAME)
+/**
+ * This code registers a catch handler into Workbox, to handle failed network
+ * requests. As it is, it returns a custom offline error page to users when
+ * they are offline.
+ *
+ * Everything in this file will be appended to the resulting service worker
+ * generated during the store's build process (public/sw.js).
+ */
 
-      // Setting {cache: 'reload'} in the new request will ensure that the response
-      // isn't fulfilled from the HTTP cache; i.e., it will be from the network.
-      await cache.add(new Request(OFFLINE_PAGE, { cache: 'reload' }))
-      // 👆🏻 Adding the offline page to the cache
-    })()
-  )
-})
+const OFFLINE_PAGE_HTML = '/offline/index.html'
 
-// This is gonna handle failed network requests.
+// `workbox` will be defined in the scope where this code is executed.
+// eslint-disable-next-line no-undef
+const offlinePageCacheKey = workbox.precaching.getCacheKeyForURL(
+  OFFLINE_PAGE_HTML
+)
+
+// This will handle failed network requests.
 // We're simply returning a cached offline page.
 const catchHandler = async ({ event }) => {
   const dest = event.request.destination
 
   if (dest === 'document') {
     // Getting the offline page from cache.
-    const cache = await caches.open(OFFLINE_PAGE_CACHE_NAME)
+    const response = await caches.match(offlinePageCacheKey)
 
-    return cache.match(OFFLINE_PAGE)
+    return response
   }
 
   return Response.error()
 }
 
-// `workbox` will be defined in the scope where this code is executed.
 // eslint-disable-next-line no-undef
 workbox.routing.setCatchHandler(catchHandler)
