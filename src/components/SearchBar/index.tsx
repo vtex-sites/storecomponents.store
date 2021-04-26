@@ -20,17 +20,17 @@ const SearchBar: FC = () => {
       placeholder="Olá, o que você procura hoje?"
       aria-label="Olá, o que você procura hoje?"
     >
-      <SuspenseSSR
-        fallback={
-          <SearchSuggestionsContainer>
+      <SearchSuggestionsContainer>
+        <SuspenseSSR
+          fallback={
             <Center>
               <Spinner />
             </Center>
-          </SearchSuggestionsContainer>
-        }
-      >
-        <SearchSuggestions />
-      </SuspenseSSR>
+          }
+        >
+          <SearchSuggestions />
+        </SuspenseSSR>
+      </SearchSuggestionsContainer>
     </StoreUISearchBar>
   )
 }
