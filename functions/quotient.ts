@@ -6,7 +6,7 @@ exports.handler = async (event) => {
     }
   }
 
-  if (event.queryStringParameters.y === 0) {
+  if (event.queryStringParameters.y === '0') {
     throw new Error('Unhandled exception: dividend cannot be zero')
   }
 
