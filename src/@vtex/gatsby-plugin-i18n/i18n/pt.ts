@@ -1,5 +1,9 @@
 import pt from '@vtex/gatsby-theme-store/i18n/pt.json'
-import { searchSuggestionsI18nPT, minicartI18nPT } from '@vtex/store-ui'
+import {
+  searchSuggestionsI18nPT,
+  authProvidersI18nPT,
+  minicartI18nPT,
+} from '@vtex/store-ui'
 
 export default {
   ...pt,
@@ -7,6 +11,10 @@ export default {
   ...minicartI18nPT,
 
   ...searchSuggestionsI18nPT,
+
+  ...authProvidersI18nPT,
+  'login.button.greeting': 'Olá {name}',
+  'login.button.action': 'Entrar',
 
   'shelf.title.0': 'Ofertas',
 
