@@ -24,7 +24,9 @@ const catchHandler = async ({ event }) => {
 
   if (dest === 'document') {
     // Getting the offline page from cache.
-    const response = await caches.match(offlinePageCacheKey)
+    const response = await caches.match(offlinePageCacheKey, {
+      ignoreSearch: true,
+    })
 
     return response
   }
