@@ -65,9 +65,17 @@ exports.onCreateNode = async ({ node, reporter }) => {
 
         const src = source.srcSet
 
-        source.srcSet = widths
-          .map((width) => `${optimize(src, { width, aspect: true })} ${width}w`)
-          .join(',')
+        try {
+          source.srcSet = widths
+            .map(
+              (width) => `${optimize(src, { width, aspect: true })} ${width}w`
+            )
+            .join(',')
+        } catch (error) {
+          // TODO: some image is breaking this optimization it seems
+          // eslint-disable-next-line no-console
+          console.log('Error optimizing home image: ', error)
+        }
       }
     }
   }
