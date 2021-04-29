@@ -65,6 +65,10 @@ exports.onCreateNode = async ({ node, reporter }) => {
 
         const src = source.srcSet
 
+        if (!src) {
+          return
+        }
+
         source.srcSet = widths
           .map((width) => `${optimize(src, { width, aspect: true })} ${width}w`)
           .join(',')
