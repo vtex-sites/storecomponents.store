@@ -4,6 +4,6 @@
     "resolveJsonModule": true,
     "module": "ESNext"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "functions/**/*.ts"],
   "exclude": ["node_modules", "public"]
 }
