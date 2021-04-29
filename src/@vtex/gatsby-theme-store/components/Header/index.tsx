@@ -1,5 +1,5 @@
 import { useIntl } from '@vtex/gatsby-plugin-i18n'
-import { Flex, Header } from '@vtex/store-ui'
+import { Box, Flex, Header } from '@vtex/store-ui'
 import type { FC } from 'react'
 import React, { Fragment } from 'react'
 
@@ -15,12 +15,21 @@ const StoreHeader: FC = () => {
   const variant = 'header'
   const { formatMessage } = useIntl()
 
+  const onClick = () => {
+    fetch('/functions/hello?name=VTEX')
+      .then((resp) => resp.text())
+      .then((text) => alert(text))
+  }
+
   return (
     <Fragment>
-      <NotificationBar
-        text={formatMessage({ id: 'notification-bar.sale' })}
-        variant={`${variant}.notificationbar`}
-      />
+      <Box onClick={onClick}>
+        <NotificationBar
+          text="Serverless function test"
+          variant={`${variant}.notificationbar`}
+        />
+      </Box>
+
       <OverMenu variant={`${variant}.overmenu`} />
       <Header variant={variant}>
         <Flex variant={`${variant}.left`}>
