@@ -2713,10 +2713,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.318.1", "@vtex/store-ui@^0.318.1":
-  version "0.318.1"
-  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.318.1.tgz#fb20e73d6a0559871cfe289345eab82dcf26e665"
-  integrity sha512-e2y9yRK4JbLD5s6K9I5ThfYNCqn4lIGdi7yRuz37DuqUI6o13XNltIFrc3c2NiG0nF9aR44gVrhmuQCq2pWfZw==
+"@vtex/store-ui@0.318.3", "@vtex/store-ui@^0.318.1":
+  version "0.318.3"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.318.3.tgz#ed4395ebeb1ab261b405082e2cc709f526f51c39"
+  integrity sha512-tEzju3iDj7VdS7MVEYCxAH+UexRV1FcKYJ5pdmRX6pb1FVKliZuFS3vMZoOeMBP74hncCKCkdOxluLa4T41EOw==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
