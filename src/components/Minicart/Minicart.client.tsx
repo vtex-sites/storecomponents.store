@@ -19,7 +19,7 @@ const MinicartDrawer = lazy(() => import('@vtex/store-ui/src/Minicart/Drawer'))
 
 const Minicart: FC = () => {
   const { removeItem, updateQuantity: updateItem } = useOrderItems()
-  const { hideToast, message, type, isVisible } = useToast()
+  const { hideToast, messages } = useToast()
   const queueStatus = useOrderQueueStatus()
   const { format: numberFormat } = useNumberFormat()
   const { isOpen, toggle } = useMinicart()
@@ -41,9 +41,7 @@ const Minicart: FC = () => {
           disableViewCart={queueStatus === 'Pending'}
           numberFormat={numberFormat}
           hideToast={hideToast}
-          message={message}
-          type={type}
-          isToastVisible={isVisible}
+          messages={messages}
           items={orderForm.items as any}
         />
       )}
