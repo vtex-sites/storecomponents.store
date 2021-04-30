@@ -8,7 +8,7 @@ import { SearchSuggestions, useSearchBarContext } from '@vtex/store-ui'
 import React, { useMemo } from 'react'
 import type { FC } from 'react'
 
-import ProductSummary from '../../@vtex/gatsby-theme-store/components/ProductSummary'
+import ProductSummary from '../../../@vtex/gatsby-theme-store/components/ProductSummary'
 
 const useHistory = () => {
   const history = useSearchHistory()

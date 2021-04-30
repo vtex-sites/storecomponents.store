@@ -1,8 +1,8 @@
-import React from 'react'
 import { Button as StoreUIButton } from '@vtex/store-ui'
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import type { FC, ComponentPropsWithoutRef } from 'react'
 import type { SxStyleProp } from '@vtex/store-ui'
-import { FormattedMessage } from '@vtex/gatsby-plugin-i18n'
 
 const styles: SxStyleProp = {
   px: '24px',
@@ -27,7 +27,7 @@ const styles: SxStyleProp = {
 
 type Props = ComponentPropsWithoutRef<typeof StoreUIButton>
 
-const Button: FC<Props> = ({ loading, ...props }) => (
+const Button: FC<Props> = (props) => (
   <StoreUIButton {...props} sx={styles}>
     <FormattedMessage id="buy-button.add-to-cart" />
   </StoreUIButton>

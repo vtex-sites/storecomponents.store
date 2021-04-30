@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { FormattedMessage } from '@vtex/gatsby-plugin-i18n'
+import { FormattedMessage } from 'react-intl'
 import { Box, jsx, LoginLogo, LocalizedLink } from '@vtex/store-ui'
 import type { FC } from 'react'
 

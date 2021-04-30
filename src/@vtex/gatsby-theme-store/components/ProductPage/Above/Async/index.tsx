@@ -1,5 +1,4 @@
 import React from 'react'
-import type { FC } from 'react'
 import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
 import {
   useBestSeller,
@@ -7,11 +6,12 @@ import {
   useSku,
 } from '@vtex/gatsby-theme-store'
 import { Divider, ProductDetailsReference } from '@vtex/store-ui'
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
+import { FormattedMessage } from 'react-intl'
+import type { FC } from 'react'
 
-import BuyButton from '../../../../../../components/BuyButton/BuyButton.client'
+import BuyButton from '../../../../../../components/ui/BuyButton/BuyButton.client'
 import Offer from './Offer'
-import Social from './Social'
+import Social from '../../../../../../components/common/Social'
 
 type Item = {
   itemId: string
@@ -47,7 +47,6 @@ const Async: FC<Props> = ({ slug }) => {
 
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
-  const { formatMessage } = useIntl()
   const { productReference, productName } = product
   const [{ props: itemImgProps }] = useDetailsImages(sku.images)
 
@@ -74,7 +73,7 @@ const Async: FC<Props> = ({ slug }) => {
       <Divider />
 
       <ProductDetailsReference variant={variant}>
-        {formatMessage({ id: 'productDetails.reference' })}: {productReference}
+        <FormattedMessage id="productDetails.reference" />: {productReference}
       </ProductDetailsReference>
       {isAvailable && <BuyButton sku={itemSku} productName={productName} />}
       <Social />

@@ -11,7 +11,7 @@ import {
 } from '@vtex/store-ui'
 import type { FC } from 'react'
 
-import type { FooterQueryQuery } from './__generated__/FooterQuery.graphql'
+import type { FooterQueryQuery } from '../../../@vtex/gatsby-theme-store/components/__generated__/FooterQuery.graphql'
 
 interface Item {
   name: string | undefined | null

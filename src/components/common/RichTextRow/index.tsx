@@ -1,14 +1,15 @@
-import React, { FC } from 'react'
 import { Box, Flex, Grid, RichMarkdown } from '@vtex/store-ui'
+import React from 'react'
+import type { FC } from 'react'
 
-import freeShippingHtml from './free-shipping.md'
-import deliveryHtml from './delivery.md'
-import pickupHtml from './pickup.md'
+import BoxIcon from '../../icons/Box'
+import CouponIcon from '../../icons/Coupon'
+import DeliveryIcon from '../../icons/Delivery'
+import StoreIcon from '../../icons/Store'
 import dealHtml from './deal.md'
-import BoxImg from './Box'
-import DeliveryImg from './Delivery'
-import StoreImg from './Store'
-import CouponImg from './Coupon'
+import deliveryHtml from './delivery.md'
+import freeShippingHtml from './free-shipping.md'
+import pickupHtml from './pickup.md'
 
 const FullWidthContainer: FC = ({ children }) => (
   <Box sx={{ width: '100%' }}>{children}</Box>
@@ -34,19 +35,19 @@ const RichTextRow: FC = () => (
     <Box backgroundColor="#6b7381">
       <Grid gap={2} columns={MAX_ITEMS}>
         <RowItemContainer>
-          <BoxImg />
+          <BoxIcon />
           <RichMarkdown text={freeShippingHtml} variant="dealsRow" />
         </RowItemContainer>
         <RowItemContainer>
-          <DeliveryImg />
+          <DeliveryIcon />
           <RichMarkdown text={deliveryHtml} variant="dealsRow" />
         </RowItemContainer>
         <RowItemContainer>
-          <StoreImg />
+          <StoreIcon />
           <RichMarkdown text={pickupHtml} variant="dealsRow" />
         </RowItemContainer>
         <RowItemContainer>
-          <CouponImg />
+          <CouponIcon />
           <RichMarkdown text={dealHtml} variant="dealsRow" />
         </RowItemContainer>
       </Grid>

@@ -11,7 +11,7 @@ interface Props {
 }
 
 const BuyButton: FC<Props> = ({ sku, productName }) => {
-  const props = useBuyButton({ sku, quantity: 1, productName })
+  const { loading, ...props } = useBuyButton({ sku, quantity: 1, productName })
 
   return <Button {...props} />
 }

@@ -1,5 +1,6 @@
-import React, { FC } from 'react'
 import { Skeleton } from '@vtex/store-ui'
+import React from 'react'
+import type { FC } from 'react'
 
 const AsyncInfoPreview: FC = () => (
   <>

@@ -1,7 +1,7 @@
-// https://storecomponents.vtexassets.com/arquivos/box.png
-import React, { FC } from 'react'
+import React from 'react'
+import type { FC } from 'react'
 
-const Img: FC = () => (
+const BoxIcon: FC = () => (
   <img
     width="24px"
     height="24px"
@@ -10,4 +10,4 @@ const Img: FC = () => (
   />
 )
 
-export default Img
+export default BoxIcon

@@ -1,20 +1,20 @@
-import React from 'react'
-import type { FC } from 'react'
-import { useIntl } from '@vtex/gatsby-plugin-i18n'
 import {
-  useNumberFormat,
   useListPrice,
+  useNumberFormat,
   usePrice,
 } from '@vtex/gatsby-theme-store'
 import {
   Box,
+  OfferContainer,
+  OfferDiscountBadge,
+  OfferInstallments,
+  OfferListPrice,
   OfferPrice,
   OfferSoldOut,
-  OfferListPrice,
-  OfferContainer,
-  OfferInstallments,
-  OfferDiscountBadge,
 } from '@vtex/store-ui'
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
+import type { FC } from 'react'
 
 interface Installment {
   value: number
@@ -53,7 +53,6 @@ const Offer: FC<Props> = ({
   },
   variant = 'default',
 }) => {
-  const { formatMessage } = useIntl()
   const { format } = useNumberFormat()
   const price = usePrice(commercialOffer)
   const listPrice = useListPrice(commercialOffer)
@@ -66,7 +65,7 @@ const Offer: FC<Props> = ({
     <OfferContainer variant={variant}>
       {!isAvailable ? (
         <OfferSoldOut variant={variant}>
-          {formatMessage({ id: 'offer.soldout' })}
+          <FormattedMessage id="offer.soldout" />
         </OfferSoldOut>
       ) : (
         <>
@@ -80,27 +79,29 @@ const Offer: FC<Props> = ({
           >
             <OfferListPrice variant={variant}>{listPrice}</OfferListPrice>
             <OfferDiscountBadge variant={variant}>
-              {discountPrice !== 0
-                ? formatMessage(
-                    { id: 'offer.discount' },
-                    { price: format(discountPrice) }
-                  )
-                : discountPrice}
+              {discountPrice !== 0 ? (
+                <FormattedMessage
+                  id="offer.discount"
+                  values={{ price: format(discountPrice) }}
+                />
+              ) : (
+                discountPrice
+              )}
             </OfferDiscountBadge>
           </Box>
 
           <OfferPrice variant={variant}>{price}</OfferPrice>
 
           <OfferInstallments variant={variant}>
-            {maxInstallments
-              ? formatMessage(
-                  { id: 'offer.installments' },
-                  {
-                    value: format(maxInstallments.value),
-                    numberOfInstallments: maxInstallments.numberOfInstallments,
-                  }
-                )
-              : null}
+            {maxInstallments ? (
+              <FormattedMessage
+                id="offer.installments"
+                values={{
+                  value: format(maxInstallments.value),
+                  numberOfInstallments: maxInstallments.numberOfInstallments,
+                }}
+              />
+            ) : null}
           </OfferInstallments>
         </>
       )}

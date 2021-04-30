@@ -4,8 +4,8 @@ import type { PageProps } from 'gatsby'
 import type { FC } from 'react'
 
 import ProductSummary from '../ProductSummary/index'
-import Shelf from '../../../../components/Shelf'
-import RichTextRow from './RichTextRow'
+import Shelf from '../../../../components/product/ProductSlider'
+import RichTextRow from '../../../../components/common/RichTextRow'
 import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
 
 type Props = PageProps<HomePageQueryQuery>
