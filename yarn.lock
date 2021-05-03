@@ -9423,6 +9423,9 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
+  dependencies:
+    minipass "^3.0.0"
+    yallist "^4.0.0"
 
 mitt@^1.2.0:
   version "1.2.0"
@@ -11263,6 +11266,8 @@ react@^0.0.0-experimental-7f28234f8:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "0.0.0-fec00a869"
 
 read-pkg-up@^2.0.0:
   version "2.0.0"
@@ -11827,10 +11832,10 @@ sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-scheduler@0.0.0-experimental-a817840ea:
-  version "0.0.0-experimental-a817840ea"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-a817840ea.tgz#6d83c8a31135ce80c32af49323a6648292f85b48"
-  integrity sha512-xhSueUCNjwiccKpkutAnxflPfS9wuBE0sj9C2ppPr/n00zhWTo2suh9dYOMWo8GkCCoUChzM+E5ICkpHgujAIA==
+scheduler@0.0.0-fec00a869:
+  version "0.0.0-fec00a869"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-fec00a869.tgz#e28ff1aa107e1d04d6e8901641b4fb1e3ba98577"
+  integrity sha512-0U25jnyBP6dRPYwaVW4WMYB0jJSYlrIHFmIuXv27X+KIHJr7vyE9gcFTqZ61NQTuxYLYepAHnUs4KgQEUDlI+g==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
