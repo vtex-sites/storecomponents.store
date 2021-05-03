@@ -16,6 +16,7 @@
     "babel-preset-gatsby": "^1.1.0",
     "csvtojson": "^2.0.10",
     "dotenv": "^8.2.0",
+    "faker": "^5.5.3",
     "gatsby": "^3.1.2",
     "gatsby-plugin-manifest": "^3.1.0",
     "gatsby-plugin-robots-txt": "^1.5.1",
