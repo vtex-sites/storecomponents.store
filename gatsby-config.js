@@ -114,6 +114,12 @@ module.exports = {
       },
     },
     {
+      resolve: `@vtex/gatsby-plugin-onesignal`,
+      options: {
+        oneSignalAppId: '435a6bcd-01d9-4bd6-9fd2-a746eba49cb8',
+      },
+    },
+    {
       resolve: '@vtex/gatsby-plugin-cms',
       options: {
         tenant: STORE_ID,
