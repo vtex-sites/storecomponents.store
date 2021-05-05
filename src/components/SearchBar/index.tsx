@@ -4,9 +4,8 @@ import {
   SearchBar as StoreUISearchBar,
   SearchSuggestionsContainer,
   Spinner,
-  Suspense,
 } from '@vtex/store-ui'
-import React, { lazy } from 'react'
+import React, { lazy, Suspense } from 'react'
 import type { FC } from 'react'
 
 const SearchSuggestions = lazy(() => import('../Suggestions'))
