@@ -11,7 +11,7 @@
     "@vtex/gatsby-plugin-pixel-facebook": "0.321.1",
     "@vtex/gatsby-plugin-theme-ui": "0.321.1",
     "@vtex/gatsby-source-vtex": "0.321.1",
-    "@vtex/gatsby-theme-store": "0.321.1",
+    "@vtex/gatsby-theme-store": "0.322.0",
     "@vtex/store-ui": "0.321.1",
     "babel-preset-gatsby": "^1.1.0",
     "csvtojson": "^2.0.10",
