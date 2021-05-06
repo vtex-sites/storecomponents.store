@@ -133,5 +133,11 @@ module.exports = {
     {
       resolve: '@vtex/gatsby-plugin-nginx',
     },
+    {
+      resolve: 'gatsby-plugin-next-seo',
+      options: {
+        defer: true,
+      },
+    },
   ],
 }

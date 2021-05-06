@@ -1,20 +1,22 @@
 import { useDetailsImages, useDetailsVideos } from '@vtex/gatsby-theme-store'
 import {
+  Breadcrumb,
   Card,
+  Container,
   Flex,
   Grid,
-  Breadcrumb,
   ProductDetailsTitle,
-  Container,
   ProductImageGallery,
+  SuspenseViewport,
 } from '@vtex/store-ui'
+import React, { lazy } from 'react'
 import type { FC } from 'react'
-import React, { Suspense } from 'react'
-import { isServer } from '@vtex/gatsby-theme-store/src/utils/env'
 
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
-import AsyncInfo from './Above/Async'
+
+const loadAsyncInfo = () => import('./Above/Async')
+const AsyncInfo = lazy(loadAsyncInfo)
 
 const variant = 'default'
 
@@ -64,11 +66,12 @@ const AboveTheFold: FC<Props> = ({
             </ProductDetailsTitle>
 
             <AsyncInfoContainer>
-              {isServer ? null : (
-                <Suspense fallback={<AsyncInfoPreview />}>
-                  <AsyncInfo slug={slug} />
-                </Suspense>
-              )}
+              <SuspenseViewport
+                preloader={loadAsyncInfo}
+                fallback={<AsyncInfoPreview />}
+              >
+                <AsyncInfo slug={slug} />
+              </SuspenseViewport>
             </AsyncInfoContainer>
           </Card>
         </Grid>
