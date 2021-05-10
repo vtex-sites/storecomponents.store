@@ -2638,10 +2638,10 @@
     intl-messageformat-parser "^6.4.3"
     react-intl "^5.13.5"
 
-"@vtex/gatsby-plugin-nginx@0.325.0":
-  version "0.325.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.325.0.tgz#ed319f1a87270b3b35a786a9b9a50f7842b44cfc"
-  integrity sha512-O4bU2VH/li3jWsxJ9cPJymsJddsxuE98K9ea0r687hAVIJF6MgrbnX1ReC41kwTZOasiQEpqNqC/gE8Mwsjvnw==
+"@vtex/gatsby-plugin-nginx@0.325.1-nginxlogs.0":
+  version "0.325.1-nginxlogs.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.325.1-nginxlogs.0.tgz#ceee61ec99b4733a628f1263c7db2cd0037e0f9a"
+  integrity sha512-h2mDaSvOMHuAa9ZnOVY9wZXXPmt9Fv7vP9qwrKcbYOz/AqfryzNSMpM2gFSx26SxkUh5ldwVscfmlK8qaaT9iw==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^5.0.1"
@@ -9447,6 +9447,9 @@ minizlib@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-2.1.2.tgz#e90d3466ba209b932451508a11ce3d3632145931"
   integrity sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==
+  dependencies:
+    minipass "^3.0.0"
+    yallist "^4.0.0"
 
 mitt@^1.2.0:
   version "1.2.0"
