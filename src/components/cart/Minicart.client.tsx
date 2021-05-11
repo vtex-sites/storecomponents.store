@@ -1,11 +1,11 @@
 import {
-  useMinicart,
   useNumberFormat,
   useOrderForm,
   useToast,
   useOrderQueueStatus,
   useOrderItems,
 } from '@vtex/gatsby-theme-store'
+import { useGlobalUIState } from '@vtex/store-sdk'
 import { MinicartButton } from '@vtex/store-ui'
 import React, { lazy } from 'react'
 import type { FC, MouseEventHandler } from 'react'
@@ -22,19 +22,19 @@ const Minicart: FC = () => {
   const { hideToast, messages } = useToast()
   const queueStatus = useOrderQueueStatus()
   const { format: numberFormat } = useNumberFormat()
-  const { isOpen, toggle } = useMinicart()
+  const { displayMinicart, openMinicart, closeMinicart } = useGlobalUIState()
   const { orderForm } = useOrderForm()
   const total = orderForm.value / 100
 
   return (
     <>
-      <MinicartButton value={orderForm.items.length} onClick={toggle} />
-      {isOpen && (
+      <MinicartButton value={orderForm.items.length} onClick={openMinicart} />
+      {displayMinicart && (
         <MinicartDrawer
           isOpen
           total={total}
           subTotal={total}
-          onClose={toggle}
+          onClose={closeMinicart}
           removeItem={removeItem}
           updateItem={updateItem}
           onCheckout={onCheckout}
