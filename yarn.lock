@@ -2677,17 +2677,17 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.325.0":
-  version "0.325.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.325.0.tgz#1bdcd171310aa478d83d2959d3c7ebfaa24d7142"
-  integrity sha512-qawhSs1HkCCEAGSZEWELKGrczvRXUWFxwnHBZOvfnzb7Athjd6h9whtXJJNtnBUpz/TJNOXOfbVHhYpNEtXuvw==
+"@vtex/gatsby-theme-store@0.327.0":
+  version "0.327.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.327.0.tgz#66497d09426eb2ac54b3e5cb8d4384d0de27ed55"
+  integrity sha512-NZgj3ffBxprp1glBhnqH8jev0uzdbXMkwN0rorE66v9si7gjaJrGYMQ/eT0s/yvyMrn0x8nV4xQTIUifB7z5rQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
     "@vtex/gatsby-plugin-graphql" "^0.325.0"
     "@vtex/gatsby-plugin-theme-ui" "^0.325.0"
     "@vtex/order-items" "^0.6.1"
     "@vtex/order-manager" "^0.5.2"
-    "@vtex/store-ui" "^0.325.0"
+    "@vtex/store-ui" "^0.327.0"
     gatsby-plugin-bundle-stats "^2.7.2"
     html-loader "^2.1.2"
     intersection-observer "^0.11.0"
@@ -2713,14 +2713,7 @@
     react "17.0.1"
     uuid "^8.3.2"
 
-"@vtex/order-manager@^0.5.0":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@vtex/order-manager/-/order-manager-0.5.1.tgz#7dd34adcf5f7c887a432b9e240525f3c8e8cf614"
-  integrity sha512-ICy3cSB0foUuUjd6TBPasMOXAXQfCqaO+wr3HROfsodRKpzAA87WzwdpcSF59eeSI0TclGwfOrnMd5anP7tM0Q==
-  dependencies:
-    react "17.0.1"
-
-"@vtex/order-manager@^0.5.2":
+"@vtex/order-manager@^0.5.0", "@vtex/order-manager@^0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@vtex/order-manager/-/order-manager-0.5.2.tgz#3fcc20ab67671dfe77d278270b22993dd143ba40"
   integrity sha512-pHGe1V7OOqW6gg2Kmjay8tTGRNICQhd6qSjaP69hSgYUxO/eWXVeeofidij65arJk8o41B6CdpS14ZItsBp4Yw==
@@ -2732,10 +2725,29 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-ui@0.325.0", "@vtex/store-ui@^0.325.0":
+"@vtex/store-ui@0.325.0":
   version "0.325.0"
   resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.325.0.tgz#3ff842ac569a2ec97a585732277af42710973313"
   integrity sha512-8xPczmx0kK5YSNs8q0o1bm1yXZI6ggmbTvQlhyXMIvz+doDYAAS9Z11nk7tHmpek5z2Sg50/YFp/DByyW9Z+4A==
+  dependencies:
+    "@reach/router" "^1.3.4"
+    "@theme-ui/match-media" "^0.3.1"
+    "@theme-ui/preset-base" "^0.3.0"
+    "@types/react-modal" "^3.12.0"
+    "@types/theme-ui__components" "^0.2.6"
+    "@vtex-components/accordion" "^0.2.3"
+    "@vtex-components/drawer" "^0.2.4"
+    deepmerge "^4.2.2"
+    react-hook-inview "^4.3.9"
+    react-swipeable "^6.0.0"
+    reakit "^1.3.0"
+    text-mask-core "^5.1.2"
+    theme-ui "^0.3.1"
+
+"@vtex/store-ui@^0.327.0":
+  version "0.327.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.327.0.tgz#2c7aaf9a402061b6e0baeec00bd67ab1cf277418"
+  integrity sha512-5QFMvx0NoTwJ4SrPlu+2Y37+lx22TxHLIfnYLMmee/hAaTMwA/bBWUKWCHIZ5GSQIHPabm5osyhMObvTVHE67A==
   dependencies:
     "@reach/router" "^1.3.4"
     "@theme-ui/match-media" "^0.3.1"
