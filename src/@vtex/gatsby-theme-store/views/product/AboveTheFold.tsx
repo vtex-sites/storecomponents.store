@@ -80,6 +80,6 @@ const AboveTheFold: FC<Props> = ({
   )
 }
 
-export { fragment } from '@vtex/gatsby-theme-store/src/components/ProductPage/AboveTheFold'
+export { fragment } from '@vtex/gatsby-theme-store/src/views/product/AboveTheFold'
 
 export default AboveTheFold

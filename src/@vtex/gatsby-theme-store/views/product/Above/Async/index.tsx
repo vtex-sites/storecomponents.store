@@ -1,5 +1,5 @@
 import React from 'react'
-import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/components/ProductPage/useAsyncProduct'
+import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/views/product/useAsyncProduct'
 import {
   useBestSeller,
   useDetailsImages,

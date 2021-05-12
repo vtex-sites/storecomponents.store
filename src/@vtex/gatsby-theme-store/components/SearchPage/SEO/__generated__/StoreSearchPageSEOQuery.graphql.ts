@@ -20,14 +20,14 @@ type Scalars = {
 export type StoreSearchPageSeoQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type StoreSearchPageSeoQueryQuery = { seo: Maybe<{ extraBlocks: Array<Maybe<{ blocks: Array<{ name: string, props: Maybe<any> }> }>> }> };
+export type StoreSearchPageSeoQueryQuery = { site: Maybe<{ siteMetadata: Maybe<{ siteUrl: Maybe<string> }> }>, seo: Maybe<{ extraBlocks: Array<Maybe<{ blocks: Array<{ name: string, props: Maybe<any> }> }>> }> };
 
 
 // Query Related Code
 
 export const StoreSearchPageSEOQuery = {
-  query: process.env.NODE_ENV === 'production' ? undefined : "query StoreSearchPageSEOQuery {\n  seo: vtexCmsPageContent(type: {eq: \"seo\"}) {\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n}\n",
-  sha256Hash: "c2f9f2304e3c79ed99d177267785aef8cd1099e5540f4b42f55c1f9dd337728d",
+  query: process.env.NODE_ENV === 'production' ? undefined : "query StoreSearchPageSEOQuery {\n  site {\n    siteMetadata {\n      siteUrl\n    }\n  }\n  seo: vtexCmsPageContent(type: {eq: \"seo\"}) {\n    extraBlocks {\n      blocks {\n        name\n        props\n      }\n    }\n  }\n}\n",
+  sha256Hash: "6da31d471527703e3346214989a3a8bf22e1dc209b5ea0edcf3c5c3613aba783",
   operationName: "StoreSearchPageSEOQuery",
 }
 
