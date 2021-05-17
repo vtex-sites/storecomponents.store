@@ -2638,13 +2638,13 @@
     intl-messageformat-parser "^6.4.3"
     react-intl "^5.13.5"
 
-"@vtex/gatsby-plugin-nginx@0.325.1-nginxlogs.0":
-  version "0.325.1-nginxlogs.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.325.1-nginxlogs.0.tgz#ceee61ec99b4733a628f1263c7db2cd0037e0f9a"
-  integrity sha512-h2mDaSvOMHuAa9ZnOVY9wZXXPmt9Fv7vP9qwrKcbYOz/AqfryzNSMpM2gFSx26SxkUh5ldwVscfmlK8qaaT9iw==
+"@vtex/gatsby-plugin-nginx@0.337.1-nginxjson2.0":
+  version "0.337.1-nginxjson2.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.337.1-nginxjson2.0.tgz#b3feb3886ed8e3163d9766016000f95f77fb131c"
+  integrity sha512-hxMSFqGkjvaUM2CrMCUCbRhCnrFRi/miIcFCOm5wjGGkuQ2CKMwZ262kYG2BH+TbS4XOohyy0qnemAEKdxosAw==
   dependencies:
     kebab-hash "^0.1.2"
-    webpack-assets-manifest "^5.0.1"
+    webpack-assets-manifest "^5.0.6"
 
 "@vtex/gatsby-plugin-pixel-facebook@0.325.0":
   version "0.325.0"
@@ -8853,11 +8853,6 @@ lodash.deburr@^4.1.0:
   resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
   integrity sha1-3bG7s+8HRYwBd7oH3hRCLLAz/5s=
 
-lodash.escaperegexp@^4.0:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/lodash.escaperegexp/-/lodash.escaperegexp-4.1.2.tgz#64762c48618082518ac3df4ccf5d5886dae20347"
-  integrity sha1-ZHYsSGGAglGKw99Mz11YhtriA0c=
-
 lodash.every@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.every/-/lodash.every-4.6.0.tgz#eb89984bebc4364279bb3aefbbd1ca19bfa6c6a7"
@@ -13615,15 +13610,14 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webpack-assets-manifest@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/webpack-assets-manifest/-/webpack-assets-manifest-5.0.1.tgz#5f2b45579e87f122dc9af714f9508c462383a722"
-  integrity sha512-4Hpv0eP1yL06cvERpwxZ+N0Pmns5j/WtiaKZeoNsFUFZB52F6wPycCyxhdyfFKMxdwC/+xeTTlBffY62I3kh2Q==
+webpack-assets-manifest@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/webpack-assets-manifest/-/webpack-assets-manifest-5.0.6.tgz#1fe7baf9b57f2d28ff09fcaef3d678cc15912b88"
+  integrity sha512-CW94ylPHurZTmxnYajSFA8763Cv/QFIKNgBwqBLaIOnBjH1EbDUAf8Eq1/i+o8qaKyKXJ3aX7r4/jtpXD88ldg==
   dependencies:
     chalk "^4.0"
     deepmerge "^4.0"
     lockfile "^1.0"
-    lodash.escaperegexp "^4.0"
     lodash.get "^4.0"
     lodash.has "^4.0"
     schema-utils "^3.0"
