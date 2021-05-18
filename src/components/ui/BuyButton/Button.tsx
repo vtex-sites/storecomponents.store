@@ -1,4 +1,4 @@
-import { Button as StoreUIButton } from '@vtex/store-ui'
+import { UIButton as StoreUIButton } from '@vtex/store-ui'
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import type { FC, ComponentPropsWithoutRef } from 'react'
