@@ -2731,10 +2731,10 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/store-sdk@0.339.0":
-  version "0.339.0"
-  resolved "https://registry.yarnpkg.com/@vtex/store-sdk/-/store-sdk-0.339.0.tgz#9f38962c6e2ec02946f65eb451f9486a92b4dcd0"
-  integrity sha512-epHxjXBBx3GS3M2eww+tK4oPbGUxmVV3DGL0qdsiTGlcyPr/Doxmvpj5c9K6NEi/hvET4jRDF+SBsahjD+hE6w==
+"@vtex/store-sdk@0.345.0":
+  version "0.345.0"
+  resolved "https://registry.yarnpkg.com/@vtex/store-sdk/-/store-sdk-0.345.0.tgz#602747e91c9a7c8a5dfc9eac7c02f206e3008c26"
+  integrity sha512-pTTEcTrG2du4+caaYc39eV5wQWCORmgv9awIp4HRRwkDqCXlu5im+wBaEO0BfT0ytJ/VR8acfKpGjsswpwaNnw==
 
 "@vtex/store-ui@0.339.0":
   version "0.339.0"

@@ -12,7 +12,7 @@
     "@vtex/gatsby-plugin-theme-ui": "0.339.0",
     "@vtex/gatsby-source-vtex": "0.339.0",
     "@vtex/gatsby-theme-store": "0.339.0",
-    "@vtex/store-sdk": "0.339.0",
+    "@vtex/store-sdk": "0.345.0",
     "@vtex/store-ui": "0.339.0",
     "babel-preset-gatsby": "^1.1.0",
     "csvtojson": "^2.0.10",
