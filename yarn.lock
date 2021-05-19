@@ -2646,10 +2646,10 @@
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^5.0.6"
 
-"@vtex/gatsby-plugin-pixel-facebook@0.339.0":
-  version "0.339.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-pixel-facebook/-/gatsby-plugin-pixel-facebook-0.339.0.tgz#caebe5ccfe8ae4f0c35eb8196d71697b056000cf"
-  integrity sha512-y6PLXcN9MKfno8BnqczUrvRxXnukQ2lyqdFZfAxpxuBkjRLzcAfoSPEcmYL7XMWm2O34HYtF5gVZonKZe2B5/g==
+"@vtex/gatsby-plugin-pixel-facebook@0.345.0":
+  version "0.345.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-pixel-facebook/-/gatsby-plugin-pixel-facebook-0.345.0.tgz#90f325dac0415a9781ce22d021b9513b97b5de0d"
+  integrity sha512-c3XbfSykBtFBQqNIMJZBR4z3NM2t1NUyLsdpATPSGUIpQatUX++zPP/XR04WMSYMpWtTCnE7DCCA//LvEY0wdQ==
 
 "@vtex/gatsby-plugin-theme-ui@0.339.0", "@vtex/gatsby-plugin-theme-ui@^0.339.0":
   version "0.339.0"
