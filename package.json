@@ -37,7 +37,8 @@
     "is-ci": "^3.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "axios": "0.21.1"
   },
   "resolutions": {
     "@typescript-eslint/parser": "^4",
