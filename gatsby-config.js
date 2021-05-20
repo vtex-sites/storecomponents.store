@@ -90,6 +90,7 @@ module.exports = {
       resolve: 'gatsby-plugin-offline',
       options: {
         precachePages: [`/offline`],
+        debug: true,
         appendScript: 'src/custom-sw-code.js',
         workboxConfig: {
           globPatterns: ['**/offline/*'],
