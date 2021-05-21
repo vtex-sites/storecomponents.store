@@ -42,7 +42,7 @@ export const useMetadata = (options: Options): Return => {
     `
   )
 
-  const [siteMetadata, facebook] = seo.extraBlocks[0].blocks
+  const [siteMetadata] = seo.extraBlocks[0].blocks
   const {
     data: {
       vtex: { product },
@@ -51,22 +51,23 @@ export const useMetadata = (options: Options): Return => {
 
   const images = useMemo(
     () =>
-      product?.items?.[0]?.images?.map((image) => ({
+      product.items[0].images.map((image: any) => ({
         url: scaleImage(
-          image?.imageUrl ?? IMAGE_DEFAULT,
+          image.imageUrl ?? IMAGE_DEFAULT,
           IMAGE_SIZE,
           IMAGE_SIZE
         ),
         width: IMAGE_SIZE,
         height: IMAGE_SIZE,
-        alt: image?.imageText,
+        alt: image.imageText,
       })),
     [product]
   )
 
-  const title = product?.titleTag || siteMetadata.props.title
+  const price = product.items[0].sellers[0].commercialOffer.spotPrice
+  const title = product.titleTag || siteMetadata.props.title
   const description =
-    product?.metaTagDescription || siteMetadata.props.description
+    product.metaTagDescription || siteMetadata.props.description
 
   return {
     ...siteMetadata.props,
@@ -75,12 +76,21 @@ export const useMetadata = (options: Options): Return => {
     description,
     canonical: `https://${host}${pathname}`,
     openGraph: {
-      ...facebook.props,
-      type: 'product',
+      type: 'og:product',
       url: `${siteUrl}${pathname}`,
       title,
       description,
       images,
     },
+    metaTags: [
+      {
+        property: 'product:price:amount',
+        content: price,
+      },
+      {
+        property: 'product:price:currency',
+        content: 'BRL',
+      },
+    ],
   }
 }
