@@ -768,6 +768,8 @@ const props = {
   staticQueryHashes: ['1509283416', '3105657990', '958032024'],
 }
 
+/* const COLUMNS = [2, 3, 5] */
+
 const Page = () => {
   // https://github.com/vtex/faststore/blob/ef28af02bef9c124ecf3d00dd01e281fcd1291dd/packages/gatsby-theme-store/src/templates/search.tsx
   // TODO: Reuse <AboveTheFold> component
@@ -781,6 +783,23 @@ const Page = () => {
 
   const breadcrumb = (props.result.data.vtex.facets?.breadcrumb ??
     []) as BreadcrumbItem[]
+
+  const [result, setResult] = React.useState({})
+
+  React.useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        'https://jsonplaceholder.typicode.com/todos/1'
+      )
+
+      const json = await response.json()
+
+      /* console.log(json) */
+      setResult(json)
+    }
+
+    fetchData()
+  }, [])
 
   return (
     <Layout>
