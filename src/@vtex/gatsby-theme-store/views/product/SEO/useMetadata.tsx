@@ -89,7 +89,7 @@ export const useMetadata = (options: Options): Return => {
       },
       {
         property: 'product:price:currency',
-        content: 'BRL',
+        content: 'USD',
       },
     ],
   }
