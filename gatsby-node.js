@@ -155,7 +155,11 @@ exports.onCreatePage = async (args) => {
    *
    * More infos on the issue: https://github.com/gatsbyjs/gatsby/issues/21701
    */
-  if (page.matchPath && page.matchPath.includes('/:slug/p')) {
+  if (
+    page.matchPath &&
+    page.matchPath.includes('/:slug/p') &&
+    process.env.NODE_ENV === 'production'
+  ) {
     deletePage(page)
   }
 
