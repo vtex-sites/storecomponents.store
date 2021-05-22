@@ -145,25 +145,6 @@ exports.onCreatePage = async (args) => {
   const graphql = await graphqlPromise
 
   /**
-   * TODO: Remove this file once Gatsby solves this issue
-   *
-   * Gatsby has a file called .cache/match-paths.json. This file is responsible for gatsby's router.
-   * When SSG pages, all SSG pages that matches a client-side page are added to this json so the
-   * Gatsby router knows which javascript to include. This file is eventually included in `app.js` entrypoint.
-   * Since we are now generating the whole site, we can remove the product client-side pages and save a HUGE
-   * amount of bundle space
-   *
-   * More infos on the issue: https://github.com/gatsbyjs/gatsby/issues/21701
-   */
-  if (
-    page.matchPath &&
-    page.matchPath.includes('/:slug/p') &&
-    process.env.NODE_ENV === 'production'
-  ) {
-    deletePage(page)
-  }
-
-  /**
    * Adds context to home page
    */
   if (
