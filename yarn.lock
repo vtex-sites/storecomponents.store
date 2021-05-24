@@ -2671,10 +2671,22 @@
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.347.0.tgz#880534b2a1bb3efaf4308352197e9ac5d7c87df7"
   integrity sha512-PKzNOe8rr3tcUdePV53+2gh540A/IAq+faqKE27rPAmr0hMwn6MFpoOO+GlcPv0WlPjUFkjn1NnwY7Vn9pSBVQ==
 
-"@vtex/gatsby-plugin-graphql@0.347.0", "@vtex/gatsby-plugin-graphql@^0.347.0":
+"@vtex/gatsby-plugin-graphql@0.347.0":
   version "0.347.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.347.0.tgz#ca8068d9169306546c13ec922837e5135c113224"
   integrity sha512-0KnVM/vBo1fwcMI8/LsdjDCKp6q7ffN+HrFhfnZHP1A30MeUWwEsi8XzwFlcC3FBiRlTYd2RNrFhXPE5qi++6A==
+  dependencies:
+    "@graphql-codegen/core" "^1.17.7"
+    "@graphql-codegen/plugin-helpers" "^1.17.7"
+    "@graphql-codegen/typescript" "^1.17.7"
+    "@graphql-codegen/typescript-operations" "^1.17.7"
+    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
+    fs-extra "^9.0.1"
+
+"@vtex/gatsby-plugin-graphql@^0.353.0":
+  version "0.353.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.353.0.tgz#0bf21b8818c1078a92ed131974749c871d025939"
+  integrity sha512-dC/ldt00QzHIW26kAPOYycx2sJogtHXU2j75r1DjaRWsJwi3U05Cp88A3LbRIuJa8kWvAoU7jvVUk78sVMZfNw==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2709,10 +2721,24 @@
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-pixel-facebook/-/gatsby-plugin-pixel-facebook-0.347.0.tgz#32fd6153f15a9eb68bbd348a39d7e7ce5f6e66e7"
   integrity sha512-zMbQTBF9nYJZl8YTh0XmVADBYm1b83GWzEv2qrQgELQs4vfB9w8ScL5fFzzrq46n/pkWPsWdbQ5gwv0V1T41iQ==
 
-"@vtex/gatsby-plugin-theme-ui@0.347.0", "@vtex/gatsby-plugin-theme-ui@^0.347.0":
+"@vtex/gatsby-plugin-theme-ui@0.347.0":
   version "0.347.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.347.0.tgz#a356d03d1ba553a247e811304bf8d98f4a60b0e4"
   integrity sha512-od25o3AWISrGPQ0mvFIjrbhLZmnLxWr6TCHv7bdEoHTuNqRFvS+YhC8oliesYD0zw1BDBVPH0VQEtJA0Hzr+Iw==
+  dependencies:
+    "@babel/core" "^7.11.4"
+    "@babel/parser" "^7.11.4"
+    "@babel/preset-typescript" "^7.10.4"
+    "@babel/register" "^7.11.5"
+    "@babel/traverse" "^7.11.0"
+    "@babel/types" "^7.11.0"
+    create-emotion-server "^10.0.27"
+    theme-ui "^0.3.1"
+
+"@vtex/gatsby-plugin-theme-ui@^0.353.0":
+  version "0.353.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.353.0.tgz#c5b554ad02cc8ae411be8b65783090281cd0d3a2"
+  integrity sha512-NC1oFYlI/WpKE/ffS99hvUmsHbUWTKalV6JyES7+6otQcgWNUmQzbXybqYmmM6HG2o+4yRNh67q2LptvS/HLMQ==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -2735,14 +2761,14 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@0.347.0":
-  version "0.347.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.347.0.tgz#cd0cb78a472683068404b229f489ed7a8ef925ec"
-  integrity sha512-FT0FyG/ZPsPujVlLnlmkroWApihgPQOGD01sbtMxgso/I9S9hYbx6nR3o5Zy/LOi56UbmvHpChcDVCOex/m+6g==
+"@vtex/gatsby-theme-store@0.353.0":
+  version "0.353.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.353.0.tgz#84db2962af7a59c580b3792a98588c44934f89da"
+  integrity sha512-OiyAZJsQLOE63r2N/0xTKChOylOujERYVPuA5lap5cYM+iLti7QaYBrLZRMcHj7AVVl54yeqP7TsTawMf9bnRg==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "^0.347.0"
-    "@vtex/gatsby-plugin-theme-ui" "^0.347.0"
+    "@vtex/gatsby-plugin-graphql" "^0.353.0"
+    "@vtex/gatsby-plugin-theme-ui" "^0.353.0"
     "@vtex/order-items" "^0.6.1"
     "@vtex/order-manager" "^0.5.2"
     gatsby-plugin-bundle-stats "^2.7.2"
@@ -2770,14 +2796,7 @@
     react "17.0.1"
     uuid "^8.3.2"
 
-"@vtex/order-manager@^0.5.0":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@vtex/order-manager/-/order-manager-0.5.1.tgz#7dd34adcf5f7c887a432b9e240525f3c8e8cf614"
-  integrity sha512-ICy3cSB0foUuUjd6TBPasMOXAXQfCqaO+wr3HROfsodRKpzAA87WzwdpcSF59eeSI0TclGwfOrnMd5anP7tM0Q==
-  dependencies:
-    react "17.0.1"
-
-"@vtex/order-manager@^0.5.2":
+"@vtex/order-manager@^0.5.0", "@vtex/order-manager@^0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@vtex/order-manager/-/order-manager-0.5.2.tgz#3fcc20ab67671dfe77d278270b22993dd143ba40"
   integrity sha512-pHGe1V7OOqW6gg2Kmjay8tTGRNICQhd6qSjaP69hSgYUxO/eWXVeeofidij65arJk8o41B6CdpS14ZItsBp4Yw==
