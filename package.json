@@ -11,7 +11,7 @@
     "@vtex/gatsby-plugin-pixel-facebook": "https://pkg.csb.dev/vtex/faststore/commit/1d1843c2/@vtex/gatsby-plugin-pixel-facebook",
     "@vtex/gatsby-plugin-theme-ui": "https://pkg.csb.dev/vtex/faststore/commit/1d1843c2/@vtex/gatsby-plugin-theme-ui",
     "@vtex/gatsby-source-vtex": "https://pkg.csb.dev/vtex/faststore/commit/1d1843c2/@vtex/gatsby-source-vtex",
-    "@vtex/gatsby-theme-store": "https://pkg.csb.dev/vtex/faststore/commit/1d1843c2/@vtex/gatsby-theme-store",
+    "@vtex/gatsby-theme-store": "https://pkg.csb.dev/vtex/faststore/commit/33c939f8/@vtex/gatsby-theme-store",
     "@vtex/store-sdk": "https://pkg.csb.dev/vtex/faststore/commit/1d1843c2/@vtex/store-sdk",
     "@vtex/store-ui": "https://pkg.csb.dev/vtex/faststore/commit/1d1843c2/@vtex/store-ui",
     "babel-preset-gatsby": "^1.1.0",
