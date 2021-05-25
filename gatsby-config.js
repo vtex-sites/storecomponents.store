@@ -139,5 +139,12 @@ module.exports = {
         defer: true,
       },
     },
+    {
+      resolve: '@vtex/gatsby-plugin-performance',
+      options: {
+        enableServerRouting: true,
+        enableNonBlockingStart: true,
+      },
+    },
   ],
 }
