@@ -195,7 +195,7 @@ exports.onCreatePage = async (args) => {
   /**
    * Adds context to search pages
    */
-  if (!page.component.endsWith('/templates/search.tsx')) {
+  if (!page.component.includes('/templates/search.')) {
     return
   }
 

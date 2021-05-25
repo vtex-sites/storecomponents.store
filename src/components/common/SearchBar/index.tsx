@@ -1,4 +1,4 @@
-import { useSearch } from '@vtex/gatsby-theme-store'
+import { useFullTextSearch } from '@vtex/gatsby-theme-store'
 import {
   Center,
   SearchBar as StoreUISearchBar,
@@ -11,7 +11,7 @@ import type { FC } from 'react'
 const SearchSuggestions = lazy(() => import('../Suggestions'))
 
 const SearchBar: FC = () => {
-  const onSearch = useSearch()
+  const onSearch = useFullTextSearch()
 
   return (
     <StoreUISearchBar
