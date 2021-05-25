@@ -2704,10 +2704,10 @@
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^5.0.6"
 
-"@vtex/gatsby-plugin-pixel-facebook@0.347.0":
-  version "0.347.0"
-  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-pixel-facebook/-/gatsby-plugin-pixel-facebook-0.347.0.tgz#32fd6153f15a9eb68bbd348a39d7e7ce5f6e66e7"
-  integrity sha512-zMbQTBF9nYJZl8YTh0XmVADBYm1b83GWzEv2qrQgELQs4vfB9w8ScL5fFzzrq46n/pkWPsWdbQ5gwv0V1T41iQ==
+"@vtex/gatsby-plugin-pixel-facebook@0.353.0":
+  version "0.353.0"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-pixel-facebook/-/gatsby-plugin-pixel-facebook-0.353.0.tgz#6a5758bc8ff017a30e40924e36cbee2056e51d4a"
+  integrity sha512-hHVycdKWzLDYRBreREbQlZ2ZavbWUJ8+4ntFhjlJ4YH+wQGJujFwl2GHfztfkonpalZwxhCEpRb39QTXC2646A==
 
 "@vtex/gatsby-plugin-theme-ui@0.347.0", "@vtex/gatsby-plugin-theme-ui@^0.347.0":
   version "0.347.0"
