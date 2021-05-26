@@ -9,11 +9,7 @@ import {
   SearchTemplateAside,
   SearchTemplateMain,
 } from '@vtex/gatsby-theme-store/src/components/Search/SearchTemplate'
-import type {
-  SearchPageQueryQuery,
-  SearchPageQueryQueryVariables,
-} from '@vtex/gatsby-theme-store/src/templates/__generated__/SearchPageQuery.graphql'
-import type { PageProps } from 'gatsby'
+import type { SearchViewProps } from '@vtex/gatsby-theme-store/src/views/search'
 
 import { Banner } from './Banner'
 
@@ -23,10 +19,12 @@ const DesktopSearchFilters = lazy(
 
 const COLUMNS = [2, 3, 5]
 
-type Props = PageProps<
-  SearchPageQueryQuery,
-  SearchPageQueryQueryVariables & { vtexCmsPageContent: any }
->
+interface Props extends SearchViewProps {
+  pageContext: {
+    canonicalPath: string
+    vtexCmsPageContent: any
+  }
+}
 
 const AboveTheFold: FC<Props> = ({ data, pageContext }) => {
   const breadcrumb = (data.vtex.facets?.breadcrumb ?? []) as BreadcrumbItem[]
@@ -51,7 +49,7 @@ const AboveTheFold: FC<Props> = ({ data, pageContext }) => {
 
         <SearchTemplateMain>
           <Controls data={data} />
-          <PageList initialData={data} columns={COLUMNS} />
+          <PageList initialData={data as any} columns={COLUMNS} />
         </SearchTemplateMain>
       </SearchTemplateContainer>
     </Container>
