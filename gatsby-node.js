@@ -55,27 +55,6 @@ exports.onCreateNode = async ({ node, reporter }) => {
     `[${GATSBY_VTEX_ACCOUNT}.store]: Optimizing Images for: ${node.name}`
   )
 
-  if (node.type === 'home') {
-    const carousel = node.blocks.find((block) => block.name === 'Carousel')
-
-    for (const item of carousel.props.allItems) {
-      for (const source of item.sources) {
-        const widths =
-          source.media === '(max-width: 40em)' ? sizes.mobile : sizes.desktop
-
-        const src = source.srcSet
-
-        if (!src) {
-          return
-        }
-
-        source.srcSet = widths
-          .map((width) => `${optimize(src, { width, aspect: true })} ${width}w`)
-          .join(',')
-      }
-    }
-  }
-
   // eslint-disable-next-line vtex/prefer-early-return
   if (node.type === 'plp' || node.type === 'productListLandingPage') {
     const banner = node.blocks.find((block) => block.name === 'SearchBanner')

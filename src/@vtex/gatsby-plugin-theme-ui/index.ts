@@ -19,7 +19,6 @@ import { searchBannerTheme } from './searchBanner'
 import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
-import carouselTheme from './carousel'
 import shelfTheme from './shelf'
 import minicartTheme from './minicart'
 import productImageGalleryTheme from './productImageGallery'
@@ -37,7 +36,6 @@ export default createTheme(
   searchBarTheme,
   searchTheme,
   custom,
-  carouselTheme,
   offerTheme,
   productSummaryTheme,
   productDetailsTheme,

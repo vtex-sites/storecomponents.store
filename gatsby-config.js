@@ -1,16 +1,18 @@
-const { resolve } = require('path')
+require('dotenv').config({
+  // eslint-disable-next-line node/global-require
+  path: require('path').resolve('vtex.env'),
+})
 
 const csv2json = require('csvtojson')
 
-require('dotenv').config({
-  path: resolve('vtex.env'),
-})
+const images = require('./src/images.config')
 
 const {
   GATSBY_VTEX_ACCOUNT: STORE_ID,
   GATSBY_VTEX_ENVIRONMENT,
   GATSBY_VTEX_IO_WORKSPACE,
   GATSBY_STORE_PROFILING,
+  CI: isCI,
 } = process.env
 
 const {
@@ -133,6 +135,15 @@ module.exports = {
     },
     {
       resolve: '@vtex/gatsby-plugin-nginx',
+      options: {
+        httpOptions: [
+          ['merge_slashes', 'off'],
+          ['proxy_http_version', '1.1'],
+        ],
+        serverOptions: isCI
+          ? [['resolver', '169.254.169.253']]
+          : [['resolver', '8.8.8.8']],
+      },
     },
     {
       resolve: 'gatsby-plugin-next-seo',
@@ -145,6 +156,27 @@ module.exports = {
       options: {
         enableServerRouting: true,
         enableNonBlockingStart: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-image',
+    },
+    {
+      resolve: '@vtex/gatsby-plugin-thumbor',
+      options: {
+        server: isCI
+          ? 'http://thumbor.vtex.internal'
+          : 'http://thumbor.thumborize.me',
+        ...(isProduction && {
+          basePath: '/assets',
+          sizes: Object.values(images)
+            .map((variant) =>
+              variant.breakpoints.map(
+                (width) => `${width}x${Math.round(width / variant.aspectRatio)}`
+              )
+            )
+            .flat(),
+        }),
       },
     },
   ],
