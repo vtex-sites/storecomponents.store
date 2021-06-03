@@ -37,20 +37,19 @@
     }
   },
   "paginationDots": {
-    "container": {
-      "paddingY": "10px",
-      "paddingX": 0,
-      "marginTop": "0.5rem",
-      "marginBottom": "0.5rem",
-      "position": "absolute",
-      "justifyContent": "center",
-      "alignItems": "center",
-      "display": "flex",
-      "margin": 0,
-      "bottom": 0,
-      "left": 0,
-      "right": 0
-    },
+    "paddingY": "10px",
+    "paddingX": 0,
+    "marginTop": "0.5rem",
+    "marginBottom": "0.5rem",
+    "position": "absolute",
+    "justifyContent": "center",
+    "alignItems": "center",
+    "display": "flex",
+    "margin": 0,
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+
     "dot": {
       "bg": "#a8a8a8",
       "cursor": "pointer",

@@ -13,7 +13,7 @@ type Props = PageProps<HomePageQueryQuery>
 
 const Fold: FC<Props> = ({ data: { content, vtex } }) => (
   <>
-    <Carousel {...content?.blocks[0]?.props} />
+    <Carousel {...content?.blocks[0]?.props} showArrows showDots />
     <RichTextRow />
     <Container>
       <Shelf

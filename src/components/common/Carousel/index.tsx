@@ -2,7 +2,6 @@
 import { useGetThumborImageData } from '@vtex/gatsby-plugin-thumbor'
 import {
   Box,
-  SliderPaginationDots,
   SliderArrowLeft,
   SliderArrowRight,
   useSlider,
@@ -82,6 +81,7 @@ const Carousel: FC<Props> = ({
 
   const [item] = items
   const images = useImages(item)
+  const pages = useMemo(() => new Array(totalPages).fill(0), [totalPages])
 
   return (
     <Box sx={styles}>
@@ -111,12 +111,28 @@ const Carousel: FC<Props> = ({
         ) : null}
       </Box>
       {showDots ? (
-        <SliderPaginationDots
+        <Box
           sx={styles.paginationDots}
-          onSelect={setPage}
-          selectedPage={page}
-          totalPages={totalPages}
-        />
+          role="group"
+          aria-label="Slider pagination dots"
+        >
+          {pages.map((_, index) => (
+            <Box
+              sx={
+                index === page
+                  ? styles.paginationDots.activeDot
+                  : styles.paginationDots.dot
+              }
+              key={index}
+              tabIndex={0}
+              onKeyDown={() => setPage(index)}
+              onClick={() => setPage(index)}
+              role="button"
+              aria-label={`Dot ${index + 1} of ${totalPages}`}
+              data-testid="paginationDot"
+            />
+          ))}
+        </Box>
       ) : null}
     </Box>
   )
