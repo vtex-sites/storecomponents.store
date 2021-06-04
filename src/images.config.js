@@ -10,9 +10,9 @@ module.exports = {
     },
   },
   'carousel.mobile': {
-    sourceWidth: 1080,
+    sourceWidth: 720,
     aspectRatio: 900 / 1348,
-    breakpoints: [360, 480, 720, 1080],
+    breakpoints: [360, 480, 720],
     backgroundColor: '#EDEDED',
     layout: 'fullWidth',
     options: {
