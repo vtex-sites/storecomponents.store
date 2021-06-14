@@ -33,9 +33,10 @@ module.exports = {
     siteUrl,
   },
   flags: {
+    DEV_SSR: true,
+    FAST_DEV: true,
+    PARALLEL_SOURCING: true,
     PRESERVE_WEBPACK_CACHE: true,
-    FAST_DEV: false,
-    DEV_SSR: false,
   },
   plugins: [
     {
