@@ -15,7 +15,9 @@ const onCheckout: MouseEventHandler<HTMLButtonElement> = (e) => {
   window.location.href = '/checkout/'
 }
 
-const MinicartDrawer = lazy(() => import('@vtex/store-ui/src/Minicart/Drawer'))
+const MinicartDrawer = lazy(
+  () => import('@vtex/store-ui/src/deprecated/Minicart/Drawer')
+)
 
 const Minicart: FC = () => {
   const { removeItem, updateQuantity: updateItem } = useOrderItems()
