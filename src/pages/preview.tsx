@@ -1,6 +1,6 @@
 import Layout from '@vtex/gatsby-theme-store/src/components/Layout'
 import { useLocation } from '@reach/router'
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import useInterval from '@use-it/interval'
 import { Skeleton } from '@vtex/store-ui'
 
