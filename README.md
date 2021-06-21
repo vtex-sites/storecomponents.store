@@ -10,6 +10,8 @@
 
 Kick-off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing-fast store for React. 
 
+asdfasdf
+
 ## 🚀 Quick start
 
 0. **Clone this repo**
@@ -20,7 +22,7 @@ Kick-off your project with this default boilerplate. This starter ships with the
     # Clone this repo into your machine
     npx degit vtex-sites/storecomponents.store my-awesome-store
     ```
-
+asdfasdf
 1.  **Install dependencies**
 
     Install dependencies with yarn
