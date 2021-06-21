@@ -7,8 +7,7 @@ import { Skeleton } from '@vtex/store-ui'
 import AboveTheFold from '../@vtex/gatsby-theme-store/components/HomePage/AboveTheFold'
 import BelowTheFold from '../@vtex/gatsby-theme-store/components/HomePage/BelowTheFold'
 
-const CMS_BASE_URL =
-  'https://nardi88--storecomponents.myvtex.com/_v/admin-cms-graphql-rc/v0/contentVariant?variantId='
+const CMS_BASE_URL = '/cms-api/contentVariant?variantId='
 
 const MOCK = {
   data: {
