@@ -15,52 +15,16 @@ const MOCK = {
       products: [
         {
           id: '1',
-          productName: 'Work Shirt Top',
+          productName: 'Sample Product',
           linkText: 'working-shirt',
-          productClusters: [
-            {
-              id: '1182',
-              name: 'Top Seller',
-            },
-            {
-              id: '1969',
-              name: 'teste Ultimo SKU',
-            },
-          ],
-          properties: [
-            {
-              name: 'On Sale',
-              originalName: 'On Sale',
-              values: ['True'],
-            },
-            {
-              name: 'Hide price',
-              originalName: 'Hide price',
-              values: ['True'],
-            },
-            {
-              name: 'Sleeve type',
-              originalName: 'Sleeve type',
-              values: ['Long Sleeve'],
-            },
-            {
-              name: 'Color',
-              originalName: 'Color',
-              values: ['Grey', 'Green', 'Pink', 'Red', 'Fuchsia', 'Blue'],
-            },
-            {
-              name: 'sellerId',
-              originalName: 'sellerId',
-              values: ['1'],
-            },
-          ],
+          productClusters: [],
           items: [
             {
               itemId: '2000546',
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155580/work-shirt_verde.jpg?v=637082282343630000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -99,7 +63,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155477/Frame-5.jpg?v=636793808919200000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -138,7 +102,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155581/work-shirt_rosabb.jpg?v=637082285184830000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -177,7 +141,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155586/work-shirt_rosasalmao.jpg?v=637085533153900000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: 'Frente1',
                 },
               ],
@@ -216,7 +180,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155584/work-shirt_roxo.jpg?v=637082297972300000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -255,7 +219,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155583/work-shirt_azul.jpg?v=637082297211530000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -293,22 +257,9 @@ const MOCK = {
         },
         {
           id: '3',
-          productName: 'Tank Top',
+          productName: 'Sample Product',
           linkText: 'tank-top',
-          productClusters: [
-            {
-              id: '1182',
-              name: 'Top Seller',
-            },
-            {
-              id: '1967',
-              name: 'Collection without highlight',
-            },
-            {
-              id: '1969',
-              name: 'teste Ultimo SKU',
-            },
-          ],
+          productClusters: [],
           properties: [
             {
               name: 'Sleeve type',
@@ -332,7 +283,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155642/Frame-1.jpg?v=637411554902130000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -371,7 +322,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155643/Frame-2.jpg?v=637411555784670000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -409,18 +360,9 @@ const MOCK = {
         },
         {
           id: '8',
-          productName: "Jobs' Top Notebook",
+          productName: 'Sample Product',
           linkText: 'jobs-notebook',
-          productClusters: [
-            {
-              id: '1182',
-              name: 'Top Seller',
-            },
-            {
-              id: '1969',
-              name: 'teste Ultimo SKU',
-            },
-          ],
+          productClusters: [],
           properties: [
             {
               name: 'battery',
@@ -444,17 +386,17 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155478/Frame-7.jpg?v=636793810230270000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155479/Frame-8.jpg?v=636793810355200000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155480/Frame-6.jpg?v=636793810491070000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -492,14 +434,9 @@ const MOCK = {
         },
         {
           id: '9',
-          productName: 'Top Everyday Necessaire',
+          productName: 'Sample Product',
           linkText: 'everyday-necessaire',
-          productClusters: [
-            {
-              id: '1182',
-              name: 'Top Seller',
-            },
-          ],
+          productClusters: [],
           properties: [
             {
               name: 'Cor',
@@ -518,12 +455,12 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155482/Frame-10.jpg?v=636793816835170000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155483/Frame-9.jpg?v=636793817010530000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: 'summaryimage',
                 },
               ],
@@ -561,14 +498,9 @@ const MOCK = {
         },
         {
           id: '12',
-          productName: 'Top Traveler+Backpack',
+          productName: 'Sample Product',
           linkText: 'traveler-backpack',
-          productClusters: [
-            {
-              id: '1182',
-              name: 'Top Seller',
-            },
-          ],
+          productClusters: [],
           properties: [
             {
               name: 'Cor',
@@ -587,7 +519,7 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155489/Frame-8.jpg?v=636793840315500000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
               ],
@@ -625,14 +557,9 @@ const MOCK = {
         },
         {
           id: '14',
-          productName: 'Top Fashion Eyeglasses',
+          productName: 'Sample Product',
           linkText: 'fashion-eyeglasses',
-          productClusters: [
-            {
-              id: '1182',
-              name: 'Top Seller',
-            },
-          ],
+          productClusters: [],
           properties: [
             {
               name: 'sellerId',
@@ -646,12 +573,12 @@ const MOCK = {
               images: [
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155468/Frame-5.jpg?v=636793755542000000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: null,
                 },
                 {
                   imageUrl:
-                    'https://storecomponents.vtexassets.com/arquivos/ids/155467/Frame-4.jpg?v=636793755384500000',
+                    'https://via.placeholder.com/1000?text=Sample%20Product',
                   imageText: 'summaryimage',
                 },
               ],
