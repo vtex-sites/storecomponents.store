@@ -48,9 +48,36 @@ const siteMetadata: Schema = {
   },
 }
 
+const siteMetadataWithSlug: Schema = {
+  ...siteMetadata,
+  properties: {
+    title: {
+      title: 'Default page title',
+      description: 'Display this title when no other tile is available',
+      type: 'string',
+      default: 'Store Theme | VTEX SFJ',
+    },
+    description: {
+      title: 'Meta tag description',
+      type: 'string',
+      default: 'A beautifuly designed site for general VTEX stores',
+    },
+    titleTemplate: {
+      title: 'Title template to be used in category/product pages',
+      type: 'string',
+      default: '%s | Store Theme',
+    },
+    slug: {
+      title: 'URL Slug',
+      type: 'string',
+      default: '/landing-page-url',
+    },
+  },
+}
+
 const facebook: Schema = {
   title: 'Facebook',
-  description: 'Como o Facebook compartilha a sua loja',
+  description: 'How your store is shared on Facebook',
   type: 'object',
   required: ['thumbnail'],
   ...widgets.facebookSEOPreview,
@@ -159,14 +186,14 @@ const SearchBanner: Schema = {
 
 const Carousel: Schema = {
   title: 'Carousel',
-  description: 'Um carousel de imagens',
+  description: 'A carousel of images',
   type: 'object',
   properties: {
     allItems: {
       type: 'array',
       minItems: 1,
       items: {
-        title: 'Imagens',
+        title: 'Images',
         type: 'object',
         properties: {
           sources: {
@@ -174,20 +201,20 @@ const Carousel: Schema = {
             minItems: 2,
             maxItems: 2,
             items: {
-              title: 'Imagem responsiva',
+              title: 'Responsive image',
               type: 'object',
               properties: {
                 srcSet: {
-                  title: 'Imagem',
+                  title: 'Image',
                   type: 'string',
                   widget: {
                     'ui:widget': 'image-uploader',
                   },
                 } as any,
                 media: {
-                  title: 'Tipo de dispositivo',
+                  title: 'Device type',
                   type: 'string',
-                  description: 'Em qual dispositivo a imagem sera mostrada',
+                  description: 'In which device the image will be shown',
                   oneOf: [
                     {
                       type: 'string',
@@ -208,13 +235,12 @@ const Carousel: Schema = {
           href: {
             title: 'Link',
             description:
-              'Apos clicada a imagem, o usuario vai navegar para este link',
+              'After clicking the image, the user will navigate to this link',
             type: 'string',
           },
           alt: {
-            title: 'Descricao da imagem',
-            description:
-              'Como usuarios que nao podem abrir a imagem leem o link',
+            title: 'Description',
+            description: 'How users who cannot open the image read the link',
             type: 'string',
           },
         },
@@ -225,40 +251,39 @@ const Carousel: Schema = {
 
 const Fold: Schema = {
   title: 'Fold',
-  description:
-    'Componentes embaixo deste serao renderizados apos a dobra da pagina',
+  description: 'Components below this will be loaded as the user scrolls',
   type: 'null',
 }
 
 const DynamicShelf: Schema = {
-  title: 'Shelf dinamica',
-  description: 'Mude sua shelf dinamica',
+  title: 'Dynamic Shelf',
+  description: 'Change your dynamic shelf',
   type: 'object',
   properties: {
     title: {
       type: 'string',
-      title: 'Titulo da Shelf',
+      title: 'Shelf Title',
     },
     searchParams: {
       type: 'object',
-      title: 'Parametros de busca da Shelf',
+      title: 'Search parameters for Shelf',
       properties: {
         from: {
           type: 'number',
-          title: 'de',
+          title: 'from',
         },
         to: {
           type: 'number',
-          title: 'ate',
+          title: 'to',
         },
         collection: {
           type: 'string',
-          title: 'Colecao',
+          title: 'Collection',
         },
         hideUnavailableItems: {
           default: true,
           type: 'boolean',
-          title: 'Esconder items indisponiveis',
+          title: 'Hide unavailable items',
         },
         orderBy,
       },
@@ -296,6 +321,74 @@ const Footer = {
   },
 } as any
 
+const RichText: Schema = {
+  title: 'Text',
+  description: '',
+  type: 'object',
+  properties: {
+    content: {
+      type: 'string',
+      title: 'Text',
+      widget: {
+        'ui:widget': 'draftjs-rich-text',
+      },
+    },
+  },
+} as any
+
+const href: Schema = {
+  title: 'URL address',
+  description: '',
+  type: 'string',
+}
+
+const alt: Schema = {
+  title: 'Image description',
+  description: 'Image description for accessibility',
+  type: 'string',
+}
+
+const src: Schema = {
+  title: 'Image',
+  description: 'Image',
+  type: 'string',
+  ...widgets.imageUploader,
+}
+
+const Banners: Schema = {
+  title: '6 banners group',
+  description: 'Home banners below carrousel',
+  type: 'object',
+  properties: {
+    banners: {
+      type: 'array',
+      maxItems: 6,
+      minItems: 6,
+      items: {
+        type: 'object',
+        title: 'Image',
+        properties: {
+          src,
+          href,
+          alt,
+        },
+      },
+    },
+  },
+}
+
+const InstitutionalHeader: Schema = {
+  title: 'Institutional page header',
+  description: 'Define a title for your page',
+  type: 'object',
+  properties: {
+    title: {
+      type: 'string',
+      title: 'Institutional page title',
+    },
+  },
+}
+
 export const contentTypes: ContentTypes = {
   home: {
     name: 'Home Page',
@@ -332,14 +425,27 @@ export const contentTypes: ContentTypes = {
     beforeBlocks: {},
     afterBlocks: {},
   },
+  institutionalPage: {
+    name: 'Institutional page',
+    extraBlocks: {
+      SEO: {
+        siteMetadataWithSlug,
+      },
+    },
+    beforeBlocks: {},
+    afterBlocks: {},
+  },
 }
 
 export const builderConfig: BuilderConfig = {
   blocks: {
-    Carousel,
-    SearchBanner,
     Fold,
+    Banners,
+    Carousel,
+    RichText,
+    SearchBanner,
     DynamicShelf,
+    InstitutionalHeader,
   },
   contentTypes,
   messages: {
