@@ -9,5 +9,5 @@ const Minicart: FC = () => (
     <MinicartClient />
   </SuspenseSSR>
 )
-
+//comment for test
 export default Minicart
