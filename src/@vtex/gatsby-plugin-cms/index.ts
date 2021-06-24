@@ -77,6 +77,26 @@ const facebook: Schema = {
   },
 }
 
+const orderByMap = {
+  'price:desc': 'Price: High to Low',
+  'price:asc': 'Price: Low to High',
+  'orders:desc': 'Sales',
+  'name:desc': 'Name, descending',
+  'name:asc': 'Name, ascending',
+  'release:desc': 'Release date',
+  'discount:desc': 'Discount',
+  '': 'Default',
+}
+
+const orderBy = ({
+  title: 'Order By',
+  description: 'Default search ordering',
+  type: 'string',
+  default: '',
+  enum: Object.keys(orderByMap),
+  enumNames: Object.values(orderByMap),
+} as unknown) as Schema
+
 const SearchIdSelector: Schema = {
   title: 'Category ID Selector',
   description: 'In which categories this banner will be shown',
@@ -88,36 +108,7 @@ const SearchIdSelector: Schema = {
       description: 'The id of the category to show',
       type: 'string',
     },
-    orderBy: {
-      title: 'Order By',
-      description: 'Default search ordering',
-      type: 'string',
-      default: '',
-      enum: [
-        '',
-        'OrderByScoreDESC',
-        'OrderByPriceDESC',
-        'OrderByPriceASC',
-        'OrderByTopSaleDESC',
-        'OrderByReviewRateDESC',
-        'OrderByNameDESC',
-        'OrderByNameASC',
-        'OrderByReleaseDateDESC',
-        'OrderByBestDiscountDESC',
-      ],
-      enumNames: [
-        'Default',
-        'Relevance',
-        'Price: High to Low',
-        'Price: Low to High',
-        'Sales',
-        'Reviews',
-        'Name, ascending',
-        'Name, descending',
-        'Release date',
-        'Discount',
-      ],
-    } as any,
+    orderBy,
   },
 }
 
@@ -269,35 +260,7 @@ const DynamicShelf: Schema = {
           type: 'boolean',
           title: 'Esconder items indisponiveis',
         },
-        orderBy: {
-          type: 'string',
-          default: '',
-          enum: [
-            '',
-            'OrderByScoreDESC',
-            'OrderByPriceDESC',
-            'OrderByPriceASC',
-            'OrderByTopSaleDESC',
-            'OrderByReviewRateDESC',
-            'OrderByNameDESC',
-            'OrderByNameASC',
-            'OrderByReleaseDateDESC',
-            'OrderByBestDiscountDESC',
-          ],
-          enumNames: [
-            'Default',
-            'Relevance',
-            'Price: High to Low',
-            'Price: Low to High',
-            'Sales',
-            'Reviews',
-            'Name, ascending',
-            'Name, descending',
-            'Release date',
-            'Discount',
-          ],
-          title: 'Orderne Por',
-        } as any,
+        orderBy,
       },
     },
   },
