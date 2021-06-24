@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.142.0",
   "dependencies": {
+    "@use-it/interval": "^1.0.0",
     "@vtex/gatsby-plugin-cms": "^0.371.7",
     "@vtex/gatsby-plugin-google-tag-manager": "^0.371.7",
     "@vtex/gatsby-plugin-graphql": "^0.371.7",
