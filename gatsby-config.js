@@ -26,6 +26,20 @@ const allowedHosts = [`${STORE_ID}.vtex.app`, 'storetheme.vtex.com']
 const isProduction = ENV === 'production'
 const siteUrl = isProduction ? URL : DEPLOY_PRIME_URL
 
+const unique = (x) => Array.from(new Set(x))
+
+const getSizes = (variants) =>
+  unique(
+    Object.values(variants)
+      .flatMap((variant) =>
+        variant.breakpoints.map((width) => [
+          `${width}x${Math.ceil(width / variant.aspectRatio)}`,
+          `${width}x${Math.floor(width / variant.aspectRatio)}`,
+        ])
+      )
+      .flat()
+  )
+
 module.exports = {
   siteMetadata: {
     title: 'Store Theme | VTEX Base Store',
@@ -169,13 +183,7 @@ module.exports = {
           : 'http://thumbor.thumborize.me',
         ...(isProduction && {
           basePath: '/assets',
-          sizes: Object.values(images)
-            .map((variant) =>
-              variant.breakpoints.map(
-                (width) => `${width}x${Math.round(width / variant.aspectRatio)}`
-              )
-            )
-            .flat(),
+          sizes: getSizes(images),
         }),
       },
     },
