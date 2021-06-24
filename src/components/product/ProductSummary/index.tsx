@@ -26,10 +26,16 @@ export type Item = {
     }
   }>
   images: Array<{ imageUrl: string; imageText: string }>
+  referenceId: Array<{ value: string | null | undefined }> | null | undefined
+  name: string
 }
 
 interface Props {
   product: {
+    id: string
+    brand: string
+    productReference: string | null | undefined
+    categoryTree: Array<{ name: string }>
     productName: string
     items: Item[]
   }
@@ -87,7 +93,7 @@ const ProductSummary: FC<Props> = ({ product }) => {
         />
       ) : null}
 
-      <BuyButton sku={itemSku} productName={productName} />
+      <BuyButton sku={itemSku} product={product as Product} />
     </LocalizedLink>
   )
 }

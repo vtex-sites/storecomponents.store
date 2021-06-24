@@ -1,17 +1,21 @@
 import { useBuyButton } from '@vtex/gatsby-theme-store'
 import React from 'react'
 import type { FC } from 'react'
-import type { SKU } from '@vtex/gatsby-theme-store'
+import type { SKU, Product } from '@vtex/gatsby-theme-store'
 
 import Button from './Button'
 
 interface Props {
   sku: SKU | undefined | null
-  productName: string
+  product: Product | undefined | null
 }
 
-const BuyButton: FC<Props> = ({ sku, productName }) => {
-  const { loading, ...props } = useBuyButton({ sku, quantity: 1, productName })
+const BuyButton: FC<Props> = ({ sku, product }) => {
+  const { loading, ...props } = useBuyButton({
+    sku,
+    quantity: 1,
+    product,
+  })
 
   return <Button {...props} />
 }

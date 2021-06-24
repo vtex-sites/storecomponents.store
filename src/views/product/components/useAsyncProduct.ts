@@ -31,6 +31,10 @@ export const query = gql`
         productReference
         description
         linkText
+        brand
+        categoryTree {
+          name
+        }
         specificationGroups {
           name
           specifications {
@@ -44,6 +48,10 @@ export const query = gql`
             values
           }
           itemId
+          name
+          referenceId {
+            value: Value
+          }
           images {
             imageUrl
             imageText

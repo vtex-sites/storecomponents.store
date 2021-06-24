@@ -23,6 +23,8 @@ type Item = {
     }
   }>
   images?: Array<{ imageUrl: string; imageText: string }>
+  referenceId: Array<{ value: string | null | undefined }> | null | undefined
+  name: string
 }
 
 interface Props {
@@ -31,7 +33,10 @@ interface Props {
 
 type Product = {
   product: {
-    productReference: string
+    id: string
+    categoryTree: Array<{ name: string }>
+    brand: string
+    productReference: string | null | undefined
     items: Item[]
     productName: string
   }
@@ -47,7 +52,7 @@ const Async: FC<Props> = ({ slug }) => {
 
   const [sku] = useSku<Item>(product)
   const { commercialOffer } = useBestSeller(sku)
-  const { productReference, productName } = product
+  const { productReference } = product
   const [{ props: itemImgProps }] = useDetailsImages(sku.images)
 
   const isAvailable =
@@ -75,7 +80,7 @@ const Async: FC<Props> = ({ slug }) => {
       <ProductDetailsReference variant={variant}>
         <FormattedMessage id="productDetails.reference" />: {productReference}
       </ProductDetailsReference>
-      {isAvailable && <BuyButton sku={itemSku} productName={productName} />}
+      {isAvailable && <BuyButton sku={itemSku} product={product} />}
       <Social />
     </>
   )

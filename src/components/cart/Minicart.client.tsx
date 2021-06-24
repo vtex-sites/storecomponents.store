@@ -19,6 +19,8 @@ const MinicartDrawer = lazy(
   () => import('@vtex/store-ui/src/deprecated/Minicart/Drawer')
 )
 
+const MinicartDrawerWithGenerics = MinicartDrawer as typeof MinicartDrawer['_result']
+
 const Minicart: FC = () => {
   const { removeItem, updateQuantity: updateItem } = useOrderItems()
   const { hideToast, messages } = useToast()
@@ -32,7 +34,7 @@ const Minicart: FC = () => {
     <>
       <MinicartButton value={orderForm.items.length} onClick={openMinicart} />
       {displayMinicart && (
-        <MinicartDrawer
+        <MinicartDrawerWithGenerics<any>
           isOpen
           total={total}
           subTotal={total}
@@ -44,7 +46,7 @@ const Minicart: FC = () => {
           numberFormat={numberFormat}
           hideToast={hideToast}
           messages={messages}
-          items={orderForm.items as any}
+          items={orderForm.items}
         />
       )}
     </>
