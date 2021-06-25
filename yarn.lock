@@ -2718,6 +2718,10 @@
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^5.0.6"
 
+"@vtex/gatsby-plugin-onesignal@https://pkg.csb.dev/vtex/faststore/commit/141c7b08/@vtex/gatsby-plugin-onesignal":
+  version "0.0.0"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/141c7b08/@vtex/gatsby-plugin-onesignal#f1885cfab8ad0f2b3fcdd1728f4e9dff75e35e69"
+
 "@vtex/gatsby-plugin-performance@^0.371.21":
   version "0.371.21"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-performance/-/gatsby-plugin-performance-0.371.21.tgz#727a6acd575fb222716b9d1c54649cc058f6e1c0"
