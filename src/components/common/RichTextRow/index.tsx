@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Flex, Grid, jsx } from '@vtex/store-ui'
+import { Grid, jsx } from '@vtex/store-ui'
 import type { FC } from 'react'
 
 import BoxIcon from '../../icons/Box'
