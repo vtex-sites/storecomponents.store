@@ -1,0 +1,15 @@
+{
+  "width": "100%",
+  "backgroundColor": "#6b7381",
+
+  "item": {
+    "display": "flex",
+    "alignItems": "center",
+    "flexDirection": "column",
+    "py": "1rem"
+  },
+
+  "itemText": {
+    "color": "white"
+  }
+}

@@ -1,4 +1,4 @@
-import { SxStyleProp } from '@vtex/store-ui'
+import type { SxStyleProp } from '@vtex/store-ui'
 
 export const custom: SxStyleProp = {
   'rich-text': {
@@ -21,9 +21,6 @@ export const custom: SxStyleProp = {
       textAlign: 'center',
       textTransform: 'uppercase',
       textDecoration: 'none',
-    },
-    dealsRow: {
-      color: 'white',
     },
   },
   buttons: {

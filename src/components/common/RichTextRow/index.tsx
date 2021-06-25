@@ -1,58 +1,36 @@
-import { Box, Flex, Grid, RichMarkdown } from '@vtex/store-ui'
-import React from 'react'
+/** @jsx jsx */
+import { Flex, Grid, jsx } from '@vtex/store-ui'
 import type { FC } from 'react'
 
 import BoxIcon from '../../icons/Box'
 import CouponIcon from '../../icons/Coupon'
 import DeliveryIcon from '../../icons/Delivery'
 import StoreIcon from '../../icons/Store'
-import dealHtml from './deal.md'
-import deliveryHtml from './delivery.md'
-import freeShippingHtml from './free-shipping.md'
-import pickupHtml from './pickup.md'
-
-const FullWidthContainer: FC = ({ children }) => (
-  <Box sx={{ width: '100%' }}>{children}</Box>
-)
-
-const RowItemContainer: FC = ({ children }) => (
-  <Flex
-    variant="deal-row-item-container"
-    sx={{
-      alignItems: 'center',
-      flexDirection: 'column',
-      paddingTop: '1rem',
-    }}
-  >
-    {children}
-  </Flex>
-)
+import styles from './styles.json'
 
 const MAX_ITEMS = [1, 4]
 
 const RichTextRow: FC = () => (
-  <FullWidthContainer>
-    <Box backgroundColor="#6b7381">
-      <Grid gap={2} columns={MAX_ITEMS}>
-        <RowItemContainer>
-          <BoxIcon />
-          <RichMarkdown text={freeShippingHtml} variant="dealsRow" />
-        </RowItemContainer>
-        <RowItemContainer>
-          <DeliveryIcon />
-          <RichMarkdown text={deliveryHtml} variant="dealsRow" />
-        </RowItemContainer>
-        <RowItemContainer>
-          <StoreIcon />
-          <RichMarkdown text={pickupHtml} variant="dealsRow" />
-        </RowItemContainer>
-        <RowItemContainer>
-          <CouponIcon />
-          <RichMarkdown text={dealHtml} variant="dealsRow" />
-        </RowItemContainer>
-      </Grid>
-    </Box>
-  </FullWidthContainer>
+  <div sx={styles}>
+    <Grid gap={2} columns={MAX_ITEMS}>
+      <div sx={styles.item}>
+        <BoxIcon />
+        <div sx={styles.itemText}>Exclusive deals</div>
+      </div>
+      <div sx={styles.item}>
+        <DeliveryIcon />
+        <div sx={styles.itemText}>One day delivery</div>
+      </div>
+      <div sx={styles.item}>
+        <StoreIcon />
+        <div sx={styles.itemText}>Free shipping!!</div>
+      </div>
+      <div sx={styles.item}>
+        <CouponIcon />
+        <div sx={styles.itemText}>Pick up in store</div>
+      </div>
+    </Grid>
+  </div>
 )
 
 export default RichTextRow
