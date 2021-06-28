@@ -21,28 +21,19 @@ const AsyncInfo = lazy(loadAsyncInfo)
 const variant = 'default'
 
 type Props = {
-  data: {
-    vtex: {
-      product: {
-        productName: string
-        categoryTree: Array<{ name: string; href: string }>
-        items: Array<{
-          images: Array<{ imageUrl: string; imageText: string }>
+  product: {
+    productName: string
+    categoryTree: Array<{ name: string; href: string }>
+    items: Array<{
+      images: Array<{ imageUrl: string; imageText: string }>
 
-          videos: Array<{ videoUrl: string }>
-        }>
-      }
-    }
+      videos: Array<{ videoUrl: string }>
+    }>
   }
   slug: string
 }
 
-const AboveTheFold: FC<Props> = ({
-  data: {
-    vtex: { product },
-  },
-  slug,
-}) => {
+const AboveTheFold: FC<Props> = ({ product, slug }) => {
   const {
     productName,
     categoryTree: breadcrumb = [],

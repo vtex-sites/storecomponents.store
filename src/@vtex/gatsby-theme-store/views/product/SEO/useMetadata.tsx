@@ -1,14 +1,14 @@
 import { useLocation } from '@reach/router'
 import { useMemo } from 'react'
-import { IMAGE_DEFAULT, scaleImage, useLocale } from '@vtex/gatsby-theme-store'
+import { IMAGE_DEFAULT, useLocale } from '@vtex/gatsby-theme-store'
 import { graphql, useStaticQuery } from 'gatsby'
 import type { ComponentPropsWithoutRef } from 'react'
-import type { ProductPageProps } from '@vtex/gatsby-theme-store/src/templates/product'
+import type { ProductViewProps } from '@vtex/gatsby-theme-store/src/views/product'
 import type { GatsbySeo } from 'gatsby-plugin-next-seo'
 
 import type { StoreProductPageSeoQueryQuery } from './__generated__/StoreProductPageSEOQuery.graphql'
 
-type Options = ProductPageProps
+type Options = ProductViewProps
 
 type Return = ComponentPropsWithoutRef<typeof GatsbySeo>
 
@@ -43,20 +43,11 @@ export const useMetadata = (options: Options): Return => {
   )
 
   const [siteMetadata] = seo.extraBlocks[0].blocks
-  const {
-    data: {
-      vtex: { product },
-    },
-  } = options
-
+  const { product } = options
   const images = useMemo(
     () =>
       product.items[0].images.map((image: any) => ({
-        url: scaleImage(
-          image.imageUrl ?? IMAGE_DEFAULT,
-          IMAGE_SIZE,
-          IMAGE_SIZE
-        ),
+        url: image.imageUrl ?? IMAGE_DEFAULT,
         width: IMAGE_SIZE,
         height: IMAGE_SIZE,
         alt: image.imageText,
