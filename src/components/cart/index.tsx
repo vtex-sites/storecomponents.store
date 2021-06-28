@@ -10,4 +10,5 @@ const Minicart: FC = () => (
   </SuspenseSSR>
 )
 //comment for test
+// other comment
 export default Minicart
