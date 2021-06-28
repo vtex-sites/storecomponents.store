@@ -16,8 +16,9 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import type { FC } from 'react'
 
-import type { Installment } from '../../../../../../sdk/useMaxInstallments'
-import { useMaxInstallments } from '../../../../../../sdk/useMaxInstallments'
+import { useMaxInstallments } from '../../../sdk/useMaxInstallments'
+import { useDiscount } from '../../../sdk/useDiscount'
+import type { Installment } from '../../../sdk/useMaxInstallments'
 
 interface Props {
   commercialOffer: {
@@ -28,20 +29,6 @@ interface Props {
     availableQuantity: number
   }
   variant?: string
-}
-
-const useDiscount = ({
-  price,
-  listPrice,
-}: {
-  price: number
-  listPrice: number
-}) => {
-  if (typeof price === 'number' && typeof listPrice === 'number') {
-    return listPrice - price
-  }
-
-  return 0
 }
 
 const Offer: FC<Props> = ({ commercialOffer, variant = 'default' }) => {
