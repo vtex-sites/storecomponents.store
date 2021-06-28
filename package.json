@@ -20,7 +20,7 @@
     "babel-preset-gatsby": "^1.1.0",
     "csvtojson": "^2.0.10",
     "dotenv": "^8.2.0",
-    "gatsby": "^3.1.2",
+    "gatsby": "3.1.1",
     "gatsby-plugin-image": "^1.6.0",
     "gatsby-plugin-manifest": "^3.1.0",
     "gatsby-plugin-next-seo": "^1.7.0",
