@@ -10,7 +10,7 @@ import { FormattedMessage } from 'react-intl'
 import type { FC } from 'react'
 
 import BuyButton from '../../../../../../components/ui/BuyButton/BuyButton.client'
-import Offer from './Offer'
+import Offer from '../../../../../../components/common/Offer'
 import Social from '../../../../../../components/common/Social'
 
 type Item = {
