@@ -68,5 +68,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
