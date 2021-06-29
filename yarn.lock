@@ -3077,9 +3077,10 @@
   resolved "https://registry.yarnpkg.com/@vtex-components/drawer/-/drawer-0.2.4.tgz#682e627135c8f6cb134ffcc6661206163de6d7e8"
   integrity sha512-bv39LunQ9q+mtMN9eGzZSfRUx8VgJkOrMr5LDt8kdlA1+NemohiROTshj0RUwLGxCD6HcOOsQE25imIklKc1FQ==
 
-"@vtex/gatsby-plugin-cms@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-cms":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-cms#5dd87a48fb55f4fff36a25c7a678b1610066ccf7"
+"@vtex/gatsby-plugin-cms@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-cms/-/gatsby-plugin-cms-0.371.25.tgz#4de570f9b52dfd495233ae98c721681dde4f1b3d"
+  integrity sha512-LPxQAIdYi2uLOAkUCf6Xz4eou5eqts8B4t8foRiiHrCsiCP/gnLY8UnNK9oy6EchszY/8yn5r83ehDE8+t5jHg==
   dependencies:
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"
@@ -3088,29 +3089,15 @@
     gatsby-graphql-source-toolkit "^2.0.1"
     p-map "^4.0.0"
 
-"@vtex/gatsby-plugin-cms@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-cms":
-  version "0.371.24"
-  uid "5dd87a48fb55f4fff36a25c7a678b1610066ccf7"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-cms#5dd87a48fb55f4fff36a25c7a678b1610066ccf7"
-  dependencies:
-    "@babel/preset-typescript" "^7.12.7"
-    "@babel/register" "^7.12.1"
-    chokidar "^3.5.0"
-    fs-extra "^9.0.1"
-    gatsby-graphql-source-toolkit "^2.0.1"
-    p-map "^4.0.0"
+"@vtex/gatsby-plugin-google-tag-manager@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-google-tag-manager/-/gatsby-plugin-google-tag-manager-0.371.25.tgz#a449a67ec894932d188a84532b5767190c82f4d8"
+  integrity sha512-2I84NR8GD8jDZv7+RKybi4630uEQaRola8A9ocy/ZjRQsObQuMnXY6Ay/uKrlPDrdVws0ezvjZKVDaoP6EEjxQ==
 
-"@vtex/gatsby-plugin-google-tag-manager@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-google-tag-manager":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-google-tag-manager#f01796b5e453dabb2f5d425f79a4461f125319cc"
-
-"@vtex/gatsby-plugin-google-tag-manager@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-google-tag-manager":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-google-tag-manager#0e317261061ed38d5c3e6f7e664fdc544d1cba00"
-
-"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-graphql":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-graphql#7041b626a0bf1b2f015779762c85d99e351b3704"
+"@vtex/gatsby-plugin-graphql@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.371.25.tgz#edf9278d4b72ab8da7936bac2b97e2d166d78652"
+  integrity sha512-FB7fjoi57e4Ywsd+TaIizA7mQ4C/aX2n+na9q9zp4/B1Ayc2E9OhxcCnj0ucJNaMmBssVQc2f2zXWWAj5hKW5A==
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -3119,21 +3106,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-graphql":
-  version "0.371.24"
-  uid "7041b626a0bf1b2f015779762c85d99e351b3704"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-graphql#7041b626a0bf1b2f015779762c85d99e351b3704"
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
-"@vtex/gatsby-plugin-i18n@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-i18n":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-i18n#8570c29cdb01a7b27f55478d3c5dff800c0eca7c"
+"@vtex/gatsby-plugin-i18n@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.371.25.tgz#7983209bbf3da756639fdde211aa4fa75cfb8de6"
+  integrity sha512-FqTeOmQHO37W5OLTDOFABIgV8nYME2GuJ4m5kEvw+KI/09F3Ng9gW75ek/p8zm9nhbO9uYvQ146oetXH4OWS1w==
   dependencies:
     "@babel/parser" "^7.12.7"
     "@babel/preset-typescript" "^7.12.7"
@@ -3143,54 +3119,28 @@
     intl-messageformat-parser "^6.4.3"
     react-intl "^5.18.0"
 
-"@vtex/gatsby-plugin-i18n@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-i18n":
-  version "0.371.24"
-  uid "8570c29cdb01a7b27f55478d3c5dff800c0eca7c"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-i18n#8570c29cdb01a7b27f55478d3c5dff800c0eca7c"
-  dependencies:
-    "@babel/parser" "^7.12.7"
-    "@babel/preset-typescript" "^7.12.7"
-    "@babel/register" "^7.12.1"
-    "@babel/traverse" "^7.12.9"
-    "@babel/types" "^7.12.7"
-    intl-messageformat-parser "^6.4.3"
-    react-intl "^5.18.0"
-
-"@vtex/gatsby-plugin-nginx@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-nginx":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-nginx#6c8fbf0388fd8e8ecc6cb9c914ead434646be06d"
+"@vtex/gatsby-plugin-nginx@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-nginx/-/gatsby-plugin-nginx-0.371.25.tgz#9a3bda7aa70cdcb8e9ed0b7bfbd5abaf88797580"
+  integrity sha512-rHf/N8LY+gw8ORU74LkleuIlxEFf6O+ULPb4IyEl2jArRhxsD/vJcttmYD7xhYQfUZQ5XT0k592wLFV2mETugg==
   dependencies:
     kebab-hash "^0.1.2"
     webpack-assets-manifest "^5.0.6"
 
-"@vtex/gatsby-plugin-nginx@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-nginx":
-  version "0.371.24"
-  uid "6c8fbf0388fd8e8ecc6cb9c914ead434646be06d"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-nginx#6c8fbf0388fd8e8ecc6cb9c914ead434646be06d"
-  dependencies:
-    kebab-hash "^0.1.2"
-    webpack-assets-manifest "^5.0.6"
+"@vtex/gatsby-plugin-performance@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-performance/-/gatsby-plugin-performance-0.371.25.tgz#f2567f279a7600b9a542e09753ea59a8c623b70a"
+  integrity sha512-EOm+Cy+rJdjkIZlYLBMnmFSrBtH/Cx1pOq50T9yD2CkSEcEk7Pnb48GEkwW6PqM5OtFc1xFNZup7Bk9t3W+dxA==
 
-"@vtex/gatsby-plugin-performance@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-performance":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-performance#310aca93681afcfad7ab640f199574a8a15bfc3d"
+"@vtex/gatsby-plugin-pixel-facebook@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-pixel-facebook/-/gatsby-plugin-pixel-facebook-0.371.25.tgz#9cbed00d306624c91b00c0234c4b58b0f438853c"
+  integrity sha512-Kq6aRwUxinEL2qgm0Cj0Rz73ssdEIXXZ043QEkqUE6wg1evcBDPbnH/j0fRt9BEmASff1GZtgKvB7xZACt3zLA==
 
-"@vtex/gatsby-plugin-performance@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-performance":
-  version "0.371.24"
-  uid "310aca93681afcfad7ab640f199574a8a15bfc3d"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-performance#310aca93681afcfad7ab640f199574a8a15bfc3d"
-
-"@vtex/gatsby-plugin-pixel-facebook@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-pixel-facebook":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-pixel-facebook#dff142b5a803f9dd18af0b8ed42f7b3142a6f348"
-
-"@vtex/gatsby-plugin-pixel-facebook@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-pixel-facebook":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-pixel-facebook#77831dca74f9bfd6c428294f965b84962a31ada3"
-
-"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-theme-ui":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-theme-ui#1f12a666dbfd39060091eec6acf49d94db1507a9"
+"@vtex/gatsby-plugin-theme-ui@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.371.25.tgz#1f319e365fec84b2089cda5ad26cf82df41e9714"
+  integrity sha512-NfrrGWVlHxmvXkdvXvRsqzF6nhbZXm0oYHNnWmSB0Rkir+CoYzc2Y/rhu8Iw6NocJ5NSvxG1fDJ5/vxN7Eaj7A==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -3201,32 +3151,15 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-theme-ui":
-  version "0.371.24"
-  uid "1f12a666dbfd39060091eec6acf49d94db1507a9"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-theme-ui#1f12a666dbfd39060091eec6acf49d94db1507a9"
-  dependencies:
-    "@babel/core" "^7.11.4"
-    "@babel/parser" "^7.11.4"
-    "@babel/preset-typescript" "^7.10.4"
-    "@babel/register" "^7.11.5"
-    "@babel/traverse" "^7.11.0"
-    "@babel/types" "^7.11.0"
-    create-emotion-server "^10.0.27"
-    theme-ui "^0.3.1"
+"@vtex/gatsby-plugin-thumbor@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-thumbor/-/gatsby-plugin-thumbor-0.371.25.tgz#a258fa3c2188d71d3f57148db20835fd0760b8ef"
+  integrity sha512-9fU06EscSw6Z1oBECzDAnqqBlDQ8GFMViKtIAPfFJgoG1U2tHcyn9+7K8yH1wJfTCejrXBaPFUYl0p102Dq6OQ==
 
-"@vtex/gatsby-plugin-thumbor@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-thumbor":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-thumbor#6849a3aa50cf6956f6e6ac76fa42d71bf77b9a5f"
-
-"@vtex/gatsby-plugin-thumbor@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-thumbor":
-  version "0.371.24"
-  uid "6849a3aa50cf6956f6e6ac76fa42d71bf77b9a5f"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-thumbor#6849a3aa50cf6956f6e6ac76fa42d71bf77b9a5f"
-
-"@vtex/gatsby-source-vtex@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-source-vtex":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-source-vtex#58aa00862ba2f6a547b35b4bb759b69cda075307"
+"@vtex/gatsby-source-vtex@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-source-vtex/-/gatsby-source-vtex-0.371.25.tgz#2f046c39e11392c11a2fc113ebf7c7bc2b3b875f"
+  integrity sha512-LsrAMpqMzhE774PDtHJfbSaMcYaRpbibsWb34OzW9ChHrhveYL8dKuLLgnI+NaKidV00IhrOiqBz8N90Dwv3zQ==
   dependencies:
     "@graphql-tools/delegate" "^7.1.5"
     "@graphql-tools/wrap" "^7.0.8"
@@ -3236,25 +3169,14 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-source-vtex@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-source-vtex":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-source-vtex#5428f82008d2b834fe16928f56712cf1c8d57a54"
-  dependencies:
-    "@graphql-tools/delegate" "^7.1.5"
-    "@graphql-tools/wrap" "^7.0.8"
-    gatsby-graphql-source-toolkit "^2.0.1"
-    isomorphic-unfetch "^3.0.0"
-    p-map "^4.0.0"
-    slugify "^1.4.6"
-    uuid "^8.3.0"
-
-"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-theme-store":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-theme-store#58e898e8443f021a863e071d02c30d6395365381"
+"@vtex/gatsby-theme-store@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.371.25.tgz#2b33f1c29f7ae6e83707dec418c81a3fd0f19546"
+  integrity sha512-Kpny2X56VfrZ4vg5KtEtyqXtBsMRa2L0iZ/2kNugSkzUaYgY000I1BQi1MdoL7Ax59MC3B31mNIEjS07mA4aNw==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-graphql"
-    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/gatsby-plugin-theme-ui"
+    "@vtex/gatsby-plugin-graphql" "^0.371.25"
+    "@vtex/gatsby-plugin-theme-ui" "^0.371.25"
     "@vtex/order-items" "^0.6.1"
     "@vtex/order-manager" "^0.5.2"
     gatsby-plugin-bundle-stats "^2.7.2"
@@ -3267,33 +3189,10 @@
     schema-dts "^0.6.0"
     swr "^0.3.0"
 
-"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-theme-store":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-theme-store#5006b024f2be6f388dafdb73fb977a7343800631"
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-graphql"
-    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/gatsby-plugin-theme-ui"
-    "@vtex/order-items" "^0.6.1"
-    "@vtex/order-manager" "^0.5.2"
-    gatsby-plugin-bundle-stats "^2.7.2"
-    html-loader "^2.1.2"
-    intersection-observer "^0.11.0"
-    intl-format-cache "^4.3.0"
-    markdown-loader "^6.0.0"
-    nprogress "^0.2.0"
-    requestidlecallback-polyfill "^1.0.2"
-    schema-dts "^0.6.0"
-    swr "^0.3.0"
-
-"@vtex/lighthouse-config@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/lighthouse-config":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/lighthouse-config#80f2219af324694c5fca2b5699e9022426e44210"
-
-"@vtex/lighthouse-config@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/lighthouse-config":
-  version "0.371.24"
-  uid "80f2219af324694c5fca2b5699e9022426e44210"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/lighthouse-config#80f2219af324694c5fca2b5699e9022426e44210"
+"@vtex/lighthouse-config@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.371.25.tgz#291d33f298283d4c4e006976716fd32f3cca05a9"
+  integrity sha512-88PGkk5Pqkl88KnhyTJ4GX2ElrL2GfNJSiH9mORy/5sAw+ufmwFs5iIIDmHvT6soOl7gGRXbhJNynkHlJazX8g==
 
 "@vtex/order-items@^0.6.1":
   version "0.6.2"
@@ -3317,48 +3216,15 @@
   resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.3.6.tgz#31762608d9a59b815b6d4e963e439b12f1a12279"
   integrity sha512-nXE3BcMODomFK3EowfK+Hdj2qQRqB8JcdRv8yTREXnN9xq8DYKmH/dWB+RY/Hn3KozFLbygpZRbqYsiA6HDINQ==
 
-"@vtex/renovate-config@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/renovate-config":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/renovate-config#3b4c4a69f11e8f53376b2b7acda9f6a33eb9de98"
+"@vtex/store-sdk@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/store-sdk/-/store-sdk-0.371.25.tgz#5308529ae1ed0fe3b594c10c8e7f45ceb44892c5"
+  integrity sha512-bRD+dTg3izGhnizcnH/bcC4HOWcpceBcUxksS+FB8P5lWqEQUw0oBb0tOULJ5bXH4gGRIxCGLwxXJs+3mWL5ig==
 
-"@vtex/renovate-config@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/renovate-config":
-  version "0.371.24"
-  uid "3b4c4a69f11e8f53376b2b7acda9f6a33eb9de98"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/renovate-config#3b4c4a69f11e8f53376b2b7acda9f6a33eb9de98"
-
-"@vtex/store-sdk@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/store-sdk":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/store-sdk#c54f3982d2d6dd8f29810bdc4e806a5c28daa34b"
-
-"@vtex/store-sdk@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/store-sdk":
-  version "0.371.24"
-  uid c54f3982d2d6dd8f29810bdc4e806a5c28daa34b
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/store-sdk#c54f3982d2d6dd8f29810bdc4e806a5c28daa34b"
-
-"@vtex/store-ui@https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/store-ui":
-  version "0.371.24"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/8884ce13/@vtex/store-ui#1d1f469e42bc541fa6aba579e1c453d2b5c591fc"
-  dependencies:
-    "@reach/popover" "^0.15.0"
-    "@reach/router" "^1.3.4"
-    "@theme-ui/match-media" "^0.3.1"
-    "@theme-ui/preset-base" "^0.3.0"
-    "@types/react-modal" "^3.12.0"
-    "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
-    "@vtex-components/drawer" "^0.2.4"
-    deepmerge "^4.2.2"
-    react-hook-inview "^4.3.9"
-    react-intl "^5.18.0"
-    react-swipeable "^6.0.0"
-    reakit "^1.3.0"
-    text-mask-core "^5.1.2"
-    theme-ui "^0.3.1"
-
-"@vtex/store-ui@https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/store-ui":
-  version "0.371.24"
-  uid "1d1f469e42bc541fa6aba579e1c453d2b5c591fc"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/bbec9b9f/@vtex/store-ui#1d1f469e42bc541fa6aba579e1c453d2b5c591fc"
+"@vtex/store-ui@^0.371.25":
+  version "0.371.25"
+  resolved "https://registry.yarnpkg.com/@vtex/store-ui/-/store-ui-0.371.25.tgz#485f85ad49cc11e94f684c60568b501c1626af95"
+  integrity sha512-I7xq7YXRdx78S7vTqf1GeBc3fnn8wkGK0ffKgcJIx6Er2CMRJGRuRULdoHynmMqxVFGG1YGm82TdmqQjwOxNJQ==
   dependencies:
     "@reach/popover" "^0.15.0"
     "@reach/router" "^1.3.4"
