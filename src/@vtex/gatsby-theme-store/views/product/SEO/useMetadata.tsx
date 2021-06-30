@@ -3,16 +3,14 @@ import { useMemo } from 'react'
 import { IMAGE_DEFAULT, useLocale } from '@vtex/gatsby-theme-store'
 import { graphql, useStaticQuery } from 'gatsby'
 import type { ComponentPropsWithoutRef } from 'react'
-import type { ProductViewProps } from '@vtex/gatsby-theme-store/src/views/product'
 import type { GatsbySeo } from 'gatsby-plugin-next-seo'
 
+import type { ProductViewProps } from '../index'
 import type { StoreProductPageSeoQueryQuery } from './__generated__/StoreProductPageSEOQuery.graphql'
 
 type Options = ProductViewProps
 
 type Return = ComponentPropsWithoutRef<typeof GatsbySeo>
-
-const IMAGE_SIZE = 720
 
 export const useMetadata = (options: Options): Return => {
   const locale = useLocale()
@@ -43,13 +41,12 @@ export const useMetadata = (options: Options): Return => {
   )
 
   const [siteMetadata] = seo.extraBlocks[0].blocks
-  const { product } = options
+  const { product }: any = options
+
   const images = useMemo(
     () =>
       product.items[0].images.map((image: any) => ({
         url: image.imageUrl ?? IMAGE_DEFAULT,
-        width: IMAGE_SIZE,
-        height: IMAGE_SIZE,
         alt: image.imageText,
       })),
     [product]
@@ -80,7 +77,7 @@ export const useMetadata = (options: Options): Return => {
       },
       {
         property: 'product:price:currency',
-        content: 'USD',
+        content: 'BRL',
       },
     ],
   }

@@ -14,26 +14,14 @@ import type { FC } from 'react'
 
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
+import type { ProductViewProps } from '.'
 
 const loadAsyncInfo = () => import('./Above/Async')
 const AsyncInfo = lazy(loadAsyncInfo)
 
 const variant = 'default'
 
-type Props = {
-  product: {
-    productName: string
-    categoryTree: Array<{ name: string; href: string }>
-    items: Array<{
-      images: Array<{ imageUrl: string; imageText: string }>
-
-      videos: Array<{ videoUrl: string }>
-    }>
-  }
-  slug: string
-}
-
-const AboveTheFold: FC<Props> = ({ product, slug }) => {
+const AboveTheFold: FC<ProductViewProps> = ({ product, slug }: any) => {
   const {
     productName,
     categoryTree: breadcrumb = [],
@@ -70,7 +58,5 @@ const AboveTheFold: FC<Props> = ({ product, slug }) => {
     </Flex>
   )
 }
-
-export { fragment } from '@vtex/gatsby-theme-store/src/views/product/AboveTheFold'
 
 export default AboveTheFold

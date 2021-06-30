@@ -26,7 +26,7 @@ type Item = {
 }
 
 interface Props {
-  slug?: string
+  slug: string
 }
 
 type Product = {
