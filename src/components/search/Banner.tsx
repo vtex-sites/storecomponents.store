@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@vtex/store-ui'
 
+import styles from './styles.json'
 import type { BrowserSearchPageQueryQuery } from '../../@vtex/gatsby-theme-store/templates/__generated__/BrowserSearchPageQuery.graphql'
 
 type SearchBanners = NonNullable<
@@ -20,7 +21,7 @@ const SearchBanner = ({ banners = [] }: Props) => {
 
   return (
     <div
-      sx={{ variant: 'search.banner.container' }}
+      sx={styles.banner.container}
       dangerouslySetInnerHTML={{ __html: banner.html }}
     />
   )

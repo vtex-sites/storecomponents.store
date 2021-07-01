@@ -1,0 +1,11 @@
+{
+  "banner": {
+    "container": {
+      "display": "flex",
+      "justifyContent": "center",
+
+      "maxHeight": "233px",
+      "overflow": "hidden"
+    }
+  }
+}

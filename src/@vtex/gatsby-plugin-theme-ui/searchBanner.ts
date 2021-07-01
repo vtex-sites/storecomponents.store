@@ -16,16 +16,5 @@ export const searchBannerTheme: SxStyleProp = createTheme(
         },
       },
     },
-    search: {
-      banner: {
-        container: {
-          display: 'flex',
-          justifyContent: 'center',
-
-          maxHeight: '233px',
-          overflow: 'hidden',
-        },
-      },
-    },
   }
 )
