@@ -22,7 +22,7 @@ export const searchBannerTheme: SxStyleProp = createTheme(
           display: 'flex',
           justifyContent: 'center',
 
-          height: '233px',
+          maxHeight: '233px',
           overflow: 'hidden',
         },
       },

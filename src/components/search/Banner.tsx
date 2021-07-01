@@ -14,7 +14,9 @@ interface Props {
 const SearchBanner = ({ banners = [] }: Props) => {
   const [banner] = banners
 
-  if (!banner?.html) return null
+  if (!banner?.html) {
+    return null
+  }
 
   return (
     <div
