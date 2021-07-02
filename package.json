@@ -13,7 +13,7 @@
     "@vtex/gatsby-plugin-theme-ui": "^0.371.29",
     "@vtex/gatsby-plugin-thumbor": "^0.371.29",
     "@vtex/gatsby-source-vtex": "^0.371.29",
-    "@vtex/gatsby-theme-store": "0.371.29",
+    "@vtex/gatsby-theme-store": "0.371.32",
     "@vtex/store-sdk": "^0.371.29",
     "@vtex/store-ui": "^0.371.29",
     "babel-preset-gatsby": "^1.1.0",
