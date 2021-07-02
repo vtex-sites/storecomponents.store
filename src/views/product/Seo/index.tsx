@@ -10,7 +10,7 @@ interface Props {
   product: SeoFragment_ProductFragment
 }
 
-const Seo: FC<Props> = (props) => {
+const Seo: FC<Props> = ({ product }) => {
   const {
     seo,
     site: {
@@ -41,7 +41,7 @@ const Seo: FC<Props> = (props) => {
   return (
     <ProductSEO
       siteMetadata={{ ...siteMetadata, siteUrl }}
-      {...(props as any)}
+      product={product as any}
     />
   )
 }
