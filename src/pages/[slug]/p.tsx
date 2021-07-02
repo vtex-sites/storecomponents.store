@@ -5,9 +5,9 @@ import type { FC } from 'react'
 import HybridWrapper from '@vtex/gatsby-theme-store/src/components/HybridWrapper'
 import Layout from '@vtex/gatsby-theme-store/src/components/Layout'
 import { useQuery } from '@vtex/gatsby-theme-store'
-import AboveTheFoldPreview from '@vtex/gatsby-theme-store/src/views/product/AboveTheFoldPreview'
+import { Card, Container, Flex, Grid, Skeleton } from '@vtex/store-ui'
 
-import DefaultProductView from '../../@vtex/gatsby-theme-store/views/product/index'
+import DefaultProductView from '../../views/product'
 import { BrowserProductPageQuery } from '../../[slug]/__generated__/BrowserProductPageQuery.graphql'
 import type {
   BrowserProductPageQueryQuery,
@@ -37,7 +37,24 @@ const ProductPage: FC<BrowserProductPageProps> = (props) => {
 
 const Page: FC<BrowserProductPageProps> = (props) => (
   <Layout>
-    <HybridWrapper fallback={<AboveTheFoldPreview />}>
+    <HybridWrapper
+      fallback={
+        <Container>
+          <Flex variant="productPage.container">
+            <Skeleton width="500px" height="45px" />
+            <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, 2]}>
+              <Skeleton width="500px" height="500px" />
+              <Card>
+                <Skeleton width="500px" height="20px" />
+                <Skeleton width="500px" height="20px" />
+                <Skeleton width="500px" height="20px" />
+                <Skeleton width="500px" height="20px" />
+              </Card>
+            </Grid>
+          </Flex>
+        </Container>
+      }
+    >
       <ProductPage {...props} />
     </HybridWrapper>
   </Layout>

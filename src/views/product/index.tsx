@@ -33,7 +33,7 @@ const ProductView: FC<ProductViewProps> = (props) => {
 
 export const fragment = graphql`
   fragment ProductViewFragment_product on StoreProduct {
-    ...StructuredProductFragment_product
+    ...SeoFragment_product
     id: productId
     productReference
     productName

@@ -19,10 +19,10 @@ type Scalars = {
 // Operation related types
 export type ProductViewFragment_ProductFragment = (
   { productReference: Maybe<string>, productName: Maybe<string>, linkText: Maybe<string>, id: Maybe<string>, items: Maybe<Array<Maybe<{ name: Maybe<string>, complementName: Maybe<string>, itemId: Maybe<string>, referenceId: Maybe<Array<Maybe<{ value: Maybe<string> }>>>, images: Maybe<Array<Maybe<{ imageUrl: Maybe<string>, imageText: Maybe<string> }>>>, videos: Maybe<Array<Maybe<{ videoUrl: Maybe<string> }>>>, sellers: Maybe<Array<Maybe<{ commercialOffer: Maybe<{ price: Maybe<number>, listPrice: Maybe<number>, availableQuantity: Maybe<number>, priceValidUntil: Maybe<string> }> }>>> }>>>, productClusters: Maybe<Array<Maybe<{ id: Maybe<string>, name: Maybe<string> }>>>, properties: Maybe<Array<Maybe<{ name: Maybe<string>, originalName: Maybe<string>, values: Maybe<Array<Maybe<string>>> }>>> }
-  & StructuredProductFragment_ProductFragment
+  & SeoFragment_ProductFragment
 );
 
-export type StructuredProductFragment_ProductFragment = { titleTag: Maybe<string>, metaTagDescription: Maybe<string>, productName: Maybe<string>, description: Maybe<string>, brand: Maybe<string>, linkText: Maybe<string>, items: Maybe<Array<Maybe<{ itemId: Maybe<string>, ean: Maybe<string>, images: Maybe<Array<Maybe<{ imageUrl: Maybe<string> }>>>, sellers: Maybe<Array<Maybe<{ commercialOffer: Maybe<{ spotPrice: Maybe<number>, availableQuantity: Maybe<number>, priceValidUntil: Maybe<string> }> }>>> }>>>, categoryTree: Maybe<Array<Maybe<{ href: Maybe<string>, name: Maybe<string> }>>> };
+export type SeoFragment_ProductFragment = { titleTag: Maybe<string>, metaTagDescription: Maybe<string>, productName: Maybe<string>, description: Maybe<string>, brand: Maybe<string>, linkText: Maybe<string>, id: Maybe<string>, items: Maybe<Array<Maybe<{ itemId: Maybe<string>, ean: Maybe<string>, images: Maybe<Array<Maybe<{ imageUrl: Maybe<string> }>>>, sellers: Maybe<Array<Maybe<{ commercialOffer: Maybe<{ spotPrice: Maybe<number>, availableQuantity: Maybe<number>, priceValidUntil: Maybe<string> }> }>>> }>>>, categoryTree: Maybe<Array<Maybe<{ href: Maybe<string>, name: Maybe<string> }>>> };
 
 
 // Query Related Code

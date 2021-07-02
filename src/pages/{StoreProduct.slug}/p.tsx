@@ -4,7 +4,7 @@ import type { PageProps } from 'gatsby'
 import type { FC } from 'react'
 
 import Layout from '../../@vtex/gatsby-theme-store/components/Layout'
-import ProductView from '../../@vtex/gatsby-theme-store/views/product/index'
+import ProductView from '../../views/product'
 import type {
   ServerProductPageQueryQuery,
   ServerProductPageQueryQueryVariables,

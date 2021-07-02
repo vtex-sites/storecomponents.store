@@ -29,7 +29,7 @@ export type ServerProductPageQueryQuery = { product: Maybe<{ titleTag: Maybe<str
 
 export const ServerProductPageQuery = {
   query: process.env.NODE_ENV === 'production' ? undefined : "query ServerProductPageQuery($id: String!) {\n  product: storeProduct(id: {eq: $id}) {\n    id: productId\n    titleTag\n    metaTagDescription\n    productName\n    description\n    brand\n    linkText\n    items {\n      itemId\n      ean\n      images {\n        imageUrl\n        imageText\n      }\n      sellers {\n        commercialOffer: commertialOffer {\n          spotPrice\n          availableQuantity: AvailableQuantity\n          priceValidUntil: PriceValidUntil\n          price: Price\n          listPrice: ListPrice\n        }\n      }\n      name\n      complementName\n      referenceId {\n        value: Value\n      }\n      videos {\n        videoUrl\n      }\n    }\n    categoryTree {\n      href\n      name\n    }\n    productReference\n    productClusters {\n      id\n      name\n    }\n    properties {\n      name\n      originalName\n      values\n    }\n  }\n}\n",
-  sha256Hash: "817224b5cae1a2ca6e7bc2a87c1281ad957e75a1d22d997a5bd92efe680adec4",
+  sha256Hash: "82fa0d137b98b8de7047ce40495d50582a11bfe35a51487cddca4aa55dacc7cb",
   operationName: "ServerProductPageQuery",
 }
 
