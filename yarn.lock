@@ -4349,10 +4349,10 @@
     text-mask-core "^5.1.2"
     theme-ui "^0.3.1"
 
-"@vtex/test-tools@^3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@vtex/test-tools/-/test-tools-3.4.1.tgz#3ac397ca584ee8aee52d6de19c81047898dc965b"
-  integrity sha512-D2DG8tUNos6Rdui8n8ip4gJ0NwbX7EoRoxEFMMFZhSD3y8fxtDaU7RgLjyOlmeUKkOSbjunHzRnQdbzcVc2jGw==
+"@vtex/test-tools@3.4.3-beta.0":
+  version "3.4.3-beta.0"
+  resolved "https://registry.yarnpkg.com/@vtex/test-tools/-/test-tools-3.4.3-beta.0.tgz#ada24c89c2a655d4b901bfbaa376045cd1602c4b"
+  integrity sha512-mZWzLCZv7wG065E/uNc5DKlMgewI32NpZiCNM4EgbCKqH4GHeLNOK1xDUKccyt+7pnapGU7KKMWygjfPCO1Ewg==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/plugin-proposal-class-properties" "^7.10.4"
