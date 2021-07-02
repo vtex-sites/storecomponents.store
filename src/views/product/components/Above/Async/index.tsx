@@ -1,5 +1,4 @@
 import React from 'react'
-import { useAsyncProduct } from '@vtex/gatsby-theme-store/src/views/product/useAsyncProduct'
 import {
   useBestSeller,
   useDetailsImages,
@@ -9,9 +8,10 @@ import { Divider, ProductDetailsReference } from '@vtex/store-ui'
 import { FormattedMessage } from 'react-intl'
 import type { FC } from 'react'
 
-import BuyButton from '../../../../../../components/ui/BuyButton/BuyButton.client'
-import Offer from '../../../../../../components/common/Offer'
-import Social from '../../../../../../components/common/Social'
+import { useAsyncProduct } from '../../useAsyncProduct'
+import BuyButton from '../../../../../components/ui/BuyButton/BuyButton.client'
+import Offer from '../../../../../components/common/Offer'
+import Social from '../../../../../components/common/Social'
 
 type Item = {
   itemId: string

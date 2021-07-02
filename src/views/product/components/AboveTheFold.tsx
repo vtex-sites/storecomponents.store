@@ -14,7 +14,7 @@ import type { FC } from 'react'
 
 import AsyncInfoContainer from './Above/Async/Container'
 import AsyncInfoPreview from './Above/Async/Preview'
-import type { ProductViewProps } from '.'
+import type { ProductViewProps } from '..'
 
 const loadAsyncInfo = () => import('./Above/Async')
 const AsyncInfo = lazy(loadAsyncInfo)
