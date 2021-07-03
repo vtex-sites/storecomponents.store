@@ -14,11 +14,10 @@ import {
 } from '@vtex/store-ui'
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
+import { useDiscount } from '@sdk/useDiscount'
+import { useMaxInstallments } from '@sdk/useMaxInstallments'
 import type { FC } from 'react'
-
-import { useMaxInstallments } from '../../../sdk/useMaxInstallments'
-import { useDiscount } from '../../../sdk/useDiscount'
-import type { Installment } from '../../../sdk/useMaxInstallments'
+import type { Installment } from '@sdk/useMaxInstallments'
 
 interface Props {
   commercialOffer: {

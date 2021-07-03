@@ -25,6 +25,7 @@
     "gatsby-plugin-next-seo": "^1.7.0",
     "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-robots-txt": "^1.5.1",
+    "gatsby-plugin-root-import": "^2.0.6",
     "react": "^0.0.0-experimental-7f28234f8",
     "react-dom": "^0.0.0-experimental-7f28234f8",
     "react-helmet-async": "^1.0.9",

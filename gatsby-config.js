@@ -5,7 +5,8 @@ require('dotenv').config({
 
 const csv2json = require('csvtojson')
 
-const images = require('./src/images.config')
+const images = require('./src/images/images.config')
+const tsconfig = require('./tsconfig.json')
 
 const {
   GATSBY_VTEX_ACCOUNT: STORE_ID,
@@ -55,6 +56,10 @@ module.exports = {
     PRESERVE_WEBPACK_CACHE: true,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: tsconfig.compilerOptions.paths,
+    },
     {
       resolve: `@vtex/gatsby-source-vtex`,
       options: {

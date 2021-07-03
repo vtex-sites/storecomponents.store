@@ -2,7 +2,15 @@
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "module": "ESNext"
+    "module": "ESNext",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@sdk/*": ["src/sdk/*"],
+      "@pages/*": ["src/pages/*"],
+      "@components/*": ["src/pages/*"],
+      "@images/*": ["src/images/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "public"]
