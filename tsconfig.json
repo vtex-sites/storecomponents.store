@@ -6,10 +6,7 @@
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
-      "@sdk/*": ["src/sdk/*"],
-      "@pages/*": ["src/pages/*"],
-      "@components/*": ["src/pages/*"],
-      "@images/*": ["src/images/*"]
+      "src/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
