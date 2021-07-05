@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:8000/",
+  "integrationFolder": "cypress/e2e",
+  "defaultCommandTimeout": 20000,
+  "video": true,
+  "retries": 2,
+  "chromeWebSecurity": false
+}

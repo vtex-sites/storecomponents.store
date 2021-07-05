@@ -19,11 +19,10 @@ describe('check all links in the home', () => {
       }
 
       cy.intercept('GET', `/page-data${url.pathname}/page-data.json`).as(
-        'pageLoad'
+        `pageLoad${url.pathname}`
       )
       cy.visit($page.prop('href'), { failOnStatusCode: false })
-      // eslint-disable-next-line cypress/no-unnecessary-waiting
-      cy.wait('@pageLoad')
+      cy.wait(`@pageLoad${url.pathname}`)
         .its('response.statusCode')
         .then(($code) => {
           if ($code < 200 || $code > 399) {
