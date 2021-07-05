@@ -3215,6 +3215,25 @@
     schema-dts "^0.6.0"
     swr "^0.3.0"
 
+"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/76a8e708/@vtex/gatsby-theme-store":
+  version "0.371.33"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/76a8e708/@vtex/gatsby-theme-store#76bce06f85787dd0ab695bbf96378b9c6bf6c775"
+  dependencies:
+    "@theme-ui/match-media" "^0.3.1"
+    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/76a8e708/@vtex/gatsby-plugin-graphql"
+    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/76a8e708/@vtex/gatsby-plugin-theme-ui"
+    "@vtex/order-items" "^0.6.1"
+    "@vtex/order-manager" "^0.5.2"
+    gatsby-plugin-bundle-stats "^2.7.2"
+    html-loader "^2.1.2"
+    intersection-observer "^0.11.0"
+    intl-format-cache "^4.3.0"
+    markdown-loader "^6.0.0"
+    nprogress "^0.2.0"
+    requestidlecallback-polyfill "^1.0.2"
+    schema-dts "^0.6.0"
+    swr "^0.3.0"
+
 "@vtex/lighthouse-config@^0.371.29":
   version "0.371.29"
   resolved "https://registry.yarnpkg.com/@vtex/lighthouse-config/-/lighthouse-config-0.371.29.tgz#e0452502e9dea7f3649eea77192d0acfddfd86cd"
