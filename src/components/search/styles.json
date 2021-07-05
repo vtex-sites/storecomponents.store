@@ -4,7 +4,7 @@
       "display": "flex",
       "justifyContent": "center",
 
-      "maxHeight": "233px",
+      "height": "233px",
       "overflow": "hidden"
     }
   }
