@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Box,
   Flex,
@@ -9,9 +10,8 @@ import {
 } from '@vtex/store-ui'
 import type { PageProps } from 'gatsby'
 import type { FC } from 'react'
-import React from 'react'
 
-import type { HomePageQueryQuery } from '../../pages/__generated__/HomePageQuery.graphql'
+import type { HomePageQueryQuery } from '../../__generated__/HomePageQuery.graphql'
 import exampleStoreMd from './example-store.md'
 import reachUsMd from './reach-us.md'
 
@@ -19,7 +19,7 @@ type Props = PageProps<HomePageQueryQuery>
 
 const Block: FC = ({ children }) => <Box sx={{ my: 5 }}>{children}</Box>
 
-const BelowTheFold: FC<Props> = () => (
+const Fold: FC<Props> = () => (
   <>
     <Block>
       <InfoCard>
@@ -46,4 +46,4 @@ const BelowTheFold: FC<Props> = () => (
   </>
 )
 
-export default BelowTheFold
+export default Fold

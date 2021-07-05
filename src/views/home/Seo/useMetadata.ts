@@ -1,12 +1,11 @@
 import { useLocation } from '@reach/router'
-import type { PageProps } from 'gatsby'
 import type { GatsbySeo } from 'gatsby-plugin-next-seo'
 import type { ComponentPropsWithoutRef } from 'react'
 import { useLocale } from '@vtex/gatsby-theme-store'
 
-import type { HomePageQueryQuery } from '../../../pages/__generated__/HomePageQuery.graphql'
+import type { Props } from '../../../pages'
 
-type Options = PageProps<HomePageQueryQuery>
+type Options = Props
 
 type Return = ComponentPropsWithoutRef<typeof GatsbySeo>
 
