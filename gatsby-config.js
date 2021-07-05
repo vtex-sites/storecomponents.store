@@ -1,12 +1,10 @@
-require('dotenv').config({
-  // eslint-disable-next-line node/global-require
-  path: require('path').resolve('vtex.env'),
-})
+require('dotenv').config({ path: 'vtex.env' })
+
+const { resolve } = require('path')
 
 const csv2json = require('csvtojson')
 
 const images = require('./src/images/images.config')
-const tsconfig = require('./tsconfig.json')
 
 const {
   GATSBY_VTEX_ACCOUNT: STORE_ID,
@@ -58,7 +56,9 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-plugin-root-import',
-      options: tsconfig.compilerOptions.paths,
+      options: {
+        src: resolve('./src'),
+      },
     },
     {
       resolve: `@vtex/gatsby-source-vtex`,
