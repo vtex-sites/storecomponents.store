@@ -30,7 +30,11 @@ const Minicart: FC = () => {
 
   return (
     <>
-      <MinicartButton value={orderForm.items.length} onClick={openMinicart} />
+      <MinicartButton
+        data-testid="openCart"
+        value={orderForm.items.length}
+        onClick={openMinicart}
+      />
       {displayMinicart && (
         <MinicartDrawer
           isOpen
