@@ -2635,20 +2635,9 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-plugin-graphql":
-  version "0.372.0"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-plugin-graphql#5b2fb8dbb9709c516bca292773a6a12c78c15843"
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
-"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-plugin-graphql":
+"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-plugin-graphql":
   version "0.372.1"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-plugin-graphql#379b171ba146b2e60567727c28929cba1c16d08e"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-plugin-graphql#379b171ba146b2e60567727c28929cba1c16d08e"
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2702,22 +2691,9 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-plugin-theme-ui":
-  version "0.372.0"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-plugin-theme-ui#0801e67dfa25b5b62ccd08d1b2eda44929bd5853"
-  dependencies:
-    "@babel/core" "^7.11.4"
-    "@babel/parser" "^7.11.4"
-    "@babel/preset-typescript" "^7.10.4"
-    "@babel/register" "^7.11.5"
-    "@babel/traverse" "^7.11.0"
-    "@babel/types" "^7.11.0"
-    create-emotion-server "^10.0.27"
-    theme-ui "^0.3.1"
-
-"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-plugin-theme-ui":
+"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-plugin-theme-ui":
   version "0.372.1"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-plugin-theme-ui#e7adf827feaa3085768ca77ff9b8a69c2681302e"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-plugin-theme-ui#e7adf827feaa3085768ca77ff9b8a69c2681302e"
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -2746,32 +2722,13 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-theme-store":
-  version "0.372.0"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-theme-store#24c3e2d8adbbd68bd3b71619c3b55303f551b216"
-  dependencies:
-    "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-plugin-graphql"
-    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/0ce44b95/@vtex/gatsby-plugin-theme-ui"
-    "@vtex/order-items" "^0.6.1"
-    "@vtex/order-manager" "^0.5.2"
-    gatsby-plugin-bundle-stats "^2.7.2"
-    html-loader "^2.1.2"
-    intersection-observer "^0.11.0"
-    intl-format-cache "^4.3.0"
-    markdown-loader "^6.0.0"
-    nprogress "^0.2.0"
-    requestidlecallback-polyfill "^1.0.2"
-    schema-dts "^0.6.0"
-    swr "^0.3.0"
-
-"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-theme-store":
+"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-theme-store":
   version "0.372.1"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-theme-store#fc8439df14f1465337bb077a22e51d6103301254"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-theme-store#31d97d7cfad01854ae6b70a7075c9aae78809d16"
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-plugin-graphql"
-    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/af19798e/@vtex/gatsby-plugin-theme-ui"
+    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-plugin-graphql"
+    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/ca94fd95/@vtex/gatsby-plugin-theme-ui"
     "@vtex/order-items" "^0.6.1"
     "@vtex/order-manager" "^0.5.2"
     gatsby-plugin-bundle-stats "^2.7.2"
