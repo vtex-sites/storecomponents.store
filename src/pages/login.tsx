@@ -12,7 +12,7 @@ import {
 } from '@vtex/gatsby-theme-store'
 import type { ProvidersResponse } from '@vtex/gatsby-theme-store'
 
-import Layout from '../@vtex/gatsy-theme-store/components/Layout'
+import Layout from '../@vtex/gatsby-theme-store/components/Layout'
 
 type Props = PageProps<unknown>
 type DefaultProvidersComponents = typeof AUTH_PROVIDERS
