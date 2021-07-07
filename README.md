@@ -12,7 +12,7 @@ Kick-off your project with this default boilerplate. This starter ships with the
 
 ## 🚀 Quick start
 
-0. **Clone this repo**
+0. **Clone this repo***
 
     Get up and running by cloning this repo.
 
