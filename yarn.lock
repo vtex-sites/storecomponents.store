@@ -2637,7 +2637,6 @@
 
 "@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/2c6355de/@vtex/gatsby-plugin-graphql":
   version "0.372.3"
-  uid "8a81e185ac616b361820a64c4ac9623ba69d2ab6"
   resolved "https://pkg.csb.dev/vtex/faststore/commit/2c6355de/@vtex/gatsby-plugin-graphql#8a81e185ac616b361820a64c4ac9623ba69d2ab6"
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
@@ -2647,9 +2646,10 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-plugin-graphql":
+"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-plugin-graphql":
   version "0.372.3"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-plugin-graphql#8a81e185ac616b361820a64c4ac9623ba69d2ab6"
+  uid "8a81e185ac616b361820a64c4ac9623ba69d2ab6"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-plugin-graphql#8a81e185ac616b361820a64c4ac9623ba69d2ab6"
   dependencies:
     "@graphql-codegen/core" "^1.17.7"
     "@graphql-codegen/plugin-helpers" "^1.17.7"
@@ -2705,7 +2705,6 @@
 
 "@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/2c6355de/@vtex/gatsby-plugin-theme-ui":
   version "0.372.3"
-  uid c912ece4e0c5e46c41a343a040922f91b9ee184a
   resolved "https://pkg.csb.dev/vtex/faststore/commit/2c6355de/@vtex/gatsby-plugin-theme-ui#c912ece4e0c5e46c41a343a040922f91b9ee184a"
   dependencies:
     "@babel/core" "^7.11.4"
@@ -2717,9 +2716,10 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-plugin-theme-ui":
+"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-plugin-theme-ui":
   version "0.372.3"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-plugin-theme-ui#c912ece4e0c5e46c41a343a040922f91b9ee184a"
+  uid c912ece4e0c5e46c41a343a040922f91b9ee184a
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-plugin-theme-ui#c912ece4e0c5e46c41a343a040922f91b9ee184a"
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/parser" "^7.11.4"
@@ -2767,13 +2767,13 @@
     schema-dts "^0.6.0"
     swr "^0.3.0"
 
-"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-theme-store":
+"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-theme-store":
   version "0.372.3"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-theme-store#3e394b3839503382fe8ab9c59d8f0dd54cfe711b"
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-theme-store#fdb6c7a845f9863a9ac54f0a32b334628fb4b88b"
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-plugin-graphql"
-    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/gatsby-plugin-theme-ui"
+    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-plugin-graphql"
+    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/gatsby-plugin-theme-ui"
     "@vtex/order-items" "^0.6.1"
     "@vtex/order-manager" "^0.5.2"
     gatsby-plugin-bundle-stats "^2.7.2"
@@ -2815,12 +2815,12 @@
 
 "@vtex/store-sdk@https://pkg.csb.dev/vtex/faststore/commit/2c6355de/@vtex/store-sdk":
   version "0.372.3"
-  uid f60da0a41a9d54cdae50232292d5c5c08160cc60
   resolved "https://pkg.csb.dev/vtex/faststore/commit/2c6355de/@vtex/store-sdk#f60da0a41a9d54cdae50232292d5c5c08160cc60"
 
-"@vtex/store-sdk@https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/store-sdk":
+"@vtex/store-sdk@https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/store-sdk":
   version "0.372.3"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/50a8af85/@vtex/store-sdk#f60da0a41a9d54cdae50232292d5c5c08160cc60"
+  uid f60da0a41a9d54cdae50232292d5c5c08160cc60
+  resolved "https://pkg.csb.dev/vtex/faststore/commit/66ef389e/@vtex/store-sdk#f60da0a41a9d54cdae50232292d5c5c08160cc60"
 
 "@vtex/store-ui@^0.372.3":
   version "0.372.3"
