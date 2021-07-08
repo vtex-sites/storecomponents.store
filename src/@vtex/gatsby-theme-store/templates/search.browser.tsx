@@ -21,12 +21,13 @@ import type {
 
 const SearchPage: FC<PageProps> = (props) => {
   const {
-    pageContext: { hideUnavailableItems },
+    pageContext: { hideUnavailableItems, pageInfo },
     pageContext,
+    location,
   } = props
 
-  const searchParams = useSearchParamsFromUrl()
-  const variables = useQueryVariablesFromSearchParams(searchParams)
+  const searchParams = useSearchParamsFromUrl(location)
+  const variables = useQueryVariablesFromSearchParams(searchParams, pageInfo)
   const redirecting = usePersonalizedSearchRedirect(searchParams)
 
   const { data } = useQuery<
@@ -53,6 +54,7 @@ const SearchPage: FC<PageProps> = (props) => {
       data={data}
       searchParams={searchParams}
       pageContext={pageContext}
+      pageInfo={pageInfo}
     />
   )
 }
@@ -64,6 +66,7 @@ type PageProps = GatsbyPageProps<
     from?: number
     to?: number
     canonicalPath: string
+    pageInfo: { size: number }
   }
 >
 
