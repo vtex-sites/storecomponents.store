@@ -46,9 +46,9 @@ const Seo: FC<SearchViewProps> = (props) => {
   return (
     <SearchSEO
       {...siteMetadata.props}
-      title={searchMetadata?.title ?? siteMetadata.props.title}
+      title={searchMetadata?.title || siteMetadata.props.title}
       description={
-        searchMetadata?.description ?? siteMetadata.props.description
+        searchMetadata?.description || siteMetadata.props.description
       }
       canonical={canonical}
       breadcrumb={facets?.breadcrumb as any} // this can be removed once GraphQL types are correct
