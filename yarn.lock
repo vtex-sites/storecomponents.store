@@ -2635,17 +2635,6 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
-"@vtex/gatsby-plugin-graphql@https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-plugin-graphql":
-  version "0.372.4"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-plugin-graphql#39b80510cc1f264db938a01aff7a5fa9eb43bbce"
-  dependencies:
-    "@graphql-codegen/core" "^1.17.7"
-    "@graphql-codegen/plugin-helpers" "^1.17.7"
-    "@graphql-codegen/typescript" "^1.17.7"
-    "@graphql-codegen/typescript-operations" "^1.17.7"
-    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
-    fs-extra "^9.0.1"
-
 "@vtex/gatsby-plugin-i18n@^0.372.5":
   version "0.372.5"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.372.5.tgz#0d394a555f234665c6af0452dbabeb98d4af48be"
@@ -2691,19 +2680,6 @@
     create-emotion-server "^10.0.27"
     theme-ui "^0.3.1"
 
-"@vtex/gatsby-plugin-theme-ui@https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-plugin-theme-ui":
-  version "0.372.4"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-plugin-theme-ui#0c106746970239963f4adce12bd0b57a2a440536"
-  dependencies:
-    "@babel/core" "^7.11.4"
-    "@babel/parser" "^7.11.4"
-    "@babel/preset-typescript" "^7.10.4"
-    "@babel/register" "^7.11.5"
-    "@babel/traverse" "^7.11.0"
-    "@babel/types" "^7.11.0"
-    create-emotion-server "^10.0.27"
-    theme-ui "^0.3.1"
-
 "@vtex/gatsby-plugin-thumbor@^0.372.5":
   version "0.372.5"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-thumbor/-/gatsby-plugin-thumbor-0.372.5.tgz#6685535d16310a4f60bac1e46bb1748c95b18c08"
@@ -2722,13 +2698,14 @@
     slugify "^1.4.6"
     uuid "^8.3.0"
 
-"@vtex/gatsby-theme-store@https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-theme-store":
-  version "0.372.4"
-  resolved "https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-theme-store#eb423a64a664102ac1c2d30236b292031363d2b5"
+"@vtex/gatsby-theme-store@^0.372.5":
+  version "0.372.5"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-theme-store/-/gatsby-theme-store-0.372.5.tgz#6ae91a24fb62ce70b750a39bb4c9e1599e6ac8d6"
+  integrity sha512-AlNSXt+5dReoClyRWXwMgzfAiM2PYy7uxNaXn8vPbUOT1TkrVVWBzMGp/CyQJ9kyVZe0LsCoBZmu2ICfpasdOQ==
   dependencies:
     "@theme-ui/match-media" "^0.3.1"
-    "@vtex/gatsby-plugin-graphql" "https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-plugin-graphql"
-    "@vtex/gatsby-plugin-theme-ui" "https://pkg.csb.dev/vtex/faststore/commit/06daf69f/@vtex/gatsby-plugin-theme-ui"
+    "@vtex/gatsby-plugin-graphql" "^0.372.5"
+    "@vtex/gatsby-plugin-theme-ui" "^0.372.5"
     "@vtex/order-items" "^0.6.1"
     "@vtex/order-manager" "^0.5.2"
     gatsby-plugin-bundle-stats "^2.7.2"
