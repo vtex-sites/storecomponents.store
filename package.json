@@ -15,7 +15,7 @@
     "@vtex/gatsby-source-vtex": "^0.372.5",
     "@vtex/gatsby-theme-store": "^0.372.5",
     "@vtex/store-sdk": "^0.372.5",
-    "@vtex/store-ui": "^0.372.5",
+    "@vtex/store-ui": "https://pkg.csb.dev/vtex/faststore/commit/1c392f4f/@vtex/store-ui",
     "babel-preset-gatsby": "^1.1.0",
     "csvtojson": "^2.0.10",
     "dotenv": "^8.2.0",
