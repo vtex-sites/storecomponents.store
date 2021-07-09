@@ -2,7 +2,7 @@ const { goToSearchPage } = require('@vtex/test-tools/dist/cypress').default
 
 describe('Navigation between search pages', () => {
   before(() => {
-    cy.visit('/')
+    cy.visit('/').then(() => {})
     goToSearchPage({ pageIndex: 0 })
   })
 
