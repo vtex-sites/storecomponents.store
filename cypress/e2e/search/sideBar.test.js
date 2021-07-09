@@ -14,22 +14,15 @@ describe('Sidebar filter', () => {
     return Cypress.$(resolveIdentifier(dataId)).text()
   }
 
-  const filterCategory = () => {
-    cy.get('[data-testid="collapsibleHeader"]').eq(8).click({
-      force: true,
-    })
-
-    cy.get('[data-testid="collapsible-Categoria"]')
-      .find('li')
-      .eq(0)
-      .click({ force: true })
+  const filterCategory = (header) => {
+    header.find('li').eq(0).click({ force: true })
 
     cy.location().url().should('include', 'map=')
 
     cy.get('[data-testid="breadcrumb"] div:nth-child(3)').should(
       ($breadcrumbTitle) => {
         expect($breadcrumbTitle).to.have.text(
-          getText(['collapsible-Categoria', 'filterItemValue'], {
+          getText(['collapsibleHeader', 'filterItemValue'], {
             index: 0,
           })
         )
@@ -63,7 +56,7 @@ describe('Sidebar filter', () => {
 
   it('tests the use of the category filter', () => {
     cy.get('[data-testid="collapsibleHeader"]').each((header) => {
-      if (header.text() === 'Categoria') filterCategory()
+      if (header.text() === 'Categoria') filterCategory(header)
     })
   })
 })
