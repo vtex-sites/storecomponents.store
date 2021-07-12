@@ -8,6 +8,8 @@ describe('check all links in the home', () => {
     const localURL = new URL(Cypress.config().baseUrl)
 
     cy.get("a:not([href*='mailto:'])").each(($page) => {
+      cy.log($page.prop('href'))
+      cy.log(Cypress.config().baseUrl)
       if ($page.prop('href') === Cypress.config().baseUrl) {
         return
       }
