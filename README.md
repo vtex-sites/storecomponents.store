@@ -6,49 +6,50 @@
 </p>
 <h1 align="center">
   A store theme powered by VTEX and Gatsby
-</h1> 
+</h1>
 
-Kick-off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing-fast store for React. 
+test
+Kick-off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing-fast store for React.
 
 ## 🚀 Quick start
 
 0. **Clone this repo**
 
-    Get up and running by cloning this repo.
+   Get up and running by cloning this repo.
 
-    ```shell
-    # Clone this repo into your machine
-    npx degit vtex-sites/storecomponents.store my-awesome-store
-    ```
+   ```shell
+   # Clone this repo into your machine
+   npx degit vtex-sites/storecomponents.store my-awesome-store
+   ```
 
-1.  **Install dependencies**
+1. **Install dependencies**
 
-    Install dependencies with yarn
+   Install dependencies with yarn
 
-    ```shell
-    cd my-awesome-store/
-    yarn
-    ```
+   ```shell
+   cd my-awesome-store/
+   yarn
+   ```
 
-2.  **Setup env vars.**
+2. **Setup env vars.**
 
-    Chose a store by changing the `vtex.env` file and adding your own custom account name.
+   Chose a store by changing the `vtex.env` file and adding your own custom account name.
 
-3.  **Start developing.**
+3. **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+   Navigate into your new site’s directory and start it up.
 
-    ```shell
-    gatsby develop
-    ```
+   ```shell
+   gatsby develop
+   ```
 
-1.  **Open the source code and start editing!**
+4. **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
+   Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+   _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-awesome-store` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real-time!
+   Open the `my-awesome-store` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real-time!
 
 ## 🧐 What's inside?
 
@@ -87,7 +88,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 8.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-9. **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+9.  **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 10. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
@@ -106,6 +107,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on their website
 - **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## ⚡ Performance
-This project uses Google's Lighthouse CI for analyzing the store's performance and setting performance budgets. The URLs tested can be found and changed in the `ci.collect.url` property. Feel free to change this at your will 
+
+This project uses Google's Lighthouse CI for analyzing the store's performance and setting performance budgets. The URLs tested can be found and changed in the `ci.collect.url` property. Feel free to change this at your will
 
 <!-- AUTO-GENERATED-CONTENT:END -->
