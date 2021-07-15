@@ -3563,10 +3563,10 @@
     "@typescript-eslint/types" "4.15.0"
     eslint-visitor-keys "^2.0.0"
 
-"@vtex-components/accordion@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@vtex-components/accordion/-/accordion-0.2.3.tgz#d300548777b0c69941672def4b1f5f8ddef286d2"
-  integrity sha512-eBHg0p1iiOT1toSzrPxJz+9sSFlm/BY4VKOgopTFVI+CxW4fm4Wfk4nI0b+zq3w5nEPewu1RMgIBKsJtuTHrRw==
+"@vtex-components/accordion@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@vtex-components/accordion/-/accordion-0.2.4.tgz#cf4bb890068a7b93302c74795784cb7654426142"
+  integrity sha512-JmMjhpCJoWTuHOick9+5SKqE3DGj/oI4xxLqtZqcBXBSsbdWwxgSkXw+CD/KkOyjSBki28Az9ZkOkM3SytkX2A==
 
 "@vtex-components/drawer@^0.2.4":
   version "0.2.4"
@@ -3728,7 +3728,7 @@
     "@theme-ui/preset-base" "^0.3.0"
     "@types/react-modal" "^3.12.0"
     "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.3"
+    "@vtex-components/accordion" "^0.2.4"
     "@vtex-components/drawer" "^0.2.4"
     deepmerge "^4.2.2"
     react-hook-inview "^4.3.9"
