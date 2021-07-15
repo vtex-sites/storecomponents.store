@@ -6,5 +6,16 @@ export default createTheme(searchSuggestionsTheme, {
 
     position: 'absolute',
     right: [undefined, 0],
+
+    products: {
+      list: {
+        alignItems: 'center',
+        overflowX: 'scroll',
+        li: {
+          maxWidth: '153px',
+          px: '2px',
+        },
+      },
+    },
   },
 })

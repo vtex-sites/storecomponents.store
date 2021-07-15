@@ -1,16 +1,14 @@
-import { useLink, useSummaryImage } from '@vtex/gatsby-theme-store'
-import {
-  ProductSummaryContainer,
-  ProductSummaryImage,
-  ProductSummaryTitle,
-} from '@vtex/store-ui'
-import React from 'react'
-import type { Props } from '@vtex/gatsby-theme-store/src/components/ProductSummary'
+/** @jsx jsx */
+import { useLink } from '@vtex/gatsby-theme-store'
+import { LocalizedLink, jsx } from '@vtex/store-ui'
+import { useThumborImageData } from '@vtex/gatsby-plugin-thumbor'
+import imageConf from 'src/images/config'
 import type { FC } from 'react'
 
 import Offer from './Offer'
 import OfferPreview from './OfferPreview'
 import BuyButton from '../../ui/BuyButton'
+import styles from './styles.json'
 
 export type Item = {
   itemId: string
@@ -30,43 +28,55 @@ export type Item = {
   images: Array<{ imageUrl: string; imageText: string }>
 }
 
-type Product = {
-  productName: string
-  items: Item[]
+interface Props {
+  product: {
+    productName: string
+    items: Item[]
+  }
 }
 
-const ProductSummary: FC<Props> = ({
-  product,
-  loading = 'lazy',
-  variant = 'default',
-}) => {
+const ProductSummary: FC<Props> = ({ product }) => {
   const {
     items: [sku],
     productName,
-  } = (product as unknown) as Product
+  } = product
 
   const {
     images: [{ imageUrl, imageText }],
     sellers,
   } = sku
 
-  const linkProps = useLink(product)
-  const imgProps = useSummaryImage(imageUrl)
+  const linkProps = useLink(product as any)
+  const image = useThumborImageData({
+    ...imageConf['product.summary'],
+    baseUrl: imageUrl,
+  })
 
   const itemSku = {
     ...sku,
-    images: [{ imageUrl: imgProps.src }],
+    images: [{ imageUrl: image.images.fallback?.src }],
   }
 
   return (
-    <ProductSummaryContainer {...linkProps} variant={variant}>
-      <ProductSummaryImage
-        alt={imageText ?? 'Product Image'}
-        loading={loading}
-        variant={variant}
-        {...imgProps}
-      />
-      <ProductSummaryTitle variant={variant}>{productName}</ProductSummaryTitle>
+    <LocalizedLink
+      data-testid="productSummaryContainer"
+      state={{ fromSummary: true }}
+      sx={styles.link}
+      {...linkProps}
+    >
+      <div sx={styles.imageContainer}>
+        <img
+          sx={styles.image}
+          alt={imageText ?? 'Product Image'}
+          loading="lazy"
+          width={image.width}
+          height={image.height}
+          {...image.images.fallback}
+        />
+      </div>
+      <h3 sx={styles.title} data-testid="productSummaryTitle">
+        {productName}
+      </h3>
 
       {sellers === undefined ? (
         <OfferPreview />
@@ -78,7 +88,7 @@ const ProductSummary: FC<Props> = ({
       ) : null}
 
       <BuyButton sku={itemSku} productName={productName} />
-    </ProductSummaryContainer>
+    </LocalizedLink>
   )
 }
 
