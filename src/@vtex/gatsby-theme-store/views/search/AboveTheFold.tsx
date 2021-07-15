@@ -8,7 +8,7 @@ import {
   SearchTemplateMain,
 } from '@vtex/gatsby-theme-store/src/components/Search/SearchTemplate'
 import SearchBanner from 'src/components/search/Banner'
-import CollectionBanner from 'src/components/common/SearchBanner'
+import CollectionBanner from 'src/components/common/CollectionBanner'
 import { lazy } from 'react'
 import type { FC } from 'react'
 import type { SearchViewProps } from '@vtex/gatsby-theme-store/src/views/search'
