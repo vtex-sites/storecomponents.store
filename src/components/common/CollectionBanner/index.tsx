@@ -1,7 +1,7 @@
 /**  @jsx jsx */
 import { useGetThumborImageData } from '@vtex/gatsby-plugin-thumbor'
 import { jsx } from '@vtex/store-ui'
-import { GatsbyImage, withArtDirection } from 'gatsby-plugin-image'
+import { withArtDirection } from 'gatsby-plugin-image'
 import { useMemo } from 'react'
 import type { FC } from 'react'
 
@@ -68,7 +68,7 @@ const SearchBanner: FC<Props> = ({ blocks }) => {
           style={{ backgroundColor: props.image.backgroundColor }}
         />
         <picture>
-          {props.image.images.sources?.map((source) => (
+          {props.image.images.sources?.map((source: any) => (
             <source key={source.srcSet} {...source} />
           ))}
           <img
