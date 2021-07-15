@@ -1,7 +1,5 @@
-import type { FC } from 'react'
-import React, { lazy } from 'react'
-import type { BreadcrumbItem } from '@vtex/store-ui'
-import { SuspenseDevice, Breadcrumb, Container } from '@vtex/store-ui'
+/** @jsx jsx */
+import { SuspenseDevice, Breadcrumb, Container, jsx } from '@vtex/store-ui'
 import PageList from '@vtex/gatsby-theme-store/src/components/Search/List'
 import Controls from '@vtex/gatsby-theme-store/src/components/Search/Controls'
 import {
@@ -9,11 +7,14 @@ import {
   SearchTemplateAside,
   SearchTemplateMain,
 } from '@vtex/gatsby-theme-store/src/components/Search/SearchTemplate'
+import SearchBanner from 'src/components/search/Banner'
+import CollectionBanner from 'src/components/common/SearchBanner'
+import { lazy } from 'react'
+import type { FC } from 'react'
 import type { SearchViewProps } from '@vtex/gatsby-theme-store/src/views/search'
+import type { BreadcrumbItem } from '@vtex/store-ui'
 
-import { Banner } from './Banner'
 import type { BrowserSearchPageQueryQuery } from '../../templates/__generated__/BrowserSearchPageQuery.graphql'
-import SearchBanner from '../../../../components/search/Banner'
 
 const DesktopSearchFilters = lazy(
   () => import('@vtex/gatsby-theme-store/src/components/Search/Filters/Desktop')
@@ -39,7 +40,7 @@ const AboveTheFold: FC<Props> = ({ data, pageContext }) => {
       <Breadcrumb breadcrumb={breadcrumb} type="SEARCH" />
 
       {pageContext.vtexCmsPageContent != null && (
-        <Banner {...pageContext.vtexCmsPageContent} />
+        <CollectionBanner {...pageContext.vtexCmsPageContent} />
       )}
 
       <SearchTemplateContainer>

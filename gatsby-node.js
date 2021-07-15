@@ -1,7 +1,4 @@
 const { merge } = require('webpack-merge')
-const { optimize } = require('@vtex/gatsby-theme-store/sdk/img/fileManager')
-
-const { GATSBY_VTEX_ACCOUNT } = process.env
 
 exports.onCreateWebpackConfig = ({
   actions: { replaceWebpackConfig },
@@ -38,58 +35,6 @@ const throwOnErrors = (errors, reporter) => {
     reporter.panicOnBuild(errors.toString())
 
     throw errors
-  }
-}
-
-exports.onCreateNode = async ({ node, reporter }) => {
-  if (node.internal.type !== 'vtexCmsPageContent') {
-    return
-  }
-
-  const sizes = {
-    mobile: [360, 480],
-    desktop: [1280, 1440, 1920],
-  }
-
-  reporter.info(
-    `[${GATSBY_VTEX_ACCOUNT}.store]: Optimizing Images for: ${node.name}`
-  )
-
-  // eslint-disable-next-line vtex/prefer-early-return
-  if (node.type === 'plp' || node.type === 'productListLandingPage') {
-    const banner = node.blocks.find((block) => block.name === 'SearchBanner')
-
-    if (banner) {
-      banner.props.sources = [
-        {
-          media: '(min-width: 40em)',
-          srcSet: sizes.desktop
-            .map(
-              (width) =>
-                `${optimize(banner.props.desktop.srcSet, {
-                  width,
-                  aspect: true,
-                })} ${width}w`
-            )
-            .join(','),
-        },
-        {
-          media: '(max-width: 40em)',
-          srcSet: sizes.mobile
-            .map(
-              (width) =>
-                `${optimize(banner.props.mobile.srcSet, {
-                  width,
-                  aspect: true,
-                })} ${width}w`
-            )
-            .join(','),
-        },
-      ]
-
-      delete banner.props.desktop
-      delete banner.props.mobile
-    }
   }
 }
 

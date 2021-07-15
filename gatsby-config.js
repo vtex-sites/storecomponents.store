@@ -4,7 +4,7 @@ const { resolve } = require('path')
 
 const csv2json = require('csvtojson')
 
-const images = require('./src/images/images.config')
+const images = require('./src/images/config')
 
 const {
   GATSBY_VTEX_ACCOUNT: STORE_ID,

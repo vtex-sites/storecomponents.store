@@ -10,7 +10,7 @@ import {
 import { Link } from 'gatsby'
 import { GatsbyImage, withArtDirection } from 'gatsby-plugin-image'
 import { useMemo } from 'react'
-import imagesConf from 'src/images/images.config'
+import imagesConf from 'src/images/config'
 import type { FC } from 'react'
 
 import styles from './styles.json'

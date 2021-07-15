@@ -19,4 +19,24 @@ module.exports = {
       fitIn: true,
     },
   },
+  'searchBanner.desktop': {
+    sourceWidth: 1920,
+    aspectRatio: 3840 / 714,
+    breakpoints: [1280, 1440, 1920],
+    backgroundColor: '#D0D0D0',
+    layout: 'fullWidth',
+    options: {
+      fitIn: true,
+    },
+  },
+  'searchBanner.mobile': {
+    sourceWidth: 720,
+    aspectRatio: 480 / 317,
+    breakpoints: [360, 480, 720],
+    backgroundColor: '#D0D0D0',
+    layout: 'fullWidth',
+    options: {
+      fitIn: true,
+    },
+  },
 }

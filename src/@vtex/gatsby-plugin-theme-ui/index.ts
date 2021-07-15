@@ -15,7 +15,6 @@ import offerTheme from './offer'
 import productDetailsTheme from './productDetails'
 import { productQuantityTheme } from './productQuantity'
 import productSummaryTheme from './productSummary'
-import { searchBannerTheme } from './searchBanner'
 import searchBarTheme from './searchBar'
 import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
@@ -24,7 +23,6 @@ import minicartTheme from './minicart'
 import productImageGalleryTheme from './productImageGallery'
 
 export default createTheme(
-  searchBannerTheme,
   base,
   breadcrumb,
   minicartTheme,
