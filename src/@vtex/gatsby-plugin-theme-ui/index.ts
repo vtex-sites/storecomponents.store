@@ -19,7 +19,6 @@ import { searchTheme } from './searchFilter'
 import searchSuggestionsTheme from './searchSuggestions'
 import shelfTheme from './shelf'
 import minicartTheme from './minicart'
-import productImageGalleryTheme from './productImageGallery'
 
 export default createTheme(
   base,
@@ -38,6 +37,5 @@ export default createTheme(
   loginTheme,
   authTheme,
   toastTheme,
-  shelfTheme,
-  productImageGalleryTheme
+  shelfTheme
 )

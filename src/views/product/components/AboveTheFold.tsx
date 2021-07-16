@@ -1,4 +1,4 @@
-import { useDetailsImages, useDetailsVideos } from '@vtex/gatsby-theme-store'
+import { useDetailsVideos } from '@vtex/gatsby-theme-store'
 import {
   Breadcrumb,
   Card,
@@ -6,10 +6,12 @@ import {
   Flex,
   Grid,
   ProductDetailsTitle,
-  ProductImageGallery,
   SuspenseViewport,
 } from '@vtex/store-ui'
-import React, { lazy } from 'react'
+import React, { lazy, useMemo } from 'react'
+import ImageGallery from 'src/components/product/ImageGallery'
+import imageConf from 'src/images/config'
+import { useGetThumborImageData } from '@vtex/gatsby-plugin-thumbor'
 import type { FC } from 'react'
 
 import AsyncInfoContainer from './Above/Async/Container'
@@ -28,7 +30,23 @@ const AboveTheFold: FC<ProductViewProps> = ({ product, slug }: any) => {
     items: [{ images, videos }],
   } = product
 
-  const imageItems = useDetailsImages(images)
+  const getImageData = useGetThumborImageData()
+
+  const imageItems = useMemo(
+    () =>
+      images.map((x: any) => ({
+        type: 'image' as const,
+        props: {
+          image: getImageData({
+            ...imageConf['product.details'],
+            baseUrl: x.imageUrl,
+          }),
+          alt: x.imageText,
+        },
+      })),
+    [getImageData, images]
+  )
+
   const videoItems = useDetailsVideos(videos, productName)
   const galleryItems = [...imageItems, ...videoItems]
 
@@ -37,7 +55,7 @@ const AboveTheFold: FC<ProductViewProps> = ({ product, slug }: any) => {
       <Container>
         <Breadcrumb breadcrumb={breadcrumb} type="PRODUCT" />
         <Grid my={4} mx="auto" gap={[0, 3]} columns={[1, '60% 40%']}>
-          <ProductImageGallery allItems={galleryItems} />
+          <ImageGallery allItems={galleryItems} />
 
           <Card>
             <ProductDetailsTitle variant={variant}>

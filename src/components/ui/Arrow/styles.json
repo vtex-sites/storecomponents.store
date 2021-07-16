@@ -1,0 +1,13 @@
+{
+  "default": {
+    "bg": "transparent",
+    "borderColor": "transparent",
+    "cursor": "pointer",
+    "&:hover": {
+      "opacity": "0.5"
+    },
+    "svg": {
+      "color": "text"
+    }
+  }
+}

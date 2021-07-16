@@ -1,0 +1,63 @@
+{
+  "container": {
+    "mx": 2,
+    "display": "flex",
+    "flexWrap": "nowrap",
+    "flexDirection": "row"
+  },
+
+  "featured": {
+    "flexGrow": 1,
+    "position": "relative"
+  },
+
+  "media": {
+    "width": "100%"
+  },
+
+  "image": {
+    "width": "100%",
+    "aspect-ratio": "1"
+  },
+
+  "arrowLeft": {
+    "position": "absolute",
+    "top": "50%",
+    "left": 0,
+    "zIndex": 1
+  },
+
+  "arrowRight": {
+    "position": "absolute",
+    "top": "50%",
+    "right": 0,
+    "zIndex": 1
+  },
+
+  "miniatureContainer": {
+    "display": ["none", "block"],
+    "mx": "15px",
+    "width": "78px",
+
+    "img": {
+      "width": "100%",
+      "aspect-ratio": "1"
+    }
+  },
+
+  "miniatureActive": {
+    "display": "contents",
+    "marginBottom": "5px",
+    "borderStyle": "solid",
+    "borderColor": "secondary",
+    "borderWidth": "1px"
+  },
+
+  "miniatureInactive": {
+    "display": "contents",
+    "marginBottom": "5px",
+    "borderStyle": "solid",
+    "borderColor": "gray",
+    "borderWidth": "1px"
+  }
+}
