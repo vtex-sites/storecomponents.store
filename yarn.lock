@@ -3563,7 +3563,7 @@
     "@typescript-eslint/types" "4.15.0"
     eslint-visitor-keys "^2.0.0"
 
-"@vtex-components/accordion@^0.2.4":
+"@vtex-components/accordion@^0.2.3":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@vtex-components/accordion/-/accordion-0.2.4.tgz#cf4bb890068a7b93302c74795784cb7654426142"
   integrity sha512-JmMjhpCJoWTuHOick9+5SKqE3DGj/oI4xxLqtZqcBXBSsbdWwxgSkXw+CD/KkOyjSBki28Az9ZkOkM3SytkX2A==
@@ -3728,7 +3728,7 @@
     "@theme-ui/preset-base" "^0.3.0"
     "@types/react-modal" "^3.12.0"
     "@types/theme-ui__components" "^0.2.6"
-    "@vtex-components/accordion" "^0.2.4"
+    "@vtex-components/accordion" "^0.2.3"
     "@vtex-components/drawer" "^0.2.4"
     deepmerge "^4.2.2"
     react-hook-inview "^4.3.9"
@@ -3738,10 +3738,10 @@
     text-mask-core "^5.1.2"
     theme-ui "^0.3.1"
 
-"@vtex/test-tools@3.4.3-beta.1":
-  version "3.4.3-beta.1"
-  resolved "https://registry.yarnpkg.com/@vtex/test-tools/-/test-tools-3.4.3-beta.1.tgz#005de4efdef4bedcb7e22be9a2dbff7604906f71"
-  integrity sha512-6pHQiyTFRpYNMh+cOdDp1Top+XNpwOjSVvU12b8j8noO44gHrLk9xXJkP99hPDDv9S9g0O5t12IT9ETfG+z/TA==
+"@vtex/test-tools@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@vtex/test-tools/-/test-tools-3.4.2.tgz#557d47620182bfecbe5c9e47de69c5dfa1898bf2"
+  integrity sha512-+zhUHnX9RFKmM5vaSDkU+SbLc9UkBtkbxN2nquSyMfSidwimRVC0yImQuBW2vnT6qNxbJOMmr+Invm5X/tEang==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/plugin-proposal-class-properties" "^7.10.4"
