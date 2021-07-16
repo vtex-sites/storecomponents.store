@@ -17,7 +17,7 @@ const BuyButton: FC<Props> = ({ sku, product }) => {
     product,
   })
 
-  return <Button {...props} />
+  return <Button data-testid="addToCart" {...props} />
 }
 
 export default BuyButton
