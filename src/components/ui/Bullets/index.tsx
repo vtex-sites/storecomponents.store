@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Bullets as UIBullets, jsx } from '@vtex/store-ui'
+import { Bullets as StoreUIBullets, jsx } from '@vtex/store-ui'
 import type { BulletsProps } from '@vtex/store-ui'
 import type { FC } from 'react'
 
@@ -11,7 +11,7 @@ interface Props extends BulletsProps {
 
 const Bullets: FC<Props> = ({ variant = 'default', ...props }) => (
   <div sx={styles[variant]}>
-    <UIBullets {...props} />
+    <StoreUIBullets {...props} />
   </div>
 )
 

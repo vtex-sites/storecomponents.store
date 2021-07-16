@@ -24,32 +24,14 @@
     "position": "absolute",
     "top": "50%",
     "left": 0,
-    "zIndex": 1,
-    "bg": "transparent",
-    "borderColor": "transparent",
-    "cursor": "pointer",
-    "&:hover": {
-      "opacity": "0.5"
-    },
-    "svg": {
-      "color": "text"
-    }
+    "zIndex": 1
   },
 
   "arrowRight": {
     "position": "absolute",
     "top": "50%",
     "right": 0,
-    "zIndex": 1,
-    "bg": "transparent",
-    "borderColor": "transparent",
-    "cursor": "pointer",
-    "&:hover": {
-      "opacity": "0.5"
-    },
-    "svg": {
-      "color": "text"
-    }
+    "zIndex": 1
   },
 
   "miniatureContainer": {
