@@ -46,6 +46,7 @@
   },
 
   "miniatureActive": {
+    "display": "contents",
     "marginBottom": "5px",
     "borderStyle": "solid",
     "borderColor": "secondary",
@@ -53,6 +54,7 @@
   },
 
   "miniatureInactive": {
+    "display": "contents",
     "marginBottom": "5px",
     "borderStyle": "solid",
     "borderColor": "gray",
