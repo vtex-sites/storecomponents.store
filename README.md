@@ -7,7 +7,11 @@
 <h1 align="center">
   A store theme powered by VTEX and Gatsby
 </h1> 
-
+asdfsdf
+asdfsadf
+asdfsadf
+asdfasdf
+asdfasdf
 Kick-off your project with this default boilerplate. This starter ships with the main VTEX Store configuration files you might need to get up and running blazing fast with the blazing-fast store for React. 
 
 ## 🚀 Quick start
