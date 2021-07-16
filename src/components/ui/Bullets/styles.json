@@ -15,7 +15,7 @@
       "left": 0,
       "right": 0
     },
-    "[data-store-button]": {
+    "[data-store-bullets]>[data-bullet-item]>[data-store-button]": {
       "bg": "#a8a8a8",
       "cursor": "pointer",
       "display": "inline-block",

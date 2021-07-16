@@ -20,13 +20,7 @@ type VideoItem = {
 
 interface Props {
   allItems: Array<VideoItem | ImageItem>
-  showArrows?: boolean
-  showDots?: boolean
-  autoplay?: number
 }
-
-const variant = 'productImageGallery'
-const featuredVariant = `${variant}.featured`
 
 const ProductImageGallery: FC<Props> = ({ allItems }) => {
   const {
@@ -44,6 +38,8 @@ const ProductImageGallery: FC<Props> = ({ allItems }) => {
 
   // this is safe, since there is only one item per page
   const [item] = items
+  const displayDots = allItems.length > 1
+  const displayArrows = allItems.length > 1
 
   return (
     <div sx={styles.container}>
@@ -70,32 +66,37 @@ const ProductImageGallery: FC<Props> = ({ allItems }) => {
         ))}
       </div>
       <div sx={styles.featured} {...dragHandlers}>
-        <Arrow
-          direction="left"
-          sx={styles.arrowLeft}
-          data-testid="previousProductImage"
-          aria-label="previous image"
-          onClick={setPreviousPage}
-        />
+        {displayArrows && (
+          <Arrow
+            direction="left"
+            sx={styles.arrowLeft}
+            data-testid="previousProductImage"
+            aria-label="previous image"
+            onClick={setPreviousPage}
+          />
+        )}
         <div sx={styles.media}>
           {item.type === 'image' && (
             <GatsbyImage sx={styles.image} {...item.props} />
           )}
           {item.type === 'video' && <YoutubeIframe {...item.props} />}
         </div>
-        <Arrow
-          direction="right"
-          sx={styles.arrowRight}
-          data-testid="nextProductImage"
-          aria-label="next image"
-          onClick={setNextPage}
-        />
-
-        <Bullets
-          totalQuantity={totalPages}
-          activeBullet={page}
-          onClick={(_, idx) => setPage(idx)}
-        />
+        {displayArrows && (
+          <Arrow
+            direction="right"
+            sx={styles.arrowRight}
+            data-testid="nextProductImage"
+            aria-label="next image"
+            onClick={setNextPage}
+          />
+        )}
+        {displayDots && (
+          <Bullets
+            totalQuantity={totalPages}
+            activeBullet={page}
+            onClick={(_, idx) => setPage(idx)}
+          />
+        )}
       </div>
     </div>
   )
